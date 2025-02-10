@@ -1,39 +1,84 @@
 ---
 title: 'Getting Started: DigiTax and FIRS e-Invoicing'
 excerpt: >-
-  This page will help you get started with DGTXNG. You'll be up and running in a
-  jiffy!
+  Overview of how to get started with DigiTax Nigeria API. You'll be up and
+  running in short order!
 hidden: false
 ---
-Welcome to ReadMe! :owlbert:
+## Why DigiTax
 
-You're on your way to building an awesome developer hub! Here's some of the things you'll want to check out.
+DigiTax is your digital solution for effective, simple, and painless tax compliance. Our APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
 
-# 📝 Customize your docs
+## Understanding the FIRS e-Invoicing System
 
-What you're looking at right now is what we call our **Guides**. It's a free-form place to write to your heart's content! And the best part is... you aren't alone! Your users can contribute (with your approval, don't worry!) using the **[Suggested Edits](https://docs.readme.com/main/docs/suggested-edits)** feature on every page. It's like GitHub Pull Requests, but for text!
+FIRS (Federal Inland Revenue Service) is an agency of the government of Nigeria that is responsible for the assessment, collection and accounting for all revenues that are due to the government in accordance with the laws of Nigeria.
 
-Want to ease your users into it with some fancy marketing pages? You can enable a **[Landing Page](https://docs.readme.com/main/docs/landing-page)**, and write as much HTML as you want to make it look like your brand.
+To align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy, FIRS is implementing "e-invoices" in stages.
 
-# 🚦 Interactive API Docs
+This transformative e-invoicing system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
 
-If you don't have an API, then no worries! ReadMe is great for any sort of documentation. But if you have an API, there are a few features to make your experience with ReadMe (and your users' experience with your developer hub!) a magical one:
+## APPs and SIs
 
-* **Upload your OpenAPI file:** First step is to describe your API to us! If you already have an OpenAPI file, there's lots of ways to upload it in the *API Reference* section. Our favorite is the GitHub Action, but you can use our CLI or you can upload it directly to the UI!
-* **Add API Keys:** Don't make your users hunt around for API keys. You can surface their API key [right in the docs](https://docs.readme.com/main/docs/personalized-docs), so they can play around with your API right inside ReadMe.
-* **Add Logs:** The coolest thing about ReadMe is you can add [real-time API Logs](https://docs.readme.com/main/docs/developer-dashboard) right to your docs, so you and your users can both see what's going on with their API. Trust us, it's magical!
+**Access Point Providers** (APPs) and **System Integrators** (SIs) form the backbone of the digital tax compliance ecosystem, facilitating efficiency, compliance, and security in both local and international business operations. More about them here: [FIRS: APPs and SIs](doc:apps-and-sis)
 
-# 📈 Know your users
+## More on FIRS e-Invoicing System
 
-One of the best ways to know if you're nailing the dev experience is checking out how your users are interacting with both your docs and API.
+### Key Features of FIRS e-Invoicing
 
-* **Documentation Metrics** let you see who's using your docs, what your best and worst pages are, what people are searching for and more!
-* **API Metrics** are a bit harder to set up (I promise we do our best to make it painless!), but once you set this up you'll know *everything* that's going on with your users!
+1. Digital Representation of Transactions:\
+   Captures essential transaction details such as supplier and buyer information, item descriptions, quantities, prices, taxes, and total amounts.
+2. Global Standards:\
+   Built on international best practices like the Universal Business Language (UBL) and Peppol, facilitating local and cross-border trade.
+3. Security and Integrity:\
+   Advanced encryption ensures secure data transmission and compliance.
 
-# 💬 We're here to help!
+### How Invoice Factoring Works with e-Invoicing
 
-ReadMe has a *ton* of ways to make your docs the envy of any <Glossary>parliament</Glossary> (like that mouseover!). If you get stuck, [shoot us an email](mailto:support@readme.io) or use the Intercom widget on the bottom right of any page.
+Invoice factoring is an efficient way for businesses to access liquidity by selling outstanding e-invoices to a factoring provider. Through the FIRS e-invoicing system:
 
-We're excited you're here! :blue_heart:
+1. Instant Validation: Factoring providers can verify invoice authenticity and check for FIRS digital stamps in real-time.
+2. Secure Records: E-invoices are stored in a secure database, reducing risks of fraud or error.
+3. Accelerated Cash Flow: Faster approvals for factoring requests, improving business liquidity.
 
-![This won't be fun to clean up...](https://owlbert.io/images/popper.gif)
+Benefits for Businesses:
+
+* Reliable cash flow from verified invoices.
+* Simplified compliance for factoring processes.
+* Government support for economic growth by promoting business liquidity.
+
+### Interconnectivity Between e-Invoicing and Secure Invoice Exchange
+
+How It Works:
+
+1. Invoice Generation and Encryption:\
+   Businesses generate e-invoices via their ERP systems. Each invoice is digitally signed and encrypted by FIRS to ensure compliance.
+2. Secure Transmission:\
+   Access Point Providers (APPs) facilitate the secure transfer of encrypted invoices between trading partners and FIRS.
+3. Cross-Border Exchange:\
+   For international trade, FIRS e-invoicing adheres to global standards, enabling seamless transactions across borders.
+4. Decryption and Receipt:\
+   Buyers decrypt the invoice using their registered keys, review details, and process payments.
+
+### Key Benefits of DigiTax Integration with FIRS e-Invoicing
+
+DigiTax acts as a System Integrator (SI) and Access Point Providers (APP) that simplifies compliance with FIRS e-invoicing requirements:
+
+* ERP Alignment: Ensures seamless integration with your ERP system to comply with FIRS standards.
+* Digital Certificates: Manages the registration of devices and acquisition of digital certificates.
+* Real-Time Functionality: Provides real-time notifications and invoice verification.
+* Secure Exchange: Guarantees data integrity with cryptographically signed JWTs and industry-standard encryption.
+
+Key Benefits for Businesses:
+
+* Enhanced Security: Encryption ensures sensitive data is protected.
+* Real-Time Access: Instant processing and verification for efficient workflows.
+* Global Compatibility: Aligns Nigerian businesses with international invoicing platforms for seamless trade.
+* Ease of Use: Simplified integration reduces operational burden.
+
+## Enter DigiTax
+
+**DigiTax** is a solution that sits between you, a taxpayer, and the FIRS e-Invoicing System.
+
+With DigiTax, you gain access to a streamlined invoicing system that not only ensures compliance but also supports your business’s growth and international outreach. Together, DigiTax and FIRS e-invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
+
+<Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
