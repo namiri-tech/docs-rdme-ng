@@ -1,0 +1,4 @@
+---
+title: /invoices
+hidden: false
+---

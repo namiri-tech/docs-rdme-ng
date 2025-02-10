@@ -1,0 +1,792 @@
+openapi: 3.0.0
+info:
+  title: FIRS API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8095
+    description: Local
+  - url: https://staging.api-v2.digitax.tech/ng/v1
+    description: Staging
+paths:
+  /resources/countries:
+    get:
+      summary: Get FIRS Countries
+      security:
+        - apiKeyAuth: []
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS countries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Country"
+  /resources/currencies:
+    get:
+      summary: Get FIRS Currencies
+      security:
+        - apiKeyAuth: []
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS currencies
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Currency"
+  /resources/tax-categories:
+    get:
+      summary: Get FIRS Tax Categories
+      security:
+        - apiKeyAuth: []
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS tax categories
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TaxCategory"
+  /resources/invoice-types:
+    get:
+      summary: Get FIRS Invoice Types
+      security:
+        - apiKeyAuth: []
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS invoice types
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/CommonCode"
+  /resources/payment-means:
+    get:
+      summary: Get FIRS Payment Means
+      security:
+        - apiKeyAuth: []
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS payment means
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/CommonCode"
+  /info:
+    get:
+      summary: Get FIRS Info
+      security:
+        - apiKeyAuth: []
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: FIRS Info
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Branch"
+  /parties:
+    get:
+      summary: Get FIRS Parties
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS parties
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: "#/components/schemas/Pagination"
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Party"
+    post:
+      summary: Create Party
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - tax_identification_number
+                - name
+                - email
+                - address
+              properties:
+                tax_identification_number:
+                  type: string
+                email:
+                  type: string
+                name:
+                  type: string
+                phone:
+                  type: string
+                address:
+                  $ref: "#/components/schemas/Address"
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
+          description: Party created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Party"
+  /items:
+    get:
+      summary: Get FIRS Items
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS items
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: "#/components/schemas/Pagination"
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Item"
+    post:
+      summary: Create Item
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - tax_category_code
+                - product_category
+                - item_name
+                - hsn_code
+                - price_amount
+                - currency_code
+                - description
+              properties:
+                tax_category_code:
+                  type: string
+                product_category:
+                  type: string
+                item_name:
+                  type: string
+                hsn_code:
+                  type: string
+                price_amount:
+                  type: number
+                  format: double
+                currency_code:
+                  type: string
+                description:
+                  type: string
+                display_name:
+                  type: string
+                price_unit:
+                  type: string
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
+          description: Item created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Item"
+  /invoices:
+    get:
+      summary: Get FIRS Invoices
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS invoices
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: "#/components/schemas/Pagination"
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Invoice"
+    post:
+      summary: Create Invoice
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - customer_id
+                - invoice_date
+                - issue_date
+                - invoice_type_code
+                - document_currency_code
+                - items
+              properties:
+                customer_id:
+                  type: string
+                invoice_date:
+                  type: string
+                  format: date
+                issue_date:
+                  type: string
+                  format: date
+                invoice_type_code:
+                  type: string
+                tax_point_date:
+                  type: string
+                  format: date
+                document_currency_code:
+                  type: string
+                buyer_reference:
+                  type: string
+                billing_reference:
+                  type: array
+                  items:
+                    $ref: "#/components/schemas/InvoiceDocumentReference"
+                dispatch_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                receipt_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                originator_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                contract_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                due_date:
+                  type: string
+                  format: date
+                notes:
+                  type: string
+                items:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - item_id
+                      - quantity
+                      - price_amount
+                    properties:
+                      item_id:
+                        type: string
+                      quantity:
+                        type: number
+                        format: double
+                      price_amount:
+                        type: number
+                        format: double
+                      discount_rate:
+                        type: number
+                        format: double
+                      fee_rate:
+                        type: number
+                        format: double
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
+          description: Invoice created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Invoice"
+components:
+  schemas:
+    Country:
+      type: object
+      required:
+        - name
+        - alpha2
+        - alpha3
+      properties:
+        name:
+          type: string
+        alpha2:
+          type: string
+        alpha3:
+          type: string
+    Currency:
+      type: object
+      required:
+        - symbol
+        - name
+        - symbolNative
+        - decimalDigits
+        - rounding
+        - code
+        - namePlural
+      properties:
+        symbol:
+          type: string
+        name:
+          type: string
+        symbolNative:
+          type: string
+        decimalDigits:
+          type: integer
+        rounding:
+          type: integer
+        code:
+          type: string
+        namePlural:
+          type: string
+    TaxCategory:
+      type: object
+      required:
+        - code
+        - name
+        - tax_rate
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        tax_rate:
+          type: number
+          format: double
+    CommonCode:
+      type: object
+      required:
+        - code
+        - value
+      properties:
+        code:
+          type: string
+        value:
+          type: string
+    Address:
+      type: object
+      required:
+        - street_name
+        - city_name
+        - postal_zone
+        - country_code
+      properties:
+        street_name:
+          type: string
+        city_name:
+          type: string
+        postal_zone:
+          type: string
+        country_code:
+          type: string
+    Branch:
+      type: object
+      required:
+        - id
+        - created_at
+        - updated_at
+        - active
+        - is_test
+        - tax_identification_number
+        - address
+        - taxpayer_name
+        - taxpayer_email
+      properties:
+        id:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        active:
+          type: boolean
+        is_test:
+          type: boolean
+        service_id:
+          type: string
+        taxpayer_id:
+          type: string
+        taxpayer_name:
+          type: string
+        taxpayer_email:
+          type: string
+        tax_identification_number:
+          type: string
+        address:
+          $ref: "#/components/schemas/Address"
+    Party:
+      type: object
+      required:
+        - id
+        - created_at
+        - updated_at
+        - active
+        - tax_identification_number
+        - name
+        - email
+      properties:
+        id:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        active:
+          type: boolean
+        tax_identification_number:
+          type: string
+        name:
+          type: string
+        phone:
+          type: string
+        email:
+          type: string
+        address:
+          $ref: "#/components/schemas/Address"
+    Item:
+      type: object
+      required:
+        - id
+        - created_at
+        - updated_at
+        - active
+        - tax_category_code
+        - product_category
+        - item_name
+        - hsn_code
+        - item_number
+        - price_amount
+        - currency_code
+        - description
+      properties:
+        id:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        active:
+          type: boolean
+        tax_category_code:
+          type: string
+        product_category:
+          type: string
+        item_name:
+          type: string
+        hsn_code:
+          type: string
+        item_number:
+          type: string
+        price_amount:
+          type: number
+          format: double
+        currency_code:
+          type: string
+        description:
+          type: string
+        display_name:
+          type: string
+    Invoice:
+      type: object
+      required:
+        - id
+        - created_at
+        - updated_at
+        - active
+        - customer_id
+        - invoice_date
+        - issue_date
+        - invoice_type_code
+        - document_currency_code
+        - tax_currency_code
+        - invoice_number
+        - invoice_reference_number
+        - status
+        - is_valid
+        - line_extension_amount
+        - tax_exclusive_amount
+        - tax_inclusive_amount
+        - payable_amount
+        - tax_amount
+        - items
+      properties:
+        id:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        active:
+          type: boolean
+        customer_id:
+          type: string
+        invoice_date:
+          type: string
+          format: date
+        issue_date:
+          type: string
+          format: date
+        is_valid:
+          type: boolean
+        invoice_type_code:
+          type: string
+        tax_point_date:
+          type: string
+          format: date
+        document_currency_code:
+          type: string
+        tax_currency_code:
+          type: string
+        invoice_number:
+          type: string
+        invoice_reference_number:
+          type: string
+        buyer_reference:
+          type: string
+        payment_status:
+          type: string
+        delivery_date:
+          type: string
+          format: date
+        status:
+          type: string
+          enum: [DRAFT, PENDING, CONFIRMED, FAILED, COMPLETED]
+        line_extension_amount:
+          type: number
+          format: double
+        tax_exclusive_amount:
+          type: number
+          format: double
+        tax_inclusive_amount:
+          type: number
+          format: double
+        payable_amount:
+          type: number
+          format: double
+        tax_amount:
+          type: number
+          format: double
+        billing_reference:
+          type: array
+          items:
+            $ref: "#/components/schemas/InvoiceDocumentReference"
+        dispatch_document_reference:
+          $ref: "#/components/schemas/InvoiceDocumentReference"
+        receipt_document_reference:
+          $ref: "#/components/schemas/InvoiceDocumentReference"
+        originator_document_reference:
+          $ref: "#/components/schemas/InvoiceDocumentReference"
+        contract_document_reference:
+          $ref: "#/components/schemas/InvoiceDocumentReference"
+        due_date:
+          type: string
+          format: date
+        notes:
+          type: string
+        qr_code_data:
+          type: string
+        taxes:
+          type: array
+          items:
+            $ref: "#/components/schemas/TaxBreakdown"
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/InvoiceItem"
+    InvoiceItem:
+      type: object
+      required:
+        - id
+        - item_id
+        - line_extension_amount
+        - quantity
+        - price_amount
+        - created_at
+        - updated_at
+        - active
+      properties:
+        id:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        active:
+          type: boolean
+        item_id:
+          type: string
+        line_extension_amount:
+          type: number
+          format: double
+        quantity:
+          type: number
+          format: double
+        price_amount:
+          type: number
+          format: double
+        discount_rate:
+          type: number
+          format: double
+        fee_rate:
+          type: number
+          format: double
+        discount_amount:
+          type: number
+          format: double
+        fee_amount:
+          type: number
+          format: double
+    Pagination:
+      type: object
+      properties:
+        next:
+          type: string
+          example: item_01HC3J1VVVM05YCTS61G7V3KC6
+        previous:
+          type: string
+          example: item_01HC3J1VVVM05YCTS61G7V3KC6
+        page_size:
+          type: integer
+          example: 20
+    InvoiceDocumentReference:
+      type: object
+      required:
+        - irn
+        - issue_date
+      properties:
+        irn:
+          type: string
+        issue_date:
+          type: string
+          format: date
+    TaxBreakdown:
+      type: object
+      required:
+        - tax_category_code
+        - tax_amount
+        - taxable_amount
+        - tax_percentage
+      properties:
+        tax_category_code:
+          type: string
+        tax_amount:
+          type: number
+          format: double
+        taxable_amount:
+          type: number
+          format: double
+        tax_percentage:
+          type: number
+          format: double
+  parameters:
+    After:
+      in: query
+      name: after
+      required: false
+      schema:
+        type: string
+        description: When paginating results, a pointer to an ID after which we want results
+        example: item_01HC3J1VVVM05YCTS61G7V3KC6
+    Before:
+      in: query
+      name: before
+      required: false
+      schema:
+        type: string
+        description: When paginating results, a pointer to an ID before which we want results
+        example: item_01HC3J1VVVM05YCTS61G7V3KC6
+    PageSize:
+      in: query
+      name: page_size
+      required: false
+      schema:
+        type: integer
+        maximum: 20
+        minimum: 1
+        description: The maximum number of items to return per page, defaults to 20
+        example: 20
+  responses:
+    default:
+      $ref: "#/components/responses/Error"
+    Error:
+      description: Error response
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - message
+              - code
+            properties:
+              message:
+                type: string
+              code:
+                type: string
+  securitySchemes:
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
