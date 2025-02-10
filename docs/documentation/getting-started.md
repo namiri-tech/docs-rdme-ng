@@ -1,5 +1,5 @@
 ---
-title: Getting Started with DGTXNG
+title: 'Getting Started: DigiTax and FIRS e-Invoicing'
 excerpt: >-
   This page will help you get started with DGTXNG. You'll be up and running in a
   jiffy!
