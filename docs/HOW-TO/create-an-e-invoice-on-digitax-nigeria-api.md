@@ -1,7 +1,7 @@
 ---
 title: Create an e-invoice on DigiTax Nigeria API
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
