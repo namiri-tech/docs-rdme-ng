@@ -11,8 +11,8 @@ For an invoice to be generated, an item and a party need to be created.
 
 Relevant API endpoints:
 
-1. \[Create Party]\(Create Party)
-2. [Create Item](ref:post_items)
+1. Create Party
+2. Create Item
 
 ## e-Invoice steps
 
@@ -31,25 +31,4 @@ Relevant API endpoints:
 
 An invoice is marked **FAILED** if there's an error at step 3.
 
-![](https://files.readme.io/79445835c26f6f1fd85d01b4f717751ba7df8988f762ae3466f1f93fc55e82a2-image.png)
-
-<br />
-
-<br />
-
-\[block:image] &#x20;
-\{
-&#x20; "images": \[
-&#x20;   \{
-&#x20;     "image": \[
-&#x20;       "https\://files.readme.io/d517b8f45ddc1edc3bf1e83f07575bf27ec7810fc92d23db0c218ce77c1f7d14-image.png",
-&#x20;       null,
-&#x20;       "E-INVOICE flow steps"
-&#x20;     ],
-&#x20;     "align": "center",
-&#x20;     "border": true,
-&#x20;     "caption": "E-INVOICE flow steps"
-&#x20;   }
-&#x20; ]
-}
-\[/block]
+<Image align="center" border={true} caption="E-INVOICE flow steps" src="https://files.readme.io/79445835c26f6f1fd85d01b4f717751ba7df8988f762ae3466f1f93fc55e82a2-image.png" />
