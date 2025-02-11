@@ -31,4 +31,4 @@ Relevant API endpoints:
 
 An invoice is marked **FAILED** if there's an error at step 3.
 
-<Image align="center" border={true} caption="E-INVOICE flow steps" src="https://files.readme.io/79445835c26f6f1fd85d01b4f717751ba7df8988f762ae3466f1f93fc55e82a2-image.png" />
+<Image align="center" border={true} caption="e-Invoice flow steps" src="https://files.readme.io/79445835c26f6f1fd85d01b4f717751ba7df8988f762ae3466f1f93fc55e82a2-image.png" />
