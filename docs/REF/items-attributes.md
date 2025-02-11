@@ -1,7 +1,7 @@
 ---
 title: Items attributes
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
