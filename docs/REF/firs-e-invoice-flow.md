@@ -18,7 +18,7 @@ Relevant API endpoints:
 
 1. [Create Invoice](ref:post_invoices)
 2. The IRN is generated on DigiTax system
-   1. This marks the invoice as **DRAFT status**
+   * This marks the invoice as **DRAFT status**
 3. Validate invoice request is sent to FIRS e-invoicing system
    * This marks the invoice as **PENDING status**
    * The **QR code** is generated
