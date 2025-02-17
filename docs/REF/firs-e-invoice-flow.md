@@ -21,7 +21,7 @@ Relevant API endpoints:
    1. This marks the invoice as **DRAFT status**
 3. Validate invoice request is sent to FIRS e-invoicing system
    * This marks the invoice as **PENDING status**
-   1. The **QR code** is generated
+   * The **QR code** is generated
 4. Submit invoice (called signing) request is sent to FIRS e-invoicing system
    * This marks the invoice as **COMPLETE**
    * Invoice details are download-able from FIRS
