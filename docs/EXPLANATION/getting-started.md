@@ -1,23 +1,31 @@
 ---
 title: 'Getting Started: DigiTax Nigeria and FIRS e-Invoicing'
 excerpt: >-
-  Overview of how to get started with DigiTax Nigeria API. You'll be up and
-  running in short order!
+  Overview of how to get started with DigiTax Nigeria API
 hidden: false
 ---
-> **DigiTax** Nigeria integrates you with FIRS e-Invoicing System
 
-## Understanding the FIRS e-Invoicing System
+## Introduction to DigiTax and FIRS
+
+### What is DigiTax?
+
+DigiTax is your digital solution for effective, simple, and painless tax compliance through electronic tax invoicing. DigiTax APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
+
+### What is FIRS e-Invoicing System?
 
 FIRS (Federal Inland Revenue Service) is an agency of the government of Nigeria that is responsible for the assessment, collection and accounting for all revenues that are due to the government in accordance with the laws of Nigeria.
 
-To align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy, FIRS is implementing "e-invoices" in stages.
+To align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy, FIRS is implementing a transformative e-invoicing system. This system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
 
-This transformative e-invoicing system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
+## DigiTax Nigeria and FIRS e-Invoicing
 
-## What is DigiTax?
+> **DigiTax Nigeria** integrates you with FIRS e-Invoicing System
 
-DigiTax is your digital solution for effective, simple, and painless tax compliance through electronic tax invoicing. Our APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
+**DigiTax** is a solution that sits between you; the taxpayer, and the FIRS e-Invoicing System.
+
+With DigiTax, you gain access to a streamlined invoicing system that not only ensures compliance but also supports your business's growth and international outreach. Together, DigiTax and FIRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
+
+<Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
 
 ## More on FIRS e-Invoicing System
 
@@ -49,11 +57,3 @@ Key Benefits for Businesses:
 * Real-Time Access: Instant processing and verification for efficient workflows.
 * Global Compatibility: Aligns Nigerian businesses with international invoicing platforms for seamless trade.
 * Ease of Use: Simplified integration reduces operational burden.
-
-## Conclusion: DigiTax and FIRS e-Invoicing
-
-**DigiTax** is a solution that sits between you, a taxpayer, and the FIRS e-Invoicing System.
-
-With DigiTax, you gain access to a streamlined invoicing system that not only ensures compliance but also supports your business’s growth and international outreach. Together, DigiTax and FIRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
-
-<Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
