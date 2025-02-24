@@ -25,19 +25,7 @@ With DigiTax, you gain access to a streamlined invoicing system that not only en
 
 <Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
 
-<Columns layout="auto">
-  <Column>
-    More on FIRS e-Invoicing System
-  </Column>
-
-  <Column>
-    Benefits of integrating with DigiTax
-  </Column>
-
-  <Column>
-    DigiTax Nigeria API reference
-  </Column>
-</Columns>
+## Gain understanding through our detailed guides
 
 <Cards columns={2}>
   <Card title="FIRS e-Invoicing System" href="https://readme.com" icon="fa-info">
@@ -56,6 +44,10 @@ With DigiTax, you gain access to a streamlined invoicing system that not only en
     **Excepteur sint occaecat cupidatat non proident**
   </Card>
 </Cards>
+
+## Explore our API reference
+
+<br />
 
 ## More on FIRS e-Invoicing System
 
