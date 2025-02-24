@@ -17,7 +17,7 @@ Once signed up on DigiTax, you can generate an e-invoice via the:
 
 ## e-invoice sections
 
-Below are the details on an e-invoice when downloaded via the Dashboard.
+Below are the details on an e-invoice when downloaded via the Dashboard. The sections comprise what FIRS expects in an e-invoice.
 
 <Image align="center" border={true} caption="e-invoice with key sections highlighted" src="https://files.readme.io/33566ee0ff09bd12b887e8fa226ee7e71c95d56ca5622c96230d71a0603d54fd-image.png" />
 
