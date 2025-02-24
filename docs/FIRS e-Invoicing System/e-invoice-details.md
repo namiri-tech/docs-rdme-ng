@@ -2,7 +2,7 @@
 title: e-invoice details
 excerpt: Explore the details on an e-invoice
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
