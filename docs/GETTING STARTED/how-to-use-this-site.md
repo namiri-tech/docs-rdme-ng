@@ -15,10 +15,10 @@ Explore the guides as outlined on the left-hand menu.
 ### Guide page features
 
 * **Table of contents** on the right-hand side (Only on Desktop)
-* **Suggested Edits**: If you find a typo, or rather think a page should be improved, we welcome you to make suggestions that we'll integrate (after approval, of course!). See **Suggested Edits** (Edit icon - on Mobile) on the right of a page's header (above Table of Contents on Desktop)
+* **Suggested Edits**: If you find a typo, or rather think a page should be improved, we welcome you to offer suggestions that we'll integrate (after approval, of course!). See **Suggested Edits** (Edit icon - on Mobile) on the right of a page's header (above Table of Contents on Desktop)
 * **Hover to view Glossary definitions (mouseover)**: We don't want to get lost in the jargon. Words (acronyms) listed in the Glossary appear on a page as underlined with a dotted line.
 
-  Like \<\<glossary:API>>, hover (or click - \_On Mobile\_) to view the definition.
+  Like <Glossary>API</Glossary>, hover (or click - *On Mobile*) to view the definition.
 
 ## 🚦 Interactive API Docs
 
