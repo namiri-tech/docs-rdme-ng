@@ -11,7 +11,7 @@ hidden: false
 
 African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting.
 
-<Accordion title="DigiTax is multi-national" icon="fa-book-globe">
+<Accordion title="DigiTax is multi-national, explore other countries here" icon="fa-book-globe">
   If you're looking for another country or the general homepage for DigiTax API, navigate to the [DigiTax API homepage](https://docs.digitax.tech), or country-specific API hub pages (ordered alphabetically):
 
   * [DigiTax Kenya API hub](https://ke.docs.digitax.tech)
