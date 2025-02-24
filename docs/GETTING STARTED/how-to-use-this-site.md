@@ -22,11 +22,11 @@ Explore the guides as outlined on the left-hand menu.
 
 ## 🚦 Interactive API Docs
 
-For a great dev experience, the endpoints in the [API reference](/reference)  are interactive.
+For a great developer experience, the endpoints in the [DigiTax Nigeria API reference](/reference) are interactive.
 
-Once you're set up in our dashboard, you'll get your test **X-API-Key** to use in the staging-api environment (and localhost environment for local development).
+Once you're set up in the DigiTax Dashboard, you can generate a sandbox/ LIVE **X-API-Key** for authorization.
 
-Explore the API endpoints [here](/reference) .
+Explore the API endpoints [here](/reference).
 
 ## 💬 We're here to help
 
