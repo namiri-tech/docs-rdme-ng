@@ -10,6 +10,12 @@ On the getting-started page, [DigiTax Nigeria and FIRS e-Invoicing](doc:getting-
 
 Below, we'll go deeper into Nigeria's tax authority (FIRS) and the FIRS e-invoicing system.
 
+## FIRS e-invoicing system introduction
+
+FIRS is implementing "e-invoices" in stages.
+
+Nigeria's Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy, FIRS is implementing "e-invoices" in stages.
+
 ### Key Features of FIRS e-Invoicing
 
 1. Digital Representation of Transactions:\
