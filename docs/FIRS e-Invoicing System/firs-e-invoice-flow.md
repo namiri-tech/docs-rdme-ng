@@ -13,7 +13,7 @@ For an invoice to be generated, an item and a party need to be created.
 Relevant API endpoints:
 
 1. Create Party
-2. Create Item
+2. [Create Item](/reference/post/items)
 
 ## e-Invoice steps
 
