@@ -6,10 +6,14 @@ excerpt: >-
 hidden: false
 ---
 > If you're new here, learn [how to use this site](doc:how-to-use-this-site)
+>
+> This is the DigiTax Nigeria API guide
 
 ## Electronic Tax Invoicing
 
 African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting.
+
+Nigeria is one of the countries and the country's tax authority, **FIRS** (**F**ederal **I**nland **R**evenue **S**ervice) has a transformative e-invoicing system, simply referred to as *FIRS e-Invoicing System*.
 
 <Accordion title="DigiTax is multi-national, explore other countries here" icon="fa-book-globe">
   If you're looking for another country or the general homepage for DigiTax API, navigate to the [DigiTax API homepage](https://docs.digitax.tech), or country-specific API hub pages (ordered alphabetically):
@@ -18,8 +22,6 @@ African countries lately have been opting to digitize their tax systems by impos
   * DigiTax Nigeria API hub (You are here 🎉)
   * [DigiTax Zambia API hub](https://zm.docs.digitax.tech)
 </Accordion>
-
-Nigeria is one of the countries and the country's tax authority, **FIRS** (**F**ederal **I**nland **R**evenue **S**ervice) has a transformative e-invoicing system, simply referred to as *FIRS e-Invoicing System*.
 
 ## Introduction to FIRS e-Invoicing System and DigiTax
 
