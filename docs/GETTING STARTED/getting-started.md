@@ -1,6 +1,8 @@
 ---
-title: 'Getting Started: DigiTax Nigeria and FIRS e-Invoicing'
-excerpt: Overview of how to get started with DigiTax Nigeria API
+title: DigiTax Nigeria and FIRS e-Invoicing
+excerpt: >-
+  Overview of how to get started with DigiTax Nigeria API and integrate with
+  FIRS e-Invoicing System
 hidden: false
 ---
 ## Introduction to DigiTax and FIRS
