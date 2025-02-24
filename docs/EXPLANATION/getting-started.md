@@ -27,11 +27,17 @@ With DigiTax, you gain access to a streamlined invoicing system that not only en
 
 ## Gain understanding through our detailed guides
 
+This API Hub contains guides and API reference pages for further understanding, equipping you to integrate with the DigiTax Nigeria API.
+
 <Cards columns={2}>
-  <Card title="FIRS e-Invoicing System" href="https://readme.com" icon="fa-info">
+  <Card title="Navigation" icon="fa-compass">
+    If you're new here, learn how to navigate the API Hub [here](/)
+  </Card>
+
+  <Card title="FIRS e-Invoicing System" icon="fa-info">
     Understand:
 
-    * Access Point Providers (APPs) and System Integrators (SIs)
+    * FIRS Access Point Providers (APPs) and System Integrators (SIs)
     * Key Features of FIRS e-Invoicing
   </Card>
 
@@ -43,7 +49,11 @@ With DigiTax, you gain access to a streamlined invoicing system that not only en
     * DigiTax support center
   </Card>
 
-  <Card title="How to" icon="fa-star">
+  <Card title="How-to guides" icon="fa-star">
+    Learn step-by-step how specific actions are completed
+  </Card>
+
+  <Card title="Digi" icon="fa-star">
     > Ut enim ad minim veniam, quis nostrud ullamco
   </Card>
 
