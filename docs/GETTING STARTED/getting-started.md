@@ -23,6 +23,14 @@ Nigeria is one of the countries and the country's tax authority, **FIRS** (**F**
   * [DigiTax Zambia API hub](https://zm.docs.digitax.tech)
 </Accordion>
 
+> 👍 Welcome to the DigiTax Nigeria API Hub
+>
+> Here, you'll:
+>
+> * Be introduced to FIRS e-Invoicing System and DigiTax.
+> * Learn how to navigate the API Hub pages - guides and API reference.
+> * Gain
+
 ## Introduction to FIRS e-Invoicing System and DigiTax
 
 ### FIRS e-Invoicing System
@@ -41,17 +49,15 @@ Connected tax authorities/ regulators (so far):
 * DigiTax Kenya integrates you with KRA eTIMS
 * DigiTax Zambia integrates you with ZRA Smart Invoice System
 
+<Image align="center" border={true} caption="DigiTax - Tax authorities/ regulators" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
+
 ## DigiTax Nigeria and FIRS e-Invoicing
 
 > **DigiTax Nigeria** integrates you with FIRS e-Invoicing System
 
 **DigiTax** is a solution that sits between you; the taxpayer, and the FIRS e-Invoicing System.
 
-<Image align="center" border={true} caption="DigiTax - Tax authorities/ regulators" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
-
-With DigiTax, you gain access to a streamlined invoicing system that ensures compliance and supports your business's growth.
-
-Together, DigiTax and FIRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
+With DigiTax, you gain access to a streamlined invoicing system that ensures compliance and supports your business's growth. Together, DigiTax and FIRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
 
 <Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
 
