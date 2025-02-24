@@ -13,7 +13,7 @@ African countries lately have been opting to digitize their tax systems by impos
 
 Nigeria is one of the countries and the country's tax authority, **FIRS** (**F**ederal **I**nland **R**evenue **S**ervice) has a transformative e-invoicing system, simply referred to as *FIRS e-Invoicing System*.
 
-<Accordion title="DigiTax is multi-national, explore other countries here" icon="fa-book-globe">
+<Accordion title="DigiTax is multi-national. You are viewing DigiTax Nigeria API Guides. Explore other countries here" icon="fa-book-globe">
   If you're looking for another country or the general homepage for DigiTax API, navigate to the [DigiTax API homepage](https://docs.digitax.tech), or country-specific API hub pages (ordered alphabetically):
 
   * [DigiTax Kenya API hub](https://ke.docs.digitax.tech)
