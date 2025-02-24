@@ -33,17 +33,25 @@ FIRS introduced the FIRS e-invoicing system to align with Nigeria’s Digital Ec
 
 ### DigiTax Platform
 
-DigiTax platform, by Namiri Technology (the company), constitutes a suite of digital solutions crafted for effective, simple, and painless tax compliance through **electronic tax invoicing**. These solutions enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
+DigiTax platform, by Namiri Technology (the company), constitutes a suite of digital solutions crafted for effective, simple, and painless tax compliance through **electronic tax invoicing**. These solutions enable taxpayers (individuals and businesses) to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
+
+Connected tax authorities/ regulators (so far):
+
+* DigiTax Nigeria integrates you with FIRS e-Invoicing System
+* DigiTax Kenya integrates you with KRA eTIMS
+* DigiTax Zambia integrates you with ZRA Smart Invoice System
 
 ## DigiTax Nigeria and FIRS e-Invoicing
 
 > **DigiTax Nigeria** integrates you with FIRS e-Invoicing System
 
-DigiTax is your digital solution for effective, simple, and painless tax compliance through electronic tax invoicing. DigiTax APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
-
 **DigiTax** is a solution that sits between you; the taxpayer, and the FIRS e-Invoicing System.
 
-With DigiTax, you gain access to a streamlined invoicing system that not only ensures compliance but also supports your business's growth and international outreach. Together, DigiTax and FIRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
+<Image align="center" border={true} caption="DigiTax - Tax authorities/ regulators" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
+
+With DigiTax, you gain access to a streamlined invoicing system that ensures compliance and supports your business's growth.
+
+Together, DigiTax and FIRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
 
 <Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
 
