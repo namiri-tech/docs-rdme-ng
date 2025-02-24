@@ -75,7 +75,7 @@ This API Hub contains guides and API reference pages for further understanding, 
     * Key Features of FIRS e-Invoicing
   </Card>
 
-  <Card title="Benefits of integrating with DigiTax" icon="fa-plug">
+  <Card title="DigiTax integration" icon="fa-plug">
     Explore:
 
     * DigiTax API feature-set
@@ -85,10 +85,6 @@ This API Hub contains guides and API reference pages for further understanding, 
 
   <Card title="How-to guides" icon="fa-star">
     Learn step-by-step how specific actions are completed
-  </Card>
-
-  <Card title="Digi" icon="fa-star">
-    > Ut enim ad minim veniam, quis nostrud ullamco
   </Card>
 </Cards>
 
