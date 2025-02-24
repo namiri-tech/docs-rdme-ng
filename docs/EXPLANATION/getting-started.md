@@ -1,17 +1,15 @@
 ---
 title: 'Getting Started: DigiTax Nigeria and FIRS e-Invoicing'
-excerpt: >-
-  Overview of how to get started with DigiTax Nigeria API
+excerpt: Overview of how to get started with DigiTax Nigeria API
 hidden: false
 ---
-
 ## Introduction to DigiTax and FIRS
 
 ### What is DigiTax?
 
 DigiTax is your digital solution for effective, simple, and painless tax compliance through electronic tax invoicing. DigiTax APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
 
-### What is FIRS e-Invoicing System?
+### What is FIRS and the FIRS e-Invoicing System?
 
 FIRS (Federal Inland Revenue Service) is an agency of the government of Nigeria that is responsible for the assessment, collection and accounting for all revenues that are due to the government in accordance with the laws of Nigeria.
 
