@@ -1,6 +1,6 @@
 ---
 title: How to use this site
-excerpt: If you're new to DigiTax API Hub pages, learn how to navigate them below
+excerpt: If you're new to here, learn how to navigate the DigiTax API Hub pages below
 deprecated: false
 hidden: false
 metadata:
