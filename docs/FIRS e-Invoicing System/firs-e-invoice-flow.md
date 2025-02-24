@@ -1,5 +1,6 @@
 ---
 title: FIRS e-invoice flow
+excerpt: Steps taken when a FIRS e-invoice is generated
 deprecated: false
 hidden: false
 metadata:
