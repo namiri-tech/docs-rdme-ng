@@ -24,7 +24,7 @@ Explore the guides as outlined on the left-hand menu.
 
 For a great developer experience, the endpoints in the [DigiTax Nigeria API reference](/reference) are interactive.
 
-Once you're set up in the DigiTax Dashboard, you can generate a sandbox/ LIVE **X-API-Key** for authorization.
+Once you're set up in the DigiTax Dashboard, you can generate a sandbox or LIVE **X-API-Key** for authorization.
 
 Explore the API endpoints [here](/reference).
 
