@@ -1,13 +1,13 @@
 ---
-title: 'Getting Started: DigiTax and FIRS e-Invoicing'
+title: 'Getting Started: DigiTax Nigeria and FIRS e-Invoicing'
 excerpt: >-
   Overview of how to get started with DigiTax Nigeria API. You'll be up and
   running in short order!
 hidden: false
 ---
-## Why DigiTax
+## What is DigiTax?
 
-DigiTax is your digital solution for effective, simple, and painless tax compliance. Our APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
+DigiTax is your digital solution for effective, simple, and painless tax compliance through electronic tax invoicing. Our APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
 
 ## Understanding the FIRS e-Invoicing System
 
