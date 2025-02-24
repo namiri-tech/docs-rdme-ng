@@ -36,6 +36,12 @@ This API Hub contains guides and API reference pages for further understanding, 
     If you're new here, learn how to navigate the API Hub [here](https://ng.docs.digitax.tech/docs/how-to-use-this-site)
   </Card>
 
+  <Card title="Support" icon="fa-question">
+    If you get stuck, or have questions, [email us](mailto:support@namiri.tech)\
+    OR\
+    Use the chat app on the bottom right.
+  </Card>
+
   <Card title="FIRS e-Invoicing System" icon="fa-info">
     Understand:
 
@@ -57,10 +63,6 @@ This API Hub contains guides and API reference pages for further understanding, 
 
   <Card title="Digi" icon="fa-star">
     > Ut enim ad minim veniam, quis nostrud ullamco
-  </Card>
-
-  <Card title="Questions/ Support" icon="fa-question">
-    **Excepteur sint occaecat cupidatat non proident**
   </Card>
 </Cards>
 
