@@ -18,7 +18,7 @@ Relevant API endpoints:
 ## e-Invoice steps
 
 1. [Create Invoice](ref:post_invoices)
-2. The IRN is generated on DigiTax system
+2. The Invoice Reference Number (IRN) is generated on DigiTax
    * This marks the invoice as **DRAFT status**
 3. Validate invoice request is sent to FIRS e-invoicing system
    * This marks the invoice as **PENDING status**
@@ -32,4 +32,4 @@ Relevant API endpoints:
 
 An invoice is marked **FAILED** if there's an error at step 3.
 
-<Image align="center" border={true} caption="e-Invoice flow steps" src="https://files.readme.io/79445835c26f6f1fd85d01b4f717751ba7df8988f762ae3466f1f93fc55e82a2-image.png" />
+<Image align="center" border={true} caption="E-invoice flow steps" src="https://files.readme.io/79445835c26f6f1fd85d01b4f717751ba7df8988f762ae3466f1f93fc55e82a2-image.png" />
