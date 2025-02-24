@@ -1,5 +1,6 @@
 ---
 title: e-invoice details
+excerpt: Explore the details on an e-invoice
 deprecated: false
 hidden: true
 metadata:
@@ -7,17 +8,16 @@ metadata:
 ---
 ## Using DigiTax to generate e-invoices
 
-<br />
+Once signed up on DigiTax, you can generate an e-invoice via the:
 
-Once signed up on DigiTax, you can generate an e-invoice via:
-
-* the DigiTax Dashboard
-* the DigiTax API
-* the DigiTax App
-
-Below are the details on an e-invoice when downloaded via the Dashboard.
+* **DigiTax Dashboard** (Web Browser-based Desktop application for e-invoicing),
+* **DigiTax API** (for system-to-system integration without the issue of platform hopping), and
+* **DigiTax App** (Compatible with Android POS devices)
+* **DigiTax Plugins** like DigiTax WooCommerce, DigiTax Odoo, DigiTax Quickbooks, DigiTax Sage Online, among others. These  may vary in availability per country.
 
 ## e-invoice sections
+
+Below are the details on an e-invoice when downloaded via the Dashboard.
 
 <Image align="center" border={true} caption="e-invoice with key sections highlighted" src="https://files.readme.io/33566ee0ff09bd12b887e8fa226ee7e71c95d56ca5622c96230d71a0603d54fd-image.png" />
 
