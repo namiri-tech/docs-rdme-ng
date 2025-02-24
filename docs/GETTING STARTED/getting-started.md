@@ -5,7 +5,7 @@ excerpt: >-
   FIRS e-Invoicing System
 hidden: false
 ---
->  Welcome to DigiTax Nigeria API Hub
+> Welcome to DigiTax Nigeria API Hub
 >
 > If you're new here, learn [how to use this site](doc:how-to-use-this-site)
 
@@ -37,7 +37,7 @@ FIRS introduced the FIRS e-invoicing system to align with Nigeria’s Digital Ec
 
 DigiTax platform, by Namiri Technology (the company), constitutes a suite of digital solutions crafted for effective, simple, and painless tax compliance through **electronic tax invoicing**. These solutions enable taxpayers (individuals and businesses) to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
 
-Connected tax authorities/ regulators (so far):
+DigiTax connects with regional tax authorities/ regulators (so far):
 
 * DigiTax Nigeria integrates you with FIRS e-Invoicing System
 * DigiTax Kenya integrates you with KRA eTIMS
@@ -53,11 +53,9 @@ Connected tax authorities/ regulators (so far):
 
 With DigiTax, you gain access to a streamlined invoicing system that ensures compliance and supports your business's growth. Together, DigiTax and FIRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
 
-<Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
+### Gain understanding of DigiTax Nigeria integration through our detailed guides
 
-## Gain understanding through our detailed guides
-
-This API Hub contains guides and API reference pages for further understanding, equipping you to integrate with the DigiTax Nigeria API.
+This API Hub contains guides and API reference pages for further understanding, equipping you on how to integrate with the DigiTax Nigeria API.
 
 <Cards columns={2}>
   <Card title="Navigation" icon="fa-compass">
@@ -95,6 +93,12 @@ This API Hub contains guides and API reference pages for further understanding, 
 </Cards>
 
 ## Explore our API reference
+
+<br />
+
+<br />
+
+<Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
 
 <br />
 
