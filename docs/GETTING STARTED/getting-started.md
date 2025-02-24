@@ -100,7 +100,9 @@ Once you're set up in the DigiTax Dashboard, you can generate a sandbox/ LIVE **
 
 Explore the API endpoints [here](/reference)
 
-***
+## Welcome again
+
+Once again, thank you for reviewing the getting started page of the DigiTax Nigeria API hub. We're excited you're here! 💚
 
 Welcome to the Less Taxing solution - DigiTax.
 
