@@ -1,5 +1,5 @@
 ---
-title: e-invoice details
+title: FIRS e-invoice details
 excerpt: Explore the details on an e-invoice
 deprecated: false
 hidden: false
