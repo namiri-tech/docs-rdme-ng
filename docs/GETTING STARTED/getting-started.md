@@ -5,21 +5,33 @@ excerpt: >-
   FIRS e-Invoicing System
 hidden: false
 ---
-## Introduction to DigiTax and FIRS
+> If you're new here, learn [how to use this site](doc:how-to-use-this-site)
 
-### What is DigiTax?
+## Electronic Tax Invoicing
 
-DigiTax is your digital solution for effective, simple, and painless tax compliance through electronic tax invoicing. DigiTax APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
+African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting.
 
-### What is FIRS and the FIRS e-Invoicing System?
+Nigeria is one of the countries and the country's tax authority, **FIRS** (**F**ederal **I**nland **R**evenue **S**ervice) has a transformative e-invoicing system, simply referred to as *FIRS e-Invoicing System*.
+
+## Introduction to FIRS e-Invoicing System and DigiTax
+
+### FIRS e-Invoicing System
 
 FIRS (Federal Inland Revenue Service) is an agency of the government of Nigeria that is responsible for the assessment, collection and accounting for all revenues that are due to the government in accordance with the laws of Nigeria.
 
 To align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy, FIRS is implementing a transformative e-invoicing system. This system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
 
+### DigiTax
+
+<br />
+
+### What is the
+
 ## DigiTax Nigeria and FIRS e-Invoicing
 
 > **DigiTax Nigeria** integrates you with FIRS e-Invoicing System
+
+DigiTax is your digital solution for effective, simple, and painless tax compliance through electronic tax invoicing. DigiTax APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
 
 **DigiTax** is a solution that sits between you; the taxpayer, and the FIRS e-Invoicing System.
 
