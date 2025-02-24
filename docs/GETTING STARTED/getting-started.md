@@ -11,6 +11,14 @@ hidden: false
 
 African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting.
 
+<Accordion title="DigiTax is multi-national" icon="fa-book-globe">
+  If you're looking for another country or the general homepage for DigiTax API, navigate to the [DigiTax API homepage](https://docs.digitax.tech), or country-specific API hub pages (ordered alphabetically):
+
+  * [DigiTax Kenya API hub](https://ke.docs.digitax.tech)
+  * DigiTax Nigeria API hub (You are here 🎉)
+  * [DigiTax Zambia API hub](https://zm.docs.digitax.tech)
+</Accordion>
+
 Nigeria is one of the countries and the country's tax authority, **FIRS** (**F**ederal **I**nland **R**evenue **S**ervice) has a transformative e-invoicing system, simply referred to as *FIRS e-Invoicing System*.
 
 ## Introduction to FIRS e-Invoicing System and DigiTax
@@ -19,13 +27,11 @@ Nigeria is one of the countries and the country's tax authority, **FIRS** (**F**
 
 FIRS (Federal Inland Revenue Service) is an agency of the government of Nigeria that is responsible for the assessment, collection and accounting for all revenues that are due to the government in accordance with the laws of Nigeria.
 
-To align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy, FIRS is implementing a transformative e-invoicing system. This system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
+FIRS introduced the FIRS e-invoicing system to align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy. This e-invoicing system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
 
-### DigiTax
+### DigiTax Platform
 
-<br />
-
-### What is the
+DigiTax platform, by Namiri Technology (the company), constitutes a suite of digital solutions crafted for effective, simple, and painless tax compliance through **electronic tax invoicing**. These solutions enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
 
 ## DigiTax Nigeria and FIRS e-Invoicing
 
