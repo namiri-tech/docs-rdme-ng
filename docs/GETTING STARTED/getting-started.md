@@ -17,7 +17,7 @@ Nigeria is one of the countries and the country's tax authority, **FIRS** (**F**
   You are currently reading a guide in the DigiTax Nigeria API Hub. If you're looking for another country or the general homepage for DigiTax API, navigate to the [DigiTax API homepage](https://docs.digitax.tech), or country-specific API hub pages (ordered alphabetically):
 
   * [DigiTax Kenya API hub](https://ke.docs.digitax.tech)
-  * DigiTax Nigeria API hub (You are here 🎉)
+  * **DigiTax Nigeria API hub (You are here 🎉)**
   * [DigiTax Zambia API hub](https://zm.docs.digitax.tech)
 </Accordion>
 
