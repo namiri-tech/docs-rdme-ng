@@ -39,12 +39,12 @@ With DigiTax, you gain access to a streamlined invoicing system that not only en
   </Column>
 </Columns>
 
-<Cards columns={4}>
-  <Card title="First Card" href="https://readme.com" icon="fa-home" target="_blank">
+<Cards columns={2}>
+  <Card title="FIRS e-Invoicing System" href="https://readme.com" icon="fa-info">
     Neque porro quisquam est qui dolorem ipsum quia
   </Card>
 
-  <Card title="Second Card" icon="fa-user">
+  <Card title="Benefits of integrating with DigiTax" icon="fa-plug">
     *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
   </Card>
 
