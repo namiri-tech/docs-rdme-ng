@@ -69,7 +69,7 @@ Gain understanding of DigiTax Nigeria integration through our detailed guides.
   <Card title="Support" icon="fa-question">
     If you get stuck, or have questions, [email us](mailto:support@namiri.tech)\
     OR\
-    Use the chat app on the bottom right.
+    Use the DigiTax chat on the bottom right.
   </Card>
 
   <Card title="FIRS e-Invoicing System" icon="fa-info">
