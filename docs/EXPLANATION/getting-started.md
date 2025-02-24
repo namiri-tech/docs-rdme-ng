@@ -5,9 +5,7 @@ excerpt: >-
   running in short order!
 hidden: false
 ---
-## What is DigiTax?
-
-DigiTax is your digital solution for effective, simple, and painless tax compliance through electronic tax invoicing. Our APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
+>  DigiTax Nigeria integrates you with FIRS e-Invoicing System
 
 ## Understanding the FIRS e-Invoicing System
 
@@ -17,11 +15,15 @@ To align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and 
 
 This transformative e-invoicing system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
 
-## APPs and SIs
+## What is DigiTax?
 
-**Access Point Providers** (APPs) and **System Integrators** (SIs) form the backbone of the digital tax compliance ecosystem, facilitating efficiency, compliance, and security in both local and international business operations. More about them here: [FIRS: APPs and SIs](doc:apps-and-sis)
+DigiTax is your digital solution for effective, simple, and painless tax compliance through electronic tax invoicing. Our APIs enable businesses to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
 
 ## More on FIRS e-Invoicing System
+
+### APPs and SIs
+
+**Access Point Providers** (APPs) and **System Integrators** (SIs) form the backbone of the FIRS digital tax compliance ecosystem, facilitating efficiency, compliance, and security in both local and international business operations. More about them here: [FIRS: APPs and SIs](doc:apps-and-sis)
 
 ### Key Features of FIRS e-Invoicing
 
