@@ -73,7 +73,7 @@ Gain understanding of DigiTax Nigeria integration through our detailed guides.
   </Card>
 
   <Card title="FIRS e-Invoicing System" icon="fa-info">
-    Understand:
+    Under *FIRS e-Invoicing System* category, these are expounded for your understanding:
 
     * FIRS Access Point Providers (APPs) and System Integrators (SIs)
     * Key Features of FIRS e-Invoicing
