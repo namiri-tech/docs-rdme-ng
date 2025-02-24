@@ -53,12 +53,81 @@ Key Roles of SIs:
 
 ## Key Differences Between APPs and SIs
 
-| Aspect              | Access Point Providers (APPs)                                    | System Integrators (SIs)                                             |
-| ------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Primary Role        | Secure transmission of invoices between entities and authorities | Integrating and configuring internal business systems for compliance |
-| Focus               | Acts as a gateway for data exchange.                             | Aligns internal systems with e-invoicing requirements.               |
-| Services Provided   | Encryption, real-time transmission, cross-border compatibility.  | ERP integration, device registration, API setup, compliance.         |
-| Stakeholders Served | Trading partners, tax authorities, and businesses.               | Businesses and enterprises needing system compliance.                |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Aspect
+      </th>
+
+      <th>
+        Access Point Providers (APPs)
+      </th>
+
+      <th>
+        System Integrators (SIs)
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Primary Role
+      </td>
+
+      <td>
+        Secure transmission of invoices between entities and authorities
+      </td>
+
+      <td>
+        Integrating and configuring internal business systems for compliance
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Focus
+      </td>
+
+      <td>
+        Acts as a gateway for data exchange.
+      </td>
+
+      <td>
+        Aligns internal systems with e-invoicing requirements.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Services Provided
+      </td>
+
+      <td>
+        Encryption, real-time transmission, cross-border compatibility.
+      </td>
+
+      <td>
+        <Glossary>ERP</Glossary> integration, device registration, <Glossary>API</Glossary> setup, compliance.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Stakeholders Served
+      </td>
+
+      <td>
+        Trading partners, tax authorities, and businesses.
+      </td>
+
+      <td>
+        Businesses and enterprises needing system compliance.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## Collaboration Between APPs and SIs
 
@@ -67,4 +136,4 @@ In practice, APPs and SIs often work together to deliver a seamless e-invoicing 
 * APPs ensure secure transmission, while
 * SIs enable the business’s systems to produce compliant e-invoices ready for submission via the APPs.
 
-Together, they form the backbone of the digital tax compliance ecosystem, facilitating efficiency, compliance, and security in both local and international business operations.
+And this is how, together, they form the backbone of the digital tax compliance ecosystem, facilitating efficiency, compliance, and security in both local and international business operations.
