@@ -15,7 +15,7 @@ metadata:
 
 ## Access Point Providers (APPs)
 
-Access Point Providers are intermediaries in the e-invoicing ecosystem responsible for securely transmitting e-invoices and other tax-related data between businesses, their trading partners, and the tax authorities. They act as the “gateways” for data exchange, ensuring that the invoices reach their intended recipients efficiently, securely, and in compliance with regulatory standards.
+Access Point Providers are intermediaries in the FIRS e-invoicing ecosystem responsible for securely transmitting e-invoices and other tax-related data between businesses, their trading partners, and the tax authorities. They act as the “gateways” for data exchange, ensuring that the invoices reach their intended recipients efficiently, securely, and in compliance with regulatory standards.
 
 Key Roles of APPs:
 
