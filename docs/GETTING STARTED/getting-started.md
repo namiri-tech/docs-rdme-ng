@@ -94,11 +94,13 @@ Gain understanding of DigiTax Nigeria integration through our detailed guides.
 
 ### Explore DigiTax Nigeria API reference
 
-For a great dev experience, the endpoints in the [API reference](/reference) are interactive.
+For a great developer experience, the endpoints in the [DigiTax Nigeria API reference](/reference) are interactive.
 
-Once you're set up in the DigiTax Dashboard, you'll get your sandbox/ LIVE **X-API-Key** to use for authorization.
+Once you're set up in the DigiTax Dashboard, you can generate a sandbox/ LIVE **X-API-Key** for authorization.
 
 Explore the API endpoints [here](/reference)
+
+***
 
 Welcome to the Less Taxing solution - DigiTax.
 
