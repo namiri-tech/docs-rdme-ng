@@ -7,10 +7,6 @@ metadata:
 ---
 ## More on FIRS e-Invoicing System
 
-### APPs and SIs
-
-**Access Point Providers** (APPs) and **System Integrators** (SIs) form the backbone of the FIRS digital tax compliance ecosystem, facilitating efficiency, compliance, and security in both local and international business operations. More about them here: [FIRS: APPs and SIs](doc:apps-and-sis)
-
 ### Key Features of FIRS e-Invoicing
 
 1. Digital Representation of Transactions:\
