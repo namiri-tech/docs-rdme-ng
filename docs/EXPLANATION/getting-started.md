@@ -36,7 +36,10 @@ With DigiTax, you gain access to a streamlined invoicing system that not only en
   </Card>
 
   <Card title="Benefits of integrating with DigiTax" icon="fa-plug">
-    *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
+    Understand:
+
+    * DigiTax API feature-set
+    * Complimentary DigiTax products
   </Card>
 
   <Card title="How to" icon="fa-star">
