@@ -5,11 +5,9 @@ excerpt: >-
   FIRS e-Invoicing System
 hidden: false
 ---
-> If you're new here, learn [how to use this site](doc:how-to-use-this-site)
->
-> This is the DigiTax Nigeria API guide
+## Electronic Tax Invoicing in Nigeria
 
-## Electronic Tax Invoicing
+> If you're new here, learn [how to use this site](doc:how-to-use-this-site)
 
 African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting.
 
