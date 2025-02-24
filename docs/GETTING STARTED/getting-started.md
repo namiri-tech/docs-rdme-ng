@@ -53,9 +53,13 @@ DigiTax connects with regional tax authorities/ regulators (so far):
 
 With DigiTax, you gain access to a streamlined invoicing system that ensures compliance and supports your business's growth. Together, DigiTax and FIRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
 
-### Gain understanding of DigiTax Nigeria integration through our detailed guides
+## DigiTax Nigeria API Hub
 
 This API Hub contains guides and API reference pages for further understanding, equipping you on how to integrate with the DigiTax Nigeria API.
+
+### Explore DigiTax Nigeria API Guides
+
+Gain understanding of DigiTax Nigeria integration through our detailed guides.
 
 <Cards columns={2}>
   <Card title="Navigation" icon="fa-compass">
@@ -88,43 +92,14 @@ This API Hub contains guides and API reference pages for further understanding, 
   </Card>
 </Cards>
 
-## Explore our API reference
+### Explore DigiTax Nigeria API reference
 
-<br />
+For a great dev experience, the endpoints in the [API reference](/reference) are interactive.
 
-<br />
+Once you're set up in the DigiTax Dashboard, you'll get your sandbox/ LIVE **X-API-Key** to use for authorization.
+
+Explore the API endpoints [here](/reference)
+
+Welcome to the Less Taxing solution - DigiTax.
 
 <Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
-
-<br />
-
-## More on FIRS e-Invoicing System
-
-### APPs and SIs
-
-**Access Point Providers** (APPs) and **System Integrators** (SIs) form the backbone of the FIRS digital tax compliance ecosystem, facilitating efficiency, compliance, and security in both local and international business operations. More about them here: [FIRS: APPs and SIs](doc:apps-and-sis)
-
-### Key Features of FIRS e-Invoicing
-
-1. Digital Representation of Transactions:\
-   Captures essential transaction details such as supplier and buyer information, item descriptions, quantities, prices, taxes, and total amounts.
-2. Global Standards:\
-   Built on international best practices like the Universal Business Language (**UBL**) and Peppol, facilitating local and cross-border trade.
-3. Security and Integrity:\
-   Advanced encryption ensures secure data transmission and compliance.
-
-### Key Benefits of DigiTax Integration with FIRS e-Invoicing
-
-DigiTax acts as a System Integrator (SI) and Access Point Providers (APP) that simplifies compliance with FIRS e-invoicing requirements:
-
-* ERP Alignment: Ensures seamless integration with your ERP system to comply with FIRS standards.
-* Digital Certificates: Manages the registration of devices and acquisition of digital certificates.
-* Real-Time Functionality: Provides real-time notifications and invoice verification.
-* Secure Exchange: Guarantees data integrity with cryptographically signed JWTs and industry-standard encryption.
-
-Key Benefits for Businesses:
-
-* Enhanced Security: Encryption ensures sensitive data is protected.
-* Real-Time Access: Instant processing and verification for efficient workflows.
-* Global Compatibility: Aligns Nigerian businesses with international invoicing platforms for seamless trade.
-* Ease of Use: Simplified integration reduces operational burden.
