@@ -29,7 +29,10 @@ With DigiTax, you gain access to a streamlined invoicing system that not only en
 
 <Cards columns={2}>
   <Card title="FIRS e-Invoicing System" href="https://readme.com" icon="fa-info">
-    Neque porro quisquam est qui dolorem ipsum quia
+    Understand:
+
+    * Access Point Providers (APPs) and System Integrators (SIs)
+    * Key Features of FIRS e-Invoicing
   </Card>
 
   <Card title="Benefits of integrating with DigiTax" icon="fa-plug">
