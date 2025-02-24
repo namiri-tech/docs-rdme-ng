@@ -5,7 +5,7 @@ excerpt: >-
   running in short order!
 hidden: false
 ---
->  DigiTax Nigeria integrates you with FIRS e-Invoicing System
+> DigiTax Nigeria integrates you with FIRS e-Invoicing System
 
 ## Understanding the FIRS e-Invoicing System
 
@@ -33,33 +33,6 @@ DigiTax is your digital solution for effective, simple, and painless tax complia
    Built on international best practices like the Universal Business Language (UBL) and Peppol, facilitating local and cross-border trade.
 3. Security and Integrity:\
    Advanced encryption ensures secure data transmission and compliance.
-
-### How Invoice Factoring Works with e-Invoicing
-
-Invoice factoring is an efficient way for businesses to access liquidity by selling outstanding e-invoices to a factoring provider. Through the FIRS e-invoicing system:
-
-1. Instant Validation: Factoring providers can verify invoice authenticity and check for FIRS digital stamps in real-time.
-2. Secure Records: E-invoices are stored in a secure database, reducing risks of fraud or error.
-3. Accelerated Cash Flow: Faster approvals for factoring requests, improving business liquidity.
-
-Benefits for Businesses:
-
-* Reliable cash flow from verified invoices.
-* Simplified compliance for factoring processes.
-* Government support for economic growth by promoting business liquidity.
-
-### Interconnectivity Between e-Invoicing and Secure Invoice Exchange
-
-How It Works:
-
-1. Invoice Generation and Encryption:\
-   Businesses generate e-invoices via their ERP systems. Each invoice is digitally signed and encrypted by FIRS to ensure compliance.
-2. Secure Transmission:\
-   Access Point Providers (APPs) facilitate the secure transfer of encrypted invoices between trading partners and FIRS.
-3. Cross-Border Exchange:\
-   For international trade, FIRS e-invoicing adheres to global standards, enabling seamless transactions across borders.
-4. Decryption and Receipt:\
-   Buyers decrypt the invoice using their registered keys, review details, and process payments.
 
 ### Key Benefits of DigiTax Integration with FIRS e-Invoicing
 
