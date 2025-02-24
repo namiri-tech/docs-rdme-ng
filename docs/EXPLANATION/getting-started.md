@@ -36,11 +36,11 @@ With DigiTax, you gain access to a streamlined invoicing system that not only en
     *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
   </Card>
 
-  <Card title="Third Card" icon="fa-star">
+  <Card title="How to" icon="fa-star">
     > Ut enim ad minim veniam, quis nostrud ullamco
   </Card>
 
-  <Card title="Fourth Card" icon="fa-question">
+  <Card title="Questions/ Support" icon="fa-question">
     **Excepteur sint occaecat cupidatat non proident**
   </Card>
 </Cards>
