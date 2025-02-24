@@ -31,7 +31,7 @@ This API Hub contains guides and API reference pages for further understanding, 
 
 <Cards columns={2}>
   <Card title="Navigation" icon="fa-compass">
-    If you're new here, learn how to navigate the API Hub [here](/)
+    If you're new here, learn how to navigate the API Hub [here](https://ng.docs.digitax.tech/how-to-use-this-site)
   </Card>
 
   <Card title="FIRS e-Invoicing System" icon="fa-info">
