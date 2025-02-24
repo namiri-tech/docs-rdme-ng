@@ -1,17 +1,21 @@
 ---
 title: 'FIRS: APPs and SIs'
 excerpt: >-
-  DigiTax Nigeria API acts as a Access Point Provider and System Integrator to
-  serve you better.
+  DigiTax Nigeria API acts as a Access Point Provider (APP) and System
+  Integrator (SI) to serve you better.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
+## APPs and SIs
+
 > Summary:
 >
-> SIs are able to generate IRNs and retrieve invoice details\
-> APPs are able to do more functions in the e-invoice flow like: checking, submitting, validating, and transmitting.
+> SIs generate Invoice Reference Numbers (IRNs) and retrieve invoice details.\
+> APPs perform more functions in the [FIRS e-invoice flow](doc:firs-e-invoice-flow) like: checking, submitting, validating, and transmitting.
+
+**Access Point Providers** (APPs) and **System Integrators** (SIs) form the backbone of the FIRS digital tax compliance ecosystem, facilitating efficiency, compliance, and security in both local and international business operations.
 
 ## Access Point Providers (APPs)
 
