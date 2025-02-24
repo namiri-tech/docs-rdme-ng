@@ -12,9 +12,11 @@ Below, we'll go deeper into Nigeria's tax authority (FIRS) and the FIRS e-invoic
 
 ## FIRS e-invoicing system introduction
 
-FIRS is implementing "e-invoices" in stages.
+Nigeria’s Federal Inland Revenue Services (FIRS) has been implementing "e-invoices" in stages. The factors driving e-invoicing include:
 
-Nigeria's Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy, FIRS is implementing "e-invoices" in stages.
+* Nigeria's Digital Economy Policy and Strategy (2020–2030)
+* Support for growth of the digital economy
+* 2007 Tax Administration and Enforcement Act
 
 ### Key Features of FIRS e-Invoicing
 
