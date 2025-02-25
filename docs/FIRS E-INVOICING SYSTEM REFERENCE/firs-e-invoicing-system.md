@@ -6,9 +6,9 @@ hidden: false
 metadata:
   robots: index
 ---
-We introduced DigiTax Nigeria and FIRS e-Invoicing on the [getting-started page](doc:getting-started). Below, we'll go deeper into Nigeria's tax authority (FIRS) and the FIRS e-invoicing system.
+We introduced DigiTax Nigeria and FIRS e-Invoicing on the [getting-started page](doc:getting-started). Below, we are going into further detail on Nigeria's tax authority (FIRS) and the FIRS E-Invoicing System.
 
-## FIRS e-invoicing system introduction
+## FIRS E-Invoicing System introduction
 
 Nigeria’s Federal Inland Revenue Services (FIRS) has been implementing "e-invoices" in stages. The factors driving e-invoicing include:
 
