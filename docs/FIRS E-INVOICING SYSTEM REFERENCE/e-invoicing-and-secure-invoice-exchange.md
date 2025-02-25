@@ -5,9 +5,9 @@ hidden: false
 metadata:
   robots: index
 ---
-## Secure Invoice Exchange
+## Introduction to Secure Invoice Exchange
 
-Secure Invoice Exchange
+Secure Invoice Exchange is a standardized data exchange system that enables real-time insights and improved data interpretation, ensuring seamless, secure, and efficient invoice transactions. It often incorporates cryptography to protect sensitive financial data and enhance transaction security.
 
 ## Other benefits of the FIRS E-Invoicing System
 
