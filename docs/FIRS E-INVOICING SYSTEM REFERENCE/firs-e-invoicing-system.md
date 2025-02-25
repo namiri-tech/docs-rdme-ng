@@ -32,7 +32,7 @@ are the driving factors of the rollout of the FIRS E-Invoicing System.
 * Digital Representation of Transactions:\
   Captures essential transaction details such as supplier and buyer information, item descriptions, quantities, prices, taxes, and total amounts.
 * Global Standards:\
-  Built on international best practices like the Universal Business Language (**UBL**) and [Peppol](https://peppol.org/about/), facilitating local and cross-border trade.
+  Built on international best practices like the Universal Business Language (**UBL**) and Pan-European Public Procurement Online ([Peppol](https://peppol.org/about/)), facilitating local and cross-border trade.
 * Security and Integrity:\
   Advanced encryption ensures secure data transmission and compliance.
 * Secure Invoice Exchange:\
