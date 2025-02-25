@@ -42,7 +42,7 @@ Below are the steps required to get up and running.
 
 The following are the steps to getting a sandbox business (for testing before you go LIVE)
 
-1. [Sign up on DigiTax](https://digitax.tech/sign-up)
+1. [Sign up on DigiTax](https://digitax.tech)
 2. Create a profile.
 3. Create a sandbox business.
 4. Generate an API Key under "Integrations" tab. See screenshots below:
@@ -50,57 +50,54 @@ The following are the steps to getting a sandbox business (for testing before yo
 Navigate to the "Integrations" menu.\
 Then select "Add API KEY"
 
-<br />
-
-\[block:image] &#x20;
+\[block:image]\
+\{\
+"images": \[
 \{
-&#x20; "images": \[
-&#x20;   \{
-&#x20;     "image": \[
-&#x20;       "https\://files.readme.io/f129eaf-Screenshot\_2024-08-17\_at\_12.11.35.png",
-&#x20;       "",
-&#x20;       ""
-&#x20;     ],
-&#x20;     "align": "center"
-&#x20;   }
-&#x20; ]
+"image": \[
+"[https://files.readme.io/f129eaf-Screenshot\_2024-08-17\_at\_12.11.35.png](https://files.readme.io/f129eaf-Screenshot_2024-08-17_at_12.11.35.png)",
+"",
+""
+],
+"align": "center"
+}
+]
 }
 \[/block]
 
 Enter a name and select "API key" OR "License key"
 
-\[block:image] &#x20;
+\[block:image]\
+\{\
+"images": \[
 \{
-&#x20; "images": \[
-&#x20;   \{
-&#x20;     "image": \[
-&#x20;       "https\://files.readme.io/5b8acb6-Api\_Key.png",
-&#x20;       "",
-&#x20;       ""
-&#x20;     ],
-&#x20;     "align": "center",
-&#x20;     "sizing": "350px",
-&#x20;     "border": true
-&#x20;   }
-&#x20; ]
+"image": \[
+"[https://files.readme.io/5b8acb6-Api\_Key.png](https://files.readme.io/5b8acb6-Api_Key.png)",
+"",
+""
+],
+"align": "center",
+"sizing": "350px",
+"border": true
+}
+]
 }
 \[/block]
 
-&#x20;&#x20;
-\[block:image]
+\[block:image]\
 \{
-&#x20; "images": \[
-&#x20;   \{
-&#x20;     "image": \[
-&#x20;       "https\://files.readme.io/56c4160-License\_Key.png",
-&#x20;       "",
-&#x20;       ""
-&#x20;     ],
-&#x20;     "align": "center",
-&#x20;     "sizing": "350px",
-&#x20;     "border": true
-&#x20;   }
-&#x20; ]
+"images": \[
+\{
+"image": \[
+"[https://files.readme.io/56c4160-License\_Key.png](https://files.readme.io/56c4160-License_Key.png)",
+"",
+""
+],
+"align": "center",
+"sizing": "350px",
+"border": true
+}
+]
 }
 \[/block]
 
