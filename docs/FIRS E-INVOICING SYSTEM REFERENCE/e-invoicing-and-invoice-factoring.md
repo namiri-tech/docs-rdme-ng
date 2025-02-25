@@ -7,7 +7,7 @@ metadata:
 ---
 ## Introduction to Invoice Factoring
 
-Invoice factoring is an efficient way for businesses to access liquidity by selling outstanding e-invoices to a factoring provider.
+Invoice factoring is an alternative efficient financing method where businesses sell their unpaid invoices to a third-party factoring company/ provider in exchange for immediate cash.
 
 ## Other benefits of the FIRS E-Invoicing System
 
