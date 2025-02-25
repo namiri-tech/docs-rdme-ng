@@ -6,17 +6,28 @@ hidden: false
 metadata:
   robots: index
 ---
-We introduced DigiTax Nigeria and FIRS e-Invoicing on the [getting-started page](doc:getting-started). Below, we are going into further detail on Nigeria's tax authority (FIRS) and the FIRS E-Invoicing System.
+We introduced DigiTax Nigeria and FIRS e-Invoicing on the [getting-started page](doc:getting-started). Below, we are going into further detail on  - Federal Inland Revenue Service (FIRS) and the FIRS E-Invoicing System.
+
+## FIRS
+
+The Federal Inland Revenue Service (FIRS) is Nigeria's tax authority. FIRS has had a [long history with significant milestones from 1903](https://firs.gov.ng/firs-organization/history-and-milestones).
+
+In 2007, FIRS got financial and administrative autonomy with the passage of the Federal Inland Revenue Service (establishment) Act 2007.
+
+With this Act enacted by the National Assembly of the Federal Republic of Nigeria, FIRS is charged with powers of assessment, collection of, and accounting for revenues accruable to the government of the federation; and for related matters.
 
 ## FIRS E-Invoicing System introduction
 
-Nigeria’s Federal Inland Revenue Services (FIRS) has been implementing "e-invoices" in stages. The factors driving e-invoicing include:
+The national e-invoicing solution (FIRS E-Invoicing System) is a strategic initiative of FIRS aimed at enhancing tax administration through real-time visibility into business transactions and financial data.
 
-* Nigeria's Digital Economy Policy and Strategy (2020–2030)
-* Support for growth of the digital economy
-* 2007 Tax Administration and Enforcement Act
+FIRS has been implementing the e-invoicing solution in a **phased rollout**. Overall,
 
-### Key Features of FIRS e-Invoicing
+* the 6th pillar of Nigeria's Digital Economy Policy and Strategy (2020–2030) - Soft Infrastructure, and
+* support for growth of the digital economy
+
+are the driving factors of the rollout of the FIRS E-Invoicing System.
+
+### Key Features of FIRS E-Invoicing System
 
 1. Digital Representation of Transactions:\
    Captures essential transaction details such as supplier and buyer information, item descriptions, quantities, prices, taxes, and total amounts.
