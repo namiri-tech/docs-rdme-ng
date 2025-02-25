@@ -22,6 +22,12 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 
 ***
 
+<Cards columns={2}>
+  <Card title="Prerequisites of using the API" href="https://ng.docs.digitax.tech/reference/prerequisites-of-using-the-api" icon="fa-list" />
+
+  <Card title="DigiTax Nigeria API sections" href="https://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" icon="fa-bars" />
+</Cards>
+
 <Cards columns={1}>
   <Card title="Explore DigiTax Nigeria API endpoints" icon="fa-plug">
     * [/resources]() (References for data required for other endpoints)
@@ -30,12 +36,6 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
     * /items
     * /invoices
   </Card>
-</Cards>
-
-<Cards columns={2}>
-  <Card title="Prerequisites of using the API" href="https://ng.docs.digitax.tech/reference/prerequisites-of-using-the-api" icon="fa-list" />
-
-  <Card title="DigiTax Nigeria API sections" href="https://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" icon="fa-bars" />
 </Cards>
 
 ## DigiTax
