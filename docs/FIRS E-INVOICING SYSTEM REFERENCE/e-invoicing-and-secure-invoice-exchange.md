@@ -7,6 +7,10 @@ metadata:
 ---
 ## Secure Invoice Exchange
 
+Secure Invoice Exchange
+
+## Other benefits of the FIRS E-Invoicing System
+
 Secure Invoice Exchange is one benefit of the FIRS E-Invoicing System.
 
 Consider other benefits captured on the [FIRS and FIRS e-Invoicing System page](doc:firs-e-invoicing-system).
