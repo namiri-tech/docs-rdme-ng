@@ -1,6 +1,6 @@
 ---
 title: DigiTax API Introduction
-excerpt: All you need to start using the API
+excerpt: An overview of the DigiTax API
 deprecated: false
 hidden: false
 metadata:
