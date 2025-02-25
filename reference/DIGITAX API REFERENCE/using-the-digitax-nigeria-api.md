@@ -23,10 +23,10 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 </Cards>
 
 <Cards columns={1}>
-  <Card title="Explore DigiTax Nigeria API resources endpoints" icon="fa-book">
+  <Card title="Explore resources DigiTax Nigeria API endpoints" icon="fa-book">
     Consider endpoints under **/resources** as references for data required for other endpoints.
 
-    * [/resources/countries]()
+    * [/resources/countries](https://ng.docs.digitax.tech/reference/get_resources-countries)
     * [/resources/currencies]()
     * [/resources//tax-categories]()
     * [/resources/invoice-types]()
