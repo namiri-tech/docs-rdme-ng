@@ -22,14 +22,6 @@ Briefly, **DigiTax** is a solution that sits between you; the taxpayer, and the 
   </Card>
 </Cards>
 
-<Accordion title="Explore DigiTax Nigeria API endpoints" icon="fa-plug">
-  * /resources
-  * /info
-  * parties
-  * items
-  * invoices
-</Accordion>
-
 <Cards columns={2}>
   <Card title="Prerequisites of using the API" href="https://readme.com" />
 
