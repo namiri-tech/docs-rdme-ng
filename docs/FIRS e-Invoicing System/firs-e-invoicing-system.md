@@ -6,9 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-On the getting-started page, [DigiTax Nigeria and FIRS e-Invoicing](doc:getting-started) we introduced FIRS and gave an overview of how it relates to DigiTax.
-
-Below, we'll go deeper into Nigeria's tax authority (FIRS) and the FIRS e-invoicing system.
+We introduced DigiTax Nigeria and FIRS e-Invoicing on the [getting-started page](doc:getting-started). Below, we'll go deeper into Nigeria's tax authority (FIRS) and the FIRS e-invoicing system.
 
 ## FIRS e-invoicing system introduction
 
