@@ -13,8 +13,7 @@ hidden: false
   </Card>
 
   <Card title="Support" icon="fa-question">
-    If you get stuck, or have questions, [email us](mailto:support@namiri.tech)\
-    OR\
+    If you get stuck, or have questions, [email us](mailto:support@namiri.tech) OR\
     Use the DigiTax chat on the bottom right.
   </Card>
 </Cards>
