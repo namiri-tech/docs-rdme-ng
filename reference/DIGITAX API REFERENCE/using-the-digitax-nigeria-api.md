@@ -10,8 +10,6 @@ metadata:
 
 Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and FIRS e-Invoicing](doc:getting-started) and [FIRS and FIRS e-Invoicing System](doc:firs-e-invoicing-system).
 
-> Use **DigiTax Nigeria API** to integrate your system with FIRS e-Invoicing System
-
 <Cards columns={1}>
   <Card title="Explore DigiTax Nigeria API endpoints" icon="fa-plug">
     * [/resources]() (References for data required for other endpoints)
@@ -28,13 +26,17 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
   <Card title="DigiTax Nigeria API sections" href="https://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" icon="fa-bars" />
 </Cards>
 
-***
+<Columns layout="auto">
+  <Column>
+    > Use **DigiTax Nigeria API** to integrate your system with FIRS e-Invoicing System
+  </Column>
 
-Briefly, **DigiTax** is a solution that sits between you; the taxpayer, and the systems of regional tax authorities/ regulators. For Nigeria, that is, the FIRS e-Invoicing System.
+  <Column>
+    <Image border={true} caption="DigiTax - FIRS e-Invoicing System" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
+  </Column>
+</Columns>
 
-<Image align="center" border={true} caption="DigiTax - FIRS e-Invoicing System" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
-
-## DigiTax API
+## DigiTax
 
 Namiri Technologies, through our DigiTax Platform, have developed a suite of solutions:
 
@@ -43,6 +45,10 @@ Namiri Technologies, through our DigiTax Platform, have developed a suite of s
 * DigiTax API
 
 > The first two are powered by the DigiTax API :tada:
+
+## DigiTax API
+
+**DigiTax** is a solution that sits between you; the taxpayer, and the systems of regional tax authorities/ regulators. For Nigeria, that is, the FIRS e-Invoicing System.
 
 ### DigiTax API Features
 
