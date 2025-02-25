@@ -10,7 +10,7 @@ metadata:
 
 Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and FIRS e-Invoicing](doc:getting-started) and [FIRS and FIRS e-Invoicing System](doc:firs-e-invoicing-system).
 
-Briefly, **DigiTax** is a solution that sits between you; the taxpayer, and the systems of regional tax authorities/ regulators. For Nigeria, that is, the FIRS e-Invoicing System.
+> Use **DigiTax Nigeria API** to integrate your system with FIRS e-Invoicing System
 
 <Cards columns={1}>
   <Card title="Explore DigiTax Nigeria API endpoints" icon="fa-plug">
@@ -30,7 +30,7 @@ Briefly, **DigiTax** is a solution that sits between you; the taxpayer, and the 
 
 ***
 
-> Use **DigiTax Nigeria API** to integrate your system with FIRS e-Invoicing System
+Briefly, **DigiTax** is a solution that sits between you; the taxpayer, and the systems of regional tax authorities/ regulators. For Nigeria, that is, the FIRS e-Invoicing System.
 
 <Image align="center" border={true} caption="DigiTax - FIRS e-Invoicing System" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
 
