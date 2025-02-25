@@ -1,18 +1,54 @@
 ---
-title: Setup required for using the DigiTax API
+title: DigiTax API Setup
 excerpt: All you need to start using the API
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
+## Introduction
+
 Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and FIRS e-Invoicing](doc:getting-started) and [FIRS and FIRS e-Invoicing System](doc:firs-e-invoicing-system).
 
-Briefly,
+Briefly, **DigiTax** is a solution that sits between you; the taxpayer, and the systems of regional tax authorities/ regulators. For Nigeria, that is, the FIRS e-Invoicing System.
 
-<br />
+> **DigiTax Nigeria** integrates you with FIRS e-Invoicing System
 
-## Using DigiTax to generate e-invoices
+<Image align="center" border={true} caption="DigiTax - Tax authorities/ regulators" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
+
+## DigiTax API
+
+Namiri Technologies, through our DigiTax Platform, have developed a suite of solutions:
+
+* DigiTax App (Compatible with Android POS),
+* DigiTax Dashboard (Web Browser-based Desktop application)
+* DigiTax API
+
+> The first two are powered by the DigiTax API :tada:
+
+### DigiTax API Features
+
+The DigiTax API is built with various industry standards for API platforms in mind. These include:
+
+* RESTful API
+* OpenAPI (formerly Swagger): An open-source standard that allows a standardized way to generate, document, and test our APIs.
+* Secure authentication with cryptographically signed JWTs (JSON Web Tokens)
+
+To use this API, you'll need access to DigiTax Dashboard environment to get an X-API-Key. Get in touch with [our team](mailto:support@namiri.tech).
+
+Below are the steps required to get up and running
+
+## Prerequisites of using the API
+
+The following are the steps to getting a sandbox business (for testing before you go LIVE)
+
+1. [Sign up on DigiTax](https://digitax.tech/sign-up)
+2. Create an organization.
+3. Email [support@namiri.tech](mailto:support@namiri.tech) requesting access to a SANDBOX business
+4. Once you have access to a sandbox business, you can now transact on the dashboard
+5. We'll also share an API Key.
+
+Use the **X-API-Key** in your header when making API calls through the interactive API docs [here](/reference) OR via your integration during testing.
 
 <br />
 
@@ -29,20 +65,20 @@ Once signed up on DigiTax, you can generate an e-invoice via:
 
 <br />
 
-\[block:image] &#x20;
+\[block:image]\
+\{\
+"images": \[
 \{
-&#x20; "images": \[
-&#x20;   \{
-&#x20;     "image": \[
-&#x20;       "https\://files.readme.io/beb06a39e60ef12a080e0a12971be349f904c923c022190afbfcbb57a4a01922-CleanShot\_2025-02-01\_at\_12.05.23\_22x.png",
-&#x20;       "",
-&#x20;       "e-invoice with key sections highlighted"
-&#x20;     ],
-&#x20;     "align": "center",
-&#x20;     "border": true,
-&#x20;     "caption": "e-invoice with key sections highlighted"
-&#x20;   }
-&#x20; ]
+"image": \[
+"[https://files.readme.io/beb06a39e60ef12a080e0a12971be349f904c923c022190afbfcbb57a4a01922-CleanShot\_2025-02-01\_at\_12.05.23\_22x.png](https://files.readme.io/beb06a39e60ef12a080e0a12971be349f904c923c022190afbfcbb57a4a01922-CleanShot_2025-02-01_at_12.05.23_22x.png)",
+"",
+"e-invoice with key sections highlighted"
+],
+"align": "center",
+"border": true,
+"caption": "e-invoice with key sections highlighted"
+}
+]
 }
 \[/block]
 
@@ -52,19 +88,19 @@ An e-invoice has three key components: (They are highlighted above)
 
 <br />
 
-1. A QR code
-   2. The tax breakdown of that invoice
-      3. e-invoice metadata that includes:
-         * Date and Time of transaction
-           * Invoice number
-             * Signature
-               * Internal Data
+1. A QR code\
+   2\. The tax breakdown of that invoice
+   3\. e-invoice metadata that includes:
+   * Date and Time of transaction
+     * Invoice number
+       * Signature
+         * Internal Data
 
 * DigiTax Dashboard (Web Browser-based Desktop application for e-invoicing) and
   * DigiTax API (for system-to-system integration without the issue of platform hopping).
 
 \[block:image]\
-\{\
+\{
 "images": \[
 \{
 "image": \[
@@ -114,12 +150,8 @@ The DigiTax App and Dashboard users securely sign up and log in via social media
 
 > The dashboard is where you sign up and set up profiles and businesses outrightly as a product user or before integration.
 >
-> <br />
->
 > All activity is logged for audit trail and compliance checks and all information is encrypted and transmitted for\
 > maximum protection
->
-> <br />
 
 ### API
 
@@ -129,4 +161,4 @@ The API is built with various industry standards for API platforms in mind, but 
    2\. OpenAPI (formerly Swagger): An open-source standard that allows a standardised way to generate, document, and test our APIs.
    3\. Secure authentication with cryptographically signed JWTs (JSON Web Tokens)
 
-To use this API, you'll need access to DigiTax Dashboard ( environments. Get in touch with our Sales team.
+To use this API, you'll need access to DigiTax Dashboard environments. Get in touch with our Sales team.
