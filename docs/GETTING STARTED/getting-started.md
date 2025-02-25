@@ -19,12 +19,6 @@ hidden: false
   </Card>
 </Cards>
 
-## Electronic Tax Invoicing in Nigeria
-
-African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting.
-
-Nigeria is one of the countries and the country's tax authority, **FIRS** (Federal Inland Revenue Service) has a transformative e-invoicing system, simply referred to as *FIRS e-Invoicing System*.
-
 <Accordion title="DigiTax is multi-national. Explore other countries here ..." icon="fa-globe">
   You are currently reading a guide in the DigiTax Nigeria API Hub.
 
@@ -34,6 +28,12 @@ Nigeria is one of the countries and the country's tax authority, **FIRS** (Feder
   * **DigiTax Nigeria API hub (You are here 🎉)**
   * [DigiTax Zambia API hub](https://zm.docs.digitax.tech)
 </Accordion>
+
+## Electronic Tax Invoicing in Nigeria
+
+African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting.
+
+Nigeria is one of the countries and the country's tax authority, **FIRS** (Federal Inland Revenue Service) has a transformative e-invoicing system, simply referred to as *FIRS e-Invoicing System*.
 
 ## Introduction to FIRS e-Invoicing System and DigiTax
 
