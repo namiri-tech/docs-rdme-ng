@@ -9,12 +9,12 @@ hidden: false
 
 <Cards columns={2}>
   <Card title="Navigation" icon="fa-compass">
-    If you're new here, learn how to navigate DigiTax Nigeria API Hub [here](https://ng.docs.digitax.tech/docs/how-to-use-this-site)
+    If you're new here, learn how to navigate DigiTax Nigeria API Hub [here](https://ng.docs.digitax.tech/docs/how-to-use-this-site).
   </Card>
 
   <Card title="Support" icon="fa-question">
     If you get stuck, or have questions, [email us](mailto:support@namiri.tech) OR\
-    Use the DigiTax chat on the bottom right.
+    Talk to us via the DigiTax chat on the bottom right of this page.
   </Card>
 </Cards>
 
