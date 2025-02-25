@@ -12,6 +12,12 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 
 Briefly, **DigiTax** is a solution that sits between you; the taxpayer, and the systems of regional tax authorities/ regulators. For Nigeria, that is, the FIRS e-Invoicing System.
 
+<Accordion title="Explore DigiTax Nigeria API endpoints" icon="fa-plug">
+  Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Ut enim
+  ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint
+  occaecat cupidatat non proident!
+</Accordion>
+
 <Columns layout="auto">
   <Column>
     [Prerequisites of using the API]()
@@ -21,12 +27,6 @@ Briefly, **DigiTax** is a solution that sits between you; the taxpayer, and the 
     [DigiTax Nigeria API sections]()
   </Column>
 </Columns>
-
-<Accordion title="DigiTax Nigeria API endpoints" icon="fa-plug">
-  Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Ut enim
-  ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint
-  occaecat cupidatat non proident!
-</Accordion>
 
 > **DigiTax Nigeria** integrates you with FIRS e-Invoicing System
 
