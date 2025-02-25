@@ -9,6 +9,10 @@ metadata:
 
 Invoice factoring is an efficient way for businesses to access liquidity by selling outstanding e-invoices to a factoring provider.
 
+## Other benefits of the FIRS E-Invoicing System
+
+Invoice factoring is one benefit of the FIRS E-Invoicing System. Consider other benefits captured on the [FIRS and FIRS e-Invoicing System page](doc:firs-e-invoicing-system).
+
 ## How Invoice Factoring Works with e-Invoicing
 
 Through the FIRS e-invoicing system, there is:
