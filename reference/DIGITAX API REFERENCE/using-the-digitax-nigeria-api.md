@@ -14,8 +14,8 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 
 <Cards columns={1}>
   <Card title="Explore DigiTax Nigeria API endpoints" icon="fa-plug">
-    * /resources
-    * /info
+    * [/resources]() (References for data required for other endpoints)
+    * /[info]()
     * /parties
     * /items
     * /invoices
