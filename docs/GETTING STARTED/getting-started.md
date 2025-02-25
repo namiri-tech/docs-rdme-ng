@@ -16,6 +16,14 @@ hidden: false
     If you get stuck, or have questions, [email us](mailto:support@namiri.tech) OR\
     Talk to us via the DigiTax chat on the bottom right of this page.
   </Card>
+
+  <Card title="FIRS integration with DigiTax" icon="fa-bars">
+    Explore this page and other detailed guide pages to gain understanding of the FIRS E-Invoicing System and how DigiTax integration works.
+  </Card>
+
+  <Card title="DigiTax Nigeria API Reference" icon="fa-plug">
+    Get the prerequsites and Explore our interactive API reference [here]() and the APIs feature set.
+  </Card>
 </Cards>
 
 <Accordion title="DigiTax is multi-national. Explore other countries here ..." icon="fa-globe">
@@ -69,37 +77,6 @@ This API Hub contains guides and API reference pages for further understanding, 
 ### Explore DigiTax Nigeria API Guides
 
 Gain understanding of DigiTax Nigeria integration through our detailed guides.
-
-<Cards columns={2}>
-  <Card title="Navigation" icon="fa-compass">
-    If you're new here, learn how to navigate the API Hub [here](https://ng.docs.digitax.tech/docs/how-to-use-this-site)
-  </Card>
-
-  <Card title="Support" icon="fa-question">
-    If you get stuck, or have questions, [email us](mailto:support@namiri.tech)\
-    OR\
-    Use the DigiTax chat on the bottom right.
-  </Card>
-
-  <Card title="FIRS e-Invoicing System" icon="fa-info">
-    Under *FIRS e-Invoicing System* category, these are expounded for your understanding:
-
-    * FIRS Access Point Providers (APPs) and System Integrators (SIs)
-    * Key Features of FIRS e-Invoicing
-  </Card>
-
-  <Card title="DigiTax integration" icon="fa-plug">
-    Explore:
-
-    * DigiTax API feature-set
-    * Complimentary DigiTax products
-    * DigiTax support center
-  </Card>
-
-  <Card title="How-to guides" icon="fa-star">
-    Learn step-by-step how specific actions are completed
-  </Card>
-</Cards>
 
 ### Explore DigiTax Nigeria API reference
 
