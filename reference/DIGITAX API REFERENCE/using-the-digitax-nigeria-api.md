@@ -10,6 +10,18 @@ metadata:
 
 Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and FIRS e-Invoicing](doc:getting-started) and [FIRS and FIRS e-Invoicing System](doc:firs-e-invoicing-system).
 
+<Columns layout="auto">
+  <Column>
+    > Use **DigiTax Nigeria API** to integrate your system with FIRS e-Invoicing System
+  </Column>
+
+  <Column>
+    <Image border={true} src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
+  </Column>
+</Columns>
+
+***
+
 <Cards columns={1}>
   <Card title="Explore DigiTax Nigeria API endpoints" icon="fa-plug">
     * [/resources]() (References for data required for other endpoints)
@@ -25,16 +37,6 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 
   <Card title="DigiTax Nigeria API sections" href="https://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" icon="fa-bars" />
 </Cards>
-
-<Columns layout="auto">
-  <Column>
-    > Use **DigiTax Nigeria API** to integrate your system with FIRS e-Invoicing System
-  </Column>
-
-  <Column>
-    <Image border={true} caption="DigiTax - FIRS e-Invoicing System" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
-  </Column>
-</Columns>
 
 ## DigiTax
 
