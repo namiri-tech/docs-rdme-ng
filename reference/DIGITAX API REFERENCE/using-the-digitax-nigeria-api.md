@@ -23,9 +23,9 @@ Briefly, **DigiTax** is a solution that sits between you; the taxpayer, and the 
 </Cards>
 
 <Cards columns={2}>
-  <Card title="Prerequisites of using the API" href="https://readme.com" />
+  <Card title="Prerequisites of using the API" href="https://ng.docs.digitax.tech/reference/prerequisites-of-using-the-api" />
 
-  <Card title="DigiTax Nigeria API sections" href="https://readme.com" />
+  <Card title="DigiTax Nigeria API sections" href="https://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" />
 </Cards>
 
 ***
