@@ -34,10 +34,10 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
   </Card>
 
   <Card title="Explore core DigiTax Nigeria API endpoints" icon="fa-plug">
-    * [/info]()
-    * [/parties]()
-    * [/items]()
-    * [/invoices]()
+    * [/info](https://ng.docs.digitax.tech/reference/get_info)
+    * [/parties](https://ng.docs.digitax.tech/reference/get_parties)
+    * [/items](https://ng.docs.digitax.tech/reference/get_items)
+    * [/invoices](https://ng.docs.digitax.tech/reference/get_invoices)
   </Card>
 </Cards>
 
