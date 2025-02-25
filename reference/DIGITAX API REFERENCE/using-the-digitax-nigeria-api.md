@@ -25,7 +25,7 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 <Cards columns={2}>
   <Card title="Prerequisites of using the API" href="https://ng.docs.digitax.tech/reference/prerequisites-of-using-the-api" icon="fa-list" />
 
-  <Card title="DigiTax Nigeria API sections" href="https://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" icon="fa-info" />
+  <Card title="DigiTax Nigeria API sections" href="https://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" icon="fa-bars" />
 </Cards>
 
 ***
