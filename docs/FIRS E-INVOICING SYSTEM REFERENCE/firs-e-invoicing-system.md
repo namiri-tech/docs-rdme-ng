@@ -35,6 +35,8 @@ are the driving factors of the rollout of the FIRS E-Invoicing System.
   Built on international best practices like the Universal Business Language (**UBL**) and [Peppol](https://peppol.org/about/), facilitating local and cross-border trade.
 * Security and Integrity:\
   Advanced encryption ensures secure data transmission and compliance.
+* Secure Invoice Exchange:\
+  Read more on [e-Invoicing and Secure Invoice Exchange](doc:e-invoicing-and-secure-invoice-exchange)
 
 ### Key Benefits of FIRS e-Invoicing
 
@@ -49,3 +51,4 @@ are the driving factors of the rollout of the FIRS E-Invoicing System.
 * Real-Time Access: Instant processing and verification for efficient workflows.
 * Global Compatibility: Aligns Nigerian businesses with international invoicing platforms for seamless trade.
 * Ease of Use: Simplified integration reduces operational burden.
+* Invoice Factoring: Read more on [e-Invoicing and Invoice Factoring](doc:e-invoicing-and-invoice-factoring)
