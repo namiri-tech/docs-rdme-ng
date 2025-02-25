@@ -13,6 +13,7 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 <Columns layout="auto">
   <Column>
     > Use **DigiTax Nigeria API** to integrate your system with FIRS e-Invoicing System
+    > The main utility of the DigiTax API is to integrate your system with FIRS e-Invoicing System for automation and to reduce platform-hopping
   </Column>
 
   <Column>
@@ -38,7 +39,7 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
   </Card>
 </Cards>
 
-## DigiTax
+## DigiTax API
 
 Namiri Technologies, through our DigiTax Platform, have developed a suite of solutions:
 
@@ -47,10 +48,6 @@ Namiri Technologies, through our DigiTax Platform, have developed a suite of s
 * DigiTax API
 
 > The first two are powered by the DigiTax API :tada:
-
-## DigiTax API
-
-**DigiTax** is a solution that sits between you; the taxpayer, and the systems of regional tax authorities/ regulators. For Nigeria, that is, the FIRS e-Invoicing System.
 
 ### DigiTax API Features
 
