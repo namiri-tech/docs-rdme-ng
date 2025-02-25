@@ -3,10 +3,10 @@ info:
   title: FIRS API
   version: 1.0.0
 servers:
-  - url: http://localhost:8095
-    description: Local
   - url: https://staging.api-v2.digitax.tech/ng/v1
     description: Staging
+  - url: https://api.digitax.tech/ng/v1
+    description: Production
 paths:
   /resources/countries:
     get:
@@ -14,107 +14,105 @@ paths:
       security:
         - apiKeyAuth: []
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
+        '200':
           description: A list of FIRS countries
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/Country"
+                  $ref: '#/components/schemas/Country'
+        default:
+          $ref: '#/components/responses/Error'
   /resources/currencies:
     get:
       summary: Get FIRS Currencies
       security:
         - apiKeyAuth: []
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
+        '200':
           description: A list of FIRS currencies
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/Currency"
+                  $ref: '#/components/schemas/Currency'
+        default:
+          $ref: '#/components/responses/Error'
   /resources/tax-categories:
     get:
       summary: Get FIRS Tax Categories
       security:
         - apiKeyAuth: []
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
+        '200':
           description: A list of FIRS tax categories
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/TaxCategory"
+                  $ref: '#/components/schemas/TaxCategory'
+        default:
+          $ref: '#/components/responses/Error'
   /resources/invoice-types:
     get:
       summary: Get FIRS Invoice Types
       security:
         - apiKeyAuth: []
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
+        '200':
           description: A list of FIRS invoice types
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/CommonCode"
+                  $ref: '#/components/schemas/CommonCode'
+        default:
+          $ref: '#/components/responses/Error'
   /resources/payment-means:
     get:
       summary: Get FIRS Payment Means
       security:
         - apiKeyAuth: []
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
+        '200':
           description: A list of FIRS payment means
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/CommonCode"
+                  $ref: '#/components/schemas/CommonCode'
+        default:
+          $ref: '#/components/responses/Error'
   /info:
     get:
       summary: Get FIRS Info
       security:
         - apiKeyAuth: []
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
+        '200':
           description: FIRS Info
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Branch"
+                $ref: '#/components/schemas/Branch'
+        default:
+          $ref: '#/components/responses/Error'
   /parties:
     get:
       summary: Get FIRS Parties
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: "#/components/parameters/Before"
-        - $ref: "#/components/parameters/After"
-        - $ref: "#/components/parameters/PageSize"
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
+        '200':
           description: A list of FIRS parties
           content:
             application/json:
@@ -125,11 +123,13 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: "#/components/schemas/Pagination"
+                    $ref: '#/components/schemas/Pagination'
                   data:
                     type: array
                     items:
-                      $ref: "#/components/schemas/Party"
+                      $ref: '#/components/schemas/Party'
+        default:
+          $ref: '#/components/responses/Error'
     post:
       summary: Create Party
       security:
@@ -155,29 +155,27 @@ paths:
                 phone:
                   type: string
                 address:
-                  $ref: "#/components/schemas/Address"
+                  $ref: '#/components/schemas/Address'
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "201":
+        '201':
           description: Party created
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Party"
+                $ref: '#/components/schemas/Party'
+        default:
+          $ref: '#/components/responses/Error'
   /items:
     get:
       summary: Get FIRS Items
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: "#/components/parameters/Before"
-        - $ref: "#/components/parameters/After"
-        - $ref: "#/components/parameters/PageSize"
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
+        '200':
           description: A list of FIRS items
           content:
             application/json:
@@ -188,11 +186,13 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: "#/components/schemas/Pagination"
+                    $ref: '#/components/schemas/Pagination'
                   data:
                     type: array
                     items:
-                      $ref: "#/components/schemas/Item"
+                      $ref: '#/components/schemas/Item'
+        default:
+          $ref: '#/components/responses/Error'
     post:
       summary: Create Item
       security:
@@ -232,27 +232,25 @@ paths:
                 price_unit:
                   type: string
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "201":
+        '201':
           description: Item created
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Item"
+                $ref: '#/components/schemas/Item'
+        default:
+          $ref: '#/components/responses/Error'
   /invoices:
     get:
       summary: Get FIRS Invoices
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: "#/components/parameters/Before"
-        - $ref: "#/components/parameters/After"
-        - $ref: "#/components/parameters/PageSize"
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
+        '200':
           description: A list of FIRS invoices
           content:
             application/json:
@@ -263,11 +261,13 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: "#/components/schemas/Pagination"
+                    $ref: '#/components/schemas/Pagination'
                   data:
                     type: array
                     items:
-                      $ref: "#/components/schemas/Invoice"
+                      $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
     post:
       summary: Create Invoice
       security:
@@ -306,15 +306,15 @@ paths:
                 billing_reference:
                   type: array
                   items:
-                    $ref: "#/components/schemas/InvoiceDocumentReference"
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
                 dispatch_document_reference:
-                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
                 receipt_document_reference:
-                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
                 originator_document_reference:
-                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
                 contract_document_reference:
-                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
                 due_date:
                   type: string
                   format: date
@@ -344,14 +344,14 @@ paths:
                         type: number
                         format: double
       responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "201":
+        '201':
           description: Invoice created
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Invoice"
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
 components:
   schemas:
     Country:
@@ -468,7 +468,7 @@ components:
         tax_identification_number:
           type: string
         address:
-          $ref: "#/components/schemas/Address"
+          $ref: '#/components/schemas/Address'
     Party:
       type: object
       required:
@@ -499,7 +499,7 @@ components:
         email:
           type: string
         address:
-          $ref: "#/components/schemas/Address"
+          $ref: '#/components/schemas/Address'
     Item:
       type: object
       required:
@@ -611,7 +611,12 @@ components:
           format: date
         status:
           type: string
-          enum: [DRAFT, PENDING, CONFIRMED, FAILED, COMPLETED]
+          enum:
+            - DRAFT
+            - PENDING
+            - CONFIRMED
+            - FAILED
+            - COMPLETED
         line_extension_amount:
           type: number
           format: double
@@ -630,15 +635,15 @@ components:
         billing_reference:
           type: array
           items:
-            $ref: "#/components/schemas/InvoiceDocumentReference"
+            $ref: '#/components/schemas/InvoiceDocumentReference'
         dispatch_document_reference:
-          $ref: "#/components/schemas/InvoiceDocumentReference"
+          $ref: '#/components/schemas/InvoiceDocumentReference'
         receipt_document_reference:
-          $ref: "#/components/schemas/InvoiceDocumentReference"
+          $ref: '#/components/schemas/InvoiceDocumentReference'
         originator_document_reference:
-          $ref: "#/components/schemas/InvoiceDocumentReference"
+          $ref: '#/components/schemas/InvoiceDocumentReference'
         contract_document_reference:
-          $ref: "#/components/schemas/InvoiceDocumentReference"
+          $ref: '#/components/schemas/InvoiceDocumentReference'
         due_date:
           type: string
           format: date
@@ -649,11 +654,11 @@ components:
         taxes:
           type: array
           items:
-            $ref: "#/components/schemas/TaxBreakdown"
+            $ref: '#/components/schemas/TaxBreakdown'
         items:
           type: array
           items:
-            $ref: "#/components/schemas/InvoiceItem"
+            $ref: '#/components/schemas/InvoiceItem'
     InvoiceItem:
       type: object
       required:
@@ -748,7 +753,9 @@ components:
       required: false
       schema:
         type: string
-        description: When paginating results, a pointer to an ID after which we want results
+        description: >-
+          When paginating results, a pointer to an ID after which we want
+          results
         example: item_01HC3J1VVVM05YCTS61G7V3KC6
     Before:
       in: query
@@ -756,7 +763,9 @@ components:
       required: false
       schema:
         type: string
-        description: When paginating results, a pointer to an ID before which we want results
+        description: >-
+          When paginating results, a pointer to an ID before which we want
+          results
         example: item_01HC3J1VVVM05YCTS61G7V3KC6
     PageSize:
       in: query
@@ -770,7 +779,7 @@ components:
         example: 20
   responses:
     default:
-      $ref: "#/components/responses/Error"
+      $ref: '#/components/responses/Error'
     Error:
       description: Error response
       content:
