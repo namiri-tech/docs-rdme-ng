@@ -5,9 +5,19 @@ excerpt: >-
   FIRS e-Invoicing System
 hidden: false
 ---
-> Welcome to DigiTax Nigeria API Hub
->
-> If you're new here, learn [how to use this site](doc:how-to-use-this-site)
+# Welcome to DigiTax Nigeria API Hub
+
+<Cards columns={2}>
+  <Card title="Navigation" icon="fa-compass">
+    If you're new here, learn how to navigate the API Hub [here](https://ng.docs.digitax.tech/docs/how-to-use-this-site)
+  </Card>
+
+  <Card title="Support" icon="fa-question">
+    If you get stuck, or have questions, [email us](mailto:support@namiri.tech)\
+    OR\
+    Use the DigiTax chat on the bottom right.
+  </Card>
+</Cards>
 
 ## Electronic Tax Invoicing in Nigeria
 
