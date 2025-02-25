@@ -5,6 +5,12 @@ hidden: false
 metadata:
   robots: index
 ---
+## Secure Invoice Exchange
+
+Secure Invoice Exchange is one benefit of the FIRS E-Invoicing System.
+
+Consider other benefits captured on the [FIRS and FIRS e-Invoicing System page](doc:firs-e-invoicing-system).
+
 ## Interconnectivity Between e-Invoicing and Secure Invoice Exchange
 
 How It Works:
