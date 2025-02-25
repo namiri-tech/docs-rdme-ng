@@ -26,18 +26,18 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
   <Card title="Explore DigiTax Nigeria API resources endpoints" icon="fa-book">
     Consider endpoints under **/resources** as references for data required for other endpoints.
 
-    * /resources/[countries]()
-      * /currencies
-      * /tax-categories
-      * /invoice-types
-      * /payment-means
+    * [/resources/countries]()
+    * [/resources/currencies]()
+    * [/resources//tax-categories]()
+    * [/resources/invoice-types]()
+    * [/resources/payment-means]()
   </Card>
 
   <Card title="Explore core DigiTax Nigeria API endpoints" icon="fa-plug">
-    * /[info]()
-    * /parties
-    * /items
-    * /invoices
+    * [/info]()
+    * [/parties]()
+    * [/items]()
+    * [/invoices]()
   </Card>
 </Cards>
 
