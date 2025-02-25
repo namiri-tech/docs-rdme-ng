@@ -5,7 +5,7 @@ excerpt: >-
   FIRS e-Invoicing System
 hidden: false
 ---
-## Welcome to DigiTax Nigeria API Hub
+## The DigiTax Nigeria API Hub
 
 <Cards columns={2}>
   <Card title="Navigation" icon="fa-compass">
