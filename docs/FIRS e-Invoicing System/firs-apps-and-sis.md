@@ -8,12 +8,15 @@ hidden: false
 metadata:
   robots: index
 ---
-## APPs and SIs
-
 > Summary:
 >
-> SIs generate Invoice Reference Numbers (IRNs) and retrieve invoice details.\
+> **Access Point Providers** (APPs) and **System Integrators** (SIs) form the backbone of the FIRS digital tax compliance ecosystem.
+>
+> SIs generate Invoice Reference Numbers (IRNs) and retrieve invoice details.
+>
 > APPs perform more functions in the [FIRS e-invoice flow](doc:firs-e-invoice-flow) like: checking, submitting, validating, and transmitting.
+
+## Introduction to APPs and SIs
 
 **Access Point Providers** (APPs) and **System Integrators** (SIs) form the backbone of the FIRS digital tax compliance ecosystem, facilitating efficiency, compliance, and security in both local and international business operations.
 
@@ -53,7 +56,7 @@ Key Roles of SIs:
 
 ## Key Differences Between APPs and SIs
 
-<Table>
+<Table align={["left","left","left"]}>
   <thead>
     <tr>
       <th>
