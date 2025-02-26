@@ -61,7 +61,7 @@ The DigiTax API is built with various industry standards for API platforms in mi
 
 To use this API, you'll need access to DigiTax Dashboard environment to get an X-API-Key. Get in touch with [our team](mailto:support@namiri.tech).
 
-These are the steps required to get up and running
+These are the steps required to get up and running - [https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
 
 ## Guaranteed safety and integrity
 
