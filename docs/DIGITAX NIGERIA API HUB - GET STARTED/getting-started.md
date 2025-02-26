@@ -129,6 +129,14 @@ Explore the API endpoints [here](/reference)
 
 Once again, thank you for reviewing the getting started page of the DigiTax Nigeria API hub. We're excited you're here! 💚
 
+We invite you to use **DigiTax Nigeria API** to integrate your system with FIRS e-Invoicing System for automation and to reduce platform-hopping
+
+To recap:
+
+* Explore our detailed guides to gain understanding of DigiTax Nigeria integration
+* Get the [Prerequisites for using DigiTax Nigeria API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
+* For support, [email us](mailto:support@namiri.tech) OR talk to us via the **DigiTax chat** on the bottom-right of any page
+
 Welcome to the Less Taxing solution - DigiTax.
 
 <Image align="center" width="300px" src="https://files.readme.io/f982859d4fdca89de7d179a31795b159cb6c2e34a9a4dc578b85aba910daf13f-Full-Logo_Slogan_Colour.png" />
