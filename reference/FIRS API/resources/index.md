@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Resources endpoints
 excerpt: Resources endpoints consolidate data required for other endpoints
 deprecated: false
 hidden: false
