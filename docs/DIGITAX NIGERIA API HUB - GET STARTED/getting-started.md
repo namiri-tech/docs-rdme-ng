@@ -3,7 +3,7 @@ title: DigiTax Nigeria and FIRS e-Invoicing
 excerpt: >-
   **DigiTax Nigeria API Hub** contains guides and API reference pages for
   further understanding, equipping you on how to integrate with the FIRS
-  E-Invoicing System using DigiTax Nigeria API
+  E-Invoicing System
 hidden: false
 ---
 <Cards columns={2}>
