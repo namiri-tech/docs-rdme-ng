@@ -13,9 +13,9 @@ The tax authority's system or DigiTax may take some time to process a request, a
 
 ## Where to use Callback URLs
 
-We accept an optional `callback_url` property for both [Add business item](ref:post_items)  (**POST**) and [Add sale](ref:post_sales)  (**POST**) endpoints. More details under [Scenarios](#scenarios)  section below.
+We accept an optional `callback_url` property for both [Add business item](ref:post_items)  (**POST**) and [Add invoice](ref:post_invoices)  (**POST**) endpoints. More details under [Scenarios](#scenarios)  section below.
 
-During testing, we encourage you to use a site like \<https\://webhook.site>
+During testing, we encourage you to use a site like [webhook.site](https://webhook.site)
 
 Our system will POST data to the callback URL when we have new information about the item or sale, usually after syncing with the tax authority's system.
 
@@ -48,7 +48,8 @@ We send the following callbacks:
     },
     "event": "item.sync"
   }
-  ```
+```
+
 * When a sale/ credit note has been synced to eTIMS
 
 ```json
@@ -89,4 +90,4 @@ We send the following callbacks:
     },
     "event": "sale.sync"
   }
-  ```
+```
