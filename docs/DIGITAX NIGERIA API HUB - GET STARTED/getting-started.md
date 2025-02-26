@@ -53,7 +53,9 @@ FIRS introduced the FIRS e-invoicing system to align with Nigeria’s Digital Ec
 
 DigiTax platform, by Namiri Technology (the company), constitutes a suite of digital solutions crafted for effective, simple, and painless tax compliance through **electronic tax invoicing**. These solutions enable taxpayers (individuals and businesses) to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
 
-The suite of digital solutions or products under DigiTax platform are:
+## More about DigiTax
+
+The suite of digital solutions or products under DigiTax are:
 
 * DigiTax App (Compatible with Android POS),
 * DigiTax Dashboard (Web Browser-based Desktop application)
@@ -89,11 +91,13 @@ These are the steps required to get up and running - [Prerequisites of using Dig
 
 ***
 
-## Guaranteed safety and integrity
+### Guaranteed safety and integrity
 
 We comply with industry and security best practices.
 
 > 👍 DigiTax is built with the best industry practices and to the highest security standards
+
+***
 
 ## DigiTax Nigeria and FIRS e-Invoicing
 
@@ -118,6 +122,8 @@ For a great developer experience, the endpoints in the [DigiTax Nigeria API refe
 Once you're set up in the DigiTax Dashboard, you can generate a sandbox/ LIVE **X-API-Key** for authorization.
 
 Explore the API endpoints [here](/reference)
+
+***
 
 ## Once again, welcome to the DigiTax Nigeria API Hub
 
