@@ -14,7 +14,7 @@ hidden: false
 
   <Card title="Support" icon="fa-question">
     If you get stuck, or have questions, [email us](mailto:support@namiri.tech) OR\
-    Talk to us via the **DigiTax chat** on the bottom right of this page.
+    Talk to us via the **DigiTax chat** on the bottom right of any page.
   </Card>
 
   <Card title="FIRS integration with DigiTax" icon="fa-bars">
