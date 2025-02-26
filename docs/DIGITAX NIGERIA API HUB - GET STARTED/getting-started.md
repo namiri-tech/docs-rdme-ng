@@ -73,6 +73,8 @@ to offer you a streamlined invoicing system that ensures compliance and support 
 
 The DigiTax API is built with various industry standards for API platforms in mind. Read more on this [here](https://ng.docs.digitax.tech/reference/using-the-digitax-nigeria-api#digitax-api).
 
+> We invite you to use **DigiTax Nigeria API** to integrate your system with FIRS e-Invoicing System for automation and to reduce platform-hopping
+
 ***
 
 These include:
