@@ -133,7 +133,7 @@ We invite you to use **DigiTax Nigeria API** to integrate your system with FIRS 
 
 To recap:
 
-* Explore our detailed guides to gain understanding of DigiTax Nigeria integration
+* Explore our detailed guides to gain understanding of DigiTax Nigeria integration. Learn how to navigate them [here](doc:how-to-use-this-site)
 * Get the [Prerequisites for using DigiTax Nigeria API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
 * For support, [email us](mailto:support@namiri.tech) OR talk to us via the **DigiTax chat** on the bottom-right of any page
 
