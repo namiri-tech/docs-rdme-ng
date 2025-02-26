@@ -3,8 +3,8 @@ info:
   title: FIRS API
   version: 1.0.0
 servers:
-  - url: https://staging.api-v2.digitax.tech/ng/v1
-    description: Staging
+  - url: https://staging.api.digitax.tech/ng/v1
+    description: Staging API
   - url: https://api.digitax.tech/ng/v1
     description: Production
 paths:
