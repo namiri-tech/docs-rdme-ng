@@ -45,7 +45,7 @@ Nigeria is one of the countries and the country's tax authority, **FIRS** (Feder
 
 ### FIRS e-Invoicing System
 
-FIRS (Federal Inland Revenue Service) is an agency of the government of Nigeria that is responsible for the assessment, collection and accounting for all revenues that are due to the government in accordance with the laws of Nigeria.
+<Glossary>FIRS</Glossary> is an agency of the government of Nigeria that is responsible for the assessment, collection and accounting for all revenues that are due to the government in accordance with the laws of Nigeria.
 
 FIRS introduced the FIRS e-invoicing system to align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy. This e-invoicing system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
 
@@ -55,9 +55,9 @@ DigiTax platform, by Namiri Technology (the company), constitutes a suite of dig
 
 DigiTax connects with regional tax authorities/ regulators (so far):
 
-* DigiTax Nigeria integrates you with FIRS e-Invoicing System
-* DigiTax Kenya integrates you with KRA eTIMS
-* DigiTax Zambia integrates you with ZRA Smart Invoice System
+* DigiTax Nigeria integrates you with <Glossary>FIRS</Glossary> e-Invoicing System
+* DigiTax Kenya integrates you with <Glossary>KRA</Glossary> eTIMS (electronic Tax Information Management System)
+* DigiTax Zambia integrates you with <Glossary>ZRA</Glossary> Smart Invoice System
 
 <Image align="center" border={true} caption="DigiTax - Tax authorities/ regulators" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
 
