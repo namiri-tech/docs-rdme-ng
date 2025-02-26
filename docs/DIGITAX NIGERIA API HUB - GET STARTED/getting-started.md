@@ -71,7 +71,11 @@ to offer you a streamlined invoicing system that ensures compliance and support 
 
 ### DigiTax API Features
 
-The DigiTax API is built with various industry standards for API platforms in mind. Read more on this These include:
+The DigiTax API is built with various industry standards for API platforms in mind. Read more on this [here](https://ng.docs.digitax.tech/reference/using-the-digitax-nigeria-api#digitax-api).
+
+***
+
+These include:
 
 * RESTful API
 * OpenAPI (formerly Swagger): An open-source standard that allows a standardized way to generate, document, and test our APIs.
@@ -80,6 +84,8 @@ The DigiTax API is built with various industry standards for API platforms in mi
 To use this API, you'll need access to DigiTax Dashboard environment to get an X-API-Key. Get in touch with [our team](mailto:support@namiri.tech).
 
 These are the steps required to get up and running - [Prerequisites of using DigiTax API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
+
+***
 
 ## Guaranteed safety and integrity
 
