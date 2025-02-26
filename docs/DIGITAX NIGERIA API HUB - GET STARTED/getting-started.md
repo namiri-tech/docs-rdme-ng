@@ -53,11 +53,13 @@ FIRS introduced the FIRS e-invoicing system to align with Nigeria’s Digital Ec
 
 DigiTax platform, by Namiri Technology (the company), constitutes a suite of digital solutions crafted for effective, simple, and painless tax compliance through **electronic tax invoicing**. These solutions enable taxpayers (individuals and businesses) to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
 
-DigiTax connects with regional tax authorities/ regulators (so far):
+DigiTax connects with regional tax authorities/ regulators, so far:
 
 * DigiTax Nigeria integrates you with <Glossary>FIRS</Glossary> e-Invoicing System
 * DigiTax Kenya integrates you with <Glossary>KRA</Glossary> eTIMS (electronic Tax Information Management System)
 * DigiTax Zambia integrates you with <Glossary>ZRA</Glossary> Smart Invoice System
+
+to offer you a streamlined invoicing system that ensures compliance and support your business's growth.
 
 <Image align="center" border={true} caption="DigiTax - Tax authorities/ regulators" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
 
