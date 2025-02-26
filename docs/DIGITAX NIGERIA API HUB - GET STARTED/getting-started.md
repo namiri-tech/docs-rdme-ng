@@ -63,6 +63,8 @@ to offer you a streamlined invoicing system that ensures compliance and support 
 
 <Image align="center" border={true} caption="DigiTax - Tax authorities/ regulators" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
 
+<br />
+
 ## DigiTax Nigeria and FIRS e-Invoicing
 
 > **DigiTax Nigeria** integrates you with FIRS e-Invoicing System
