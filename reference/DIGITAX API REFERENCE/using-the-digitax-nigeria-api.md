@@ -19,15 +19,12 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 <Cards columns={1}>
 <Card title="Prerequisites of using the API" href="https://ng.docs.digitax.tech/reference/prerequisites-of-using-the-api" icon="fa-list">
 </Card>
-
-<Card title="DigiTax Nigeria API sections" href="https://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" icon="fa-bars">
-</Card>
 </Cards>
 
 <Cards columns={1}>
 <Card title="Explore resources DigiTax Nigeria API endpoints" icon="fa-book">
-</Card>
 Consider endpoints under **resources** as references for data required for other endpoints.
+</Card>
 
 <Card title="Explore core DigiTax Nigeria API endpoints" icon="fa-plug">
 * [/info]([https://ng.docs.digitax.tech/reference/get_info)
