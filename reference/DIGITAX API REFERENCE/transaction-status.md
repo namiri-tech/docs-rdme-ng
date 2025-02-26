@@ -10,7 +10,7 @@ metadata:
 DigiTax provides the following:
 
 * Asynchronous functionality that automatically retries eTIMS
-* Get notifications on transaction statuses via [Callback URLs](doc:call-back-urls)
+* Get notifications on transaction statuses via [Callback URLs](ref:feature-callback-urls)
 * Throttling traffic between the businesses throughput and the tax authority's system
 
   This functionality is possible due to the DigiTax Queueing system.
@@ -58,7 +58,7 @@ Since transactions are first off entered into the DigiTax Queueing system, we gi
       </td>
 
       <td>
-        Check in later. If you set up [Callback URLs](doc:call-back-urls), DigiTax will post to your system when the FIRS E-Invoicing System sync is done.
+        Check in later. If you set up [Callback URLs](ref:feature-callback-urls), DigiTax will post to your system when the FIRS E-Invoicing System sync is done.
       </td>
     </tr>
 
@@ -72,7 +72,7 @@ Since transactions are first off entered into the DigiTax Queueing system, we gi
       </td>
 
       <td>
-        Check in later. If you set up [Callback URLs](doc:call-back-urls), DigiTax will post to your system when the FIRS E-Invoicing System sync is done.
+        Check in later. If you set up [Callback URLs](ref:feature-callback-urls), DigiTax will post to your system when the FIRS E-Invoicing System sync is done.
       </td>
     </tr>
 
@@ -115,7 +115,7 @@ Since transactions are first off entered into the DigiTax Queueing system, we gi
       </td>
 
       <td>
-        Check in later. If you set up [Callback URLs](doc:call-back-urls), DigiTax will post to your system when it is done.
+        Check in later. If you set up [Callback URLs](ref:feature-callback-urls), DigiTax will post to your system when it is done.
       </td>
     </tr>
   </tbody>
