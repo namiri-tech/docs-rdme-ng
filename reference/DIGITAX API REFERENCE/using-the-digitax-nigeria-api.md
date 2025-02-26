@@ -1,6 +1,6 @@
 ---
-title: DigiTax API Introduction
-excerpt: An overview of the DigiTax API
+title: DigiTax Nigeria API Introduction
+excerpt: An overview of the DigiTax Nigeria API
 deprecated: false
 hidden: false
 metadata:
