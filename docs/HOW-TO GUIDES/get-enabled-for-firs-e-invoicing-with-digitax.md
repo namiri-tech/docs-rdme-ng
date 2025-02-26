@@ -22,9 +22,9 @@ These are the steps needed to get enabled for FIRS E-Invoicing and go LIVE on Di
    * Input your ERP details, and set a decryption code
    * Submit the form to trigger FIRS review and approval for e-invoicing access.
 
-You can also submit your data on the enablement form on [einvoice.firs.gov.ng/enablement](https://einvoice.firs.gov.ng/enablement) without logging into FIRS e-invoicing portal.
+You can also submit your data on the enablement form on [einvoice.firs.gov.ng/enablement](https://einvoice.firs.gov.ng/enablement) without logging into <Glossary>FIRS</Glossary> e-invoicing portal.
 
-## Set up a cloud account on DigiTax dashboard
+## Set up a cloud account, and business on DigiTax dashboard
 
 1. Sign up on [digitax.tech](https://nmr.v2.digitax.tech/)
 2. Create a Nigeria profile
@@ -35,3 +35,23 @@ You can also submit your data on the enablement form on [einvoice.firs.gov.ng/en
    1. Commercial conversations come in at this point (if not sooner)
    2. Commercial conversations are finalized, and DigiTax subscription and one-time setup fees are paid
    3. An initialization request is made to FIRS E-Invoicing system, marking your business LIVE on DigiTax
+
+Once that business goes LIVE, you can go ahead and generate an API Key under the "Integrations" tab.
+
+> 👍 Your integration is LIVE 🎉
+>
+> Using the LIVE X-API-Key, you'll now be interacting with the production environment of FIRS E-Invoicing system
+
+## API Keys management
+
+Once you generate an API key, you have the option to deactivate them.
+
+Navigate to the "Integrations" menu and click on the "padlock" icon under the Action column.
+
+<Image align="center" src="https://files.readme.io/987acac983b6f3d8e458ef6e2de8d86a80e0e2fd373b0084b6f7f0dbfb897f33-APIKeys.png" />
+
+Click **Deactivate key** if you'd like to invalidate the key for API use.
+
+<Image align="center" src="https://files.readme.io/f79ef37fcf3cf1e22458347bead6762334e5985c1e704d09948a3c23cd225dbc-DeactivateAPIKenya.png" />
+
+*To making tax compliance less taxing by powering electronic invoicing.*
