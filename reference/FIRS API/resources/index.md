@@ -2,7 +2,7 @@
 title: Resources
 excerpt: Resources endpoints consolidate data required for other endpoints
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
