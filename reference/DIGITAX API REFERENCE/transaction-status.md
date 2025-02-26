@@ -13,16 +13,14 @@ DigiTax provides the following:
 * Get notifications on transaction statuses via [Callback URLs](ref:feature-callback-urls)
 * Throttling traffic between the businesses throughput and the tax authority's system
 
-  This functionality is possible due to the DigiTax Queueing system.
+These functionalities are possible due to the DigiTax Queueing system.
 
-  <br />
-
-  > 📘 You don't run the risk of double-entry
-  >
-  > Every transaction that interacts with FIRS E-Invoicing System is first off entered into the DigiTax Queueing system to mitigate against possible FIRS:
-  >
-  > * intermittency and downtime OR
-  > * slow response rate OR
+> 📘 You don't run the risk of double-entry
+>
+> Every transaction that interacts with FIRS E-Invoicing System is first off entered into the DigiTax Queueing system to mitigate against possible FIRS:
+>
+> * intermittency and downtime OR
+> * slow response rate OR
 
 ## The different transaction statuses and what they mean
 
