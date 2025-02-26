@@ -16,32 +16,26 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 
 ***
 
-\<Cards columns=\{1}>
-&#x20; \<Card title="Prerequisites of using the API" href="https\://ng.docs.digitax.tech/reference/prerequisites-of-using-the-api" icon="fa-list" />
+<Cards columns={1}>
+<Card title="Prerequisites of using the API" href="https://ng.docs.digitax.tech/reference/prerequisites-of-using-the-api" icon="fa-list">
+</Card>
 
-&#x20; \<!---
-&#x20; \<Card title="DigiTax Nigeria API sections" href="https\://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" icon="fa-bars" />
-&#x9;\-->
-\</Cards>
+<Card title="DigiTax Nigeria API sections" href="https://ng.docs.digitax.tech/reference/digitax-nigeria-api-sections" icon="fa-bars">
+</Card>
+</Cards>
 
-\<Cards columns=\{1}>
-&#x20; \<Card title="Explore resources DigiTax Nigeria API endpoints" icon="fa-book">
-&#x20;   Consider endpoints under \*\*/resources\*\* as references for data required for other endpoints.
+<Cards columns={1}>
+<Card title="Explore resources DigiTax Nigeria API endpoints" icon="fa-book">
+</Card>
+Consider endpoints under **resources** as references for data required for other endpoints.
 
-&#x20;   \* \[/resources/countries]\(https\://ng.docs.digitax.tech/reference/get\_resources-countries)
-&#x20;   \* \[/resources/currencies]\()
-&#x20;   \* \[/resources//tax-categories]\()
-&#x20;   \* \[/resources/invoice-types]\()
-&#x20;   \* \[/resources/payment-means]\()
-&#x20; \</Card>
-
-&#x20; \<Card title="Explore core DigiTax Nigeria API endpoints" icon="fa-plug">
-&#x20;   \* \[/info]\(https\://ng.docs.digitax.tech/reference/get\_info)
-&#x20;   \* \[/parties]\(https\://ng.docs.digitax.tech/reference/get\_parties)
-&#x20;   \* \[/items]\(https\://ng.docs.digitax.tech/reference/get\_items)
-&#x20;   \* \[/invoices]\(https\://ng.docs.digitax.tech/reference/get\_invoices)
-&#x20; \</Card>
-\</Cards>
+<Card title="Explore core DigiTax Nigeria API endpoints" icon="fa-plug">
+* [/info]([https://ng.docs.digitax.tech/reference/get_info)
+* [/parties](https://ng.docs.digitax.tech/reference/get_parties)
+* [/items](https://ng.docs.digitax.tech/reference/get_items)
+* [/invoices]([https://ng.docs.digitax.tech/reference/get_invoices)
+</Card>
+</Cards>
 
 ## DigiTax API
 
