@@ -13,9 +13,9 @@ Secure Invoice Exchange is a standardized data exchange system that enables real
 
 Secure Invoice Exchange is one benefit of the FIRS E-Invoicing System.
 
-Consider other benefits captured on the [FIRS and FIRS e-Invoicing System page](doc:firs-e-invoicing-system).
+Consider other benefits captured on the [FIRS and FIRS E-Invoicing System page](doc:firs-e-invoicing-system).
 
-## Interconnectivity Between e-Invoicing and Secure Invoice Exchange
+## Inter-connectivity Between e-Invoicing and Secure Invoice Exchange
 
 How It Works:
 

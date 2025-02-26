@@ -1,4 +1,6 @@
 Digi
 Namiri
+Odoo
+Quickbooks
 TIMS
 transformative

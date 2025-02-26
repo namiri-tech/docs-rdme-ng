@@ -11,11 +11,11 @@ Invoice factoring is an alternative efficient financing method where businesses 
 
 ## Other benefits of the FIRS E-Invoicing System
 
-Invoice factoring is one benefit of the FIRS E-Invoicing System. Consider other benefits captured on the [FIRS and FIRS e-Invoicing System page](doc:firs-e-invoicing-system).
+Invoice factoring is one benefit of the FIRS E-Invoicing System. Consider other benefits captured on the [FIRS and FIRS E-Invoicing system page](doc:firs-e-invoicing-system).
 
 ## How Invoice Factoring Works with e-Invoicing
 
-Through the FIRS e-invoicing system, there is:
+Through the FIRS E-Invoicing system, there is:
 
 * Instant Validation:\
   Factoring providers can verify invoice authenticity and check for FIRS digital stamps in real-time.
