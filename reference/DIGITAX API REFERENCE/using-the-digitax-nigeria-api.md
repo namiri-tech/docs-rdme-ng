@@ -51,7 +51,7 @@ The DigiTax API is built with various industry standards for API platforms in mi
 * OpenAPI (formerly Swagger): An open-source standard that allows a standardized way to generate, document, and test our APIs.
 * Secure authentication with cryptographically signed JWTs (JSON Web Tokens)
 * [Callback URLs](ref:feature-callback-urls)
-* [Standard HTTP response codes](ref:errors-and-other-http-response-codes)
+* [Standard HTTP response codes](ref:errors-and-other-http-response-codes) for errors and successful requests
 
 ### Using DigiTax API
 
