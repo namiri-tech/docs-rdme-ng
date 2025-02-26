@@ -22,7 +22,7 @@ hidden: false
   </Card>
 
   <Card title="DigiTax Nigeria API Reference" icon="fa-plug">
-    Get the pre-requsites and explore our **interactive API reference** [here]() and the APIs feature set.
+    Get the pre-requisites, explore the API endpoints, and learn its feature set via our **interactive API reference** [here](https://ng.docs.digitax.tech/reference).
   </Card>
 </Cards>
 
