@@ -17,21 +17,20 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 ***
 
 <Cards columns={1}>
-<Card title="Prerequisites of using the API" href="https://ng.docs.digitax.tech/reference/prerequisites-of-using-the-api" icon="fa-list">
-</Card>
+  <Card title="Prerequisites of using the API" href="https://ng.docs.digitax.tech/reference/prerequisites-of-using-the-api" icon="fa-list" />
 </Cards>
 
 <Cards columns={1}>
-<Card title="Explore resources DigiTax Nigeria API endpoints" icon="fa-book">
-Consider endpoints under **resources** as references for data required for other endpoints.
-</Card>
+  <Card title="Explore resources DigiTax Nigeria API endpoints" icon="fa-book">
+    Consider endpoints under **resources** as references for data required for other endpoints.
+  </Card>
 
-<Card title="Explore core DigiTax Nigeria API endpoints" icon="fa-plug">
-* [/info]([https://ng.docs.digitax.tech/reference/get_info)
-* [/parties](https://ng.docs.digitax.tech/reference/get_parties)
-* [/items](https://ng.docs.digitax.tech/reference/get_items)
-* [/invoices]([https://ng.docs.digitax.tech/reference/get_invoices)
-</Card>
+  <Card title="Explore core DigiTax Nigeria API endpoints" icon="fa-plug">
+    * [/info](\[https://ng.docs.digitax.tech/reference/get_info)
+    * [/parties](https://ng.docs.digitax.tech/reference/get_parties)
+    * [/items](https://ng.docs.digitax.tech/reference/get_items)
+    * [/invoices](\[https://ng.docs.digitax.tech/reference/get_invoices)
+  </Card>
 </Cards>
 
 ## DigiTax API
@@ -51,10 +50,19 @@ The DigiTax API is built with various industry standards for API platforms in mi
 * RESTful API
 * OpenAPI (formerly Swagger): An open-source standard that allows a standardized way to generate, document, and test our APIs.
 * Secure authentication with cryptographically signed JWTs (JSON Web Tokens)
+* [Callback URLs](ref:feature-callback-urls)
+
+### Using DigiTax API
 
 To use this API, you'll need access to DigiTax Dashboard environment to get an X-API-Key. Get in touch with [our team](mailto:support@namiri.tech).
 
 These are the steps required to get up and running - [Prerequisites of using DigiTax API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
+
+### API endpoint parameters
+
+For some API endpoints like [**Create item**](ref:post_items), body parameters (also called query parameters) are passed along with the GET, POST, PUT and DELETE requests.
+
+The responses contain attributes related to the passed-in query parameters, which unveil the data model used in the application.
 
 ## Guaranteed safety and integrity
 
