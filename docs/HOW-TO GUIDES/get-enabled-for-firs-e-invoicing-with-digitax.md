@@ -54,4 +54,4 @@ Click **Deactivate key** if you'd like to invalidate the key for API use.
 
 <Image align="center" src="https://files.readme.io/f79ef37fcf3cf1e22458347bead6762334e5985c1e704d09948a3c23cd225dbc-DeactivateAPIKenya.png" />
 
-*To making tax compliance less taxing by powering electronic invoicing.*
+*To making tax compliance less taxing by powering electronic invoicing*
