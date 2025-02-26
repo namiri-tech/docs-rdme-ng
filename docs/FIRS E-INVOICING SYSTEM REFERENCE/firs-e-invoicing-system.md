@@ -1,6 +1,6 @@
 ---
-title: FIRS and FIRS e-Invoicing System
-excerpt: In-depth guide on FIRS and the FIRS e-Invoicing System
+title: FIRS and FIRS E-Invoicing System
+excerpt: In-depth guide on FIRS and the FIRS E-Invoicing System
 deprecated: false
 hidden: false
 metadata:
