@@ -9,7 +9,7 @@ hidden: false
 
 <Cards columns={2}>
   <Card title="Navigation" icon="fa-compass">
-    If you're new here, learn how to navigate DigiTax Nigeria API Hub [here](https://ng.docs.digitax.tech/docs/how-to-use-this-site).
+    If you're new to the DigiTax Nigeria API Hub, learn how to navigate our pages [here](https://ng.docs.digitax.tech/docs/how-to-use-this-site).
   </Card>
 
   <Card title="Support" icon="fa-question">
