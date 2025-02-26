@@ -38,7 +38,7 @@ hidden: false
 
 ## Electronic Tax Invoicing in Nigeria
 
-African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting.
+African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting. Electronic Tax Invoicing is a nascent Fintech category in the Pan-African region.
 
 Nigeria is one of the countries and the country's tax authority, **FIRS** (Federal Inland Revenue Service) has a transformative e-invoicing system, simply referred to as *FIRS e-Invoicing System*.
 
