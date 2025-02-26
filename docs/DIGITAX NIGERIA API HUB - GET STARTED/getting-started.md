@@ -41,7 +41,7 @@ African countries lately have been opting to digitize their tax systems by impos
 
 Nigeria is one of the countries and the country's tax authority, **FIRS** (Federal Inland Revenue Service) has a transformative e-invoicing system, simply referred to as *FIRS e-Invoicing System*.
 
-## Introduction to FIRS e-Invoicing System and DigiTax
+## Introduction to FIRS e-Invoicing System and DigiTax platform
 
 ### FIRS e-Invoicing System
 
@@ -49,9 +49,15 @@ Nigeria is one of the countries and the country's tax authority, **FIRS** (Feder
 
 FIRS introduced the FIRS e-invoicing system to align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy. This e-invoicing system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
 
-### DigiTax Platform
+### DigiTax platform
 
 DigiTax platform, by Namiri Technology (the company), constitutes a suite of digital solutions crafted for effective, simple, and painless tax compliance through **electronic tax invoicing**. These solutions enable taxpayers (individuals and businesses) to generate, digitally sign, and transmit compliant invoices as per connected tax authorities' requirements.
+
+The suite of digital solutions or products under DigiTax platform are:
+
+* DigiTax App (Compatible with Android POS),
+* DigiTax Dashboard (Web Browser-based Desktop application)
+* DigiTax API
 
 DigiTax connects with regional tax authorities/ regulators, so far:
 
@@ -63,7 +69,23 @@ to offer you a streamlined invoicing system that ensures compliance and support 
 
 <Image align="center" border={true} caption="DigiTax - Tax authorities/ regulators" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
 
-<br />
+### DigiTax API Features
+
+The DigiTax API is built with various industry standards for API platforms in mind. Read more on this These include:
+
+* RESTful API
+* OpenAPI (formerly Swagger): An open-source standard that allows a standardized way to generate, document, and test our APIs.
+* Secure authentication with cryptographically signed JWTs (JSON Web Tokens)
+
+To use this API, you'll need access to DigiTax Dashboard environment to get an X-API-Key. Get in touch with [our team](mailto:support@namiri.tech).
+
+These are the steps required to get up and running - [Prerequisites of using DigiTax API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
+
+## Guaranteed safety and integrity
+
+We comply with industry and security best practices.
+
+> 👍 DigiTax is built with the best industry practices and to the highest security standards
 
 ## DigiTax Nigeria and FIRS e-Invoicing
 
