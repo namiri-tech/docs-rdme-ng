@@ -7,6 +7,8 @@ hidden: false
 ---
 ## The DigiTax Nigeria API Hub
 
+This API Hub contains guides and API reference pages for further understanding, equipping you on how to integrate with the DigiTax Nigeria API.
+
 <Cards columns={2}>
   <Card title="Navigation" icon="fa-compass">
     If you're new to the DigiTax Nigeria API Hub, learn how to navigate our pages [here](https://ng.docs.digitax.tech/docs/how-to-use-this-site).
