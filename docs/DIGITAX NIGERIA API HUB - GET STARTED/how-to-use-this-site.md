@@ -51,11 +51,15 @@ These are also explained on the API endpoint page(s).
 
 ### Requests
 
+After making requests via our interactive API reference, the most recent requests are saved for review under "Recent Requests" section.
+
 <Image align="center" width="360px" src="https://files.readme.io/17102ca17357bbe74dc763eec7c4288fd9dcd8e09e8b7173339166f7b69305da-CleanShot_2025-02-27_at_12.31.522x.png" />
 
 ### Parameters
 
-Parameters (or Params) come in two types in the DigiTax API - Query Params and Body Params. Below are examples:
+Parameters (or Params) come in two types in the DigiTax Nigeria API - Query Params and Body Params.
+
+Below are examples:
 
 * Query Params
 
