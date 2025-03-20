@@ -19,14 +19,13 @@ Once signed up on DigiTax, you can generate an e-invoice via the:
 
 Below are the details on an e-invoice when downloaded via the Dashboard. The sections comprise what FIRS expects in an e-invoice.
 
-<Image align="center" border={true} caption="e-invoice with key sections highlighted" src="https://files.readme.io/33566ee0ff09bd12b887e8fa226ee7e71c95d56ca5622c96230d71a0603d54fd-image.png" />
+<Image align="center" border={true} caption="e-Invoice with key sections highlighted" src="https://files.readme.io/b8204c982b9237394b0b5675105c6af9c9340601d985f036156408686dc5b1d4-CleanShot_2025-03-20_at_08.41.27_32x.png" />
 
 An e-invoice has three key components: (They are highlighted above)
 
-1. A QR code
+1. A QR code (Used by <Glossary>FIRS</Glossary> to verify authenticity of the invoice)
 2. The tax breakdown of that invoice
 3. e-invoice metadata that includes:
-   * Date and Time of transaction
+   * <Glossary>IRN</Glossary>
    * Invoice number
-   * Signature
-   * Internal Data
+   * Date and Time of transaction
