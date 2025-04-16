@@ -5,6 +5,9 @@ excerpt: >-
   further understanding, equipping you on how to integrate with the FIRS
   E-Invoicing System
 hidden: false
+metadata:
+  title: DigiTax Nigeria API Hub
+  robots: index
 ---
 <Cards columns={2}>
   <Card title="Navigation" icon="fa-compass">
