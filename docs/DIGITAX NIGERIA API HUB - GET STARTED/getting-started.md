@@ -6,7 +6,6 @@ excerpt: >-
   E-Invoicing System
 hidden: false
 metadata:
-  title: DigiTax Nigeria API Hub
   robots: index
 ---
 <Cards columns={2}>
