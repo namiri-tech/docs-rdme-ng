@@ -18,7 +18,7 @@ metadata:
     Talk to us via the **DigiTax chat** on the bottom right of any page.
   </Card>
 
-  <Card title="FIRS integration with DigiTax" icon="fa-bars">
+  <Card title="FIRS E-Invoice integration with DigiTax" icon="fa-bars">
     Explore this page and other detailed guide pages to gain understanding of the FIRS E-Invoicing System and how DigiTax integration works.
   </Card>
 
