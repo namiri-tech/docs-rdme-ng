@@ -69,7 +69,7 @@ DigiTax connects with regional tax authorities/ regulators, so far:
 * DigiTax Kenya integrates you with <Glossary>KRA</Glossary> eTIMS (electronic Tax Information Management System)
 * DigiTax Zambia integrates you with <Glossary>ZRA</Glossary> Smart Invoice System
 
-to offer you a streamlined invoicing system that ensures compliance and support your business's growth.
+to offer you a streamlined invoicing system that ensures compliance and supports the growth of your business.
 
 <Image align="center" border={true} caption="DigiTax - Tax authorities/ regulators" src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
 
