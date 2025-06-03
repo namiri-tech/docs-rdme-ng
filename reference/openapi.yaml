@@ -10,109 +10,125 @@ servers:
 paths:
   /resources/countries:
     get:
+      tags:
+        - Resources
       summary: Get FIRS Countries
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS countries
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Country'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/Country"
   /resources/currencies:
     get:
+      tags:
+        - Resources
       summary: Get FIRS Currencies
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS currencies
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Currency'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/Currency"
   /resources/tax-categories:
     get:
+      tags:
+        - Resources
       summary: Get FIRS Tax Categories
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS tax categories
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/TaxCategory'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/TaxCategory"
   /resources/invoice-types:
     get:
+      tags:
+        - Resources
       summary: Get FIRS Invoice Types
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS invoice types
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/CommonCode'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/CommonCode"
   /resources/payment-means:
     get:
+      tags:
+        - Resources
       summary: Get FIRS Payment Means
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS payment means
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/CommonCode'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/CommonCode"
   /info:
     get:
+      tags:
+        - Branch
       summary: Get FIRS Info
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: FIRS Info
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Branch'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Branch"
   /parties:
     get:
+      tags:
+        - Parties
       summary: Get FIRS Parties
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: '#/components/parameters/Before'
-        - $ref: '#/components/parameters/After'
-        - $ref: '#/components/parameters/PageSize'
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS parties
           content:
             application/json:
@@ -123,14 +139,14 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: '#/components/schemas/Pagination'
+                    $ref: "#/components/schemas/Pagination"
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Party'
-        default:
-          $ref: '#/components/responses/Error'
+                      $ref: "#/components/schemas/Party"
     post:
+      tags:
+        - Parties
       summary: Create Party
       security:
         - apiKeyAuth: []
@@ -148,34 +164,67 @@ paths:
               properties:
                 tax_identification_number:
                   type: string
+                  example: 87864516-2365
                 email:
                   type: string
+                  example: john@doe.com
                 name:
                   type: string
+                  example: John Doe
                 phone:
                   type: string
+                  example: "+2341234567890"
                 address:
-                  $ref: '#/components/schemas/Address'
+                  $ref: "#/components/schemas/Address"
       responses:
-        '201':
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
           description: Party created
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Party'
+                $ref: "#/components/schemas/Party"
+  /parties/{party_id}:
+    get:
+      tags:
+        - Parties
+      summary: Get a business party
+      description: Retrieves information about a party given their ID on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: party_id
+          required: true
+          schema:
+            type: string
+            description: Party ID on DigiTax
+            example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+      responses:
         default:
-          $ref: '#/components/responses/Error'
+          $ref: "#/components/responses/Error"
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Party"
   /items:
     get:
+      tags:
+        - Items
       summary: Get FIRS Items
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: '#/components/parameters/Before'
-        - $ref: '#/components/parameters/After'
-        - $ref: '#/components/parameters/PageSize'
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS items
           content:
             application/json:
@@ -186,14 +235,14 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: '#/components/schemas/Pagination'
+                    $ref: "#/components/schemas/Pagination"
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Item'
-        default:
-          $ref: '#/components/responses/Error'
+                      $ref: "#/components/schemas/Item"
     post:
+      tags:
+        - Items
       summary: Create Item
       security:
         - apiKeyAuth: []
@@ -214,43 +263,80 @@ paths:
               properties:
                 tax_category_code:
                   type: string
+                  example: STANDARD_VAT
                 product_category:
                   type: string
+                  example: 51472903
                 item_name:
                   type: string
+                  example: Digitax Product 001
                 hsn_code:
                   type: string
+                  example: 2847.00
                 price_amount:
                   type: number
                   format: double
+                  example: 10000.00
                 currency_code:
                   type: string
+                  example: NGN
                 description:
                   type: string
+                  example: Sample item description
                 display_name:
                   type: string
+                  example: Digitax Product 001
                 price_unit:
                   type: string
       responses:
-        '201':
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
           description: Item created
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Item'
+                $ref: "#/components/schemas/Item"
+  /items/{item_id}:
+    get:
+      tags:
+        - Items
+      summary: Get a business item
+      description: Retrieves information about an item given their ID on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: item_id
+          required: true
+          schema:
+            type: string
+            description: Item ID on DigiTax
+            example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+      responses:
         default:
-          $ref: '#/components/responses/Error'
+          $ref: "#/components/responses/Error"
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Item"
   /invoices:
     get:
+      tags:
+        - Invoices
       summary: Get FIRS Invoices
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: '#/components/parameters/Before'
-        - $ref: '#/components/parameters/After'
-        - $ref: '#/components/parameters/PageSize'
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS invoices
           content:
             application/json:
@@ -261,14 +347,14 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: '#/components/schemas/Pagination'
+                    $ref: "#/components/schemas/Pagination"
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Invoice'
-        default:
-          $ref: '#/components/responses/Error'
+                      $ref: "#/components/schemas/Invoice"
     post:
+      tags:
+        - Invoices
       summary: Create Invoice
       security:
         - apiKeyAuth: []
@@ -279,15 +365,16 @@ paths:
             schema:
               type: object
               required:
-                - customer_id
+                - party_id
                 - invoice_date
                 - issue_date
                 - invoice_type_code
                 - document_currency_code
                 - items
               properties:
-                customer_id:
+                party_id:
                   type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
                 invoice_date:
                   type: string
                   format: date
@@ -296,30 +383,34 @@ paths:
                   format: date
                 invoice_type_code:
                   type: string
+                  example: 381
                 tax_point_date:
                   type: string
                   format: date
                 document_currency_code:
                   type: string
+                  example: NGN
                 buyer_reference:
                   type: string
+                  example: "#INV-001"
                 billing_reference:
                   type: array
                   items:
-                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                    $ref: "#/components/schemas/InvoiceDocumentReference"
                 dispatch_document_reference:
-                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
                 receipt_document_reference:
-                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
                 originator_document_reference:
-                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
                 contract_document_reference:
-                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
                 due_date:
                   type: string
                   format: date
                 notes:
                   type: string
+                  example: Sample invoice notes
                 items:
                   type: array
                   items:
@@ -328,30 +419,166 @@ paths:
                       - item_id
                       - quantity
                       - price_amount
+                      - tax_rate
                     properties:
                       item_id:
                         type: string
+                        example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
                       quantity:
                         type: number
                         format: double
+                        example: 1
                       price_amount:
                         type: number
                         format: double
+                        example: 10000.00
                       discount_rate:
                         type: number
                         format: double
+                        example: 0.05
                       fee_rate:
                         type: number
                         format: double
+                        example: 0.02
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
       responses:
-        '201':
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
           description: Invoice created
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Invoice'
+                $ref: "#/components/schemas/Invoice"
+  /invoices/{invoice_id}:
+    get:
+      tags:
+        - Invoices
+      summary: Get a business invoice
+      description: Retrieves information about an invoice given their ID on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: invoice_id
+          required: true
+          schema:
+            type: string
+            description: Invoice ID on DigiTax
+            example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
+      responses:
         default:
-          $ref: '#/components/responses/Error'
+          $ref: "#/components/responses/Error"
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Invoice"
+  /invoices/{invoice_id}/pay:
+    put:
+      tags:
+        - Invoices
+      summary: Update an invoice payment status to paid
+      description: Update an invoice payment status to paid
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: invoice_id
+          required: true
+          schema:
+            type: string
+            description: Invoice ID on DigiTax
+            example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reference:
+                  type: string
+                  example: PY012001
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Invoice"
+  /invoice-downloads:
+    get:
+      tags:
+        - Invoice Downloads
+      summary: Get FIRS Invoice Downloads
+      description: Get FIRS Invoice Downloads
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS invoice downloads
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: "#/components/schemas/Pagination"
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/InvoiceDownload"
+  /invoice-downloads/{download_id}/reject:
+    put:
+      tags:
+        - Invoice Downloads
+      summary: Reject FIRS Invoice Download payment
+      description: Reject FIRS Invoice Download payment
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: download_id
+          required: true
+          schema:
+            type: string
+            description: Invoice download ID in Digitax
+            example: transmission_01JW6DXQ61ZGP2T6QDHSM34SGP
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reference:
+                  type: string
+                  example: PY012001
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InvoiceDownload"
 components:
   schemas:
     Country:
@@ -363,10 +590,13 @@ components:
       properties:
         name:
           type: string
+          example: Nigeria
         alpha2:
           type: string
+          example: NG
         alpha3:
           type: string
+          example: NGA
     Currency:
       type: object
       required:
@@ -380,32 +610,46 @@ components:
       properties:
         symbol:
           type: string
+          example: ₦
         name:
           type: string
+          example: Nigerian Naira
         symbolNative:
           type: string
+          example: ₦
         decimalDigits:
           type: integer
+          example: 2
         rounding:
           type: integer
+          example: 0
         code:
           type: string
+          example: NGN
         namePlural:
           type: string
+          example: Nigerian nairas
     TaxCategory:
       type: object
       required:
         - code
         - name
         - tax_rate
+        - has_rate
       properties:
         code:
           type: string
+          example: STANDARD_VAT
         name:
           type: string
+          example: Standard Value-Added Tax
         tax_rate:
           type: number
           format: double
+          example: 0.075
+        has_rate:
+          type: boolean
+          example: true
     CommonCode:
       type: object
       required:
@@ -414,8 +658,10 @@ components:
       properties:
         code:
           type: string
+          example: 389
         value:
           type: string
+          example: Purchase Order
     Address:
       type: object
       required:
@@ -426,12 +672,16 @@ components:
       properties:
         street_name:
           type: string
+          example: 123 Main St
         city_name:
           type: string
+          example: Lagos
         postal_zone:
           type: string
+          example: 100001
         country_code:
           type: string
+          example: NGA
     Branch:
       type: object
       required:
@@ -447,6 +697,7 @@ components:
       properties:
         id:
           type: string
+          example: branch_01HC3J1VVVM05YCTS61G7V3KC6
         created_at:
           type: string
           format: date-time
@@ -459,16 +710,21 @@ components:
           type: boolean
         service_id:
           type: string
+          example: E3B89060
         taxpayer_id:
           type: string
+          example: 3dce1631-9169-49d7-b1e9-37f081a42962
         taxpayer_name:
           type: string
+          example: John Doe
         taxpayer_email:
           type: string
+          example: john@doe.com
         tax_identification_number:
           type: string
+          example: 08289985-9146
         address:
-          $ref: '#/components/schemas/Address'
+          $ref: "#/components/schemas/Address"
     Party:
       type: object
       required:
@@ -482,6 +738,7 @@ components:
       properties:
         id:
           type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
         created_at:
           type: string
           format: date-time
@@ -492,14 +749,18 @@ components:
           type: boolean
         tax_identification_number:
           type: string
+          example: 08289985-9145
         name:
           type: string
+          example: John Doe
         phone:
           type: string
+          example: "+2341234567890"
         email:
           type: string
+          example: john@doe.com
         address:
-          $ref: '#/components/schemas/Address'
+          $ref: "#/components/schemas/Address"
     Item:
       type: object
       required:
@@ -518,6 +779,7 @@ components:
       properties:
         id:
           type: string
+          example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
         created_at:
           type: string
           format: date-time
@@ -528,23 +790,32 @@ components:
           type: boolean
         tax_category_code:
           type: string
+          example: STANDARD_VAT
         product_category:
           type: string
+          example: 51472903
         item_name:
           type: string
+          example: Digitax Product 001
         hsn_code:
           type: string
+          example: 2847
         item_number:
           type: string
+          example: ITM25-148-144544241-S6AM78
         price_amount:
           type: number
           format: double
+          example: 10000
         currency_code:
           type: string
+          example: NGN
         description:
           type: string
+          example: Sample item description
         display_name:
           type: string
+          example: Digitax Product 001
     Invoice:
       type: object
       required:
@@ -552,7 +823,7 @@ components:
         - created_at
         - updated_at
         - active
-        - customer_id
+        - party_id
         - invoice_date
         - issue_date
         - invoice_type_code
@@ -571,6 +842,7 @@ components:
       properties:
         id:
           type: string
+          example: invoice_01JWBCPPJGSSPN8GAG0XC65RJK
         created_at:
           type: string
           format: date-time
@@ -579,8 +851,9 @@ components:
           format: date-time
         active:
           type: boolean
-        customer_id:
+        party_id:
           type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
         invoice_date:
           type: string
           format: date
@@ -589,76 +862,94 @@ components:
           format: date
         is_valid:
           type: boolean
+        transmitted_at:
+          type: string
+          format: date-time
+        signed_at:
+          type: string
+          format: date-time
+        validated_at:
+          type: string
+          format: date-time
         invoice_type_code:
           type: string
+          example: 381
         tax_point_date:
           type: string
           format: date
         document_currency_code:
           type: string
+          example: NGN
         tax_currency_code:
           type: string
+          example: NGN
         invoice_number:
           type: string
         invoice_reference_number:
           type: string
+          example: 150835152MSVKRR-E3A89069-20250528
         buyer_reference:
           type: string
+          example: "#INV-001"
         payment_status:
           type: string
+          example: PENDING
         delivery_date:
           type: string
           format: date
         status:
           type: string
-          enum:
-            - DRAFT
-            - PENDING
-            - CONFIRMED
-            - FAILED
-            - COMPLETED
+          enum: [DRAFT, PENDING, CONFIRMED, FAILED, COMPLETED]
         line_extension_amount:
           type: number
           format: double
+          example: 10000
         tax_exclusive_amount:
           type: number
           format: double
+          example: 9700
         tax_inclusive_amount:
           type: number
           format: double
+          example: 10427.5
         payable_amount:
           type: number
           format: double
+          example: 10427.5
         tax_amount:
           type: number
           format: double
+          example: 727.5
         billing_reference:
           type: array
           items:
-            $ref: '#/components/schemas/InvoiceDocumentReference'
+            $ref: "#/components/schemas/InvoiceDocumentReference"
         dispatch_document_reference:
-          $ref: '#/components/schemas/InvoiceDocumentReference'
+          $ref: "#/components/schemas/InvoiceDocumentReference"
         receipt_document_reference:
-          $ref: '#/components/schemas/InvoiceDocumentReference'
+          $ref: "#/components/schemas/InvoiceDocumentReference"
         originator_document_reference:
-          $ref: '#/components/schemas/InvoiceDocumentReference'
+          $ref: "#/components/schemas/InvoiceDocumentReference"
         contract_document_reference:
-          $ref: '#/components/schemas/InvoiceDocumentReference'
+          $ref: "#/components/schemas/InvoiceDocumentReference"
         due_date:
           type: string
           format: date
         notes:
           type: string
+          example: Sample invoice notes
         qr_code_data:
           type: string
+          description: Encrypted QR code data from FIRS
+          example: "iVBORw0KGgoAAAANSUhEUgAA..."
         taxes:
           type: array
           items:
-            $ref: '#/components/schemas/TaxBreakdown'
+            $ref: "#/components/schemas/TaxBreakdown"
         items:
           type: array
           items:
-            $ref: '#/components/schemas/InvoiceItem'
+            $ref: "#/components/schemas/InvoiceItem"
     InvoiceItem:
       type: object
       required:
@@ -670,9 +961,11 @@ components:
         - created_at
         - updated_at
         - active
+        - tax_rate
       properties:
         id:
           type: string
+          example: invoiceitem_01JWBCPPJHE271WCDRRPSRQ7WS
         created_at:
           type: string
           format: date-time
@@ -683,27 +976,39 @@ components:
           type: boolean
         item_id:
           type: string
+          example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
         line_extension_amount:
           type: number
           format: double
+          example: 10000
         quantity:
           type: number
           format: double
+          example: 1
         price_amount:
           type: number
           format: double
+          example: 10000.00
         discount_rate:
           type: number
           format: double
+          example: 0.05
         fee_rate:
           type: number
           format: double
+          example: 0.02
         discount_amount:
           type: number
           format: double
+          example: 500
         fee_amount:
           type: number
           format: double
+          example: 200
+        tax_rate:
+          type: number
+          format: double
+          example: 0.075
     Pagination:
       type: object
       properties:
@@ -724,6 +1029,7 @@ components:
       properties:
         irn:
           type: string
+          example: 135620605NANVTQ-E3A89069-20250526
         issue_date:
           type: string
           format: date
@@ -737,15 +1043,42 @@ components:
       properties:
         tax_category_code:
           type: string
+          example: STANDARD_VAT
         tax_amount:
           type: number
           format: double
+          example: 727.5
         taxable_amount:
           type: number
           format: double
+          example: 9700
         tax_percentage:
           type: number
           format: double
+          example: 7.5
+    InvoiceDownload:
+      type: object
+      required:
+        - id
+        - invoice_reference_number
+        - payment_status
+      properties:
+        id:
+          type: string
+          example: transmission_01JW6E2NHP1ABCEVCM0FBK265Q
+        invoice_reference_number:
+          type: string
+          example: 135620605NANVTQ-E3A89069-20250526
+        payment_status:
+          type: string
+          enum: [PENDING, REJECTED]
+          example: REJECTED
+        data:
+          type: object
+          additionalProperties: true
+        acknowledged_at:
+          type: string
+          format: date-time
   parameters:
     After:
       in: query
@@ -753,9 +1086,7 @@ components:
       required: false
       schema:
         type: string
-        description: >-
-          When paginating results, a pointer to an ID after which we want
-          results
+        description: When paginating results, a pointer to an ID after which we want results
         example: item_01HC3J1VVVM05YCTS61G7V3KC6
     Before:
       in: query
@@ -763,9 +1094,7 @@ components:
       required: false
       schema:
         type: string
-        description: >-
-          When paginating results, a pointer to an ID before which we want
-          results
+        description: When paginating results, a pointer to an ID before which we want results
         example: item_01HC3J1VVVM05YCTS61G7V3KC6
     PageSize:
       in: query
@@ -779,7 +1108,7 @@ components:
         example: 20
   responses:
     default:
-      $ref: '#/components/responses/Error'
+      $ref: "#/components/responses/Error"
     Error:
       description: Error response
       content:
