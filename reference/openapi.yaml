@@ -513,6 +513,31 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Invoice"
+  /invoices/irn/{invoice_reference_number}:
+    get:
+      tags:
+        - Invoices
+      summary: Get a business invoice by the invoice reference number
+      description: Retrieves information about an invoice given their invoice reference number on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: invoice_reference_number
+          required: true
+          schema:
+            type: string
+            description: Invoice Reference Number
+            example: 2226499116NGE7G-E3A89069-20250601
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Invoice"
   /invoice-downloads:
     get:
       tags:
@@ -570,6 +595,56 @@ paths:
                 reference:
                   type: string
                   example: PY012001
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InvoiceDownload"
+  /invoice-downloads/{download_id}:
+    get:
+      tags:
+        - Invoice Downloads
+      summary: Get a FIRS Invoice Download
+      description: Retrieves information about an invoice download given their ID on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: download_id
+          required: true
+          schema:
+            type: string
+            description: Invoice download ID in Digitax
+            example: transmission_01JW6DXQ61ZGP2T6QDHSM34SGP
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InvoiceDownload"
+  /invoice-downloads/irn/{invoice_reference_number}:
+    get:
+      tags:
+        - Invoice Downloads
+      summary: Get a business invoice download by the invoice reference number
+      description: Retrieves information about an invoice download given their invoice reference number on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: invoice_reference_number
+          required: true
+          schema:
+            type: string
+            description: Invoice Reference Number
+            example: 2226499116NGE7G-E3A89069-20250601
       responses:
         default:
           $ref: "#/components/responses/Error"
