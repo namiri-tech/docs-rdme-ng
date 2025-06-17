@@ -1,4 +1,0 @@
----
-title: /items
-hidden: false
----

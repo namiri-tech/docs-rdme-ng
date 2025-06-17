@@ -1,4 +1,0 @@
----
-title: /info
-hidden: false
----
