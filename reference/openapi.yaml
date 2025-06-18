@@ -1,7 +1,15 @@
-openapi: 3.0.0
+openapi: 3.0.1
 info:
   title: DigiTax Nigeria API
-  version: 1.0.0
+  description: DigiTax Nigeria Public API
+  version: '3'
+  termsOfService: https://digitax.tech/page/terms
+  contact:
+    name: DigiTax
+    url: https://digitax.tech
+    email: info@digitax.tech
+  license:
+    name: Apache 2.0
 servers:
   - url: https://api.digitax.tech/ng/v1
     description: Production
