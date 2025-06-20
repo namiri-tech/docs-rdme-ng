@@ -2,7 +2,7 @@ openapi: 3.0.1
 info:
   title: DigiTax Nigeria API
   description: DigiTax Nigeria Public API
-  version: '3'
+  version: "3"
   termsOfService: https://digitax.tech/page/terms
   contact:
     name: DigiTax
@@ -24,16 +24,16 @@ paths:
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS countries
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Country'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/Country"
   /resources/currencies:
     get:
       tags:
@@ -42,16 +42,16 @@ paths:
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS currencies
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Currency'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/Currency"
   /resources/tax-categories:
     get:
       tags:
@@ -60,16 +60,16 @@ paths:
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS tax categories
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/TaxCategory'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/TaxCategory"
   /resources/invoice-types:
     get:
       tags:
@@ -78,16 +78,16 @@ paths:
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS invoice types
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/CommonCode'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/CommonCode"
   /resources/payment-means:
     get:
       tags:
@@ -96,16 +96,16 @@ paths:
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS payment means
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/CommonCode'
-        default:
-          $ref: '#/components/responses/Error'
+                  $ref: "#/components/schemas/CommonCode"
   /info:
     get:
       tags:
@@ -114,14 +114,14 @@ paths:
       security:
         - apiKeyAuth: []
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: FIRS Info
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Branch'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Branch"
   /parties:
     get:
       tags:
@@ -130,11 +130,13 @@ paths:
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: '#/components/parameters/Before'
-        - $ref: '#/components/parameters/After'
-        - $ref: '#/components/parameters/PageSize'
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS parties
           content:
             application/json:
@@ -145,13 +147,11 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: '#/components/schemas/Pagination'
+                    $ref: "#/components/schemas/Pagination"
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Party'
-        default:
-          $ref: '#/components/responses/Error'
+                      $ref: "#/components/schemas/Party"
     post:
       tags:
         - Parties
@@ -181,18 +181,18 @@ paths:
                   example: John Doe
                 phone:
                   type: string
-                  example: '+2341234567890'
+                  example: "+2341234567890"
                 address:
-                  $ref: '#/components/schemas/Address'
+                  $ref: "#/components/schemas/Address"
       responses:
-        '201':
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
           description: Party created
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Party'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Party"
   /parties/{party_id}:
     get:
       tags:
@@ -210,14 +210,14 @@ paths:
             description: Party ID on DigiTax
             example: party_01JWB8QHB4C1Q437MXCPR0XAZW
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Party'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Party"
   /items:
     get:
       tags:
@@ -226,11 +226,13 @@ paths:
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: '#/components/parameters/Before'
-        - $ref: '#/components/parameters/After'
-        - $ref: '#/components/parameters/PageSize'
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS items
           content:
             application/json:
@@ -241,13 +243,11 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: '#/components/schemas/Pagination'
+                    $ref: "#/components/schemas/Pagination"
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Item'
-        default:
-          $ref: '#/components/responses/Error'
+                      $ref: "#/components/schemas/Item"
     post:
       tags:
         - Items
@@ -280,11 +280,11 @@ paths:
                   example: Digitax Product 001
                 hsn_code:
                   type: string
-                  example: 2847
+                  example: 2847.00
                 price_amount:
                   type: number
                   format: double
-                  example: 10000
+                  example: 10000.00
                 currency_code:
                   type: string
                   example: NGN
@@ -297,14 +297,14 @@ paths:
                 price_unit:
                   type: string
       responses:
-        '201':
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
           description: Item created
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Item'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Item"
   /items/{item_id}:
     get:
       tags:
@@ -322,14 +322,14 @@ paths:
             description: Item ID on DigiTax
             example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Item'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Item"
   /invoices:
     get:
       tags:
@@ -338,11 +338,13 @@ paths:
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: '#/components/parameters/Before'
-        - $ref: '#/components/parameters/After'
-        - $ref: '#/components/parameters/PageSize'
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS invoices
           content:
             application/json:
@@ -353,13 +355,11 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: '#/components/schemas/Pagination'
+                    $ref: "#/components/schemas/Pagination"
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Invoice'
-        default:
-          $ref: '#/components/responses/Error'
+                      $ref: "#/components/schemas/Invoice"
     post:
       tags:
         - Invoices
@@ -400,19 +400,19 @@ paths:
                   example: NGN
                 buyer_reference:
                   type: string
-                  example: '#INV-001'
+                  example: "#INV-001"
                 billing_reference:
                   type: array
                   items:
-                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                    $ref: "#/components/schemas/InvoiceDocumentReference"
                 dispatch_document_reference:
-                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
                 receipt_document_reference:
-                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
                 originator_document_reference:
-                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
                 contract_document_reference:
-                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
                 due_date:
                   type: string
                   format: date
@@ -439,7 +439,7 @@ paths:
                       price_amount:
                         type: number
                         format: double
-                        example: 10000
+                        example: 10000.00
                       discount_rate:
                         type: number
                         format: double
@@ -453,14 +453,14 @@ paths:
                         format: double
                         example: 0.075
       responses:
-        '201':
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
           description: Invoice created
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Invoice'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Invoice"
   /invoices/{invoice_id}:
     get:
       tags:
@@ -478,14 +478,14 @@ paths:
             description: Invoice ID on DigiTax
             example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Invoice'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Invoice"
   /invoices/{invoice_id}/pay:
     put:
       tags:
@@ -513,22 +513,20 @@ paths:
                   type: string
                   example: PY012001
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Invoice'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Invoice"
   /invoices/irn/{invoice_reference_number}:
     get:
       tags:
         - Invoices
       summary: Get a business invoice by the invoice reference number
-      description: >-
-        Retrieves information about an invoice given their invoice reference
-        number on DigiTax
+      description: Retrieves information about an invoice given their invoice reference number on DigiTax
       security:
         - apiKeyAuth: []
       parameters:
@@ -540,14 +538,14 @@ paths:
             description: Invoice Reference Number
             example: 2226499116NGE7G-E3A89069-20250601
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Invoice'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/Invoice"
   /invoice-downloads:
     get:
       tags:
@@ -557,11 +555,13 @@ paths:
       security:
         - apiKeyAuth: []
       parameters:
-        - $ref: '#/components/parameters/Before'
-        - $ref: '#/components/parameters/After'
-        - $ref: '#/components/parameters/PageSize'
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: A list of FIRS invoice downloads
           content:
             application/json:
@@ -572,13 +572,11 @@ paths:
                   - data
                 properties:
                   cursor:
-                    $ref: '#/components/schemas/Pagination'
+                    $ref: "#/components/schemas/Pagination"
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/InvoiceDownload'
-        default:
-          $ref: '#/components/responses/Error'
+                      $ref: "#/components/schemas/InvoiceDownload"
   /invoice-downloads/{download_id}/reject:
     put:
       tags:
@@ -606,22 +604,20 @@ paths:
                   type: string
                   example: PY012001
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/InvoiceDownload'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/InvoiceDownload"
   /invoice-downloads/{download_id}:
     get:
       tags:
         - Invoice Downloads
       summary: Get a FIRS Invoice Download
-      description: >-
-        Retrieves information about an invoice download given their ID on
-        DigiTax
+      description: Retrieves information about an invoice download given their ID on DigiTax
       security:
         - apiKeyAuth: []
       parameters:
@@ -633,22 +629,20 @@ paths:
             description: Invoice download ID in Digitax
             example: transmission_01JW6DXQ61ZGP2T6QDHSM34SGP
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/InvoiceDownload'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/InvoiceDownload"
   /invoice-downloads/irn/{invoice_reference_number}:
     get:
       tags:
         - Invoice Downloads
       summary: Get a business invoice download by the invoice reference number
-      description: >-
-        Retrieves information about an invoice download given their invoice
-        reference number on DigiTax
+      description: Retrieves information about an invoice download given their invoice reference number on DigiTax
       security:
         - apiKeyAuth: []
       parameters:
@@ -660,14 +654,14 @@ paths:
             description: Invoice Reference Number
             example: 2226499116NGE7G-E3A89069-20250601
       responses:
-        '200':
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/InvoiceDownload'
-        default:
-          $ref: '#/components/responses/Error'
+                $ref: "#/components/schemas/InvoiceDownload"
 components:
   schemas:
     Country:
@@ -813,7 +807,7 @@ components:
           type: string
           example: 08289985-9146
         address:
-          $ref: '#/components/schemas/Address'
+          $ref: "#/components/schemas/Address"
     Party:
       type: object
       required:
@@ -844,12 +838,12 @@ components:
           example: John Doe
         phone:
           type: string
-          example: '+2341234567890'
+          example: "+2341234567890"
         email:
           type: string
           example: john@doe.com
         address:
-          $ref: '#/components/schemas/Address'
+          $ref: "#/components/schemas/Address"
     Item:
       type: object
       required:
@@ -979,7 +973,7 @@ components:
           example: 150835152MSVKRR-E3A89069-20250528
         buyer_reference:
           type: string
-          example: '#INV-001'
+          example: "#INV-001"
         payment_status:
           type: string
           example: PENDING
@@ -988,12 +982,7 @@ components:
           format: date
         status:
           type: string
-          enum:
-            - DRAFT
-            - PENDING
-            - CONFIRMED
-            - FAILED
-            - COMPLETED
+          enum: [DRAFT, PENDING, CONFIRMED, FAILED, COMPLETED]
         line_extension_amount:
           type: number
           format: double
@@ -1017,15 +1006,15 @@ components:
         billing_reference:
           type: array
           items:
-            $ref: '#/components/schemas/InvoiceDocumentReference'
+            $ref: "#/components/schemas/InvoiceDocumentReference"
         dispatch_document_reference:
-          $ref: '#/components/schemas/InvoiceDocumentReference'
+          $ref: "#/components/schemas/InvoiceDocumentReference"
         receipt_document_reference:
-          $ref: '#/components/schemas/InvoiceDocumentReference'
+          $ref: "#/components/schemas/InvoiceDocumentReference"
         originator_document_reference:
-          $ref: '#/components/schemas/InvoiceDocumentReference'
+          $ref: "#/components/schemas/InvoiceDocumentReference"
         contract_document_reference:
-          $ref: '#/components/schemas/InvoiceDocumentReference'
+          $ref: "#/components/schemas/InvoiceDocumentReference"
         due_date:
           type: string
           format: date
@@ -1035,15 +1024,15 @@ components:
         qr_code_data:
           type: string
           description: Encrypted QR code data from FIRS
-          example: iVBORw0KGgoAAAANSUhEUgAA...
+          example: "iVBORw0KGgoAAAANSUhEUgAA..."
         taxes:
           type: array
           items:
-            $ref: '#/components/schemas/TaxBreakdown'
+            $ref: "#/components/schemas/TaxBreakdown"
         items:
           type: array
           items:
-            $ref: '#/components/schemas/InvoiceItem'
+            $ref: "#/components/schemas/InvoiceItem"
     InvoiceItem:
       type: object
       required:
@@ -1082,7 +1071,7 @@ components:
         price_amount:
           type: number
           format: double
-          example: 10000
+          example: 10000.00
         discount_rate:
           type: number
           format: double
@@ -1165,9 +1154,7 @@ components:
           example: 135620605NANVTQ-E3A89069-20250526
         payment_status:
           type: string
-          enum:
-            - PENDING
-            - REJECTED
+          enum: [PENDING, REJECTED]
           example: REJECTED
         data:
           type: object
@@ -1182,9 +1169,7 @@ components:
       required: false
       schema:
         type: string
-        description: >-
-          When paginating results, a pointer to an ID after which we want
-          results
+        description: When paginating results, a pointer to an ID after which we want results
         example: item_01HC3J1VVVM05YCTS61G7V3KC6
     Before:
       in: query
@@ -1192,9 +1177,7 @@ components:
       required: false
       schema:
         type: string
-        description: >-
-          When paginating results, a pointer to an ID before which we want
-          results
+        description: When paginating results, a pointer to an ID before which we want results
         example: item_01HC3J1VVVM05YCTS61G7V3KC6
     PageSize:
       in: query
@@ -1208,7 +1191,7 @@ components:
         example: 20
   responses:
     default:
-      $ref: '#/components/responses/Error'
+      $ref: "#/components/responses/Error"
     Error:
       description: Error response
       content:
