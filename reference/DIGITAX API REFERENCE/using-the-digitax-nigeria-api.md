@@ -67,7 +67,7 @@ These are the steps required to get up and running on the API - [Prerequisites o
 
 For some API endpoints like [**Create item**](ref:post_items), body parameters (also called query parameters) are passed along with the GET, POST, PUT and DELETE requests.
 
-\<!-- TODO: Add item/ invoice attributes -->
+{/* TODO: Add item/ invoice attributes and link them here */}
 
 The responses contain attributes related to the passed-in query parameters, which unveil the data model used in the application.
 
