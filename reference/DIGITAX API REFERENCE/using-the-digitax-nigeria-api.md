@@ -26,10 +26,11 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
   </Card>
 
   <Card title="Explore core DigiTax Nigeria API endpoints" icon="fa-plug">
-    * [/info](\[https://ng.docs.digitax.tech/reference/get_info)
+    * [/info](https://ng.docs.digitax.tech/reference/get_info)
     * [/parties](https://ng.docs.digitax.tech/reference/get_parties)
     * [/items](https://ng.docs.digitax.tech/reference/get_items)
-    * [/invoices](\[https://ng.docs.digitax.tech/reference/get_invoices)
+    * [/invoices](https://ng.docs.digitax.tech/reference/get_invoices)
+      * [/invoice-downloads](https://ng.docs.digitax.tech/reference/get_invoice-downloads)
   </Card>
 </Cards>
 
@@ -50,18 +51,23 @@ The DigiTax API is built with various industry standards for API platforms in mi
 * RESTful API
 * OpenAPI (formerly Swagger): An open-source standard that allows a standardized way to generate, document, and test our APIs.
 * Secure authentication with cryptographically signed JWTs (JSON Web Tokens)
-* [Callback URLs](ref:feature-callback-urls)
 * [Standard HTTP response codes](ref:errors-and-other-http-response-codes) for errors and successful requests
 
 ### Using DigiTax API
 
-To use this API, you'll need access to DigiTax Dashboard environment to get an X-API-Key. Get in touch with [our team](mailto:support@namiri.tech).
+To use this API, you'll need access to DigiTax Dashboard environment to get an API Key. You can test our solutions (DigiTax Dashboard, DigiTax App and DigiTax API) for free using test businesses.
 
-These are the steps required to get up and running - [Prerequisites of using DigiTax API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
+These are the steps required to get up and running on the API - [Prerequisites of using DigiTax API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
+
+> ℹ️ You can test our solutions before committing
+>
+> For commercial conversations, get in touch with <Anchor label="our team" target="_blank" href="mailto:support@namiri.tech">our team</Anchor>
 
 ### API endpoint parameters
 
 For some API endpoints like [**Create item**](ref:post_items), body parameters (also called query parameters) are passed along with the GET, POST, PUT and DELETE requests.
+
+\<!-- TODO: Add item/ invoice attributes -->
 
 The responses contain attributes related to the passed-in query parameters, which unveil the data model used in the application.
 
