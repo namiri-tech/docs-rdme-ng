@@ -30,7 +30,7 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
     * [/parties](https://ng.docs.digitax.tech/reference/get_parties)
     * [/items](https://ng.docs.digitax.tech/reference/get_items)
     * [/invoices](https://ng.docs.digitax.tech/reference/get_invoices)
-      * [/invoice-downloads](https://ng.docs.digitax.tech/reference/get_invoice-downloads)
+    * [/invoice-downloads](https://ng.docs.digitax.tech/reference/get_invoice-downloads)
   </Card>
 </Cards>
 
