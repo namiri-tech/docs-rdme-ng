@@ -109,7 +109,7 @@ paths:
   /info:
     get:
       tags:
-        - Branch
+        - Business
       summary: Get FIRS Info
       security:
         - apiKeyAuth: []
@@ -274,13 +274,13 @@ paths:
                   example: STANDARD_VAT
                 product_category:
                   type: string
-                  example: 51472903
+                  example: "51472903"
                 item_name:
                   type: string
                   example: Digitax Product 001
                 hsn_code:
                   type: string
-                  example: 2847.00
+                  example: "2847.00"
                 price_amount:
                   type: number
                   format: double
@@ -391,7 +391,7 @@ paths:
                   format: date
                 invoice_type_code:
                   type: string
-                  example: 381
+                  example: "381"
                 tax_point_date:
                   type: string
                   format: date
@@ -461,12 +461,276 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Invoice"
+  /credit-notes:
+    get:
+      tags:
+        - Invoices
+      summary: Get FIRS Credit Notes
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS credit notes
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: "#/components/schemas/Pagination"
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Invoice"
+    post:
+      tags:
+        - Invoices
+      summary: Create Credit Note
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - party_id
+                - invoice_date
+                - issue_date
+                - invoice_type_code
+                - document_currency_code
+                - items
+                - invoice_ids
+              properties:
+                party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                invoice_date:
+                  type: string
+                  format: date
+                issue_date:
+                  type: string
+                  format: date
+                invoice_type_code:
+                  type: string
+                  example: "380"
+                tax_point_date:
+                  type: string
+                  format: date
+                document_currency_code:
+                  type: string
+                  example: NGN
+                buyer_reference:
+                  type: string
+                  example: "#INV-001"
+                invoice_ids:
+                  type: array
+                  items:
+                    type: string
+                  example: ["invoice_01JWR2VH5B3FC4JRXNJDQZCVE6", "invoice_01JWR2D80SFRN4QJB8AKAMM1FM"]
+                  description: List of invoice IDs to which this credit note applies
+                dispatch_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                receipt_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                originator_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                contract_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                due_date:
+                  type: string
+                  format: date
+                notes:
+                  type: string
+                  example: Sample invoice notes
+                items:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - item_id
+                      - quantity
+                      - price_amount
+                      - tax_rate
+                    properties:
+                      item_id:
+                        type: string
+                        example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+                      quantity:
+                        type: number
+                        format: double
+                        example: 1
+                      price_amount:
+                        type: number
+                        format: double
+                        example: 10000.00
+                      discount_rate:
+                        type: number
+                        format: double
+                        example: 0.05
+                      fee_rate:
+                        type: number
+                        format: double
+                        example: 0.02
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
+          description: Invoice created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Invoice"
+  /debit-notes:
+    get:
+      tags:
+        - Invoices
+      summary: Get FIRS Debit Notes
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: "#/components/parameters/Before"
+        - $ref: "#/components/parameters/After"
+        - $ref: "#/components/parameters/PageSize"
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: A list of FIRS debit notes
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: "#/components/schemas/Pagination"
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Invoice"
+    post:
+      tags:
+        - Invoices
+      summary: Create Debit Note
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - party_id
+                - invoice_date
+                - issue_date
+                - document_currency_code
+                - items
+                - invoice_ids
+              properties:
+                party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                invoice_date:
+                  type: string
+                  format: date
+                issue_date:
+                  type: string
+                  format: date
+                tax_point_date:
+                  type: string
+                  format: date
+                document_currency_code:
+                  type: string
+                  example: NGN
+                buyer_reference:
+                  type: string
+                  example: "#INV-001"
+                invoice_ids:
+                  type: array
+                  items:
+                    type: string
+                  example: ["invoice_01JWR2VH5B3FC4JRXNJDQZCVE6", "invoice_01JWR2D80SFRN4QJB8AKAMM1FM"]
+                  description: List of invoice IDs to which this debit note applies
+                dispatch_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                receipt_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                originator_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                contract_document_reference:
+                  $ref: "#/components/schemas/InvoiceDocumentReference"
+                due_date:
+                  type: string
+                  format: date
+                notes:
+                  type: string
+                  example: Sample invoice notes
+                items:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - item_id
+                      - quantity
+                      - price_amount
+                      - tax_rate
+                    properties:
+                      item_id:
+                        type: string
+                        example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+                      quantity:
+                        type: number
+                        format: double
+                        example: 1
+                      price_amount:
+                        type: number
+                        format: double
+                        example: 10000.00
+                      discount_rate:
+                        type: number
+                        format: double
+                        example: 0.05
+                      fee_rate:
+                        type: number
+                        format: double
+                        example: 0.02
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "201":
+          description: Invoice created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Invoice"
   /invoices/{invoice_id}:
     get:
       tags:
         - Invoices
       summary: Get a business invoice
-      description: Retrieves information about an invoice given their ID on DigiTax
+      description: Retrieves information about an invoice, credit note or debit note given their ID on DigiTax
       security:
         - apiKeyAuth: []
       parameters:
@@ -486,12 +750,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Invoice"
-  /invoices/{invoice_id}/pay:
+  /invoices/{invoice_id}/payment-status:
     put:
       tags:
         - Invoices
-      summary: Update an invoice payment status to paid
-      description: Update an invoice payment status to paid
+      summary: Update an invoice payment status
+      description: Update an invoice payment status
       security:
         - apiKeyAuth: []
       parameters:
@@ -508,7 +772,13 @@ paths:
           application/json:
             schema:
               type: object
+              required:
+                - payment_status
               properties:
+                payment_status:
+                  type: string
+                  enum: [REJECTED, PAID]
+                  example: REJECTED
                 reference:
                   type: string
                   example: PY012001
@@ -526,7 +796,7 @@ paths:
       tags:
         - Invoices
       summary: Get a business invoice by the invoice reference number
-      description: Retrieves information about an invoice given their invoice reference number on DigiTax
+      description: Retrieves information about an invoice, credit note or debit note given their invoice reference number on DigiTax
       security:
         - apiKeyAuth: []
       parameters:
@@ -577,41 +847,6 @@ paths:
                     type: array
                     items:
                       $ref: "#/components/schemas/InvoiceDownload"
-  /invoice-downloads/{download_id}/reject:
-    put:
-      tags:
-        - Invoice Downloads
-      summary: Reject FIRS Invoice Download payment
-      description: Reject FIRS Invoice Download payment
-      security:
-        - apiKeyAuth: []
-      parameters:
-        - in: path
-          name: download_id
-          required: true
-          schema:
-            type: string
-            description: Invoice download ID in Digitax
-            example: transmission_01JW6DXQ61ZGP2T6QDHSM34SGP
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                reference:
-                  type: string
-                  example: PY012001
-      responses:
-        default:
-          $ref: "#/components/responses/Error"
-        "200":
-          description: Success
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/InvoiceDownload"
   /invoice-downloads/{download_id}:
     get:
       tags:
@@ -653,6 +888,31 @@ paths:
             type: string
             description: Invoice Reference Number
             example: 2226499116NGE7G-E3A89069-20250601
+      responses:
+        default:
+          $ref: "#/components/responses/Error"
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InvoiceDownload"
+  /invoice-downloads/{download_id}/confirm:
+    get:
+      tags:
+        - Invoice Downloads
+      summary: Confirm a business invoice download's payment status
+      description: Confirms an invoice download's payment status on FIRS given their ID on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: download_id
+          required: true
+          schema:
+            type: string
+            description: Invoice download ID in Digitax
+            example: transmission_01JW6DXQ61ZGP2T6QDHSM34SGP
       responses:
         default:
           $ref: "#/components/responses/Error"
@@ -717,8 +977,8 @@ components:
       required:
         - code
         - name
-        - tax_rate
         - has_rate
+        - tax_rate
       properties:
         code:
           type: string
@@ -730,6 +990,7 @@ components:
           type: number
           format: double
           example: 0.075
+          nullable: true
         has_rate:
           type: boolean
           example: true
@@ -741,7 +1002,7 @@ components:
       properties:
         code:
           type: string
-          example: 389
+          example: "389"
         value:
           type: string
           example: Purchase Order
@@ -761,7 +1022,7 @@ components:
           example: Lagos
         postal_zone:
           type: string
-          example: 100001
+          example: "100001"
         country_code:
           type: string
           example: NGA
@@ -876,13 +1137,13 @@ components:
           example: STANDARD_VAT
         product_category:
           type: string
-          example: 51472903
+          example: "51472903"
         item_name:
           type: string
           example: Digitax Product 001
         hsn_code:
           type: string
-          example: 2847
+          example: "2847.00"
         item_number:
           type: string
           example: ITM25-148-144544241-S6AM78
@@ -922,6 +1183,9 @@ components:
         - payable_amount
         - tax_amount
         - items
+        - transmitted_at
+        - signed_at
+        - validated_at
       properties:
         id:
           type: string
@@ -948,15 +1212,18 @@ components:
         transmitted_at:
           type: string
           format: date-time
+          nullable: true
         signed_at:
           type: string
           format: date-time
+          nullable: true
         validated_at:
           type: string
           format: date-time
+          nullable: true
         invoice_type_code:
           type: string
-          example: 381
+          example: "381"
         tax_point_date:
           type: string
           format: date
