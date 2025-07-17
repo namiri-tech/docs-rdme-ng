@@ -1,4 +1,0 @@
----
-title: Items
-hidden: false
----
