@@ -1,7 +1,7 @@
 ---
 title: 'Feature: Callback URLs'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
