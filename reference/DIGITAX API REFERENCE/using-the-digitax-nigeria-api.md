@@ -21,7 +21,7 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 </Cards>
 
 <Cards columns={1}>
-  <Card title="Explore resources used in DigiTax Nigeria API endpoints" icon="fa-book">
+  <Card title="Explore resources endpoints under DigiTax Nigeria API" icon="fa-book">
     Consider endpoints under **resources** as references for data required for other endpoints.
   </Card>
 
