@@ -34,4 +34,4 @@ An invoice is created by the taxpayer is saved on DigiTax while being transmitte
 
 Review the diagram below.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/4654b31e831af6b63fd2b02a86613033f82eb0ae1f9a3364d22316dab969bd91-Digitax_Architecture_Diagram.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/6b446b991fac8fbc80bcb20c4c4ac95e9134bc9c39b73d8a16e63627d253482e-DigiTax_Architecture_Diagram.drawio_1.png" />
