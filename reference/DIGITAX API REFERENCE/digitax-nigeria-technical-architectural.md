@@ -20,7 +20,7 @@ Below are diagrams for your attention regarding the infrastructure supporting Di
 
 An invoice is created by the taxpayer is saved on DigiTax while being transmitted to the Tax regulator (FIRS)
 
-![](https://files.readme.io/bf59304d89ebc9058a45afcd0961893e9249438be1e2e38568598ae73454c51d-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/bf59304d89ebc9058a45afcd0961893e9249438be1e2e38568598ae73454c51d-image.png" />
 
 ## High-level technical architecture
 
@@ -34,4 +34,4 @@ An invoice is created by the taxpayer is saved on DigiTax while being transmitte
 
 Review the diagram below.
 
-<Image align="center" src="https://files.readme.io/4654b31e831af6b63fd2b02a86613033f82eb0ae1f9a3364d22316dab969bd91-Digitax_Architecture_Diagram.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/4654b31e831af6b63fd2b02a86613033f82eb0ae1f9a3364d22316dab969bd91-Digitax_Architecture_Diagram.png" />
