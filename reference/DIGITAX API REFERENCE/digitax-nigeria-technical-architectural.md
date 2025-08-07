@@ -2,7 +2,7 @@
 title: DigiTax Nigeria technical architecture reference
 deprecated: false
 hidden: true
-icon: 🥷
+icon: fad fa-user-ninja
 metadata:
   robots: index
 ---
