@@ -7,3 +7,6 @@
 - get_invoices-invoice-id
 - put_invoices-invoice-id-payment-status
 - get_invoices-irn-invoice-reference-number
+- post_detailed-invoices
+- post_credit-notes-with-item-codes
+- post_debit-notes-with-item-codes
