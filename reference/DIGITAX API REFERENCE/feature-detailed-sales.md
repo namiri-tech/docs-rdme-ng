@@ -17,17 +17,6 @@ metadata:
 
 For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C transactions, the party details are optional, leave the TIN, name, and email fields as empty strings.
 
-### Items Details
-
-Each item must have a unique item\_code; otherwise, the endpoint will return an error.
-
-```json
-\{ &#x20;
-&#x20; "message": "item\_code has already been used",
-&#x20; "code": "409"
-}
-```
-
 More details on, the `document_currency_code`, `tax_category_code`, `invoice_type_code` etc... can be found under the resource section [here](https://ng.docs.digitax.tech/reference/get_resources-countries#/).
 
 ### Tax Calculation
