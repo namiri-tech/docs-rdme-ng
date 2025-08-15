@@ -21,12 +21,12 @@ More details on, the `document_currency_code`, `tax_category_code`, `invoice_typ
 
 ### Tax Calculation
 
-All values must be ###tax exclusive. The tax will be calculated using the `tax_rate` specified in the items object.
+All values must be **tax exclusive**. The tax will be calculated using the `tax_rate` specified in the items object.
 
 ### Endpoint:
 
 ```json
-[https://api.digitax.tech/ng/v1/detailed-invoices](https://api.digitax.tech/ng/v1/detailed-invoices)
+https://api.digitax.tech/ng/v1/detailed-invoices
 ```
 
 ### Payload
