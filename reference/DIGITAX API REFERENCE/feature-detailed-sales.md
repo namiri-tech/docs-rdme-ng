@@ -123,3 +123,71 @@ More details on, the `document_currency_code`, `tax_category_code`, `invoice_typ
   ]
 }
 ```
+
+<br />
+
+### Credit and Debit Notes Support
+
+The main difference between detailed credit and debit notes and the original credit and debit notes endpoints is that they use the `item_code` in place of the `item_id` . But the item details and party aren't passed because both were already created when creating the original invoice
+
+Sample Credit Note Request
+
+```
+https://api.digitax.tech/ng/v1/credit-notes-with-item-codes
+```
+
+```json
+{
+  "return_date": "2025-08-15",
+  "issue_date": "2025-08-15",
+  "tax_point_date": "2025-08-15",
+  "document_currency_code": "NGN",
+  "buyer_reference": "#CN-001",
+  "invoice_id": "invoice_01JWR2VH5B3FC4JRXNJDQZCVE6",
+  "due_date": "2025-08-15",
+  "notes": "Sample credit note notes",
+  "callback_url": "https://example.com/callback",
+  "items": [
+    {
+      "item_code": "8000020107057",
+      "quantity": 1,
+      "unit_price": 10000,
+      "discount_rate": 0.05,
+      "fee_rate": 0.02,
+      "tax_rate": 0.075
+    }
+  ]
+}
+```
+
+<br />
+
+### Sample Debit Note Request
+
+```json
+https://api.digitax.tech/ng/v1/debit-notes-with-item-codes
+```
+
+```json
+{
+  "debit_date": "2025-08-15",
+  "issue_date": "2025-08-15",
+  "tax_point_date": "2025-08-15",
+  "document_currency_code": "NGN",
+  "buyer_reference": "#DN-001",
+  "invoice_id": "invoice_01JWR2VH5B3FC4JRXNJDQZCVE6",
+  "due_date": "2025-08-15",
+  "notes": "Sample debit note notes",
+  "callback_url": "https://example.com/callback",
+  "items": [
+    {
+      "item_code": "8000020107057",
+      "quantity": 1,
+      "unit_price": 10000,
+      "discount_rate": 0.05,
+      "fee_rate": 0.02,
+      "tax_rate": 0.075
+    }
+  ]
+}
+```
