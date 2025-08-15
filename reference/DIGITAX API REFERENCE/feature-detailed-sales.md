@@ -26,7 +26,7 @@ More details on, the `document_currency_code`, `tax_category_code`, `invoice_typ
 ### Endpoint:
 
 ```json
-(https://api.digitax.tech/ng/v1/detailed-invoices)
+https://api.digitax.tech/ng/v1/detailed-invoices
 ```
 
 ### Payload
