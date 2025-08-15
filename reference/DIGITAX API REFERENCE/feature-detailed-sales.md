@@ -134,3 +134,9 @@ All values must be ###tax exclusive. The tax will be calculated using the `tax_r
   ]
 }
 ```
+
+This flow also supports both credit and debit notes.
+
+Credit Notes Endpoint: [https://api.digitax.tech/ng/v1/credit-notes-with-item-codes](https://api.digitax.tech/ng/v1/credit-notes-with-item-codes)
+
+Debit Notes Endpoint: [https://api.digitax.tech/ng/v1/debit-notes-with-item-codes](https://api.digitax.tech/ng/v1/debit-notes-with-item-codes)
