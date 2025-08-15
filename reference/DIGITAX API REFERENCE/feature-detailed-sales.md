@@ -17,16 +17,16 @@ metadata:
 
 For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C transactions, the party details are optional, leave the TIN, name, and email fields as empty strings.
 
-More details on, the `document_currency_code`, `tax_category_code`, `invoice_type_code` etc... can be found under the resource section [here](https://ng.docs.digitax.tech/reference/get_resources-countries#/).
-
 ### Tax Calculation
 
-All values must be **tax exclusive**. The tax will be calculated using the `tax_rate` specified in the items object.
+The item `unit_price` must be tax exclusive. The tax will be calculated using the `tax_rate` specified in the item object; while factoring in the fee and discount.
+
+More details on, the `document_currency_code`, `tax_category_code`, `invoice_type_code` etc... can be found under the resource section [here](https://ng.docs.digitax.tech/reference/get_resources-countries#/).
 
 ### Endpoint:
 
 ```json
-https://api.digitax.tech/ng/v1/detailed-invoices
+[https://api.digitax.tech/ng/v1/detailed-invoices](https://api.digitax.tech/ng/v1/detailed-invoices)
 ```
 
 ### Payload
@@ -123,9 +123,3 @@ https://api.digitax.tech/ng/v1/detailed-invoices
   ]
 }
 ```
-
-This flow also supports both credit and debit notes.
-
-Credit Notes Endpoint: [https://api.digitax.tech/ng/v1/credit-notes-with-item-codes](https://api.digitax.tech/ng/v1/credit-notes-with-item-codes)
-
-Debit Notes Endpoint: [https://api.digitax.tech/ng/v1/debit-notes-with-item-codes](https://api.digitax.tech/ng/v1/debit-notes-with-item-codes)
