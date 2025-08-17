@@ -15,13 +15,13 @@ metadata:
 
 ### Party Details
 
-For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C transactions, the party details are optional, leave the TIN, name, and email fields as empty strings.
+For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C transactions, the party details are optional; leave the fields "party\_tin","party\_name" and "party\_email" as empty strings.
 
 ### Tax Calculation
 
 The item `unit_price` must be tax exclusive. The tax will be calculated using the `tax_rate` specified in the item object; while factoring in the fee and discount.
 
-More details on, the `document_currency_code`, `tax_category_code`, `invoice_type_code` etc... can be found under the resource section [here](https://ng.docs.digitax.tech/reference/get_resources-countries#/).
+More details on, the `document_currency_code`, `tax_category_code`, `invoice_type_code` etc... can be found under the resource section [here](https://ng.docs.digitax.tech/reference/using-the-digitax-nigeria-api#/).
 
 ### Endpoint:
 
