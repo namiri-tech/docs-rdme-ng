@@ -33,32 +33,32 @@ https://api.digitax.tech/ng/v1/detailed-invoices
 
 ```json
 {
-  "party_tin": "08289985-9145",
-  "party_name": "Namiri Technology",
-  "party_email": "firs-invoices@namiri.tech",
-  "issue_date": "2025-08-15",
-  "invoice_type_code": "381",
-  "tax_point_date": "2025-08-15",
-  "document_currency_code": "NGN",
-  "buyer_reference": "#INV-005",
-  "due_date": "2025-08-07",
-  "notes": "Sample invoice notes",
-  "callback_url": "https://example.com/callback",
-  "items": [
-    {
-      "item_code": "20107057",
-      "tax_category_code": "STANDARD_VAT",
-      "product_category": "Food and Beverage Products",
-      "item_name": "Digitax Product 001",
-      "hsn_code": "2847.00",
-      "item_description": "Sample item description",
-      "quantity": 1,
-      "unit_price": 10000,
-      "discount_rate": 0.05,
-      "fee_rate": 0.02,
-      "tax_rate": 0.075
-    }
-  ]
+    "party_tin": "08289985-9145", //The Taxpayer Identification Number (TIN) assigned to the buyer
+    "party_name": "Namiri Technology", // The registered name of the buyer receiving the invoice. This is the official business or individual name
+    "party_email": "firs-invoices@namiri.tech", // The buyer's official email address used for communication regarding invoices and tax compliance
+    "issue_date": "2025-08-15", //The date on which this invoice was issued in the format YYYY-MM-DD
+    "invoice_type_code": "381", // A code that specifies the type of invoice being issued
+    "tax_point_date": "2025-08-15", //The actual date when the tax becomes applicable in the format YYYY-MM-DD
+    "document_currency_code": "NGN", // A code that specifies the default currency in which the invoice is issued
+    "buyer_reference": "#INV-005", //A reference number or code provided by the buyer to track the invoice
+    "due_date": "2025-08-07", //The date on which this invoice is due in the format YYYY-MM-DD
+    "notes": "Sample invoice notes", // Additional invoice information that is not contained explicitly in other structures
+    "callback_url": "https://example.com/callback", // The URL to call when we have new information about the invoice, when the invoice is signed successfully or validation has failed
+    "items": [
+        {
+            "item_code": "20107057", //A unique product code assigned to the item in the user's system. It will be used as the unique product identifier
+            "tax_category_code": "STANDARD_VAT", // The code for the tax category the item belongs to. It must be one of the tax categories defined in the resources API
+            "product_category": "Food and Beverage Products", // The category the product belongs to. You can use the United Nations Standard Products and Services Code (UNSPSC) as a guide
+            "item_name": "Digitax Product 001", //The name of the good or service being sold
+            "hsn_code": "2847.00", // The Harmonized System of Nomenclature (HSN) Code for the product
+            "item_description": "Sample item description", // A brief description of the item
+            "quantity": 1, // The total number of items sold in the invoice line
+            "unit_price": 10000, // The unit price of this line item before tax
+            "discount_rate": 0.05, //The discount rate applied to the item. It must be a value between 0 and 1, where 0 means no discount and 1 means a 100% discount on the price
+            "fee_rate": 0.02, //The rate of any additional fees (e.g. service charge, delivery fee). It must be a value between 0 and 1, where 0 means no fee and 1 means a 100% fee on the price
+            "tax_rate": 0.075 // The tax rate applied to the item. It must be a value between 0 and 1. For tax category codes that already have a defined tax rate, this value must match the tax category's tax rate
+        }
+    ]
 }
 ```
 
