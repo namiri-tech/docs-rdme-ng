@@ -1546,6 +1546,18 @@
                           "format": "double",
                           "example": 0.075,
                           "description": "The tax rate applied to the item. It must be a value between 0 and 1. For tax category codes that already have a defined tax rate, this value must match the tax category's tax rate"
+                        },
+                        "taxable_amount": {
+                          "type": "number",
+                          "format": "double",
+                          "example": 9700,
+                          "description": "The amount on which tax is calculated. It must be equal to the line extension amount (unit price * quantity) plus fees minus discounts. This value will be ignored unless the business has the permission to calculate tax"
+                        },
+                        "tax_amount": {
+                          "type": "number",
+                          "format": "double",
+                          "example": 727.5,
+                          "description": "The tax amount for this line item. It must be equal to the taxable amount multiplied by the tax rate. This value will be ignored unless the business has the permission to calculate tax"
                         }
                       }
                     }
@@ -1708,6 +1720,18 @@
                           "format": "double",
                           "example": 0.075,
                           "description": "The tax rate applied to the item. It must be a value between 0 and 1. For tax category codes that already have a defined tax rate, this value must match the tax category's tax rate"
+                        },
+                        "taxable_amount": {
+                          "type": "number",
+                          "format": "double",
+                          "example": 9700,
+                          "description": "The amount on which tax is calculated. It must be equal to the line extension amount (unit price * quantity) plus fees minus discounts. This value will be ignored unless the business has the permission to calculate tax"
+                        },
+                        "tax_amount": {
+                          "type": "number",
+                          "format": "double",
+                          "example": 727.5,
+                          "description": "The tax amount for this line item. It must be equal to the taxable amount multiplied by the tax rate. This value will be ignored unless the business has the permission to calculate tax"
                         }
                       }
                     }
@@ -1870,6 +1894,18 @@
                           "format": "double",
                           "example": 0.075,
                           "description": "The tax rate applied to the item. It must be a value between 0 and 1. For tax category codes that already have a defined tax rate, this value must match the tax category's tax rate"
+                        },
+                        "taxable_amount": {
+                          "type": "number",
+                          "format": "double",
+                          "example": 9700,
+                          "description": "The amount on which tax is calculated. It must be equal to the line extension amount (unit price * quantity) plus fees minus discounts. This value will be ignored unless the business has the permission to calculate tax"
+                        },
+                        "tax_amount": {
+                          "type": "number",
+                          "format": "double",
+                          "example": 727.5,
+                          "description": "The tax amount for this line item. It must be equal to the taxable amount multiplied by the tax rate. This value will be ignored unless the business has the permission to calculate tax"
                         }
                       }
                     }
