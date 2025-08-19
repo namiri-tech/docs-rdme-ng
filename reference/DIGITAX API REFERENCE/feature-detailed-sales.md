@@ -19,7 +19,7 @@ For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C 
 
 ### Tax Calculation
 
-The item `unit_price` must be tax exclusive. The tax will be calculated using the `tax_rate` specified in the item object; while factoring in the fee and discount.
+Within the item object, users are required to provide pre-calculated values for `total_amount`, `taxable_amount`, and `tax_amount`.
 
 More details on, the `document_currency_code`, `tax_category_code`, `invoice_type_code` etc... can be found under the resource section [here](https://ng.docs.digitax.tech/reference/using-the-digitax-nigeria-api#/).
 
