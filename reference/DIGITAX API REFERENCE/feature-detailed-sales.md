@@ -56,7 +56,9 @@ https://api.digitax.tech/ng/v1/detailed-invoices
             "unit_price": 10000, // The unit price of this line item before tax
             "discount_rate": 0.05, //The discount rate applied to the item. It must be a value between 0 and 1, where 0 means no discount and 1 means a 100% discount on the price
             "fee_rate": 0.02, //The rate of any additional fees (e.g. service charge, delivery fee). It must be a value between 0 and 1, where 0 means no fee and 1 means a 100% fee on the price
-            "tax_rate": 0.075 // The tax rate applied to the item. It must be a value between 0 and 1. For tax category codes that already have a defined tax rate, this value must match the tax category's tax rate
+            "tax_rate": 0.075, // The tax rate applied to the item. It must be a value between 0 and 1. For tax category codes that already have a defined tax rate, this value must match the tax category's tax rate
+            "taxable_amount": 9700, // The amount on which tax is calculated. It must be equal to the line extension amount (unit price * quantity) plus fees minus discounts. This value will be ignored unless the business has the permission to calculate tax
+            "tax_amount": 727.5 // The tax amount for this line item. It must be equal to the taxable amount multiplied by the tax rate. This value will be ignored unless the business has the permission to calculate tax
         }
     ]
 }
