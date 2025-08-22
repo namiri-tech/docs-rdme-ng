@@ -156,7 +156,9 @@ https://api.digitax.tech/ng/v1/credit-notes-with-item-codes
       "unit_price": 10000,
       "discount_rate": 0.05,
       "fee_rate": 0.02,
-      "tax_rate": 0.075
+      "tax_rate": 0.075,
+      "taxable_amount": 9700, 
+      "tax_amount": 727.5
     }
   ]
 }
@@ -188,7 +190,9 @@ https://api.digitax.tech/ng/v1/debit-notes-with-item-codes
       "unit_price": 10000,
       "discount_rate": 0.05,
       "fee_rate": 0.02,
-      "tax_rate": 0.075
+      "tax_rate": 0.075,
+      "taxable_amount": 9700, 
+      "tax_amount": 727.5
     }
   ]
 }
