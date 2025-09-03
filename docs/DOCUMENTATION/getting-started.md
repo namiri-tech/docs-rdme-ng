@@ -27,7 +27,7 @@ metadata:
   </Card>
 </Cards>
 
-<Accordion title="DigiTax is multi-national. Explore other countries here ..." icon="fa-globe">
+<Accordion title="DigiTax is Pan African. Explore other countries here ..." icon="fa-globe">
   You are currently reading a guide in the DigiTax Nigeria API Hub.
 
   If you're looking for another country or the general homepage for DigiTax API, navigate to the [DigiTax API homepage](https://docs.digitax.tech), or country-specific API hub pages (ordered alphabetically):
@@ -41,7 +41,7 @@ metadata:
 
 African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting. Electronic Tax Invoicing is a nascent Fintech category in the Pan-African region.
 
-Nigeria is one of the countries and the country's tax authority/ regulator, **FIRS** (Federal Inland Revenue Service) has a transformative e-invoicing system, named **FIRS Merchant Buyer Solution** (FIRS MBS). In this documentation, DigiTax Nigeria API Hub, we shall simply refer to it as *FIRS E-Invoicing System*.
+Nigeria is one of the countries and the country's tax authority/ regulator, **FIRS** (Federal Inland Revenue Service) has a transformative e-invoicing system, named **FIRS Merchant Buyer Solution** (FIRS MBS). In this documentation, DigiTax Nigeria API Hub, we shall simply refer to it as _FIRS E-Invoicing System_.
 
 ## Introduction to FIRS E-Invoicing System and DigiTax platform
 
