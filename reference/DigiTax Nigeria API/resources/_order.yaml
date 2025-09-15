@@ -1,1 +1,5 @@
-[]
+- get_resources-countries
+- get_resources-currencies
+- get_resources-tax-categories
+- get_resources-invoice-types
+- get_resources-payment-means
