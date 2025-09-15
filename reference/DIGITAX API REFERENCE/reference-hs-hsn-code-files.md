@@ -5,7 +5,6 @@ excerpt: >-
   Harmonized System of Nomenclature (HSN) Code codes
 deprecated: false
 hidden: false
-icon: fad fa-user-ninja
 metadata:
   robots: index
 ---
