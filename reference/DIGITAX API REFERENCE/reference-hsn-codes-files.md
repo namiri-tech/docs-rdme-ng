@@ -1,6 +1,8 @@
 ---
-title: 'Reference: HSN codes - files'
-excerpt: Find here, CSV and JSON files for HSN codes
+title: 'Reference: HS/ HSN codes - files'
+excerpt: >-
+  Find here, CSV and JSON files for Harmonized System (HS) or otherwise named
+  Harmonized System of Nomenclature (HSN) Code codes
 deprecated: false
 hidden: true
 icon: fad fa-user-ninja
@@ -9,9 +11,11 @@ metadata:
 ---
 ## Overview
 
-<br />
+An HS (Harmonized System) code or HSN (Harmonized System of Nomenclature) code is an internationally standardized numerical code that classifies traded products, used by customs around the world to categorize goods for import and export, developed by the World Customs Organization (WCO).
+
+This code is required when registering an item in the [POST items endpoint](https://ng.docs.digitax.tech/reference/get_items/).
 
 ## Files
 
-1. CSV file
-2. JSON file
+1. The CSV file containing HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.csv">here</Anchor>.
+2. The JSON file containing HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.json">here</Anchor>
