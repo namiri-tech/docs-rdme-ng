@@ -4,7 +4,7 @@ excerpt: >-
   Find here, CSV and JSON files for Harmonized System (HS) or otherwise named
   Harmonized System of Nomenclature (HSN) Code codes
 deprecated: false
-hidden: true
+hidden: false
 icon: fad fa-user-ninja
 metadata:
   robots: index
