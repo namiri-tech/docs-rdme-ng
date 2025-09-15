@@ -303,7 +303,8 @@ paths:
                   example: '2847.00'
                   description: >-
                     The Harmonized System of Nomenclature (HSN) Code for the
-                    product
+                    product. Please refer <a
+                    href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">here</a>
                 unit_price:
                   type: number
                   format: double
