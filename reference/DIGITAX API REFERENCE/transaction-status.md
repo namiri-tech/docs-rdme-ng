@@ -45,7 +45,7 @@ On the API, these are:
 * `created_at` property
 * `validated_at` property
 * `signed_at` property
-*  `transmitted_at` property
+* `transmitted_at` property
 
 of a response from the invoices endpoints.
 
@@ -57,3 +57,24 @@ The timestamps above correspond to what you'd see on the Dashboard, under "Invoi
 * `Transmitted`
 
 <Image align="center" src="https://files.readme.io/485b71a70cbbfb59a9d623c5b7b9d6d811b88fe1a9d0de49890f129c2f9f15a6-CleanShot_2025-09-16_at_15.58.43_22x.png" />
+
+## Successful transmission requirements
+
+For an invoice to be marked as transmitted:
+
+1. A party needs to be added
+2. The party needs to be onboarded on FIRS.
+
+### Party details for transmission
+
+For testing purposes, please use the following properties:
+
+```
+Name: Namiri Technology Nigeria Limited
+TIN: 08289985-9145
+Email: firs-si@namiri.tech
+Phone: +2347724935855
+Street address: Broad Street
+City: Benin City
+Postal code: 111111
+```
