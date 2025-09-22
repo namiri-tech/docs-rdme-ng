@@ -18,11 +18,14 @@ This code is required when registering an item in the [POST items endpoint](http
 
 1. The CSV file containing HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.csv">here</Anchor>.
 
-   You can get the file programatically or via terminal by running:
+   You can download the file programatically. Below is an example using CURL via terminal:
+
    ```shell
    curl "https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.csv" > hs-codes.csv
    ```
 2. The JSON file containing HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.json">here</Anchor>.
+
+   You can download the file programatically. Below is an example using CURL via terminal:
    ```shell
    curl "https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.json" > hs-codes.json
    ```
