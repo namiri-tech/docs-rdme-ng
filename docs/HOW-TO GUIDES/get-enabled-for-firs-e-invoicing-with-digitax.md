@@ -26,7 +26,7 @@ You can also submit your data on the enablement form on [einvoice.firs.gov.ng/en
 
 ## Set up a cloud account, and business on DigiTax dashboard
 
-1. Sign up on [digitax.tech](https://nmr.v2.digitax.tech/)
+1. Sign up on [digitax.tech](https://digitax.tech/)
 2. Create a Nigeria profile
 3. Create a **LIVE** business under the Nigeria profile
 
@@ -54,4 +54,4 @@ Click **Deactivate key** if you'd like to invalidate the key for API use.
 
 <Image align="center" src="https://files.readme.io/f79ef37fcf3cf1e22458347bead6762334e5985c1e704d09948a3c23cd225dbc-DeactivateAPIKenya.png" />
 
-*To making tax compliance less taxing by powering electronic invoicing*
+_To making tax compliance less taxing by powering electronic invoicing_
