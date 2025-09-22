@@ -31,7 +31,7 @@ Key Roles of APPs:
 2. Real-Time Exchange\
    APPs facilitate instantaneous communication between trading parties and tax authorities, allowing for real-time verification and processing.
 3. Interoperability\
-   APPs ensure compatibility with different systems, including tax authority platforms like FIRS or KRA, and international frameworks like Peppol.
+   APPs ensure compatibility with different systems, including tax authority platforms like FIRS, and international frameworks like Peppol.
 4. Compliance Assurance\
    They validate that the e-invoices meet the necessary local and international regulatory standards before transmitting them.
 5. Facilitating Cross-Border Trade:\
