@@ -9,7 +9,7 @@ metadata:
 
 DigiTax provides the following:
 
-* Asynchronous functionality that automatically retries eTIMS
+* Asynchronous functionality that automatically retries FIRS
 * Get notifications on transaction statuses via [Callback URLs](ref:feature-callback-urls)
 * Throttling traffic between the businesses throughput and the tax authority's system
 
