@@ -15,7 +15,7 @@ metadata:
 
 ### Party Details
 
-For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C transactions, the party details are optional; leave the fields "party\_tin","party\_name" and "party\_email" as empty strings.
+For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C transactions, the party details are optional; leave the fields "party_tin","party_name" and "party_email" as empty strings.
 
 ### Tax Calculation
 
@@ -36,6 +36,12 @@ https://api.digitax.tech/ng/v1/detailed-invoices
     "party_tin": "08289985-9145", //The Taxpayer Identification Number (TIN) assigned to the buyer
     "party_name": "Namiri Technology", // The registered name of the buyer receiving the invoice. This is the official business or individual name
     "party_email": "firs-invoices@namiri.tech", // The buyer's official email address used for communication regarding invoices and tax compliance
+    "address": { // The buyer address is optional in this endpoint
+      "street_name": "123 Main St",
+      "city_name": "Lagos",
+      "postal_zone": "100001",
+      "country_code": "NGA"
+    },
     "issue_date": "2025-08-15", //The date on which this invoice was issued in the format YYYY-MM-DD
     "invoice_type_code": "381", // A code that specifies the type of invoice being issued
     "tax_point_date": "2025-08-15", //The actual date when the tax becomes applicable in the format YYYY-MM-DD
