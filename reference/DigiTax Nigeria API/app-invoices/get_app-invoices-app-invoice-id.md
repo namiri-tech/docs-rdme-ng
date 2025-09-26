@@ -5,6 +5,6 @@ excerpt: >-
   integration
 api:
   file: openapi.yaml
-  operationId: get_app-invoices-invoice-id
+  operationId: get_app-invoices-app-invoice-id
 hidden: false
 ---

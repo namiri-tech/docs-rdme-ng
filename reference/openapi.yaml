@@ -303,8 +303,7 @@ paths:
                   example: '2847.00'
                   description: >-
                     The Harmonized System of Nomenclature (HSN) Code for the
-                    product. Please refer <a
-                    href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">here</a>
+                    product
                 unit_price:
                   type: number
                   format: double
@@ -415,6 +414,7 @@ paths:
                 - invoice_type_code
                 - document_currency_code
                 - items
+                - trader_invoice_number
               properties:
                 party_id:
                   type: string
@@ -457,6 +457,12 @@ paths:
                   description: >-
                     A reference number or code provided by the buyer to track
                     the invoice
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the invoice in their system
                 billing_document_reference:
                   $ref: '#/components/schemas/InvoiceDocumentReference'
                   description: >-
@@ -567,6 +573,10 @@ paths:
                           between 0 and 1. For tax category codes that already
                           have a defined tax rate, this value must match the tax
                           category's tax rate
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
       responses:
         '201':
           description: Invoice created
@@ -624,6 +634,7 @@ paths:
                 - document_currency_code
                 - items
                 - invoice_id
+                - trader_invoice_number
               properties:
                 return_date:
                   type: string
@@ -658,6 +669,12 @@ paths:
                   description: >-
                     A reference number or code provided by the buyer to track
                     the credit note
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the credit note in their system
                 invoice_id:
                   type: string
                   example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
@@ -766,6 +783,10 @@ paths:
                           between 0 and 1. For tax category codes that already
                           have a defined tax rate, this value must match the tax
                           category's tax rate
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
       responses:
         '201':
           description: Credit note created
@@ -823,6 +844,7 @@ paths:
                 - document_currency_code
                 - items
                 - invoice_id
+                - trader_invoice_number
               properties:
                 debit_date:
                   type: string
@@ -857,6 +879,12 @@ paths:
                   description: >-
                     A reference number or code provided by the buyer to track
                     the debit note
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the debit note in their system
                 invoice_id:
                   type: string
                   example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
@@ -964,6 +992,10 @@ paths:
                           between 0 and 1. For tax category codes that already
                           have a defined tax rate, this value must match the tax
                           category's tax rate
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
       responses:
         '201':
           description: Debit note created
@@ -1090,6 +1122,7 @@ paths:
                 - invoice_type_code
                 - document_currency_code
                 - items
+                - trader_invoice_number
               properties:
                 party_tin:
                   type: string
@@ -1111,6 +1144,12 @@ paths:
                     The email address of the buyer of the goods or services. If
                     it is not provided and the party_tin is provided, we will
                     use firs-invoices@namiri.tech as the party's email address
+                party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the buyer of the goods or services. If not
+                    provided and the party_tin is provided, we will use a
+                    default address
                 issue_date:
                   type: string
                   format: date
@@ -1141,6 +1180,12 @@ paths:
                   description: >-
                     A reference number or code provided by the buyer to track
                     the invoice
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the invoice in their system
                 billing_document_reference:
                   $ref: '#/components/schemas/InvoiceDocumentReference'
                   description: >-
@@ -1334,6 +1379,7 @@ paths:
                 - document_currency_code
                 - items
                 - invoice_id
+                - trader_invoice_number
               properties:
                 return_date:
                   type: string
@@ -1368,6 +1414,12 @@ paths:
                   description: >-
                     A reference number or code provided by the buyer to track
                     the credit note
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the credit note in their system
                 invoice_id:
                   type: string
                   example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
@@ -1497,6 +1549,10 @@ paths:
                           the taxable amount multiplied by the tax rate. This
                           value will be ignored unless the business has the
                           permission to calculate tax
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
       responses:
         '201':
           description: Credit note created
@@ -1525,6 +1581,7 @@ paths:
                 - document_currency_code
                 - items
                 - invoice_id
+                - trader_invoice_number
               properties:
                 debit_date:
                   type: string
@@ -1559,6 +1616,12 @@ paths:
                   description: >-
                     A reference number or code provided by the buyer to track
                     the debit note
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the debit note in their system
                 invoice_id:
                   type: string
                   example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
@@ -1687,6 +1750,10 @@ paths:
                           the taxable amount multiplied by the tax rate. This
                           value will be ignored unless the business has the
                           permission to calculate tax
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
       responses:
         '201':
           description: Debit note created
@@ -2065,7 +2132,7 @@ paths:
                       $ref: '#/components/schemas/APPInvoice'
         default:
           $ref: '#/components/responses/Error'
-  /app-invoices/{invoice_id}:
+  /app-invoices/{app_invoice_id}:
     get:
       tags:
         - APP Invoices
@@ -2077,12 +2144,59 @@ paths:
         - apiKeyAuth: []
       parameters:
         - in: path
-          name: invoice_id
+          name: app_invoice_id
           required: true
           schema:
             type: string
             description: Invoice ID in Digitax
             example: appinvoice_01K4Q9TGAQNQ5A5FW0WJ9WHPH1
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APPInvoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /app-invoices/{app_invoice_id}/payment-status:
+    put:
+      tags:
+        - APP Invoices
+      summary: Update an APP invoice payment status
+      description: >-
+        Update the payment status of an invoice created in the Access Point
+        Provider integration
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: app_invoice_id
+          required: true
+          schema:
+            type: string
+            description: Invoice ID on DigiTax
+            example: appinvoice_01K4Q9TGAQNQ5A5FW0WJ9WHPH1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - payment_status
+              properties:
+                payment_status:
+                  type: string
+                  enum:
+                    - REJECTED
+                    - PAID
+                  example: REJECTED
+                  description: The payment status of the invoice
+                reference:
+                  type: string
+                  example: PY012001
+                  description: The reference number of the payment
       responses:
         '200':
           description: Success
@@ -2509,6 +2623,12 @@ components:
           description: >-
             A reference number or code provided by the buyer to track the
             invoice
+        trader_invoice_number:
+          type: string
+          example: '2453618203'
+          description: >-
+            An invoice number assigned by the supplier to uniquely identify the
+            invoice in their system
         payment_status:
           type: string
           example: PENDING
