@@ -36,7 +36,7 @@ https://api.digitax.tech/ng/v1/detailed-invoices
     "party_tin": "08289985-9145", //The Taxpayer Identification Number (TIN) assigned to the buyer
     "party_name": "Namiri Technology", // The registered name of the buyer receiving the invoice. This is the official business or individual name
     "party_email": "firs-invoices@namiri.tech", // The buyer's official email address used for communication regarding invoices and tax compliance
-    "address": { // The buyer address is optional in this endpoint
+    "party_address": { // The buyer address is optional in this endpoint
       "street_name": "123 Main St",
       "city_name": "Lagos",
       "postal_zone": "100001",
