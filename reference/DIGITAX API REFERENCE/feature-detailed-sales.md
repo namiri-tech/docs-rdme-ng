@@ -7,7 +7,6 @@ excerpt: >-
   transactions. 
 deprecated: false
 hidden: false
-icon: fad fa-user-ninja
 metadata:
   robots: index
 ---
