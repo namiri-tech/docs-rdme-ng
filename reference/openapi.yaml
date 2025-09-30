@@ -303,7 +303,9 @@ paths:
                   example: '2847.00'
                   description: >-
                     The Harmonized System of Nomenclature (HSN) Code for the
-                    product
+                    product. <a
+                    href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
+                    Reference</a>
                 unit_price:
                   type: number
                   format: double
@@ -1281,7 +1283,9 @@ paths:
                         example: '2847.00'
                         description: >-
                           The Harmonized System of Nomenclature (HSN) Code for
-                          the product
+                          the product. <a
+                          href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
+                          Reference</a>
                       item_description:
                         type: string
                         example: Sample item description
@@ -2471,7 +2475,10 @@ components:
         hsn_code:
           type: string
           example: '2847.00'
-          description: The Harmonized System of Nomenclature (HSN) Code for the product
+          description: >-
+            The Harmonized System of Nomenclature (HSN) Code for the product. <a
+            href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
+            Reference</a>
         item_number:
           type: string
           example: ITM25-148-144544241-S6AM78
@@ -3131,7 +3138,10 @@ components:
         hsn_code:
           type: string
           example: '2847.00'
-          description: The Harmonized System of Nomenclature (HSN) Code for the product
+          description: >-
+            The Harmonized System of Nomenclature (HSN) Code for the product. <a
+            href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
+            Reference</a>
         description:
           type: string
           example: Sample item description
@@ -3549,7 +3559,10 @@ components:
         hsn_code:
           type: string
           example: CC-001
-          description: The Harmonized System of Nomenclature (HSN) Code for the product
+          description: >-
+            The Harmonized System of Nomenclature (HSN) Code for the product. <a
+            href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
+            Reference</a>
         product_category:
           type: string
           example: Food and Beverages
