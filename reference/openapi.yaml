@@ -12,9 +12,7 @@ info:
     name: Apache 2.0
 servers:
   - url: https://api.digitax.tech/ng/v1
-    description: Production
-  - url: https://staging.api.digitax.tech/ng/v1
-    description: Staging
+    description: API
 paths:
   /resources/countries:
     get:
@@ -422,6 +420,30 @@ paths:
                   type: string
                   example: party_01JWB8QHB4C1Q437MXCPR0XAZW
                   description: The buyer or recipient of the goods or services
+                payee_party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                  description: >-
+                    If the payment goes to someone else, this field captures
+                    that party's ID on DigiTax
+                bill_party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                  description: >-
+                    If the payment goes to someone else, this field captures
+                    that party's ID on DigiTax
+                ship_party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                  description: >-
+                    If the payment goes to someone else, this field captures
+                    that party's ID on DigiTax
+                tax_representative_party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                  description: >-
+                    The party ID of the tax agent handling invoicing and
+                    compliance for the business if there is one
                 invoice_date:
                   type: string
                   format: date
@@ -436,6 +458,13 @@ paths:
                   description: >-
                     The date on which this invoice was issued in the format
                     YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this invoice was issued in the format
+                    HH:MM:SS
                 invoice_type_code:
                   type: string
                   example: '381'
@@ -465,6 +494,32 @@ paths:
                   description: >-
                     An invoice number assigned by the supplier to uniquely
                     identify the invoice in their system
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
                 billing_document_reference:
                   $ref: '#/components/schemas/InvoiceDocumentReference'
                   description: >-
@@ -491,6 +546,14 @@ paths:
                   description: >-
                     A reference to a contract associated with an invoice. Links
                     the invoice to a contract governing the transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with an
+                    invoice. Used as a general reference field for any related
+                    documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
                 due_date:
                   type: string
                   format: date
@@ -652,6 +715,13 @@ paths:
                   description: >-
                     The date on which this credit note was issued in the format
                     YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this credit note was issued in the format
+                    HH:MM:SS
                 tax_point_date:
                   type: string
                   format: date
@@ -681,6 +751,32 @@ paths:
                   type: string
                   example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
                   description: The DigiTax ID of the invoice that is being credited
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
                 dispatch_document_reference:
                   $ref: '#/components/schemas/InvoiceDocumentReference'
                   description: >-
@@ -703,6 +799,14 @@ paths:
                     A reference to a contract associated with a credit note.
                     Links the credit note to a contract governing the
                     transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with an
+                    invoice. Used as a general reference field for any related
+                    documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
                 due_date:
                   type: string
                   format: date
@@ -862,6 +966,13 @@ paths:
                   description: >-
                     The date on which this debit note was issued in the format
                     YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this debit note was issued in the format
+                    HH:MM:SS
                 tax_point_date:
                   type: string
                   format: date
@@ -891,6 +1002,32 @@ paths:
                   type: string
                   example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
                   description: The DigiTax ID of the invoice that is being debited
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
                 dispatch_document_reference:
                   $ref: '#/components/schemas/InvoiceDocumentReference'
                   description: >-
@@ -912,6 +1049,14 @@ paths:
                   description: >-
                     A reference to a contract associated with a debit note.
                     Links the debit note to a contract governing the transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with the
+                    debit note. Used as a general reference field for any
+                    related documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
                 due_date:
                   type: string
                   format: date
@@ -1152,6 +1297,115 @@ paths:
                     The address of the buyer of the goods or services. If not
                     provided and the party_tin is provided, we will use a
                     default address
+                payee_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number of the party to whom the
+                    payment goes to; if it goes to someone else
+                payee_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the party to whom the payment goes to;
+                    if it goes to someone else. It must be provided for invoices
+                    that have the payee_party_tin provided
+                payee_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the party to whom the payment goes to;
+                    if it goes to someone else. If it is not provided and the
+                    payee_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                payee_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the party to whom the payment goes to; if it
+                    goes to someone else. If not provided and the
+                    payee_party_tin is provided, we will use a default address
+                bill_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number of the party to whom the
+                    payment goes to; if it goes to someone else
+                bill_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the party to whom the payment goes to;
+                    if it goes to someone else. It must be provided for invoices
+                    that have the bill_party_tin provided
+                bill_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the party to whom the payment goes to;
+                    if it goes to someone else. If it is not provided and the
+                    bill_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                bill_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the party to whom the payment goes to; if it
+                    goes to someone else. If not provided and the bill_party_tin
+                    is provided, we will use a default address
+                ship_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number of the party to whom the
+                    payment goes to; if it goes to someone else
+                ship_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the party to whom the payment goes to;
+                    if it goes to someone else. It must be provided for invoices
+                    that have the ship_party_tin provided
+                ship_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the party to whom the payment goes to;
+                    if it goes to someone else. If it is not provided and the
+                    ship_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                ship_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the party to whom the payment goes to; if it
+                    goes to someone else. If not provided and the ship_party_tin
+                    is provided, we will use a default address
+                tax_representative_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number of the tax agent handling
+                    invoicing and compliance for the business if there is one
+                tax_representative_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the tax agent handling invoicing and
+                    compliance for the business. It must be provided for
+                    invoices that have the tax_representative_party_tin provided
+                tax_representative_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the tax agent handling invoicing and
+                    compliance for the business. If it is not provided and the
+                    tax_representative_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                tax_representative_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the tax agent handling invoicing and
+                    compliance for the business. If not provided and the
+                    tax_representative_party_tin is provided, we will use a
+                    default address
                 issue_date:
                   type: string
                   format: date
@@ -1159,6 +1413,13 @@ paths:
                   description: >-
                     The date on which this invoice was issued in the format
                     YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this invoice was issued in the format
+                    HH:MM:SS
                 invoice_type_code:
                   type: string
                   example: '381'
@@ -1188,6 +1449,32 @@ paths:
                   description: >-
                     An invoice number assigned by the supplier to uniquely
                     identify the invoice in their system
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
                 billing_document_reference:
                   $ref: '#/components/schemas/InvoiceDocumentReference'
                   description: >-
@@ -1214,6 +1501,14 @@ paths:
                   description: >-
                     A reference to a contract associated with an invoice. Links
                     the invoice to a contract governing the transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with an
+                    invoice. Used as a general reference field for any related
+                    documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
                 due_date:
                   type: string
                   format: date
@@ -1399,6 +1694,13 @@ paths:
                   description: >-
                     The date on which this credit note was issued in the format
                     YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this credit note was issued in the format
+                    HH:MM:SS
                 tax_point_date:
                   type: string
                   format: date
@@ -1428,6 +1730,32 @@ paths:
                   type: string
                   example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
                   description: The DigiTax ID of the invoice that is being credited
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
                 dispatch_document_reference:
                   $ref: '#/components/schemas/InvoiceDocumentReference'
                   description: >-
@@ -1450,6 +1778,14 @@ paths:
                     A reference to a contract associated with a credit note.
                     Links the credit note to a contract governing the
                     transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with the
+                    credit note. Used as a general reference field for any
+                    related documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
                 due_date:
                   type: string
                   format: date
@@ -1601,6 +1937,13 @@ paths:
                   description: >-
                     The date on which this debit note was issued in the format
                     YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this debit note was issued in the format
+                    HH:MM:SS
                 tax_point_date:
                   type: string
                   format: date
@@ -1630,6 +1973,32 @@ paths:
                   type: string
                   example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
                   description: The DigiTax ID of the invoice that is being debited
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
                 dispatch_document_reference:
                   $ref: '#/components/schemas/InvoiceDocumentReference'
                   description: >-
@@ -1651,6 +2020,14 @@ paths:
                   description: >-
                     A reference to a contract associated with a debit note.
                     Links the debit note to a contract governing the transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with the
+                    debit note. Used as a general reference field for any
+                    related documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
                 due_date:
                   type: string
                   format: date
@@ -1932,7 +2309,7 @@ paths:
                   type: string
                   example: '17:59:04'
                   format: time
-                  description: The time at which the invoice was issued in HH:mm:ss format
+                  description: The time at which the invoice was issued in HH:MM:SS format
                 due_date:
                   type: string
                   format: date
@@ -2466,7 +2843,7 @@ components:
             the tax categories defined in the resources API
         product_category:
           type: string
-          example: '51472903'
+          example: Food and Beverages
           description: The category the product belongs to
         item_name:
           type: string
@@ -2563,6 +2940,30 @@ components:
           type: string
           example: party_01JWB8QHB4C1Q437MXCPR0XAZW
           description: The buyer or recipient of the goods or services
+        payee_party_id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: >-
+            If the payment goes to someone else, this field captures that
+            party's ID on DigiTax
+        bill_party_id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: >-
+            If the payment goes to someone else, this field captures that
+            party's ID on DigiTax
+        ship_party_id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: >-
+            If the payment goes to someone else, this field captures that
+            party's ID on DigiTax
+        tax_representative_party_id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: >-
+            The party ID of the tax agent handling invoicing and compliance for
+            the business if there is one
         invoice_date:
           type: string
           format: date
@@ -2573,6 +2974,11 @@ components:
           format: date
           example: '2025-08-07'
           description: The date on which this invoice was issued in the format YYYY-MM-DD
+        issue_time:
+          type: string
+          format: time
+          example: '17:59:04'
+          description: The time at which the invoice was issued in HH:MM:SS format
         is_valid:
           type: boolean
           example: true
@@ -2688,6 +3094,31 @@ components:
           format: double
           example: 727.5
           description: The total tax amount applied to the invoice
+        accounting_cost:
+          type: string
+          example: 2000 NGN
+          description: >-
+            Represents the accounting category or cost center assigned to the
+            transaction
+        payment_terms_note:
+          type: string
+          example: Payment due within 30 days of invoice issue
+          description: Describes the terms and conditions of payment
+        invoice_delivery_period:
+          $ref: '#/components/schemas/DeliveryPeriod'
+          description: >-
+            Defines the start and end dates for when goods or services were
+            delivered. This helps track multi-day deliveries on a single invoice
+        payment_means:
+          type: array
+          description: Defines how the invoice will be paid and when payment is due
+          items:
+            $ref: '#/components/schemas/PaymentMeans'
+        allowance_charge:
+          type: array
+          description: Defines any discounts (allowance) or extra charges (charge)
+          items:
+            $ref: '#/components/schemas/AllowanceCharge'
         billing_reference:
           type: array
           items:
@@ -2715,6 +3146,13 @@ components:
           description: >-
             A reference to a contract associated with an invoice. Links the
             invoice to a contract governing the transaction
+        additional_document_reference:
+          type: array
+          description: >-
+            A reference to additional documents associated with an invoice. Used
+            as a general reference field for any related documents
+          items:
+            $ref: '#/components/schemas/InvoiceDocumentReference'
         due_date:
           type: string
           format: date
@@ -2928,6 +3366,11 @@ components:
           description: >-
             The date on which the invoice was issued by the supplier in the
             format YYYY-MM-DD
+        issue_time:
+          type: string
+          format: time
+          example: '14:30:00'
+          description: The time at which this invoice was issued in the format HH:MM:SS
         invoice_type_code:
           type: string
           example: '381'
@@ -2989,6 +3432,31 @@ components:
           format: double
           example: 727.5
           description: The total tax amount applied to the invoice
+        accounting_cost:
+          type: string
+          example: 2000 NGN
+          description: >-
+            Represents the accounting category or cost center assigned to the
+            transaction
+        payment_terms_note:
+          type: string
+          example: Payment due within 30 days of invoice issue
+          description: Describes the terms and conditions of payment
+        invoice_delivery_period:
+          $ref: '#/components/schemas/DeliveryPeriod'
+          description: >-
+            Defines the start and end dates for when goods or services were
+            delivered. This helps track multi-day deliveries on a single invoice
+        payment_means:
+          type: array
+          description: Defines how the invoice will be paid and when payment is due
+          items:
+            $ref: '#/components/schemas/PaymentMeans'
+        allowance_charge:
+          type: array
+          description: Defines any discounts (allowance) or extra charges (charge)
+          items:
+            $ref: '#/components/schemas/AllowanceCharge'
         billing_reference:
           type: array
           items:
@@ -3016,6 +3484,13 @@ components:
           description: >-
             A reference to a contract associated with an invoice. Links the
             invoice to a contract governing the transaction
+        additional_document_reference:
+          type: array
+          description: >-
+            A reference to additional documents associated with an invoice. Used
+            as a general reference field for any related documents
+          items:
+            $ref: '#/components/schemas/InvoiceDocumentReference'
         due_date:
           type: string
           format: date
@@ -3040,9 +3515,35 @@ components:
         accounting_customer_party:
           type: object
           $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: The buyer or recipient of the goods or services
         accounting_supplier_party:
           type: object
           $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: The seller or supplier issuing the invoice
+        bill_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: >-
+            If the payment goes to someone else, this field captures that
+            entity's details
+        ship_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: >-
+            If the payment goes to someone else, this field captures that
+            entity's details
+        payee_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: >-
+            If the payment goes to someone else, this field captures that
+            entity's details
+        tax_representative_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: >-
+            If a business has a tax agent handling invoicing and compliance,
+            their details are entered here
     InvoiceDownloadParty:
       type: object
       description: Represents the buyer or supplier party in a downloaded invoice
@@ -3129,7 +3630,7 @@ components:
           description: The actual fee charged in currency based on the fee rate
         product_category:
           type: string
-          example: '51472903'
+          example: Food and Beverages
           description: The category the product belongs to
         item_name:
           type: string
@@ -3150,6 +3651,16 @@ components:
           type: string
           example: Sample item sellers item identification
           description: An identifier for the item as assigned by the seller
+        service_category:
+          type: string
+          example: Construction of buildings
+          description: The category the service belongs to
+        isic_code:
+          type: string
+          example: '4100'
+          description: >-
+            The International Standard Industry Classification (ISIC) code for
+            the product
     APPInvoice:
       type: object
       required:
@@ -3197,7 +3708,7 @@ components:
           type: string
           format: time
           example: '17:59:04'
-          description: The time at which the invoice was issued in HH:mm:ss format
+          description: The time at which the invoice was issued in HH:MM:SS format
         due_date:
           type: string
           format: date
@@ -3605,6 +4116,16 @@ components:
         price:
           $ref: '#/components/schemas/LineItemPrice'
           description: The cost of a single unit of the item
+        service_category:
+          type: string
+          example: Construction of buildings
+          description: The category the service belongs to
+        isic_code:
+          type: string
+          example: '4100'
+          description: >-
+            The International Standard Industry Classification (ISIC) code for
+            the product
     LineItemDetail:
       type: object
       required:
