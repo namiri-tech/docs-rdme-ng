@@ -272,12 +272,12 @@ paths:
               type: object
               required:
                 - tax_category_code
-                - product_category
                 - item_name
-                - hsn_code
                 - unit_price
                 - currency_code
                 - description
+                - product_category
+                - hsn_code
               properties:
                 tax_category_code:
                   type: string
@@ -288,10 +288,8 @@ paths:
                 product_category:
                   type: string
                   example: Food and Beverage Products
-                  description: >-
-                    The category the product belongs to. You can use the United
-                    Nations Standard Products and Services Code (UNSPSC) as a
-                    guide
+                  description: The category the good or service belongs to
+                  maxLength: 100
                 item_name:
                   type: string
                   example: Digitax Product 001
@@ -301,7 +299,8 @@ paths:
                   example: '2847.00'
                   description: >-
                     The Harmonized System of Nomenclature (HSN) Code for the
-                    product. <a
+                    good or the International Standard Industry Classification
+                    (ISIC) code for the service. <a
                     href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
                     Reference</a>
                 unit_price:
@@ -332,6 +331,12 @@ paths:
                   description: >-
                     A unique product code assigned to the item in the user's
                     system. It will be used as the unique product identifier
+                is_service:
+                  type: boolean
+                  example: true
+                  description: >-
+                    Indicates whether the item is a service (true) or a good
+                    (false). It defaults to false if not provided
       responses:
         '201':
           description: Item created
@@ -1543,10 +1548,10 @@ paths:
                       - unit_price
                       - tax_rate
                       - tax_category_code
-                      - product_category
                       - item_name
-                      - hsn_code
                       - item_description
+                      - product_category
+                      - hsn_code
                     properties:
                       item_code:
                         type: string
@@ -1565,10 +1570,8 @@ paths:
                       product_category:
                         type: string
                         example: Food and Beverage Products
-                        description: >-
-                          The category the product belongs to. You can use the
-                          United Nations Standard Products and Services Code
-                          (UNSPSC) as a guide
+                        description: The category the good or service belongs to
+                        maxLength: 100
                       item_name:
                         type: string
                         example: Digitax Product 001
@@ -1578,7 +1581,8 @@ paths:
                         example: '2847.00'
                         description: >-
                           The Harmonized System of Nomenclature (HSN) Code for
-                          the product. <a
+                          the good or the International Standard Industry
+                          Classification (ISIC) code for the service. <a
                           href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
                           Reference</a>
                       item_description:
@@ -1650,6 +1654,12 @@ paths:
                           the taxable amount multiplied by the tax rate. This
                           value will be ignored unless the business has the
                           permission to calculate tax
+                      is_service:
+                        type: boolean
+                        example: true
+                        description: >-
+                          Indicates whether the item is a service (true) or a
+                          good (false). It defaults to false if not provided
       responses:
         '201':
           description: Invoice created
@@ -2809,13 +2819,14 @@ components:
         - updated_at
         - active
         - tax_category_code
-        - product_category
         - item_name
-        - hsn_code
         - item_number
         - unit_price
         - currency_code
         - description
+        - product_category
+        - hsn_code
+        - is_service
       properties:
         id:
           type: string
@@ -2844,7 +2855,7 @@ components:
         product_category:
           type: string
           example: Food and Beverages
-          description: The category the product belongs to
+          description: The category the good or service belongs to
         item_name:
           type: string
           example: Digitax Product 001
@@ -2853,7 +2864,9 @@ components:
           type: string
           example: '2847.00'
           description: >-
-            The Harmonized System of Nomenclature (HSN) Code for the product. <a
+            The Harmonized System of Nomenclature (HSN) Code for the good or the
+            International Standard Industry Classification (ISIC) code for the
+            service. <a
             href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
             Reference</a>
         item_number:
@@ -2883,6 +2896,10 @@ components:
           description: >-
             A unique product code assigned to the item in the user's system. It
             will be used as the unique product identifier
+        is_service:
+          type: boolean
+          example: true
+          description: Indicates whether the item is a service (true) or a good (false)
     Invoice:
       type: object
       description: Represents an invoice, credit note or debit note created on DigiTax
@@ -3640,7 +3657,8 @@ components:
           type: string
           example: '2847.00'
           description: >-
-            The Harmonized System of Nomenclature (HSN) Code for the product. <a
+            The Harmonized System of Nomenclature (HSN) Code for the product or
+            the International Standard Industry Classification (ISIC) code. <a
             href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
             Reference</a>
         description:
@@ -3660,7 +3678,7 @@ components:
           example: '4100'
           description: >-
             The International Standard Industry Classification (ISIC) code for
-            the product
+            the service
     APPInvoice:
       type: object
       required:
@@ -4071,13 +4089,15 @@ components:
           type: string
           example: CC-001
           description: >-
-            The Harmonized System of Nomenclature (HSN) Code for the product. <a
+            The Harmonized System of Nomenclature (HSN) Code for the product or
+            the International Standard Industry Classification (ISIC) code. <a
             href="https://ng.docs.digitax.tech/reference/reference-hs-hsn-code-files#/">HSN
             Reference</a>
         product_category:
           type: string
           example: Food and Beverages
           description: The category the product belongs to
+          maxLength: 100
         discount_rate:
           type: number
           format: double
@@ -4119,13 +4139,18 @@ components:
         service_category:
           type: string
           example: Construction of buildings
-          description: The category the service belongs to
+          description: >-
+            The category the service belongs to. For services, this is a
+            mandatory field; and its value is what should also be used for
+            product_category
+          maxLength: 100
         isic_code:
           type: string
           example: '4100'
           description: >-
             The International Standard Industry Classification (ISIC) code for
-            the product
+            the service. For services, this is a mandatory field; and its value
+            is what should also be used for hsn_code
     LineItemDetail:
       type: object
       required:
