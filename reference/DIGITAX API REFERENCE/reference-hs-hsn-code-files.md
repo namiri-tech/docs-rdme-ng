@@ -15,23 +15,42 @@ An HS (Harmonized System) code or HSN (Harmonized System of Nomenclature) code i
 This code is required when registering an item in the following endpoints:
 
 * [POST - items endpoint](https://ng.docs.digitax.tech/reference/get_items/)
-* [POST - Create invoice with the party and items information](https://ng.docs.digitax.tech/reference/post_detailed-invoices) 
+* [POST - Create invoice with the party and items information](https://ng.docs.digitax.tech/reference/post_detailed-invoices)
 
-## Files
+## Goods Files
 
-1. The CSV file containing HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.csv">here</Anchor>.
+The following lists in CSV and JSON are for goods:
 
-   You can download the file programatically. Below is an example using CURL via terminal:
+1. The CSV file containing Goods HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.csv">here</Anchor>.
+
+   You can download the file programmatically. Below is an example using CURL via terminal:
 
    ```shell
    curl "https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.csv" > hs-codes.csv
    ```
-2. The JSON file containing HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.json">here</Anchor>.
+2. The JSON file containing Goods HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.json">here</Anchor>.
 
-   You can download the file programatically. Below is an example using CURL via terminal:
+   You can download the file programmatically. Below is an example using CURL via terminal:
 
    ```shell
    curl "https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.json" > hs-codes.json
    ```
 
-<br />
+## Services Files
+
+The following lists in CSV and JSON are for services:
+
+1. The CSV file containing Service HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.csv">here</Anchor>.
+
+   You can download the file programmatically. Below is an example using CURL via terminal:
+
+   ```shell
+   curl "https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.csv" > hs-codes.csv
+   ```
+2. The JSON file containing Service HS codes is accessible <Anchor label="here" target="_blank" href="https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.json">here</Anchor>.
+
+   You can download the file programmatically. Below is an example using CURL via terminal:
+
+   ```shell
+   curl "https://raw.githubusercontent.com/namiri-tech/docs-rdme-ng/refs/heads/v1.0/assets/hs-codes.json" > hs-codes.json
+   ```
