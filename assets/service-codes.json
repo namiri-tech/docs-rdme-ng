@@ -1,1678 +1,1678 @@
 [
     {
-        "description": "Growing of cereals (except rice), leguminous crops and oil seeds",
-        "code": "0111"
+        "code": "0111",
+        "description": "Growing of cereals (except rice), leguminous crops and oil seeds"
     },
     {
-        "description": "Growing of rice",
-        "code": "0112"
+        "code": "0112",
+        "description": "Growing of rice"
     },
     {
-        "description": "Growing of vegetables and melons, roots and tubers",
-        "code": "0113"
+        "code": "0113",
+        "description": "Growing of vegetables and melons, roots and tubers"
     },
     {
-        "description": "Growing of sugar cane",
-        "code": "0114"
+        "code": "0114",
+        "description": "Growing of sugar cane"
     },
     {
-        "description": "Growing of tobacco",
-        "code": "0115"
+        "code": "0115",
+        "description": "Growing of tobacco"
     },
     {
-        "description": "Growing of fibre crops",
-        "code": "0116"
+        "code": "0116",
+        "description": "Growing of fibre crops"
     },
     {
-        "description": "Growing of other non-perennial crops",
-        "code": "0119"
+        "code": "0119",
+        "description": "Growing of other non-perennial crops"
     },
     {
-        "description": "Growing of grapes",
-        "code": "0121"
+        "code": "0121",
+        "description": "Growing of grapes"
     },
     {
-        "description": "Growing of tropical and subtropical fruits",
-        "code": "0122"
+        "code": "0122",
+        "description": "Growing of tropical and subtropical fruits"
     },
     {
-        "description": "Growing of citrus fruits",
-        "code": "0123"
+        "code": "0123",
+        "description": "Growing of citrus fruits"
     },
     {
-        "description": "Growing of pome fruits and stone fruits",
-        "code": "0124"
+        "code": "0124",
+        "description": "Growing of pome fruits and stone fruits"
     },
     {
-        "description": "Growing of other tree and bush fruits and nuts",
-        "code": "0125"
+        "code": "0125",
+        "description": "Growing of other tree and bush fruits and nuts"
     },
     {
-        "description": "Growing of oleaginous fruits",
-        "code": "0126"
+        "code": "0126",
+        "description": "Growing of oleaginous fruits"
     },
     {
-        "description": "Growing of beverage crops",
-        "code": "0127"
+        "code": "0127",
+        "description": "Growing of beverage crops"
     },
     {
-        "description": "Growing of spices, aromatic, drug and pharmaceutical crops",
-        "code": "0128"
+        "code": "0128",
+        "description": "Growing of spices, aromatic, drug and pharmaceutical crops"
     },
     {
-        "description": "Growing of other perennial crops",
-        "code": "0129"
+        "code": "0129",
+        "description": "Growing of other perennial crops"
     },
     {
-        "description": "Plant propagation",
-        "code": "0130"
+        "code": "0130",
+        "description": "Plant propagation"
     },
     {
-        "description": "Raising of cattle and buffaloes",
-        "code": "0141"
+        "code": "0141",
+        "description": "Raising of cattle and buffaloes"
     },
     {
-        "description": "Raising of horses and other equines",
-        "code": "0142"
+        "code": "0142",
+        "description": "Raising of horses and other equines"
     },
     {
-        "description": "Raising of camels and camelids",
-        "code": "0143"
+        "code": "0143",
+        "description": "Raising of camels and camelids"
     },
     {
-        "description": "Raising of sheep and goats",
-        "code": "0144"
+        "code": "0144",
+        "description": "Raising of sheep and goats"
     },
     {
-        "description": "Raising of swine/pigs",
-        "code": "0145"
+        "code": "0145",
+        "description": "Raising of swine/pigs"
     },
     {
-        "description": "Raising of poultry",
-        "code": "0146"
+        "code": "0146",
+        "description": "Raising of poultry"
     },
     {
-        "description": "Raising of other animals",
-        "code": "0149"
+        "code": "0149",
+        "description": "Raising of other animals"
     },
     {
-        "description": "Mixed farming",
-        "code": "0150"
+        "code": "0150",
+        "description": "Mixed farming"
     },
     {
-        "description": "Support activities for crop production",
-        "code": "0161"
+        "code": "0161",
+        "description": "Support activities for crop production"
     },
     {
-        "description": "Support activities for animal production",
-        "code": "0162"
+        "code": "0162",
+        "description": "Support activities for animal production"
     },
     {
-        "description": "Post-harvest crop activities",
-        "code": "0163"
+        "code": "0163",
+        "description": "Post-harvest crop activities"
     },
     {
-        "description": "Seed processing for propagation",
-        "code": "0164"
+        "code": "0164",
+        "description": "Seed processing for propagation"
     },
     {
-        "description": "Hunting, trapping and related service activities",
-        "code": "0170"
+        "code": "0170",
+        "description": "Hunting, trapping and related service activities"
     },
     {
-        "description": "Silviculture and other forestry activities",
-        "code": "0210"
+        "code": "0210",
+        "description": "Silviculture and other forestry activities"
     },
     {
-        "description": "Logging",
-        "code": "0220"
+        "code": "0220",
+        "description": "Logging"
     },
     {
-        "description": "Gathering of non-wood forest products",
-        "code": "0230"
+        "code": "0230",
+        "description": "Gathering of non-wood forest products"
     },
     {
-        "description": "Support services to forestry",
-        "code": "0240"
+        "code": "0240",
+        "description": "Support services to forestry"
     },
     {
-        "description": "Marine fishing",
-        "code": "0311"
+        "code": "0311",
+        "description": "Marine fishing"
     },
     {
-        "description": "Freshwater fishing",
-        "code": "0312"
+        "code": "0312",
+        "description": "Freshwater fishing"
     },
     {
-        "description": "Marine aquaculture",
-        "code": "0321"
+        "code": "0321",
+        "description": "Marine aquaculture"
     },
     {
-        "description": "Freshwater aquaculture",
-        "code": "0322"
+        "code": "0322",
+        "description": "Freshwater aquaculture"
     },
     {
-        "description": "Mining of hard coal",
-        "code": "0510"
+        "code": "0510",
+        "description": "Mining of hard coal"
     },
     {
-        "description": "Mining of lignite",
-        "code": "0520"
+        "code": "0520",
+        "description": "Mining of lignite"
     },
     {
-        "description": "Extraction of crude petroleum",
-        "code": "0610"
+        "code": "0610",
+        "description": "Extraction of crude petroleum"
     },
     {
-        "description": "Extraction of natural gas",
-        "code": "0620"
+        "code": "0620",
+        "description": "Extraction of natural gas"
     },
     {
-        "description": "Mining of iron ores",
-        "code": "0710"
+        "code": "0710",
+        "description": "Mining of iron ores"
     },
     {
-        "description": "Mining of uranium and thorium ores",
-        "code": "0721"
+        "code": "0721",
+        "description": "Mining of uranium and thorium ores"
     },
     {
-        "description": "Mining of other non-ferrous metal ores",
-        "code": "0729"
+        "code": "0729",
+        "description": "Mining of other non-ferrous metal ores"
     },
     {
-        "description": "Quarrying of stone, sand and clay",
-        "code": "0810"
+        "code": "0810",
+        "description": "Quarrying of stone, sand and clay"
     },
     {
-        "description": "Mining of chemical and fertilizer minerals",
-        "code": "0891"
+        "code": "0891",
+        "description": "Mining of chemical and fertilizer minerals"
     },
     {
-        "description": "Extraction of peat",
-        "code": "0892"
+        "code": "0892",
+        "description": "Extraction of peat"
     },
     {
-        "description": "Extraction of salt",
-        "code": "0893"
+        "code": "0893",
+        "description": "Extraction of salt"
     },
     {
-        "description": "Other mining and quarrying n.e.c.",
-        "code": "0899"
+        "code": "0899",
+        "description": "Other mining and quarrying n.e.c."
     },
     {
-        "description": "Support activities for petroleum and natural gas extraction",
-        "code": "0910"
+        "code": "0910",
+        "description": "Support activities for petroleum and natural gas extraction"
     },
     {
-        "description": "Support activities for other mining and quarrying",
-        "code": "0990"
+        "code": "0990",
+        "description": "Support activities for other mining and quarrying"
     },
     {
-        "description": "Processing and preserving of meat",
-        "code": "1010"
+        "code": "1010",
+        "description": "Processing and preserving of meat"
     },
     {
-        "description": "Processing and preserving of fish, crustaceans and molluscs",
-        "code": "1020"
+        "code": "1020",
+        "description": "Processing and preserving of fish, crustaceans and molluscs"
     },
     {
-        "description": "Processing and preserving of fruit and vegetables",
-        "code": "1030"
+        "code": "1030",
+        "description": "Processing and preserving of fruit and vegetables"
     },
     {
-        "description": "Manufacture of vegetable and animal oils and fats",
-        "code": "1040"
+        "code": "1040",
+        "description": "Manufacture of vegetable and animal oils and fats"
     },
     {
-        "description": "Manufacture of dairy products",
-        "code": "1050"
+        "code": "1050",
+        "description": "Manufacture of dairy products"
     },
     {
-        "description": "Manufacture of grain mill products",
-        "code": "1061"
+        "code": "1061",
+        "description": "Manufacture of grain mill products"
     },
     {
-        "description": "Manufacture of starches and starch products",
-        "code": "1062"
+        "code": "1062",
+        "description": "Manufacture of starches and starch products"
     },
     {
-        "description": "Manufacture of bakery products",
-        "code": "1071"
+        "code": "1071",
+        "description": "Manufacture of bakery products"
     },
     {
-        "description": "Manufacture of sugar",
-        "code": "1072"
+        "code": "1072",
+        "description": "Manufacture of sugar"
     },
     {
-        "description": "Manufacture of cocoa, chocolate and sugar confectionery",
-        "code": "1073"
+        "code": "1073",
+        "description": "Manufacture of cocoa, chocolate and sugar confectionery"
     },
     {
-        "description": "Manufacture of macaroni, noodles, couscous and similar farinaceous products",
-        "code": "1074"
+        "code": "1074",
+        "description": "Manufacture of macaroni, noodles, couscous and similar farinaceous products"
     },
     {
-        "description": "Manufacture of prepared meals and dishes",
-        "code": "1075"
+        "code": "1075",
+        "description": "Manufacture of prepared meals and dishes"
     },
     {
-        "description": "Manufacture of other food products n.e.c.",
-        "code": "1079"
+        "code": "1079",
+        "description": "Manufacture of other food products n.e.c."
     },
     {
-        "description": "Manufacture of prepared animal feeds",
-        "code": "1080"
+        "code": "1080",
+        "description": "Manufacture of prepared animal feeds"
     },
     {
-        "description": "Distilling, rectifying and blending of spirits",
-        "code": "1101"
+        "code": "1101",
+        "description": "Distilling, rectifying and blending of spirits"
     },
     {
-        "description": "Manufacture of wines",
-        "code": "1102"
+        "code": "1102",
+        "description": "Manufacture of wines"
     },
     {
-        "description": "Manufacture of malt liquors and malt",
-        "code": "1103"
+        "code": "1103",
+        "description": "Manufacture of malt liquors and malt"
     },
     {
-        "description": "Manufacture of soft drinks; production of mineral waters and other bottled waters",
-        "code": "1104"
+        "code": "1104",
+        "description": "Manufacture of soft drinks; production of mineral waters and other bottled waters"
     },
     {
-        "description": "Manufacture of tobacco products",
-        "code": "1200"
+        "code": "1200",
+        "description": "Manufacture of tobacco products"
     },
     {
-        "description": "Preparation and spinning of textile fibres",
-        "code": "1311"
+        "code": "1311",
+        "description": "Preparation and spinning of textile fibres"
     },
     {
-        "description": "Weaving of textiles",
-        "code": "1312"
+        "code": "1312",
+        "description": "Weaving of textiles"
     },
     {
-        "description": "Finishing of textiles",
-        "code": "1313"
+        "code": "1313",
+        "description": "Finishing of textiles"
     },
     {
-        "description": "Manufacture of knitted and crocheted fabrics",
-        "code": "1391"
+        "code": "1391",
+        "description": "Manufacture of knitted and crocheted fabrics"
     },
     {
-        "description": "Manufacture of made-up textile articles, except apparel",
-        "code": "1392"
+        "code": "1392",
+        "description": "Manufacture of made-up textile articles, except apparel"
     },
     {
-        "description": "Manufacture of carpets and rugs",
-        "code": "1393"
+        "code": "1393",
+        "description": "Manufacture of carpets and rugs"
     },
     {
-        "description": "Manufacture of cordage, rope, twine and netting",
-        "code": "1394"
+        "code": "1394",
+        "description": "Manufacture of cordage, rope, twine and netting"
     },
     {
-        "description": "Manufacture of other textiles n.e.c.",
-        "code": "1399"
+        "code": "1399",
+        "description": "Manufacture of other textiles n.e.c."
     },
     {
-        "description": "Manufacture of wearing apparel, except fur apparel",
-        "code": "1410"
+        "code": "1410",
+        "description": "Manufacture of wearing apparel, except fur apparel"
     },
     {
-        "description": "Manufacture of articles of fur",
-        "code": "1420"
+        "code": "1420",
+        "description": "Manufacture of articles of fur"
     },
     {
-        "description": "Manufacture of knitted and crocheted apparel",
-        "code": "1430"
+        "code": "1430",
+        "description": "Manufacture of knitted and crocheted apparel"
     },
     {
-        "description": "Tanning and dressing of leather; dressing and dyeing of fur",
-        "code": "1511"
+        "code": "1511",
+        "description": "Tanning and dressing of leather; dressing and dyeing of fur"
     },
     {
-        "description": "Manufacture of luggage, handbags and the like, saddlery and harness",
-        "code": "1512"
+        "code": "1512",
+        "description": "Manufacture of luggage, handbags and the like, saddlery and harness"
     },
     {
-        "description": "Manufacture of footwear",
-        "code": "1520"
+        "code": "1520",
+        "description": "Manufacture of footwear"
     },
     {
-        "description": "Sawmilling and planing of wood",
-        "code": "1610"
+        "code": "1610",
+        "description": "Sawmilling and planing of wood"
     },
     {
-        "description": "Manufacture of veneer sheets and wood-based panels",
-        "code": "1621"
+        "code": "1621",
+        "description": "Manufacture of veneer sheets and wood-based panels"
     },
     {
-        "description": "Manufacture of builders’ carpentry and joinery",
-        "code": "1622"
+        "code": "1622",
+        "description": "Manufacture of builders’ carpentry and joinery"
     },
     {
-        "description": "Manufacture of wooden containers",
-        "code": "1623"
+        "code": "1623",
+        "description": "Manufacture of wooden containers"
     },
     {
-        "description": "Manufacture of other products of wood; manufacture of articles of cork, straw and plaiting materials",
-        "code": "1629"
+        "code": "1629",
+        "description": "Manufacture of other products of wood; manufacture of articles of cork, straw and plaiting materials"
     },
     {
-        "description": "Manufacture of pulp, paper and paperboard",
-        "code": "1701"
+        "code": "1701",
+        "description": "Manufacture of pulp, paper and paperboard"
     },
     {
-        "description": "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard",
-        "code": "1702"
+        "code": "1702",
+        "description": "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard"
     },
     {
-        "description": "Manufacture of other articles of paper and paperboard",
-        "code": "1709"
+        "code": "1709",
+        "description": "Manufacture of other articles of paper and paperboard"
     },
     {
-        "description": "Printing",
-        "code": "1811"
+        "code": "1811",
+        "description": "Printing"
     },
     {
-        "description": "Service activities related to printing",
-        "code": "1812"
+        "code": "1812",
+        "description": "Service activities related to printing"
     },
     {
-        "description": "Reproduction of recorded media",
-        "code": "1820"
+        "code": "1820",
+        "description": "Reproduction of recorded media"
     },
     {
-        "description": "Manufacture of coke oven products",
-        "code": "1910"
+        "code": "1910",
+        "description": "Manufacture of coke oven products"
     },
     {
-        "description": "Manufacture of refined petroleum products",
-        "code": "1920"
+        "code": "1920",
+        "description": "Manufacture of refined petroleum products"
     },
     {
-        "description": "Manufacture of basic chemicals",
-        "code": "2011"
+        "code": "2011",
+        "description": "Manufacture of basic chemicals"
     },
     {
-        "description": "Manufacture of fertilizers and nitrogen compounds",
-        "code": "2012"
+        "code": "2012",
+        "description": "Manufacture of fertilizers and nitrogen compounds"
     },
     {
-        "description": "Manufacture of plastics and synthetic rubber in primary forms",
-        "code": "2013"
+        "code": "2013",
+        "description": "Manufacture of plastics and synthetic rubber in primary forms"
     },
     {
-        "description": "Manufacture of pesticides and other agrochemical products",
-        "code": "2021"
+        "code": "2021",
+        "description": "Manufacture of pesticides and other agrochemical products"
     },
     {
-        "description": "Manufacture of paints, varnishes and similar coatings, printing ink and mastics",
-        "code": "2022"
+        "code": "2022",
+        "description": "Manufacture of paints, varnishes and similar coatings, printing ink and mastics"
     },
     {
-        "description": "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations",
-        "code": "2023"
+        "code": "2023",
+        "description": "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations"
     },
     {
-        "description": "Manufacture of other chemical products n.e.c.",
-        "code": "2029"
+        "code": "2029",
+        "description": "Manufacture of other chemical products n.e.c."
     },
     {
-        "description": "Manufacture of man-made fibres",
-        "code": "2030"
+        "code": "2030",
+        "description": "Manufacture of man-made fibres"
     },
     {
-        "description": "Manufacture of pharmaceuticals, medicinal chemical and botanical products",
-        "code": "2100"
+        "code": "2100",
+        "description": "Manufacture of pharmaceuticals, medicinal chemical and botanical products"
     },
     {
-        "description": "Manufacture of rubber tyres and tubes; retreading and rebuilding of rubber tyres",
-        "code": "2211"
+        "code": "2211",
+        "description": "Manufacture of rubber tyres and tubes; retreading and rebuilding of rubber tyres"
     },
     {
-        "description": "Manufacture of other rubber products",
-        "code": "2219"
+        "code": "2219",
+        "description": "Manufacture of other rubber products"
     },
     {
-        "description": "Manufacture of plastics products",
-        "code": "2220"
+        "code": "2220",
+        "description": "Manufacture of plastics products"
     },
     {
-        "description": "Manufacture of glass and glass products",
-        "code": "2310"
+        "code": "2310",
+        "description": "Manufacture of glass and glass products"
     },
     {
-        "description": "Manufacture of refractory products",
-        "code": "2391"
+        "code": "2391",
+        "description": "Manufacture of refractory products"
     },
     {
-        "description": "Manufacture of clay building materials",
-        "code": "2392"
+        "code": "2392",
+        "description": "Manufacture of clay building materials"
     },
     {
-        "description": "Manufacture of other porcelain and ceramic products",
-        "code": "2393"
+        "code": "2393",
+        "description": "Manufacture of other porcelain and ceramic products"
     },
     {
-        "description": "Manufacture of cement, lime and plaster",
-        "code": "2394"
+        "code": "2394",
+        "description": "Manufacture of cement, lime and plaster"
     },
     {
-        "description": "Manufacture of articles of concrete, cement and plaster",
-        "code": "2395"
+        "code": "2395",
+        "description": "Manufacture of articles of concrete, cement and plaster"
     },
     {
-        "description": "Cutting, shaping and finishing of stone",
-        "code": "2396"
+        "code": "2396",
+        "description": "Cutting, shaping and finishing of stone"
     },
     {
-        "description": "Manufacture of other non-metallic mineral products n.e.c.",
-        "code": "2399"
+        "code": "2399",
+        "description": "Manufacture of other non-metallic mineral products n.e.c."
     },
     {
-        "description": "Manufacture of basic iron and steel",
-        "code": "2410"
+        "code": "2410",
+        "description": "Manufacture of basic iron and steel"
     },
     {
-        "description": "Manufacture of basic precious and other non-ferrous metals",
-        "code": "2420"
+        "code": "2420",
+        "description": "Manufacture of basic precious and other non-ferrous metals"
     },
     {
-        "description": "Casting of iron and steel",
-        "code": "2431"
+        "code": "2431",
+        "description": "Casting of iron and steel"
     },
     {
-        "description": "Casting of non-ferrous metals",
-        "code": "2432"
+        "code": "2432",
+        "description": "Casting of non-ferrous metals"
     },
     {
-        "description": "Manufacture of structural metal products",
-        "code": "2511"
+        "code": "2511",
+        "description": "Manufacture of structural metal products"
     },
     {
-        "description": "Manufacture of tanks, reservoirs and containers of metal",
-        "code": "2512"
+        "code": "2512",
+        "description": "Manufacture of tanks, reservoirs and containers of metal"
     },
     {
-        "description": "Manufacture of steam generators, except central heating hot water boilers",
-        "code": "2513"
+        "code": "2513",
+        "description": "Manufacture of steam generators, except central heating hot water boilers"
     },
     {
-        "description": "Manufacture of weapons and ammunition",
-        "code": "2520"
+        "code": "2520",
+        "description": "Manufacture of weapons and ammunition"
     },
     {
-        "description": "Forging, pressing, stamping and roll-forming of metal; powder metallurgy",
-        "code": "2591"
+        "code": "2591",
+        "description": "Forging, pressing, stamping and roll-forming of metal; powder metallurgy"
     },
     {
-        "description": "Treatment and coating of metals; machining",
-        "code": "2592"
+        "code": "2592",
+        "description": "Treatment and coating of metals; machining"
     },
     {
-        "description": "Manufacture of cutlery, hand tools and general hardware",
-        "code": "2593"
+        "code": "2593",
+        "description": "Manufacture of cutlery, hand tools and general hardware"
     },
     {
-        "description": "Manufacture of other fabricated metal products n.e.c.",
-        "code": "2599"
+        "code": "2599",
+        "description": "Manufacture of other fabricated metal products n.e.c."
     },
     {
-        "description": "Manufacture of electronic components and boards",
-        "code": "2610"
+        "code": "2610",
+        "description": "Manufacture of electronic components and boards"
     },
     {
-        "description": "Manufacture of computers and peripheral equipment",
-        "code": "2620"
+        "code": "2620",
+        "description": "Manufacture of computers and peripheral equipment"
     },
     {
-        "description": "Manufacture of communication equipment",
-        "code": "2630"
+        "code": "2630",
+        "description": "Manufacture of communication equipment"
     },
     {
-        "description": "Manufacture of consumer electronics",
-        "code": "2640"
+        "code": "2640",
+        "description": "Manufacture of consumer electronics"
     },
     {
-        "description": "Manufacture of measuring, testing, navigating and control equipment",
-        "code": "2651"
+        "code": "2651",
+        "description": "Manufacture of measuring, testing, navigating and control equipment"
     },
     {
-        "description": "Manufacture of watches and clocks",
-        "code": "2652"
+        "code": "2652",
+        "description": "Manufacture of watches and clocks"
     },
     {
-        "description": "Manufacture of irradiation, electromedical and electrotherapeutic equipment",
-        "code": "2660"
+        "code": "2660",
+        "description": "Manufacture of irradiation, electromedical and electrotherapeutic equipment"
     },
     {
-        "description": "Manufacture of optical instruments and photographic equipment",
-        "code": "2670"
+        "code": "2670",
+        "description": "Manufacture of optical instruments and photographic equipment"
     },
     {
-        "description": "Manufacture of magnetic and optical media",
-        "code": "2680"
+        "code": "2680",
+        "description": "Manufacture of magnetic and optical media"
     },
     {
-        "description": "Manufacture of electric motors, generators, transformers and electricity distribution and control apparatus",
-        "code": "2710"
+        "code": "2710",
+        "description": "Manufacture of electric motors, generators, transformers and electricity distribution and control apparatus"
     },
     {
-        "description": "Manufacture of batteries and accumulators",
-        "code": "2720"
+        "code": "2720",
+        "description": "Manufacture of batteries and accumulators"
     },
     {
-        "description": "Manufacture of fibre optic cables",
-        "code": "2731"
+        "code": "2731",
+        "description": "Manufacture of fibre optic cables"
     },
     {
-        "description": "Manufacture of other electronic and electric wires and cables",
-        "code": "2732"
+        "code": "2732",
+        "description": "Manufacture of other electronic and electric wires and cables"
     },
     {
-        "description": "Manufacture of wiring devices",
-        "code": "2733"
+        "code": "2733",
+        "description": "Manufacture of wiring devices"
     },
     {
-        "description": "Manufacture of electric lighting equipment",
-        "code": "2740"
+        "code": "2740",
+        "description": "Manufacture of electric lighting equipment"
     },
     {
-        "description": "Manufacture of domestic appliances",
-        "code": "2750"
+        "code": "2750",
+        "description": "Manufacture of domestic appliances"
     },
     {
-        "description": "Manufacture of other electrical equipment",
-        "code": "2790"
+        "code": "2790",
+        "description": "Manufacture of other electrical equipment"
     },
     {
-        "description": "Manufacture of engines and turbines, except aircraft, vehicle and cycle engines",
-        "code": "2811"
+        "code": "2811",
+        "description": "Manufacture of engines and turbines, except aircraft, vehicle and cycle engines"
     },
     {
-        "description": "Manufacture of fluid power equipment",
-        "code": "2812"
+        "code": "2812",
+        "description": "Manufacture of fluid power equipment"
     },
     {
-        "description": "Manufacture of other pumps, compressors, taps and valves",
-        "code": "2813"
+        "code": "2813",
+        "description": "Manufacture of other pumps, compressors, taps and valves"
     },
     {
-        "description": "Manufacture of bearings, gears, gearing and driving elements",
-        "code": "2814"
+        "code": "2814",
+        "description": "Manufacture of bearings, gears, gearing and driving elements"
     },
     {
-        "description": "Manufacture of ovens, furnaces and furnace burners",
-        "code": "2815"
+        "code": "2815",
+        "description": "Manufacture of ovens, furnaces and furnace burners"
     },
     {
-        "description": "Manufacture of lifting and handling equipment",
-        "code": "2816"
+        "code": "2816",
+        "description": "Manufacture of lifting and handling equipment"
     },
     {
-        "description": "Manufacture of office machinery and equipment (except computers and peripheral equipment)",
-        "code": "2817"
+        "code": "2817",
+        "description": "Manufacture of office machinery and equipment (except computers and peripheral equipment)"
     },
     {
-        "description": "Manufacture of power-driven hand tools",
-        "code": "2818"
+        "code": "2818",
+        "description": "Manufacture of power-driven hand tools"
     },
     {
-        "description": "Manufacture of other general-purpose machinery",
-        "code": "2819"
+        "code": "2819",
+        "description": "Manufacture of other general-purpose machinery"
     },
     {
-        "description": "Manufacture of agricultural and forestry machinery",
-        "code": "2821"
+        "code": "2821",
+        "description": "Manufacture of agricultural and forestry machinery"
     },
     {
-        "description": "Manufacture of metal-forming machinery and machine tools",
-        "code": "2822"
+        "code": "2822",
+        "description": "Manufacture of metal-forming machinery and machine tools"
     },
     {
-        "description": "Manufacture of machinery for metallurgy",
-        "code": "2823"
+        "code": "2823",
+        "description": "Manufacture of machinery for metallurgy"
     },
     {
-        "description": "Manufacture of machinery for mining, quarrying and construction",
-        "code": "2824"
+        "code": "2824",
+        "description": "Manufacture of machinery for mining, quarrying and construction"
     },
     {
-        "description": "Manufacture of machinery for food, beverage and tobacco processing",
-        "code": "2825"
+        "code": "2825",
+        "description": "Manufacture of machinery for food, beverage and tobacco processing"
     },
     {
-        "description": "Manufacture of machinery for textile, apparel and leather production",
-        "code": "2826"
+        "code": "2826",
+        "description": "Manufacture of machinery for textile, apparel and leather production"
     },
     {
-        "description": "Manufacture of other special-purpose machinery",
-        "code": "2829"
+        "code": "2829",
+        "description": "Manufacture of other special-purpose machinery"
     },
     {
-        "description": "Manufacture of motor vehicles",
-        "code": "2910"
+        "code": "2910",
+        "description": "Manufacture of motor vehicles"
     },
     {
-        "description": "Manufacture of bodies (coachwork) for motor vehicles; manufacture of trailers and semi-trailers",
-        "code": "2920"
+        "code": "2920",
+        "description": "Manufacture of bodies (coachwork) for motor vehicles; manufacture of trailers and semi-trailers"
     },
     {
-        "description": "Manufacture of parts and accessories for motor vehicles",
-        "code": "2930"
+        "code": "2930",
+        "description": "Manufacture of parts and accessories for motor vehicles"
     },
     {
-        "description": "Building of ships and floating structures",
-        "code": "3011"
+        "code": "3011",
+        "description": "Building of ships and floating structures"
     },
     {
-        "description": "Building of pleasure and sporting boats",
-        "code": "3012"
+        "code": "3012",
+        "description": "Building of pleasure and sporting boats"
     },
     {
-        "description": "Manufacture of railway locomotives and rolling stock",
-        "code": "3020"
+        "code": "3020",
+        "description": "Manufacture of railway locomotives and rolling stock"
     },
     {
-        "description": "Manufacture of air and spacecraft and related machinery",
-        "code": "3030"
+        "code": "3030",
+        "description": "Manufacture of air and spacecraft and related machinery"
     },
     {
-        "description": "Manufacture of military fighting vehicles",
-        "code": "3040"
+        "code": "3040",
+        "description": "Manufacture of military fighting vehicles"
     },
     {
-        "description": "Manufacture of motorcycles",
-        "code": "3091"
+        "code": "3091",
+        "description": "Manufacture of motorcycles"
     },
     {
-        "description": "Manufacture of bicycles and invalid carriages",
-        "code": "3092"
+        "code": "3092",
+        "description": "Manufacture of bicycles and invalid carriages"
     },
     {
-        "description": "Manufacture of other transport equipment n.e.c.",
-        "code": "3099"
+        "code": "3099",
+        "description": "Manufacture of other transport equipment n.e.c."
     },
     {
-        "description": "Manufacture of furniture",
-        "code": "3100"
+        "code": "3100",
+        "description": "Manufacture of furniture"
     },
     {
-        "description": "Manufacture of jewellery and related articles",
-        "code": "3211"
+        "code": "3211",
+        "description": "Manufacture of jewellery and related articles"
     },
     {
-        "description": "Manufacture of imitation jewellery and related articles",
-        "code": "3212"
+        "code": "3212",
+        "description": "Manufacture of imitation jewellery and related articles"
     },
     {
-        "description": "Manufacture of musical instruments",
-        "code": "3220"
+        "code": "3220",
+        "description": "Manufacture of musical instruments"
     },
     {
-        "description": "Manufacture of sports goods",
-        "code": "3230"
+        "code": "3230",
+        "description": "Manufacture of sports goods"
     },
     {
-        "description": "Manufacture of games and toys",
-        "code": "3240"
+        "code": "3240",
+        "description": "Manufacture of games and toys"
     },
     {
-        "description": "Manufacture of medical and dental instruments and supplies",
-        "code": "3250"
+        "code": "3250",
+        "description": "Manufacture of medical and dental instruments and supplies"
     },
     {
-        "description": "Other manufacturing n.e.c.",
-        "code": "3290"
+        "code": "3290",
+        "description": "Other manufacturing n.e.c."
     },
     {
-        "description": "Repair of fabricated metal products",
-        "code": "3311"
+        "code": "3311",
+        "description": "Repair of fabricated metal products"
     },
     {
-        "description": "Repair of machinery",
-        "code": "3312"
+        "code": "3312",
+        "description": "Repair of machinery"
     },
     {
-        "description": "Repair of electronic and optical equipment",
-        "code": "3313"
+        "code": "3313",
+        "description": "Repair of electronic and optical equipment"
     },
     {
-        "description": "Repair of electrical equipment",
-        "code": "3314"
+        "code": "3314",
+        "description": "Repair of electrical equipment"
     },
     {
-        "description": "Repair of transport equipment, except motor vehicles",
-        "code": "3315"
+        "code": "3315",
+        "description": "Repair of transport equipment, except motor vehicles"
     },
     {
-        "description": "Repair of other equipment",
-        "code": "3319"
+        "code": "3319",
+        "description": "Repair of other equipment"
     },
     {
-        "description": "Installation of industrial machinery and equipment",
-        "code": "3320"
+        "code": "3320",
+        "description": "Installation of industrial machinery and equipment"
     },
     {
-        "description": "Electric power generation, transmission and distribution",
-        "code": "3510"
+        "code": "3510",
+        "description": "Electric power generation, transmission and distribution"
     },
     {
-        "description": "Manufacture of gas; distribution of gaseous fuels through mains",
-        "code": "3520"
+        "code": "3520",
+        "description": "Manufacture of gas; distribution of gaseous fuels through mains"
     },
     {
-        "description": "Steam and air conditioning supply",
-        "code": "3530"
+        "code": "3530",
+        "description": "Steam and air conditioning supply"
     },
     {
-        "description": "Water collection, treatment and supply",
-        "code": "3600"
+        "code": "3600",
+        "description": "Water collection, treatment and supply"
     },
     {
-        "description": "Sewerage",
-        "code": "3700"
+        "code": "3700",
+        "description": "Sewerage"
     },
     {
-        "description": "Collection of non-hazardous waste",
-        "code": "3811"
+        "code": "3811",
+        "description": "Collection of non-hazardous waste"
     },
     {
-        "description": "Collection of hazardous waste",
-        "code": "3812"
+        "code": "3812",
+        "description": "Collection of hazardous waste"
     },
     {
-        "description": "Treatment and disposal of non-hazardous waste",
-        "code": "3821"
+        "code": "3821",
+        "description": "Treatment and disposal of non-hazardous waste"
     },
     {
-        "description": "Treatment and disposal of hazardous waste",
-        "code": "3822"
+        "code": "3822",
+        "description": "Treatment and disposal of hazardous waste"
     },
     {
-        "description": "Materials recovery",
-        "code": "3830"
+        "code": "3830",
+        "description": "Materials recovery"
     },
     {
-        "description": "Remediation activities and other waste management services",
-        "code": "3900"
+        "code": "3900",
+        "description": "Remediation activities and other waste management services"
     },
     {
-        "description": "Construction of buildings",
-        "code": "4100"
+        "code": "4100",
+        "description": "Construction of buildings"
     },
     {
-        "description": "Construction of roads and railways",
-        "code": "4210"
+        "code": "4210",
+        "description": "Construction of roads and railways"
     },
     {
-        "description": "Construction of utility projects",
-        "code": "4220"
+        "code": "4220",
+        "description": "Construction of utility projects"
     },
     {
-        "description": "Construction of other civil engineering projects",
-        "code": "4290"
+        "code": "4290",
+        "description": "Construction of other civil engineering projects"
     },
     {
-        "description": "Demolition",
-        "code": "4311"
+        "code": "4311",
+        "description": "Demolition"
     },
     {
-        "description": "Site preparation",
-        "code": "4312"
+        "code": "4312",
+        "description": "Site preparation"
     },
     {
-        "description": "Electrical installation",
-        "code": "4321"
+        "code": "4321",
+        "description": "Electrical installation"
     },
     {
-        "description": "Plumbing, heat and air-conditioning installation",
-        "code": "4322"
+        "code": "4322",
+        "description": "Plumbing, heat and air-conditioning installation"
     },
     {
-        "description": "Other construction installation",
-        "code": "4329"
+        "code": "4329",
+        "description": "Other construction installation"
     },
     {
-        "description": "Building completion and finishing",
-        "code": "4330"
+        "code": "4330",
+        "description": "Building completion and finishing"
     },
     {
-        "description": "Other specialized construction activities",
-        "code": "4390"
+        "code": "4390",
+        "description": "Other specialized construction activities"
     },
     {
-        "description": "Sale of motor vehicles",
-        "code": "4510"
+        "code": "4510",
+        "description": "Sale of motor vehicles"
     },
     {
-        "description": "Maintenance and repair of motor vehicles",
-        "code": "4520"
+        "code": "4520",
+        "description": "Maintenance and repair of motor vehicles"
     },
     {
-        "description": "Sale of motor vehicle parts and accessories",
-        "code": "4530"
+        "code": "4530",
+        "description": "Sale of motor vehicle parts and accessories"
     },
     {
-        "description": "Sale, maintenance and repair of motorcycles and related parts and accessories",
-        "code": "4540"
+        "code": "4540",
+        "description": "Sale, maintenance and repair of motorcycles and related parts and accessories"
     },
     {
-        "description": "Wholesale on a fee or contract basis",
-        "code": "4610"
+        "code": "4610",
+        "description": "Wholesale on a fee or contract basis"
     },
     {
-        "description": "Wholesale of agricultural raw materials and live animals",
-        "code": "4620"
+        "code": "4620",
+        "description": "Wholesale of agricultural raw materials and live animals"
     },
     {
-        "description": "Wholesale of food, beverages and tobacco",
-        "code": "4630"
+        "code": "4630",
+        "description": "Wholesale of food, beverages and tobacco"
     },
     {
-        "description": "Wholesale of textiles, clothing and footwear",
-        "code": "4641"
+        "code": "4641",
+        "description": "Wholesale of textiles, clothing and footwear"
     },
     {
-        "description": "Wholesale of other household goods",
-        "code": "4649"
+        "code": "4649",
+        "description": "Wholesale of other household goods"
     },
     {
-        "description": "Wholesale of computers, computer peripheral equipment and software",
-        "code": "4651"
+        "code": "4651",
+        "description": "Wholesale of computers, computer peripheral equipment and software"
     },
     {
-        "description": "Wholesale of electronic and telecommunications equipment and parts",
-        "code": "4652"
+        "code": "4652",
+        "description": "Wholesale of electronic and telecommunications equipment and parts"
     },
     {
-        "description": "Wholesale of agricultural machinery, equipment and supplies",
-        "code": "4653"
+        "code": "4653",
+        "description": "Wholesale of agricultural machinery, equipment and supplies"
     },
     {
-        "description": "Wholesale of other machinery and equipment",
-        "code": "4659"
+        "code": "4659",
+        "description": "Wholesale of other machinery and equipment"
     },
     {
-        "description": "Wholesale of solid, liquid and gaseous fuels and related products",
-        "code": "4661"
+        "code": "4661",
+        "description": "Wholesale of solid, liquid and gaseous fuels and related products"
     },
     {
-        "description": "Wholesale of metals and metal ores",
-        "code": "4662"
+        "code": "4662",
+        "description": "Wholesale of metals and metal ores"
     },
     {
-        "description": "Wholesale of construction materials, hardware, plumbing and heating equipment and supplies",
-        "code": "4663"
+        "code": "4663",
+        "description": "Wholesale of construction materials, hardware, plumbing and heating equipment and supplies"
     },
     {
-        "description": "Wholesale of waste and scrap and other products n.e.c.",
-        "code": "4669"
+        "code": "4669",
+        "description": "Wholesale of waste and scrap and other products n.e.c."
     },
     {
-        "description": "Non-specialized wholesale trade",
-        "code": "4690"
+        "code": "4690",
+        "description": "Non-specialized wholesale trade"
     },
     {
-        "description": "Retail sale in non-specialized stores with food, beverages or tobacco predominating",
-        "code": "4711"
+        "code": "4711",
+        "description": "Retail sale in non-specialized stores with food, beverages or tobacco predominating"
     },
     {
-        "description": "Other retail sale in non-specialized stores",
-        "code": "4719"
+        "code": "4719",
+        "description": "Other retail sale in non-specialized stores"
     },
     {
-        "description": "Retail sale of food in specialized stores",
-        "code": "4721"
+        "code": "4721",
+        "description": "Retail sale of food in specialized stores"
     },
     {
-        "description": "Retail sale of beverages in specialized stores",
-        "code": "4722"
+        "code": "4722",
+        "description": "Retail sale of beverages in specialized stores"
     },
     {
-        "description": "Retail sale of tobacco products in specialized stores",
-        "code": "4723"
+        "code": "4723",
+        "description": "Retail sale of tobacco products in specialized stores"
     },
     {
-        "description": "Retail sale of automotive fuel in specialized stores",
-        "code": "4730"
+        "code": "4730",
+        "description": "Retail sale of automotive fuel in specialized stores"
     },
     {
-        "description": "Retail sale of computers, peripheral units, software and telecommunications equipment in specialized stores",
-        "code": "4741"
+        "code": "4741",
+        "description": "Retail sale of computers, peripheral units, software and telecommunications equipment in specialized stores"
     },
     {
-        "description": "Retail sale of audio and video equipment in specialized stores",
-        "code": "4742"
+        "code": "4742",
+        "description": "Retail sale of audio and video equipment in specialized stores"
     },
     {
-        "description": "Retail sale of textiles in specialized stores",
-        "code": "4751"
+        "code": "4751",
+        "description": "Retail sale of textiles in specialized stores"
     },
     {
-        "description": "Retail sale of hardware, paints and glass in specialized stores",
-        "code": "4752"
+        "code": "4752",
+        "description": "Retail sale of hardware, paints and glass in specialized stores"
     },
     {
-        "description": "Retail sale of carpets, rugs, wall and floor coverings in specialized stores",
-        "code": "4753"
+        "code": "4753",
+        "description": "Retail sale of carpets, rugs, wall and floor coverings in specialized stores"
     },
     {
-        "description": "Retail sale of electrical household appliances, furniture, lighting equipment and other household articles in specialized stores",
-        "code": "4759"
+        "code": "4759",
+        "description": "Retail sale of electrical household appliances, furniture, lighting equipment and other household articles in specialized stores"
     },
     {
-        "description": "Retail sale of books, newspapers and stationary in specialized stores",
-        "code": "4761"
+        "code": "4761",
+        "description": "Retail sale of books, newspapers and stationary in specialized stores"
     },
     {
-        "description": "Retail sale of music and video recordings in specialized stores",
-        "code": "4762"
+        "code": "4762",
+        "description": "Retail sale of music and video recordings in specialized stores"
     },
     {
-        "description": "Retail sale of sporting equipment in specialized stores",
-        "code": "4763"
+        "code": "4763",
+        "description": "Retail sale of sporting equipment in specialized stores"
     },
     {
-        "description": "Retail sale of games and toys in specialized stores",
-        "code": "4764"
+        "code": "4764",
+        "description": "Retail sale of games and toys in specialized stores"
     },
     {
-        "description": "Retail sale of clothing, footwear and leather articles in specialized stores",
-        "code": "4771"
+        "code": "4771",
+        "description": "Retail sale of clothing, footwear and leather articles in specialized stores"
     },
     {
-        "description": "Retail sale of pharmaceutical and medical goods, cosmetic and toilet articles in specialized stores",
-        "code": "4772"
+        "code": "4772",
+        "description": "Retail sale of pharmaceutical and medical goods, cosmetic and toilet articles in specialized stores"
     },
     {
-        "description": "Other retail sale of new goods in specialized stores",
-        "code": "4773"
+        "code": "4773",
+        "description": "Other retail sale of new goods in specialized stores"
     },
     {
-        "description": "Retail sale of second-hand goods",
-        "code": "4774"
+        "code": "4774",
+        "description": "Retail sale of second-hand goods"
     },
     {
-        "description": "Retail sale via stalls and markets of food, beverages and tobacco products",
-        "code": "4781"
+        "code": "4781",
+        "description": "Retail sale via stalls and markets of food, beverages and tobacco products"
     },
     {
-        "description": "Retail sale via stalls and markets of textiles, clothing and footwear",
-        "code": "4782"
+        "code": "4782",
+        "description": "Retail sale via stalls and markets of textiles, clothing and footwear"
     },
     {
-        "description": "Retail sale via stalls and markets of other goods",
-        "code": "4789"
+        "code": "4789",
+        "description": "Retail sale via stalls and markets of other goods"
     },
     {
-        "description": "Retail sale via mail order houses or via Internet",
-        "code": "4791"
+        "code": "4791",
+        "description": "Retail sale via mail order houses or via Internet"
     },
     {
-        "description": "Other retail sale not in stores, stalls or markets",
-        "code": "4799"
+        "code": "4799",
+        "description": "Other retail sale not in stores, stalls or markets"
     },
     {
-        "description": "Passenger rail transport, interurban",
-        "code": "4911"
+        "code": "4911",
+        "description": "Passenger rail transport, interurban"
     },
     {
-        "description": "Freight rail transport",
-        "code": "4912"
+        "code": "4912",
+        "description": "Freight rail transport"
     },
     {
-        "description": "Urban and suburban passenger land transport",
-        "code": "4921"
+        "code": "4921",
+        "description": "Urban and suburban passenger land transport"
     },
     {
-        "description": "Other passenger land transport",
-        "code": "4922"
+        "code": "4922",
+        "description": "Other passenger land transport"
     },
     {
-        "description": "Freight transport by road",
-        "code": "4923"
+        "code": "4923",
+        "description": "Freight transport by road"
     },
     {
-        "description": "Transport via pipeline",
-        "code": "4930"
+        "code": "4930",
+        "description": "Transport via pipeline"
     },
     {
-        "description": "Sea and coastal passenger water transport",
-        "code": "5011"
+        "code": "5011",
+        "description": "Sea and coastal passenger water transport"
     },
     {
-        "description": "Sea and coastal freight water transport",
-        "code": "5012"
+        "code": "5012",
+        "description": "Sea and coastal freight water transport"
     },
     {
-        "description": "Inland passenger water transport",
-        "code": "5021"
+        "code": "5021",
+        "description": "Inland passenger water transport"
     },
     {
-        "description": "Inland freight water transport",
-        "code": "5022"
+        "code": "5022",
+        "description": "Inland freight water transport"
     },
     {
-        "description": "Passenger air transport",
-        "code": "5110"
+        "code": "5110",
+        "description": "Passenger air transport"
     },
     {
-        "description": "Freight air transport",
-        "code": "5120"
+        "code": "5120",
+        "description": "Freight air transport"
     },
     {
-        "description": "Warehousing and storage",
-        "code": "5210"
+        "code": "5210",
+        "description": "Warehousing and storage"
     },
     {
-        "description": "Service activities incidental to land transportation",
-        "code": "5221"
+        "code": "5221",
+        "description": "Service activities incidental to land transportation"
     },
     {
-        "description": "Service activities incidental to water transportation",
-        "code": "5222"
+        "code": "5222",
+        "description": "Service activities incidental to water transportation"
     },
     {
-        "description": "Service activities incidental to air transportation",
-        "code": "5223"
+        "code": "5223",
+        "description": "Service activities incidental to air transportation"
     },
     {
-        "description": "Cargo handling",
-        "code": "5224"
+        "code": "5224",
+        "description": "Cargo handling"
     },
     {
-        "description": "Other transportation support activities",
-        "code": "5229"
+        "code": "5229",
+        "description": "Other transportation support activities"
     },
     {
-        "description": "Postal activities",
-        "code": "5310"
+        "code": "5310",
+        "description": "Postal activities"
     },
     {
-        "description": "Courier activities",
-        "code": "5320"
+        "code": "5320",
+        "description": "Courier activities"
     },
     {
-        "description": "Short term accommodation activities",
-        "code": "5510"
+        "code": "5510",
+        "description": "Short term accommodation activities"
     },
     {
-        "description": "Camping grounds, recreational vehicle parks and trailer parks",
-        "code": "5520"
+        "code": "5520",
+        "description": "Camping grounds, recreational vehicle parks and trailer parks"
     },
     {
-        "description": "Other accommodation",
-        "code": "5590"
+        "code": "5590",
+        "description": "Other accommodation"
     },
     {
-        "description": "Restaurants and mobile food service activities",
-        "code": "5610"
+        "code": "5610",
+        "description": "Restaurants and mobile food service activities"
     },
     {
-        "description": "Event catering",
-        "code": "5621"
+        "code": "5621",
+        "description": "Event catering"
     },
     {
-        "description": "Other food service activities",
-        "code": "5629"
+        "code": "5629",
+        "description": "Other food service activities"
     },
     {
-        "description": "Beverage serving activities",
-        "code": "5630"
+        "code": "5630",
+        "description": "Beverage serving activities"
     },
     {
-        "description": "Book publishing",
-        "code": "5811"
+        "code": "5811",
+        "description": "Book publishing"
     },
     {
-        "description": "Publishing of directories and mailing lists",
-        "code": "5812"
+        "code": "5812",
+        "description": "Publishing of directories and mailing lists"
     },
     {
-        "description": "Publishing of newspapers, journals and periodicals",
-        "code": "5813"
+        "code": "5813",
+        "description": "Publishing of newspapers, journals and periodicals"
     },
     {
-        "description": "Other publishing activities",
-        "code": "5819"
+        "code": "5819",
+        "description": "Other publishing activities"
     },
     {
-        "description": "Software publishing",
-        "code": "5820"
+        "code": "5820",
+        "description": "Software publishing"
     },
     {
-        "description": "Motion picture, video and television programme production activities",
-        "code": "5911"
+        "code": "5911",
+        "description": "Motion picture, video and television programme production activities"
     },
     {
-        "description": "Motion picture, video and television programme post-production activities",
-        "code": "5912"
+        "code": "5912",
+        "description": "Motion picture, video and television programme post-production activities"
     },
     {
-        "description": "Motion picture, video and television programme distribution activities",
-        "code": "5913"
+        "code": "5913",
+        "description": "Motion picture, video and television programme distribution activities"
     },
     {
-        "description": "Motion picture projection activities",
-        "code": "5914"
+        "code": "5914",
+        "description": "Motion picture projection activities"
     },
     {
-        "description": "Sound recording and music publishing activities",
-        "code": "5920"
+        "code": "5920",
+        "description": "Sound recording and music publishing activities"
     },
     {
-        "description": "Radio broadcasting",
-        "code": "6010"
+        "code": "6010",
+        "description": "Radio broadcasting"
     },
     {
-        "description": "Television programming and broadcasting activities",
-        "code": "6020"
+        "code": "6020",
+        "description": "Television programming and broadcasting activities"
     },
     {
-        "description": "Wired telecommunications activities",
-        "code": "6110"
+        "code": "6110",
+        "description": "Wired telecommunications activities"
     },
     {
-        "description": "Wireless telecommunications activities",
-        "code": "6120"
+        "code": "6120",
+        "description": "Wireless telecommunications activities"
     },
     {
-        "description": "Satellite telecommunications activities",
-        "code": "6130"
+        "code": "6130",
+        "description": "Satellite telecommunications activities"
     },
     {
-        "description": "Other telecommunications activities",
-        "code": "6190"
+        "code": "6190",
+        "description": "Other telecommunications activities"
     },
     {
-        "description": "Computer programming activities",
-        "code": "6201"
+        "code": "6201",
+        "description": "Computer programming activities"
     },
     {
-        "description": "Computer consultancy and computer facilities management activities",
-        "code": "6202"
+        "code": "6202",
+        "description": "Computer consultancy and computer facilities management activities"
     },
     {
-        "description": "Other information technology and computer service activities",
-        "code": "6209"
+        "code": "6209",
+        "description": "Other information technology and computer service activities"
     },
     {
-        "description": "Data processing, hosting and related activities",
-        "code": "6311"
+        "code": "6311",
+        "description": "Data processing, hosting and related activities"
     },
     {
-        "description": "Web portals",
-        "code": "6312"
+        "code": "6312",
+        "description": "Web portals"
     },
     {
-        "description": "News agency activities",
-        "code": "6391"
+        "code": "6391",
+        "description": "News agency activities"
     },
     {
-        "description": "Other information service activities n.e.c.",
-        "code": "6399"
+        "code": "6399",
+        "description": "Other information service activities n.e.c."
     },
     {
-        "description": "Central banking",
-        "code": "6411"
+        "code": "6411",
+        "description": "Central banking"
     },
     {
-        "description": "Other monetary intermediation",
-        "code": "6419"
+        "code": "6419",
+        "description": "Other monetary intermediation"
     },
     {
-        "description": "Activities of holding companies",
-        "code": "6420"
+        "code": "6420",
+        "description": "Activities of holding companies"
     },
     {
-        "description": "Trusts, funds and similar financial entities",
-        "code": "6430"
+        "code": "6430",
+        "description": "Trusts, funds and similar financial entities"
     },
     {
-        "description": "Financial leasing",
-        "code": "6491"
+        "code": "6491",
+        "description": "Financial leasing"
     },
     {
-        "description": "Other credit granting",
-        "code": "6492"
+        "code": "6492",
+        "description": "Other credit granting"
     },
     {
-        "description": "Other financial service activities, except insurance and pension funding activities, n.e.c.",
-        "code": "6499"
+        "code": "6499",
+        "description": "Other financial service activities, except insurance and pension funding activities, n.e.c."
     },
     {
-        "description": "Life insurance",
-        "code": "6511"
+        "code": "6511",
+        "description": "Life insurance"
     },
     {
-        "description": "Non-life insurance",
-        "code": "6512"
+        "code": "6512",
+        "description": "Non-life insurance"
     },
     {
-        "description": "Reinsurance",
-        "code": "6520"
+        "code": "6520",
+        "description": "Reinsurance"
     },
     {
-        "description": "Pension funding",
-        "code": "6530"
+        "code": "6530",
+        "description": "Pension funding"
     },
     {
-        "description": "Administration of financial markets",
-        "code": "6611"
+        "code": "6611",
+        "description": "Administration of financial markets"
     },
     {
-        "description": "Security and commodity contracts brokerage",
-        "code": "6612"
+        "code": "6612",
+        "description": "Security and commodity contracts brokerage"
     },
     {
-        "description": "Other activities auxiliary to financial service activities",
-        "code": "6619"
+        "code": "6619",
+        "description": "Other activities auxiliary to financial service activities"
     },
     {
-        "description": "Risk and damage evaluation",
-        "code": "6621"
+        "code": "6621",
+        "description": "Risk and damage evaluation"
     },
     {
-        "description": "Activities of insurance agents and brokers",
-        "code": "6622"
+        "code": "6622",
+        "description": "Activities of insurance agents and brokers"
     },
     {
-        "description": "Other activities auxiliary to insurance and pension funding",
-        "code": "6629"
+        "code": "6629",
+        "description": "Other activities auxiliary to insurance and pension funding"
     },
     {
-        "description": "Fund management activities",
-        "code": "6630"
+        "code": "6630",
+        "description": "Fund management activities"
     },
     {
-        "description": "Real estate activities with own or leased property",
-        "code": "6810"
+        "code": "6810",
+        "description": "Real estate activities with own or leased property"
     },
     {
-        "description": "Real estate activities on a fee or contract basis",
-        "code": "6820"
+        "code": "6820",
+        "description": "Real estate activities on a fee or contract basis"
     },
     {
-        "description": "Legal activities",
-        "code": "6910"
+        "code": "6910",
+        "description": "Legal activities"
     },
     {
-        "description": "Accounting, bookkeeping and auditing activities; tax consultancy",
-        "code": "6920"
+        "code": "6920",
+        "description": "Accounting, bookkeeping and auditing activities; tax consultancy"
     },
     {
-        "description": "Activities of head offices",
-        "code": "7010"
+        "code": "7010",
+        "description": "Activities of head offices"
     },
     {
-        "description": "Management consultancy activities",
-        "code": "7020"
+        "code": "7020",
+        "description": "Management consultancy activities"
     },
     {
-        "description": "Architectural and engineering activities and related technical consultancy",
-        "code": "7110"
+        "code": "7110",
+        "description": "Architectural and engineering activities and related technical consultancy"
     },
     {
-        "description": "Technical testing and analysis",
-        "code": "7120"
+        "code": "7120",
+        "description": "Technical testing and analysis"
     },
     {
-        "description": "Research and experimental development on natural sciences and engineering",
-        "code": "7210"
+        "code": "7210",
+        "description": "Research and experimental development on natural sciences and engineering"
     },
     {
-        "description": "Research and experimental development on social sciences and humanities",
-        "code": "7220"
+        "code": "7220",
+        "description": "Research and experimental development on social sciences and humanities"
     },
     {
-        "description": "Advertising",
-        "code": "7310"
+        "code": "7310",
+        "description": "Advertising"
     },
     {
-        "description": "Market research and public opinion polling",
-        "code": "7320"
+        "code": "7320",
+        "description": "Market research and public opinion polling"
     },
     {
-        "description": "Specialized design activities",
-        "code": "7410"
+        "code": "7410",
+        "description": "Specialized design activities"
     },
     {
-        "description": "Photographic activities",
-        "code": "7420"
+        "code": "7420",
+        "description": "Photographic activities"
     },
     {
-        "description": "Other professional, scientific and technical activities n.e.c.",
-        "code": "7490"
+        "code": "7490",
+        "description": "Other professional, scientific and technical activities n.e.c."
     },
     {
-        "description": "Veterinary activities",
-        "code": "7500"
+        "code": "7500",
+        "description": "Veterinary activities"
     },
     {
-        "description": "Renting and leasing of motor vehicles",
-        "code": "7710"
+        "code": "7710",
+        "description": "Renting and leasing of motor vehicles"
     },
     {
-        "description": "Renting and leasing of recreational and sports goods",
-        "code": "7721"
+        "code": "7721",
+        "description": "Renting and leasing of recreational and sports goods"
     },
     {
-        "description": "Renting of video tapes and disks",
-        "code": "7722"
+        "code": "7722",
+        "description": "Renting of video tapes and disks"
     },
     {
-        "description": "Renting and leasing of other personal and household goods",
-        "code": "7729"
+        "code": "7729",
+        "description": "Renting and leasing of other personal and household goods"
     },
     {
-        "description": "Renting and leasing of other machinery, equipment and tangible goods",
-        "code": "7730"
+        "code": "7730",
+        "description": "Renting and leasing of other machinery, equipment and tangible goods"
     },
     {
-        "description": "Leasing of intellectual property and similar products, except copyrighted works",
-        "code": "7740"
+        "code": "7740",
+        "description": "Leasing of intellectual property and similar products, except copyrighted works"
     },
     {
-        "description": "Activities of employment placement agencies",
-        "code": "7810"
+        "code": "7810",
+        "description": "Activities of employment placement agencies"
     },
     {
-        "description": "Temporary employment agency activities",
-        "code": "7820"
+        "code": "7820",
+        "description": "Temporary employment agency activities"
     },
     {
-        "description": "Other human resources provision",
-        "code": "7830"
+        "code": "7830",
+        "description": "Other human resources provision"
     },
     {
-        "description": "Travel agency activities",
-        "code": "7911"
+        "code": "7911",
+        "description": "Travel agency activities"
     },
     {
-        "description": "Tour operator activities",
-        "code": "7912"
+        "code": "7912",
+        "description": "Tour operator activities"
     },
     {
-        "description": "Other reservation service and related activities",
-        "code": "7990"
+        "code": "7990",
+        "description": "Other reservation service and related activities"
     },
     {
-        "description": "Private security activities",
-        "code": "8010"
+        "code": "8010",
+        "description": "Private security activities"
     },
     {
-        "description": "Security systems service activities",
-        "code": "8020"
+        "code": "8020",
+        "description": "Security systems service activities"
     },
     {
-        "description": "Investigation activities",
-        "code": "8030"
+        "code": "8030",
+        "description": "Investigation activities"
     },
     {
-        "description": "Combined facilities support activities",
-        "code": "8110"
+        "code": "8110",
+        "description": "Combined facilities support activities"
     },
     {
-        "description": "General cleaning of buildings",
-        "code": "8121"
+        "code": "8121",
+        "description": "General cleaning of buildings"
     },
     {
-        "description": "Other building and industrial cleaning activities",
-        "code": "8129"
+        "code": "8129",
+        "description": "Other building and industrial cleaning activities"
     },
     {
-        "description": "Landscape care and maintenance service activities",
-        "code": "8130"
+        "code": "8130",
+        "description": "Landscape care and maintenance service activities"
     },
     {
-        "description": "Combined office administrative service activities",
-        "code": "8211"
+        "code": "8211",
+        "description": "Combined office administrative service activities"
     },
     {
-        "description": "Photocopying, document preparation and other specialized office support activities",
-        "code": "8219"
+        "code": "8219",
+        "description": "Photocopying, document preparation and other specialized office support activities"
     },
     {
-        "description": "Activities of call centres",
-        "code": "8220"
+        "code": "8220",
+        "description": "Activities of call centres"
     },
     {
-        "description": "Organization of conventions and trade shows",
-        "code": "8230"
+        "code": "8230",
+        "description": "Organization of conventions and trade shows"
     },
     {
-        "description": "Activities of collection agencies and credit bureaus",
-        "code": "8291"
+        "code": "8291",
+        "description": "Activities of collection agencies and credit bureaus"
     },
     {
-        "description": "Packaging activities",
-        "code": "8292"
+        "code": "8292",
+        "description": "Packaging activities"
     },
     {
-        "description": "Other business support service activities n.e.c.",
-        "code": "8299"
+        "code": "8299",
+        "description": "Other business support service activities n.e.c."
     },
     {
-        "description": "General public administration activities",
-        "code": "8411"
+        "code": "8411",
+        "description": "General public administration activities"
     },
     {
-        "description": "Regulation of the activities of providing health care, education, cultural services and other social services, excluding social security",
-        "code": "8412"
+        "code": "8412",
+        "description": "Regulation of the activities of providing health care, education, cultural services and other social services, excluding social security"
     },
     {
-        "description": "Regulation of and contribution to more efficient operation of businesses",
-        "code": "8413"
+        "code": "8413",
+        "description": "Regulation of and contribution to more efficient operation of businesses"
     },
     {
-        "description": "Foreign affairs",
-        "code": "8421"
+        "code": "8421",
+        "description": "Foreign affairs"
     },
     {
-        "description": "Defence activities",
-        "code": "8422"
+        "code": "8422",
+        "description": "Defence activities"
     },
     {
-        "description": "Public order and safety activities",
-        "code": "8423"
+        "code": "8423",
+        "description": "Public order and safety activities"
     },
     {
-        "description": "Compulsory social security activities",
-        "code": "8430"
+        "code": "8430",
+        "description": "Compulsory social security activities"
     },
     {
-        "description": "Pre-primary and primary education",
-        "code": "8510"
+        "code": "8510",
+        "description": "Pre-primary and primary education"
     },
     {
-        "description": "General secondary education",
-        "code": "8521"
+        "code": "8521",
+        "description": "General secondary education"
     },
     {
-        "description": "Technical and vocational secondary education",
-        "code": "8522"
+        "code": "8522",
+        "description": "Technical and vocational secondary education"
     },
     {
-        "description": "Higher education",
-        "code": "8530"
+        "code": "8530",
+        "description": "Higher education"
     },
     {
-        "description": "Sports and recreation education",
-        "code": "8541"
+        "code": "8541",
+        "description": "Sports and recreation education"
     },
     {
-        "description": "Cultural education",
-        "code": "8542"
+        "code": "8542",
+        "description": "Cultural education"
     },
     {
-        "description": "Other education n.e.c.",
-        "code": "8549"
+        "code": "8549",
+        "description": "Other education n.e.c."
     },
     {
-        "description": "Educational support activities",
-        "code": "8550"
+        "code": "8550",
+        "description": "Educational support activities"
     },
     {
-        "description": "Hospital activities",
-        "code": "8610"
+        "code": "8610",
+        "description": "Hospital activities"
     },
     {
-        "description": "Medical and dental practice activities",
-        "code": "8620"
+        "code": "8620",
+        "description": "Medical and dental practice activities"
     },
     {
-        "description": "Other human health activities",
-        "code": "8690"
+        "code": "8690",
+        "description": "Other human health activities"
     },
     {
-        "description": "Residential nursing care facilities",
-        "code": "8710"
+        "code": "8710",
+        "description": "Residential nursing care facilities"
     },
     {
-        "description": "Residential care activities for mental retardation, mental health and substance abuse",
-        "code": "8720"
+        "code": "8720",
+        "description": "Residential care activities for mental retardation, mental health and substance abuse"
     },
     {
-        "description": "Residential care activities for the elderly and disabled",
-        "code": "8730"
+        "code": "8730",
+        "description": "Residential care activities for the elderly and disabled"
     },
     {
-        "description": "Other residential care activities",
-        "code": "8790"
+        "code": "8790",
+        "description": "Other residential care activities"
     },
     {
-        "description": "Social work activities without accommodation for the elderly and disabled",
-        "code": "8810"
+        "code": "8810",
+        "description": "Social work activities without accommodation for the elderly and disabled"
     },
     {
-        "description": "Other social work activities without accommodation",
-        "code": "8890"
+        "code": "8890",
+        "description": "Other social work activities without accommodation"
     },
     {
-        "description": "Creative, arts and entertainment activities",
-        "code": "9000"
+        "code": "9000",
+        "description": "Creative, arts and entertainment activities"
     },
     {
-        "description": "Library and archives activities",
-        "code": "9101"
+        "code": "9101",
+        "description": "Library and archives activities"
     },
     {
-        "description": "Museums activities and operation of historical sites and buildings",
-        "code": "9102"
+        "code": "9102",
+        "description": "Museums activities and operation of historical sites and buildings"
     },
     {
-        "description": "Botanical and zoological gardens and nature reserves activities",
-        "code": "9103"
+        "code": "9103",
+        "description": "Botanical and zoological gardens and nature reserves activities"
     },
     {
-        "description": "Gambling and betting activities",
-        "code": "9200"
+        "code": "9200",
+        "description": "Gambling and betting activities"
     },
     {
-        "description": "Operation of sports facilities",
-        "code": "9311"
+        "code": "9311",
+        "description": "Operation of sports facilities"
     },
     {
-        "description": "Activities of sports clubs",
-        "code": "9312"
+        "code": "9312",
+        "description": "Activities of sports clubs"
     },
     {
-        "description": "Other sports activities",
-        "code": "9319"
+        "code": "9319",
+        "description": "Other sports activities"
     },
     {
-        "description": "Activities of amusement parks and theme parks",
-        "code": "9321"
+        "code": "9321",
+        "description": "Activities of amusement parks and theme parks"
     },
     {
-        "description": "Other amusement and recreation activities n.e.c.",
-        "code": "9329"
+        "code": "9329",
+        "description": "Other amusement and recreation activities n.e.c."
     },
     {
-        "description": "Activities of business and employers membership organizations",
-        "code": "9411"
+        "code": "9411",
+        "description": "Activities of business and employers membership organizations"
     },
     {
-        "description": "Activities of professional membership organizations",
-        "code": "9412"
+        "code": "9412",
+        "description": "Activities of professional membership organizations"
     },
     {
-        "description": "Activities of trade unions",
-        "code": "9420"
+        "code": "9420",
+        "description": "Activities of trade unions"
     },
     {
-        "description": "Activities of religious organizations",
-        "code": "9491"
+        "code": "9491",
+        "description": "Activities of religious organizations"
     },
     {
-        "description": "Activities of political organizations",
-        "code": "9492"
+        "code": "9492",
+        "description": "Activities of political organizations"
     },
     {
-        "description": "Activities of other membership organizations n.e.c.",
-        "code": "9499"
+        "code": "9499",
+        "description": "Activities of other membership organizations n.e.c."
     },
     {
-        "description": "Repair of computers and peripheral equipment",
-        "code": "9511"
+        "code": "9511",
+        "description": "Repair of computers and peripheral equipment"
     },
     {
-        "description": "Repair of communication equipment",
-        "code": "9512"
+        "code": "9512",
+        "description": "Repair of communication equipment"
     },
     {
-        "description": "Repair of consumer electronics",
-        "code": "9521"
+        "code": "9521",
+        "description": "Repair of consumer electronics"
     },
     {
-        "description": "Repair of household appliances and home and garden equipment",
-        "code": "9522"
+        "code": "9522",
+        "description": "Repair of household appliances and home and garden equipment"
     },
     {
-        "description": "Repair of footwear and leather goods",
-        "code": "9523"
+        "code": "9523",
+        "description": "Repair of footwear and leather goods"
     },
     {
-        "description": "Repair of furniture and home furnishings",
-        "code": "9524"
+        "code": "9524",
+        "description": "Repair of furniture and home furnishings"
     },
     {
-        "description": "Repair of other personal and household goods",
-        "code": "9529"
+        "code": "9529",
+        "description": "Repair of other personal and household goods"
     },
     {
-        "description": "Washing and (dry-) cleaning of textile and fur products",
-        "code": "9601"
+        "code": "9601",
+        "description": "Washing and (dry-) cleaning of textile and fur products"
     },
     {
-        "description": "Hairdressing and other beauty treatment",
-        "code": "9602"
+        "code": "9602",
+        "description": "Hairdressing and other beauty treatment"
     },
     {
-        "description": "Funeral and related activities",
-        "code": "9603"
+        "code": "9603",
+        "description": "Funeral and related activities"
     },
     {
-        "description": "Other personal service activities n.e.c.",
-        "code": "9609"
+        "code": "9609",
+        "description": "Other personal service activities n.e.c."
     },
     {
-        "description": "Activities of households as employers of domestic personnel",
-        "code": "9700"
+        "code": "9700",
+        "description": "Activities of households as employers of domestic personnel"
     },
     {
-        "description": "Undifferentiated goods-producing activities of private households for own use",
-        "code": "9810"
+        "code": "9810",
+        "description": "Undifferentiated goods-producing activities of private households for own use"
     },
     {
-        "description": "Undifferentiated service-producing activities of private households for own use",
-        "code": "9820"
+        "code": "9820",
+        "description": "Undifferentiated service-producing activities of private households for own use"
     },
     {
-        "description": "Activities of extraterritorial organizations and bodies",
-        "code": "9900"
+        "code": "9900",
+        "description": "Activities of extraterritorial organizations and bodies"
     }
 ]
