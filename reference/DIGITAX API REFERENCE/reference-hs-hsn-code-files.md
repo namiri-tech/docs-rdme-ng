@@ -2,7 +2,7 @@
 title: 'Reference: HS/ HSN and Service codes - files'
 excerpt: >-
   Find here, CSV and JSON files for Harmonized System (HS) or otherwise named
-  Harmonized System of Nomenclature (HSN) Code codes
+  Harmonized System of Nomenclature (HSN) Code codes and Service codes
 deprecated: false
 hidden: false
 metadata:
