@@ -12,7 +12,7 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
 
 > Use **DigiTax Nigeria API** to integrate your system with FIRS E-Invoicing System for automation and to reduce platform-hopping
 
-<Image className="border" border={true} src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" />
+<Image border={true} src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" className="border" />
 
 ***
 
@@ -31,6 +31,7 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
     * [/items](https://ng.docs.digitax.tech/reference/get_items)
     * [/invoices](https://ng.docs.digitax.tech/reference/get_invoices)
     * [/invoice-downloads](https://ng.docs.digitax.tech/reference/get_invoice-downloads)
+    * [/app-invoices](https://ng.docs.digitax.tech/reference/get_app-invoices)
   </Card>
 </Cards>
 
