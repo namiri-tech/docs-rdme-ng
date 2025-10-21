@@ -31,7 +31,7 @@ Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and 
     * [/items](https://ng.docs.digitax.tech/reference/get_items)
     * [/invoices](https://ng.docs.digitax.tech/reference/get_invoices)
     * [/invoice-downloads](https://ng.docs.digitax.tech/reference/get_invoice-downloads)
-    * [/app-invoices](https://ng.docs.digitax.tech/reference/get_app-invoices)
+    * [/app-invoices](https://ng.docs.digitax.tech/reference/post_app-invoices)
   </Card>
 </Cards>
 
