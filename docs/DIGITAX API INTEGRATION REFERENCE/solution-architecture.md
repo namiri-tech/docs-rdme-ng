@@ -1,7 +1,7 @@
 ---
 title: 'Solution Architecture '
 excerpt: >-
-  DigiTax and FIRS Solution Achitecture - System Integration and Access Point
+  DigiTax and FIRS Solution Achitecture - System Integrator and Access Point
   Provider flow
 deprecated: false
 hidden: false
