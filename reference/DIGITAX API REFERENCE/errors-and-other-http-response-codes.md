@@ -28,6 +28,8 @@ For our interactive API, these are the main HTTP response status codes:
 
 * 401 Unauthorized
 
+* 409 Conflict
+
 * 500 Internal Server Error
 
 * 501 Not Implemented
