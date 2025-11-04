@@ -1,0 +1,3872 @@
+[
+  {
+    "name": "Umuahia North",
+    "code": "NG-AB-UNO",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Ikwo",
+    "code": "NG-EB-IKW",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Udenu",
+    "code": "NG-EN-UDE",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Irele",
+    "code": "NG-ON-IRE",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Obi Nwa",
+    "code": "NG-AB-ONW",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Borgu",
+    "code": "NG-NI-BOR",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Obia/Akpor",
+    "code": "NG-RI-OBI",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Illela",
+    "code": "NG-SO-ILL",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Udung Uko",
+    "code": "NG-AK-UUK",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Mobbar",
+    "code": "NG-BO-MOB",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Aninri",
+    "code": "NG-EN-ANI",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Enugu South",
+    "code": "NG-EN-ESO",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Atigbo",
+    "code": "NG-OY-AT1",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Oshimili North",
+    "code": "NG-DE-ONO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Roni",
+    "code": "NG-JI-RON",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Remo North",
+    "code": "NG-OG-RNO",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Lagelu",
+    "code": "NG-OY-LAG",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Ona-Ara",
+    "code": "NG-OY-OAR",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Jos East",
+    "code": "NG-PL-JEA",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Maiha",
+    "code": "NG-AD-MAI",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Bagwai",
+    "code": "NG-KN-BAG",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ifedayo",
+    "code": "NG-OS-IFE",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Oyo East",
+    "code": "NG-OY-OEA",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Nguru Potiskum",
+    "code": "NG-YO-NPO",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Shira",
+    "code": "NG-BA-SHI",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Obudu",
+    "code": "NG-CR-OB1",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Ughelli South",
+    "code": "NG-DE-USO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Ivo",
+    "code": "NG-EB-IVO",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Awgu",
+    "code": "NG-EN-AWG",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Nwangele",
+    "code": "NG-IM-NWA",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Lagos Island",
+    "code": "NG-LA-LIS",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Boripe",
+    "code": "NG-OS-BOR",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Uvwie",
+    "code": "NG-DE-UVW",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Ezinihitte",
+    "code": "NG-IM-EZI",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Giwa",
+    "code": "NG-KD-GIW",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Oluyole",
+    "code": "NG-OY-OLU",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Maradun",
+    "code": "NG-ZA-MAR",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Madagali",
+    "code": "NG-AD-MAD",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Urue-Offong/Oruko",
+    "code": "NG-AK-UOF",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Warri South",
+    "code": "NG-DE-WSO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Sabuwa",
+    "code": "NG-KT-SAB",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Edu",
+    "code": "NG-KW-EDU",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Kokona",
+    "code": "NG-NA-KOK",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Nnewi South",
+    "code": "NG-AN-NSO",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Itas/Gadau",
+    "code": "NG-BA-ITA",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Akpabuyo",
+    "code": "NG-CR-AKP",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Ethiope East",
+    "code": "NG-DE-EEA",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Ideato North",
+    "code": "NG-IM-INO",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Kuje LGA",
+    "code": "NG-FC-KLG",
+    "state_code": "NG-FC"
+  },
+  {
+    "name": "Birnin-Gwari",
+    "code": "NG-KD-BGW",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Kalgo",
+    "code": "NG-KE-KAL",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Ondo East",
+    "code": "NG-ON-OEA",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Isokan",
+    "code": "NG-OS-IS1",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Akinyele",
+    "code": "NG-OY-AKI",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Fika",
+    "code": "NG-YO-FIK",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Karawa",
+    "code": "NG-YO-KA1",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Albasu",
+    "code": "NG-KN-ALB",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Talata Mafara",
+    "code": "NG-ZA-TMA",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Zurmi",
+    "code": "NG-ZA-ZUR",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Burutu",
+    "code": "NG-DE-BUR",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Gagarawa",
+    "code": "NG-JI-GAG",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Dutsi",
+    "code": "NG-KT-DUT",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Dutsin-Ma",
+    "code": "NG-KT-DMA",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Sakaba",
+    "code": "NG-KE-SAK",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Okehi",
+    "code": "NG-KO-OKE",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Tureta",
+    "code": "NG-SO-TUR",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Okpe",
+    "code": "NG-DE-OKP",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Kwami",
+    "code": "NG-GO-KWA",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "Karaye",
+    "code": "NG-KN-KAR",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Akure North",
+    "code": "NG-ON-ANO",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Shinkafi",
+    "code": "NG-ZA-SHI",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Igueben",
+    "code": "NG-ED-IGU",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Okigwe",
+    "code": "NG-IM-OKI",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Garki",
+    "code": "NG-JI-GAR",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Rijau",
+    "code": "NG-NI-RIJ",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Ayamelum",
+    "code": "NG-AN-AYA",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Lokoja",
+    "code": "NG-KO-LOK",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Yagba East",
+    "code": "NG-KO-YEA",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Ijebu Ode",
+    "code": "NG-OG-IOD",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Kware",
+    "code": "NG-SO-KWA",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Gombi",
+    "code": "NG-AD-GOM",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Logo",
+    "code": "NG-BE-LOG",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Ohimini",
+    "code": "NG-BE-OHI",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Uzo-Uwani",
+    "code": "NG-EN-UUW",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Sandamu",
+    "code": "NG-KT-SAN",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Irepodun",
+    "code": "NG-KW-IRE",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Magama",
+    "code": "NG-NI-MAG",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Riyom",
+    "code": "NG-PL-RIY",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Katsina-Ala",
+    "code": "NG-BE-KAL",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Dan Musa",
+    "code": "NG-KT-DMU",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Fakai",
+    "code": "NG-KE-FAK",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Gwandu",
+    "code": "NG-KE-GWA",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Yauri",
+    "code": "NG-KE-YAU",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Moro",
+    "code": "NG-KW-MOR",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Epe",
+    "code": "NG-LA-EPE",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Ede South",
+    "code": "NG-OS-ESO",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Dass",
+    "code": "NG-BA-DAS",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Oru West",
+    "code": "NG-IM-OWE",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Kaduna North",
+    "code": "NG-KD-KNO",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Ife East",
+    "code": "NG-OS-IEA",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Ogu/Bolo",
+    "code": "NG-RI-OGU",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Gashaka",
+    "code": "NG-TA-GAS",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Karin-Lamido",
+    "code": "NG-TA-KLA",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Yorro",
+    "code": "NG-TA-YOR",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Demsa",
+    "code": "NG-AD-DEM",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Dekina",
+    "code": "NG-KO-DEK",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Kogi",
+    "code": "NG-KO-KOG",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Lagos Mainland",
+    "code": "NG-LA-LMA",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Katcha",
+    "code": "NG-NI-KAT",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Idanre",
+    "code": "NG-ON-IDA",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Ilaje",
+    "code": "NG-ON-ILA",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Okrika",
+    "code": "NG-RI-OKR",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Bakassi",
+    "code": "NG-CR-BAK",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Owerri North",
+    "code": "NG-IM-ONO",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Bindawa",
+    "code": "NG-KT-BIN",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Ile-Oluji-Okeigbo",
+    "code": "NG-ON-IOO",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Bassa",
+    "code": "NG-PL-BA1",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Opobo/Nkoro",
+    "code": "NG-RI-OPO",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Gboko",
+    "code": "NG-BE-GBO",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Ndokwa West",
+    "code": "NG-DE-NWE",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Gwiwa",
+    "code": "NG-JI-GWI",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Ilorin West",
+    "code": "NG-KW-IWE",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Aba South",
+    "code": "NG-AB-ASO",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Abadam",
+    "code": "NG-BO-ABA",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Biase",
+    "code": "NG-CR-BIA",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Baure",
+    "code": "NG-KT-BAU",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Bida",
+    "code": "NG-NI-BID",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Bodinga",
+    "code": "NG-SO-BOD",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Garum Mallam",
+    "code": "NG-KN-GMA",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Abeokuta South",
+    "code": "NG-OG-ASO",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Omumma",
+    "code": "NG-RI-OMU",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Ussa",
+    "code": "NG-TA-USS",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Ikono",
+    "code": "NG-AK-IKO",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Abakaliki",
+    "code": "NG-EB-ABA",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Esan South East",
+    "code": "NG-ED-ESE",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Owerri West",
+    "code": "NG-IM-OW1",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Kibiya",
+    "code": "NG-KN-KIB",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Yagba West",
+    "code": "NG-KO-YWE",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Ede North",
+    "code": "NG-OS-ENO",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Anka",
+    "code": "NG-ZA-ANK",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Gireri",
+    "code": "NG-AD-GIR",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Chibok",
+    "code": "NG-BO-CHI",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Yola North",
+    "code": "NG-AD-YNO",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Guzamala",
+    "code": "NG-BO-GUZ",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Nganzai",
+    "code": "NG-BO-NG1",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Balanga",
+    "code": "NG-GO-BAL",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "Gwaram",
+    "code": "NG-JI-GWA",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Kajuru",
+    "code": "NG-KD-KAJ",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Kura",
+    "code": "NG-KN-KUR",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Nasarawa",
+    "code": "NG-NA-NAS",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Ezza South",
+    "code": "NG-EB-ESO",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Abuja Municipa LGA",
+    "code": "NG-FC-AML",
+    "state_code": "NG-FC"
+  },
+  {
+    "name": "Ehime-Mbano",
+    "code": "NG-IM-EMB",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Bebeji",
+    "code": "NG-KN-BEB",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Oriade",
+    "code": "NG-OS-ORI",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Etung",
+    "code": "NG-CR-ETU",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Emure",
+    "code": "NG-EK-EMU",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Udi",
+    "code": "NG-EN-UDI",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "kumbotso",
+    "code": "NG-KN-KUM",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Baruten",
+    "code": "NG-KW-BAR",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Ilorin South LGA",
+    "code": "NG-KW-ISL",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Isin",
+    "code": "NG-KW-ISI",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Ese-Odo",
+    "code": "NG-ON-EOD",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Song",
+    "code": "NG-AD-SON",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Efon",
+    "code": "NG-EK-EFO",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Soba",
+    "code": "NG-KD-SOB",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Rogo",
+    "code": "NG-KN-ROG",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Daura",
+    "code": "NG-KT-DAU",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Ekiti",
+    "code": "NG-KW-EKI",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Irepodun",
+    "code": "NG-OS-IRE",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Orelope",
+    "code": "NG-OY-ORE",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Umu-Neochi",
+    "code": "NG-AB-UNE",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Eastern Obolo",
+    "code": "NG-AK-EOB",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ilemeji",
+    "code": "NG-EK-ILE",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Ihitte/Uboma",
+    "code": "NG-IM-IHI",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Charanchi",
+    "code": "NG-KT-CHA",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Wamba",
+    "code": "NG-NA-WAM",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Kanam",
+    "code": "NG-PL-KAN",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Bonny",
+    "code": "NG-RI-BON",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Ikere",
+    "code": "NG-EK-IKE",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Okene",
+    "code": "NG-KO-OK1",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Ilorin East",
+    "code": "NG-KW-IEA",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Ilesha West",
+    "code": "NG-OS-IWE",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Ibadan South East",
+    "code": "NG-OY-ISE",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Idemili south",
+    "code": "NG-AN-ISO",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Kirfi",
+    "code": "NG-BA-KIR",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Kwaya Kusar",
+    "code": "NG-BO-KKU",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Ishielu",
+    "code": "NG-EB-ISH",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Kafin Hausa",
+    "code": "NG-JI-KHA",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Sokoto North",
+    "code": "NG-SO-SNO",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Bali",
+    "code": "NG-TA-BAL",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Ibi",
+    "code": "NG-TA-IBI",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Buruku",
+    "code": "NG-BE-BUR",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Patani",
+    "code": "NG-DE-PAT",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Ohaukwu",
+    "code": "NG-EB-OH1",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Birni Kudu",
+    "code": "NG-JI-BKU",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Kaura Namoda",
+    "code": "NG-ZA-KNA",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Alkaleri",
+    "code": "NG-BA-ALK",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Oturkpo",
+    "code": "NG-BE-OTU",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Etsako Central",
+    "code": "NG-ED-EC1",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Ovia South West",
+    "code": "NG-ED-OSW",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Gwale",
+    "code": "NG-KN-GWA",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Lavun",
+    "code": "NG-NI-LAV",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Langtang South",
+    "code": "NG-PL-LSO",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Aba North",
+    "code": "NG-AB-ANO",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Ika",
+    "code": "NG-AK-IKA",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ikot Ekpene",
+    "code": "NG-AK-IEK",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Idemili North",
+    "code": "NG-AN-INO",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Akoko-Edo",
+    "code": "NG-ED-AED",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Esan Central",
+    "code": "NG-ED-ECE",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Osogbo",
+    "code": "NG-OS-OSO",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Ibadan Central",
+    "code": "NG-OY-ICE",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Oguta",
+    "code": "NG-IM-OGU",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Dawakin Kudu",
+    "code": "NG-KN-DKU",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Orolu",
+    "code": "NG-OS-ORO",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "kebbe",
+    "code": "NG-SO-KEB",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Zing",
+    "code": "NG-TA-ZIN",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Machina",
+    "code": "NG-YO-MAC",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Etinan",
+    "code": "NG-AK-ETI",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Bomadi",
+    "code": "NG-DE-BOM",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Hadejia",
+    "code": "NG-JI-HAD",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Ijebu East",
+    "code": "NG-OG-IEA",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Jos North",
+    "code": "NG-PL-JNO",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Gubio",
+    "code": "NG-BO-GUB",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Kubau",
+    "code": "NG-KD-KUB",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Jega",
+    "code": "NG-KE-JEG",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Kajola",
+    "code": "NG-OY-KAJ",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Gokana",
+    "code": "NG-RI-GOK",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Ardo-kola",
+    "code": "NG-TA-AKO",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Numan",
+    "code": "NG-AD-NUM",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Toungo",
+    "code": "NG-AD-TOU",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Esan North East",
+    "code": "NG-ED-ENE",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Etsako East",
+    "code": "NG-ED-EEA",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Ise/Orun",
+    "code": "NG-EK-ISE",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Jema'a",
+    "code": "NG-KD-JEM",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Oyi",
+    "code": "NG-AN-OYI",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Katagum",
+    "code": "NG-BA-KAT",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Apa",
+    "code": "NG-BE-APA",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Ife South",
+    "code": "NG-OS-ISO",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Saki East",
+    "code": "NG-OY-SEA",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Garko",
+    "code": "NG-KN-GAR",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Suru",
+    "code": "NG-KE-SUR",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Bende",
+    "code": "NG-AB-BEN",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Guma",
+    "code": "NG-BE-GUM",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Bama",
+    "code": "NG-BO-BAM",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Akamkpa",
+    "code": "NG-CR-AKA",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Gwarzo",
+    "code": "NG-KN-GW1",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Eti-Osa",
+    "code": "NG-LA-EOS",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Akoko North East",
+    "code": "NG-ON-ANE",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Tqngaza",
+    "code": "NG-SO-TQN",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Njaba",
+    "code": "NG-IM-NJA",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Ingawa",
+    "code": "NG-KT-ING",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Rimi",
+    "code": "NG-KT-RIM",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Barikin Ladi",
+    "code": "NG-PL-BLA",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Abua/Odual",
+    "code": "NG-RI-ABU",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Akuku Toru",
+    "code": "NG-RI-ATO",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Ngala",
+    "code": "NG-BO-NGA",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Ijero",
+    "code": "NG-EK-IJE",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Ahiazu-Mbaise",
+    "code": "NG-IM-AM1",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Kusada",
+    "code": "NG-KT-KUS",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Oyigbo",
+    "code": "NG-RI-OYI",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Gada",
+    "code": "NG-SO-GAD",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Ibeno",
+    "code": "NG-AK-IBE",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ekiti East",
+    "code": "NG-EK-EEA",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Enugu North",
+    "code": "NG-EN-ENO",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Billiri",
+    "code": "NG-GO-BIL",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "Ejigbo",
+    "code": "NG-OS-EJI",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Tai",
+    "code": "NG-RI-TAI",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Oju",
+    "code": "NG-BE-OJU",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Calabar South",
+    "code": "NG-CR-CSO",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Unuimo",
+    "code": "NG-IM-UNU",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Jibia",
+    "code": "NG-KT-JIB",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Birnin Kebbi",
+    "code": "NG-KE-BKE",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Ado-Odo/Ota",
+    "code": "NG-OG-AOD",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Okitipupa",
+    "code": "NG-ON-OKI",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Surulere",
+    "code": "NG-OY-SUR",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Ogbadibo",
+    "code": "NG-BE-OGB",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Magumeri",
+    "code": "NG-BO-MAG",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Kiyawa",
+    "code": "NG-JI-KIY",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Kachia",
+    "code": "NG-KD-KAC",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Amuwo-Odofin",
+    "code": "NG-LA-AOD",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Agwara",
+    "code": "NG-NI-AGW",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Gbako",
+    "code": "NG-NI-GBA",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Rafi",
+    "code": "NG-NI-RAF",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Isiala-Ngwa South",
+    "code": "NG-AB-INS",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Owan East",
+    "code": "NG-ED-OEA",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "kudan",
+    "code": "NG-KD-KUD",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Kunchi",
+    "code": "NG-KN-KUN",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Apapa",
+    "code": "NG-LA-APA",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Bosso",
+    "code": "NG-NI-BOS",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Ijebu North",
+    "code": "NG-OG-INO",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Goronyo",
+    "code": "NG-SO-GOR",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Ibiono Ibom",
+    "code": "NG-AK-IIB",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ikot Abasi",
+    "code": "NG-AK-IAB",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Esan West",
+    "code": "NG-ED-EWE",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Ringim",
+    "code": "NG-JI-RIN",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Mangu",
+    "code": "NG-PL-MAN",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Eleme",
+    "code": "NG-RI-ELE",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Gujba",
+    "code": "NG-YO-GUJ",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Gulani",
+    "code": "NG-YO-GUL",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Mbo",
+    "code": "NG-AK-MBO",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Oron",
+    "code": "NG-AK-ORO",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ezeagu",
+    "code": "NG-EN-EZE",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Iwajowa",
+    "code": "NG-OY-IWA",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Ahoada East",
+    "code": "NG-RI-AEA",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Isoko South",
+    "code": "NG-DE-IS1",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Egor",
+    "code": "NG-ED-EGO",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Maigatari",
+    "code": "NG-JI-MAI",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Gabasawa",
+    "code": "NG-KN-GAB",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Adavi",
+    "code": "NG-KO-ADA",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Sagbama",
+    "code": "NG-BY-SAG",
+    "state_code": "NG-BY"
+  },
+  {
+    "name": "Yabo",
+    "code": "NG-SO-YAB",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Maru",
+    "code": "NG-ZA-MA1",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Aniocha North",
+    "code": "NG-DE-ANO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Ife North",
+    "code": "NG-OS-INO",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Damban",
+    "code": "NG-BA-DAM",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Gezawa",
+    "code": "NG-KN-GEZ",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Odigbo",
+    "code": "NG-ON-ODI",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "OgoOluwa",
+    "code": "NG-OY-OGO",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Giade",
+    "code": "NG-BA-GIA",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Zango",
+    "code": "NG-KT-ZAN",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Wasagu/Danko",
+    "code": "NG-KE-WAS",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Igalamela-Odolu",
+    "code": "NG-KO-IOD",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Ewekoro",
+    "code": "NG-OG-EWE",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Binji",
+    "code": "NG-SO-BIN",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Bakori",
+    "code": "NG-KT-BAK",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Obafemi-Owode",
+    "code": "NG-OG-OOW",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Shagari",
+    "code": "NG-SO-SHA",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Wurno",
+    "code": "NG-SO-WUR",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Jalingo",
+    "code": "NG-TA-JAL",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Ogbaru",
+    "code": "NG-AN-OGB",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Gaya",
+    "code": "NG-KN-GAY",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Tudun Wada",
+    "code": "NG-KN-TWA",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Egbado North",
+    "code": "NG-OG-ENO",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Onitsha South",
+    "code": "NG-AN-OSO",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Ekeremor",
+    "code": "NG-BY-EKE",
+    "state_code": "NG-BY"
+  },
+  {
+    "name": "Ose",
+    "code": "NG-ON-OSE",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Rabah",
+    "code": "NG-SO-RAB",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Etim Ekpo",
+    "code": "NG-AK-EE1",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Sumaila",
+    "code": "NG-KN-SUM",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Kaiama",
+    "code": "NG-KW-KAI",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Mikang",
+    "code": "NG-PL-MIK",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Gusau",
+    "code": "NG-ZA-GUS",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Tsafe",
+    "code": "NG-ZA-TSA",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Mafa",
+    "code": "NG-BO-MAF",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Batsari",
+    "code": "NG-KT-BA1",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Ikeja",
+    "code": "NG-LA-IKE",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Isoko North",
+    "code": "NG-DE-INO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Ajingi",
+    "code": "NG-KN-AJI",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Dawakin Tofa",
+    "code": "NG-KN-DTO",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Shanono",
+    "code": "NG-KN-SHA",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Funakaye",
+    "code": "NG-GO-FUN",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "OriIre",
+    "code": "NG-OY-ORI",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Itu",
+    "code": "NG-AK-ITU",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Izzi",
+    "code": "NG-EB-IZZ",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Ekiti South West",
+    "code": "NG-EK-ESW",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Shomgom",
+    "code": "NG-GO-SHO",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "Kafur",
+    "code": "NG-KT-KAF",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Ibesikpo Asutan",
+    "code": "NG-AK-IAS",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Anambra West",
+    "code": "NG-AN-AWE",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Zaki",
+    "code": "NG-BA-ZAK",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Askira/Uba",
+    "code": "NG-BO-ASK",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Afikpo North",
+    "code": "NG-EB-ANO",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Afikpo South",
+    "code": "NG-EB-ASO",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Orhionmwon",
+    "code": "NG-ED-ORH",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Oye",
+    "code": "NG-EK-OYE",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Igbo-Eze South",
+    "code": "NG-EN-IES",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Doguwa",
+    "code": "NG-KN-DOG",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Obi",
+    "code": "NG-NA-OBI",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Edati",
+    "code": "NG-NI-EDA",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Kontagora",
+    "code": "NG-NI-KON",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Odeda",
+    "code": "NG-OG-ODE",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Saki West",
+    "code": "NG-OY-SWE",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Shendam",
+    "code": "NG-PL-SHE",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Irepodun/Ifelodun",
+    "code": "NG-EK-IRE",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Kano Municipal",
+    "code": "NG-KN-KMU",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ankpa",
+    "code": "NG-KO-ANK",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Omala",
+    "code": "NG-KO-OMA",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Asa",
+    "code": "NG-KW-ASA",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Shiroro",
+    "code": "NG-NI-SHI",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Etche",
+    "code": "NG-RI-ETC",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Agatu",
+    "code": "NG-BE-AGA",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Kukawa",
+    "code": "NG-BO-KUK",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Bekwara",
+    "code": "NG-CR-BEK",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Yala",
+    "code": "NG-CR-YAL",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Onicha",
+    "code": "NG-EB-ONI",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Isi-Uzo",
+    "code": "NG-EN-IUZ",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Rano",
+    "code": "NG-KN-RAN",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Safana",
+    "code": "NG-KT-SAF",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Shelleng",
+    "code": "NG-AD-SHE",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Brass",
+    "code": "NG-BY-BRA",
+    "state_code": "NG-BY"
+  },
+  {
+    "name": "Ekiti West",
+    "code": "NG-EK-EWE",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Egbado South",
+    "code": "NG-OG-ESO",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Bokkos",
+    "code": "NG-PL-BOK",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Emohua",
+    "code": "NG-RI-EMO",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Sabon birni",
+    "code": "NG-SO-SBI",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Mkpat Enin",
+    "code": "NG-AK-MEN",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Nembe",
+    "code": "NG-BY-NEM",
+    "state_code": "NG-BY"
+  },
+  {
+    "name": "Bayo",
+    "code": "NG-BO-BAY",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Obubra",
+    "code": "NG-CR-OBU",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Ovia North East",
+    "code": "NG-ED-ONE",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Shanga",
+    "code": "NG-KE-SHA",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Ojo",
+    "code": "NG-LA-OJO",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Aiyedade",
+    "code": "NG-OS-AIY",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Awka North",
+    "code": "NG-AN-ANO",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Ado",
+    "code": "NG-BE-ADO",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Rimin Gado",
+    "code": "NG-KN-RGA",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Bagudo",
+    "code": "NG-KE-BAG",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Atiba",
+    "code": "NG-OY-ATI",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Ibarapa North",
+    "code": "NG-OY-IN1",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Birnin Magaji",
+    "code": "NG-ZA-BMA",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Mubi North",
+    "code": "NG-AD-MNO",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Gwagwalada LGA",
+    "code": "NG-FC-GLG",
+    "state_code": "NG-FC"
+  },
+  {
+    "name": "Lere",
+    "code": "NG-KD-LER",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Dandi",
+    "code": "NG-KE-DAN",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Ikenne",
+    "code": "NG-OG-IKE",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Pankshin",
+    "code": "NG-PL-PAN",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Khana",
+    "code": "NG-RI-KHA",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Donga",
+    "code": "NG-TA-DON",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Monguno",
+    "code": "NG-BO-MON",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Uhunmwonde",
+    "code": "NG-ED-UHU",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Yamaltu/Deba",
+    "code": "NG-GO-YAM",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "Nkwerre",
+    "code": "NG-IM-NKW",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Bichi",
+    "code": "NG-KN-BIC",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Matazuu",
+    "code": "NG-KT-MAT",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Pategi",
+    "code": "NG-KW-PAT",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Atakumosa West",
+    "code": "NG-OS-AWE",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Isuikwato",
+    "code": "NG-AB-ISU",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Gwoza",
+    "code": "NG-BO-GWO",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Biriniwa",
+    "code": "NG-JI-BIR",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Igabi",
+    "code": "NG-KD-IGA",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Karu",
+    "code": "NG-NA-KAR",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Lau",
+    "code": "NG-TA-LAU",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Onitsha North",
+    "code": "NG-AN-ONO",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Funtua",
+    "code": "NG-KT-FUN",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Tafa",
+    "code": "NG-NI-TAF",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Kanke",
+    "code": "NG-PL-KA1",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Tarka",
+    "code": "NG-BE-TAR",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Akko",
+    "code": "NG-GO-AKK",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "kauru",
+    "code": "NG-KD-KAU",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Warawa",
+    "code": "NG-KN-WAR",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ibarapa East",
+    "code": "NG-OY-IEA",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Uyo",
+    "code": "NG-AK-UYO",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ohaozara",
+    "code": "NG-EB-OHA",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Gumel",
+    "code": "NG-JI-GUM",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Kaura LGA",
+    "code": "NG-KD-KLG",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Mushin",
+    "code": "NG-LA-MUS",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Oshodi-Isolo",
+    "code": "NG-LA-OIS",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Pailoro",
+    "code": "NG-NI-PAI",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Ipokia",
+    "code": "NG-OG-IPO",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Ndokwa East",
+    "code": "NG-DE-NEA",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Warri South West",
+    "code": "NG-DE-WSW",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Jahun",
+    "code": "NG-JI-JAH",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Doma",
+    "code": "NG-NA-DOM",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Ibarapa Central",
+    "code": "NG-OY-IC1",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Port-Harcourt",
+    "code": "NG-RI-PHA",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Fufore",
+    "code": "NG-AD-FUF",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Ningi",
+    "code": "NG-BA-NIN",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Tafawa-Balewa",
+    "code": "NG-BA-TBA",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Maiduguri",
+    "code": "NG-BO-MAI",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Ajeromi-Ifelodun",
+    "code": "NG-LA-AIF",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Kosofe",
+    "code": "NG-LA-KOS",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Oredo",
+    "code": "NG-ED-ORE",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Gudu",
+    "code": "NG-SO-GUD",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Guyuk",
+    "code": "NG-AD-GUY",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Essien Udim",
+    "code": "NG-AK-EUD",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Etsako West",
+    "code": "NG-ED-EW1",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Ideato South",
+    "code": "NG-IM-ISO",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Sabon-Gari",
+    "code": "NG-KD-SGA",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Ungogo",
+    "code": "NG-KN-UNG",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ife Central",
+    "code": "NG-OS-ICE",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Obokun",
+    "code": "NG-OS-OBO",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Ohafia",
+    "code": "NG-AB-OHA",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Kolokuma/Opokuma",
+    "code": "NG-BY-KOL",
+    "state_code": "NG-BY"
+  },
+  {
+    "name": "Oshimili South",
+    "code": "NG-DE-OSO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Abaji LGA",
+    "code": "NG-FC-ALG",
+    "state_code": "NG-FC"
+  },
+  {
+    "name": "Abeokuta North",
+    "code": "NG-OG-ANO",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Ibadan South West",
+    "code": "NG-OY-ISW",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Qua'an Pan",
+    "code": "NG-PL-QPA",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Ikwuano",
+    "code": "NG-AB-IKW",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Isiala-Ngwa North",
+    "code": "NG-AB-INN",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Yola South",
+    "code": "NG-AD-YSO",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Nnewi North",
+    "code": "NG-AN-NNO",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Obi",
+    "code": "NG-BE-OBI",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Okpokwu",
+    "code": "NG-BE-OKP",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Ukwuani",
+    "code": "NG-DE-UKW",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Tarauni",
+    "code": "NG-KN-TAR",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Njikoka",
+    "code": "NG-AN-NJI",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Mani",
+    "code": "NG-KT-MAN",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Bunza",
+    "code": "NG-KE-BUN",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Mariga",
+    "code": "NG-NI-MAR",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Irewole",
+    "code": "NG-OS-IR1",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Ibadan North West",
+    "code": "NG-OY-INW",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Silame",
+    "code": "NG-SO-SIL",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Jakusko",
+    "code": "NG-YO-JAK",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Ukwa East",
+    "code": "NG-AB-UEA",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Kiru",
+    "code": "NG-KN-KIR",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Kurfi",
+    "code": "NG-KT-KUR",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Andoni",
+    "code": "NG-RI-AND",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Yakurr",
+    "code": "NG-CR-YAK",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Ikpoba-Okha",
+    "code": "NG-ED-IOK",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Kankara",
+    "code": "NG-KT-KAN",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Koko/Besse",
+    "code": "NG-KE-KOK",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Bassa",
+    "code": "NG-PL-BAS",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Jos South",
+    "code": "NG-PL-JSO",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Nangere",
+    "code": "NG-YO-NAN",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Nsit Ibom",
+    "code": "NG-AK-NIB",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Okobo",
+    "code": "NG-AK-OKO",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Biu",
+    "code": "NG-BO-BIU",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Warri North",
+    "code": "NG-DE-WNO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Auyo",
+    "code": "NG-JI-AUY",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Imeko-Afon",
+    "code": "NG-OG-IAF",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Owo",
+    "code": "NG-ON-OWO",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Afijio",
+    "code": "NG-OY-AFI",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Abi",
+    "code": "NG-CR-ABI",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Danja",
+    "code": "NG-KT-DA1",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Mashi",
+    "code": "NG-KT-MAS",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Aleiro",
+    "code": "NG-KE-ALE",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Ijebu North East",
+    "code": "NG-OG-INE",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Gawabawa",
+    "code": "NG-SO-GAW",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Isa",
+    "code": "NG-SO-ISA",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Ukwa West",
+    "code": "NG-AB-UWE",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Igbo-Eze North",
+    "code": "NG-EN-IEN",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Yankwashi",
+    "code": "NG-JI-YAN",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Katsina",
+    "code": "NG-KT-KAT",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Akoko South Akure East",
+    "code": "NG-ON-ASA",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Akure South",
+    "code": "NG-ON-ASO",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Ekwusigo",
+    "code": "NG-AN-EKW",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Gamawa LGA",
+    "code": "NG-BA-GLG",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Mbaitoli",
+    "code": "NG-IM-MBA",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Egbeda",
+    "code": "NG-OY-EGB",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Bakura",
+    "code": "NG-ZA-BAK",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Ebonyi",
+    "code": "NG-EB-EBO",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Kaltungo",
+    "code": "NG-GO-KAL",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "Kabba/Bunu",
+    "code": "NG-KO-KAB",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Mokwa",
+    "code": "NG-NI-MOK",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Nsit Atai",
+    "code": "NG-AK-NAT",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ogoja",
+    "code": "NG-CR-OGO",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Kagarko",
+    "code": "NG-KD-KAG",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Ibeju/Lekki",
+    "code": "NG-LA-IBE",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Ikorodu",
+    "code": "NG-LA-IKO",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Nasarawa-Eggon",
+    "code": "NG-NA-NEG",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Akoko South West",
+    "code": "NG-ON-ASW",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Irepo",
+    "code": "NG-OY-IRE",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Orumba North",
+    "code": "NG-AN-ON1",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Gwer East",
+    "code": "NG-BE-GEA",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Ushongo",
+    "code": "NG-BE-USH",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Udu",
+    "code": "NG-DE-UDU",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Nkanu West",
+    "code": "NG-EN-NWE",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Dandume",
+    "code": "NG-KT-DAN",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Mai'Adua",
+    "code": "NG-KT-MAI",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Musawa",
+    "code": "NG-KT-MUS",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Obot Akara",
+    "code": "NG-AK-OAK",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ukum",
+    "code": "NG-BE-UKU",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Kala/Balge",
+    "code": "NG-BO-KAL",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Aboh-Mbaise",
+    "code": "NG-IM-AMB",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Isiala Mbano",
+    "code": "NG-IM-IMB",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Arewa-Dandi",
+    "code": "NG-KE-ADA",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Argungu",
+    "code": "NG-KE-ARG",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Offa",
+    "code": "NG-KW-OFF",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Awka South",
+    "code": "NG-AN-ASO",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Faskari",
+    "code": "NG-KT-FAS",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Badagry",
+    "code": "NG-LA-BAD",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Ogun Waterside",
+    "code": "NG-OG-OWA",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Ogbmosho South",
+    "code": "NG-OY-OSO",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Oyo West",
+    "code": "NG-OY-OWE",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Sokoto South",
+    "code": "NG-SO-SSO",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Hong",
+    "code": "NG-AD-HON",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Dunukofia",
+    "code": "NG-AN-DUN",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Toro",
+    "code": "NG-BA-TOR",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Southern Ijaw",
+    "code": "NG-BY-SIJ",
+    "state_code": "NG-BY"
+  },
+  {
+    "name": "Orlu",
+    "code": "NG-IM-ORL",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Miga",
+    "code": "NG-JI-MIG",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Ogori/Mangongo",
+    "code": "NG-KO-OGO",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Agege",
+    "code": "NG-LA-AGE",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Owan West",
+    "code": "NG-ED-OWE",
+    "state_code": "NG-ED"
+  },
+  {
+    "name": "Olamabolo",
+    "code": "NG-KO-OLA",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Suleja",
+    "code": "NG-NI-SUL",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Karasuwa",
+    "code": "NG-YO-KAR",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Oji-River",
+    "code": "NG-EN-ORI",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Kiri Kasamma",
+    "code": "NG-JI-KKA",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Dambatta",
+    "code": "NG-KN-DAM",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ogba/Egbema/Ndoni",
+    "code": "NG-RI-OGB",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Shani",
+    "code": "NG-BO-SHA",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Mashegu",
+    "code": "NG-NI-MAS",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Aiyedire",
+    "code": "NG-OS-AI1",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Ola-Oluwa",
+    "code": "NG-OS-OOL",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Wase",
+    "code": "NG-PL-WAS",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Kaga",
+    "code": "NG-BO-KAG",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Odukpani",
+    "code": "NG-CR-ODU",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Kwali LGA",
+    "code": "NG-FC-KL1",
+    "state_code": "NG-FC"
+  },
+  {
+    "name": "Ikeduru",
+    "code": "NG-IM-IKE",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Batagarawa",
+    "code": "NG-KT-BAT",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Mopa-Muro",
+    "code": "NG-KO-MMU",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Gummi",
+    "code": "NG-ZA-GUM",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Uruan",
+    "code": "NG-AK-URU",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ogbia",
+    "code": "NG-BY-OGB",
+    "state_code": "NG-BY"
+  },
+  {
+    "name": "Gwer West",
+    "code": "NG-BE-GWE",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Ughelli North",
+    "code": "NG-DE-UNO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Ezza North",
+    "code": "NG-EB-ENO",
+    "state_code": "NG-EB"
+  },
+  {
+    "name": "Zaria",
+    "code": "NG-KD-ZAR",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Minjibir",
+    "code": "NG-KN-MIN",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ngaski",
+    "code": "NG-KE-NGA",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Damboa",
+    "code": "NG-BO-DAM",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Dukku",
+    "code": "NG-GO-DUK",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "Dutse",
+    "code": "NG-JI-DUT",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Idah",
+    "code": "NG-KO-IDA",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Oke-Ero",
+    "code": "NG-KW-OER",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Akoko North West",
+    "code": "NG-ON-ANW",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Ahoada West",
+    "code": "NG-RI-AWE",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Takum",
+    "code": "NG-TA-TAK",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Aguata",
+    "code": "NG-AN-AGU",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Orsu",
+    "code": "NG-IM-ORS",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Babura",
+    "code": "NG-JI-BAB",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Awe",
+    "code": "NG-NA-AWE",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Misau",
+    "code": "NG-BA-MIS",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Konshisha",
+    "code": "NG-BE-KON",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Agaie",
+    "code": "NG-NI-AGA",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Chanchaga",
+    "code": "NG-NI-CHA",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Ido",
+    "code": "NG-OY-IDO",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Ogbomosho North",
+    "code": "NG-OY-ONO",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Tambuwal",
+    "code": "NG-SO-TAM",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Tarmua",
+    "code": "NG-YO-TAR",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Umuahia South",
+    "code": "NG-AB-USO",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Dikwa",
+    "code": "NG-BO-DIK",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Idosi-Osi",
+    "code": "NG-EK-IOS",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Wudil",
+    "code": "NG-KN-WUD",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ilesha East",
+    "code": "NG-OS-IE1",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Fune",
+    "code": "NG-YO-FUN",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Yusufari",
+    "code": "NG-YO-YUS",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Bungudu",
+    "code": "NG-ZA-BUN",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Jada",
+    "code": "NG-AD-JAD",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Ika North East",
+    "code": "NG-DE-INE",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Igbo-Etiti",
+    "code": "NG-EN-IET",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Bunkure",
+    "code": "NG-KN-BUN",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ijumu",
+    "code": "NG-KO-IJU",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Itesiwaju",
+    "code": "NG-OY-ITE",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Ganaye",
+    "code": "NG-AD-GAN",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Abak",
+    "code": "NG-AK-ABA",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Anambra East",
+    "code": "NG-AN-AEA",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Bogoro",
+    "code": "NG-BA-BOG",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Nkanu East",
+    "code": "NG-EN-NEA",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Ngor-Okpala",
+    "code": "NG-IM-NOK",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Ikara",
+    "code": "NG-KD-IKA",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Egbedore",
+    "code": "NG-OS-EGB",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Lamurde",
+    "code": "NG-AD-LAM",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Anaocha",
+    "code": "NG-AN-ANA",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Jere",
+    "code": "NG-BO-JER",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Ikole",
+    "code": "NG-EK-IKO",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Markafi",
+    "code": "NG-KD-MAR",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Maiyama",
+    "code": "NG-KE-MAI",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Wamako",
+    "code": "NG-SO-WAM",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Geidam",
+    "code": "NG-YO-GEI",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Onna",
+    "code": "NG-AK-ONN",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Bwari LGA",
+    "code": "NG-FC-BLG",
+    "state_code": "NG-FC"
+  },
+  {
+    "name": "Nafada",
+    "code": "NG-GO-NAF",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "Sule-Tankarkar",
+    "code": "NG-JI-STA",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Chikun",
+    "code": "NG-KD-CHI",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Makoda",
+    "code": "NG-KN-MAK",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Takali",
+    "code": "NG-KN-TAK",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Keana",
+    "code": "NG-NA-KEA",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Warji",
+    "code": "NG-BA-WAR",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Boki",
+    "code": "NG-CR-BOK",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Calabar-Municipal",
+    "code": "NG-CR-CMU",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Zango-Kataf",
+    "code": "NG-KD-ZKA",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Dala",
+    "code": "NG-KN-DAL",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Kankia",
+    "code": "NG-KT-KA1",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Malumfashi",
+    "code": "NG-KT-MAL",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Olorunsogo",
+    "code": "NG-OY-OLO",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Arochukwu",
+    "code": "NG-AB-ARO",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Tsanyawa",
+    "code": "NG-KN-TSA",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Lafia",
+    "code": "NG-NA-LAF",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Langtang North",
+    "code": "NG-PL-LNO",
+    "state_code": "NG-PL"
+  },
+  {
+    "name": "Bursari",
+    "code": "NG-YO-BUR",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Osisioma Ngwa",
+    "code": "NG-AB-ONG",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Eket",
+    "code": "NG-AK-EKE",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ifedore",
+    "code": "NG-ON-IFE",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Ifelodun",
+    "code": "NG-OS-IF1",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Odo-Otin",
+    "code": "NG-OS-OOT",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Bade",
+    "code": "NG-YO-BAD",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Yunusari",
+    "code": "NG-YO-YUN",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Ukanafun",
+    "code": "NG-AK-UKA",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Obanliku",
+    "code": "NG-CR-OBA",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Sapele",
+    "code": "NG-DE-SAP",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Muya",
+    "code": "NG-NI-MUY",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Asari-Toru",
+    "code": "NG-RI-AT1",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Ganjuwa",
+    "code": "NG-BA-GAN",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "AdoEkiti",
+    "code": "NG-EK-ADO",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Kaita",
+    "code": "NG-KT-KAI",
+    "state_code": "NG-KT"
+  },
+  {
+    "name": "Zuru",
+    "code": "NG-KE-ZUR",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Ibaji",
+    "code": "NG-KO-IBA",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Kurmi",
+    "code": "NG-TA-KUR",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Oruk Anam",
+    "code": "NG-AK-OAN",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Jama'are",
+    "code": "NG-BA-JAM",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Isu",
+    "code": "NG-IM-ISU",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Buji",
+    "code": "NG-JI-BUJ",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Madobi",
+    "code": "NG-KN-MAD",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Nasarawa",
+    "code": "NG-KN-NAS",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Augie",
+    "code": "NG-KE-AUG",
+    "state_code": "NG-KE"
+  },
+  {
+    "name": "Akwanga",
+    "code": "NG-NA-AKW",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Ini",
+    "code": "NG-AK-INI",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ihiala",
+    "code": "NG-AN-IHI",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Konduga",
+    "code": "NG-BO-KON",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Ethiope West",
+    "code": "NG-DE-EWE",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Enugu East",
+    "code": "NG-EN-EEA",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Surulere",
+    "code": "NG-LA-SUR",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Gurara",
+    "code": "NG-NI-GUR",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Ikwerre",
+    "code": "NG-RI-IKW",
+    "state_code": "NG-RI"
+  },
+  {
+    "name": "Bauchi",
+    "code": "NG-BA-BAU",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Yenegoa",
+    "code": "NG-BY-YEN",
+    "state_code": "NG-BY"
+  },
+  {
+    "name": "Aiyekire",
+    "code": "NG-EK-AIY",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Tofa",
+    "code": "NG-KN-TOF",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ifelodun",
+    "code": "NG-KW-IFE",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Ifako-Ijaye",
+    "code": "NG-LA-IIJ",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Wushishi",
+    "code": "NG-NI-WUS",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Iwo",
+    "code": "NG-OS-IWO",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Ika South",
+    "code": "NG-DE-ISO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Keffi",
+    "code": "NG-NA-KEF",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Toto",
+    "code": "NG-NA-TOT",
+    "state_code": "NG-NA"
+  },
+  {
+    "name": "Atakumosa East",
+    "code": "NG-OS-AEA",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Ila",
+    "code": "NG-OS-ILA",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Ugwunagbo",
+    "code": "NG-AB-UGW",
+    "state_code": "NG-AB"
+  },
+  {
+    "name": "Esit Eket",
+    "code": "NG-AK-EEK",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Nsit Ubium",
+    "code": "NG-AK-NUB",
+    "state_code": "NG-AK"
+  },
+  {
+    "name": "Ifo",
+    "code": "NG-OG-IFO",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Wukari",
+    "code": "NG-TA-WUK",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Vandeikya",
+    "code": "NG-BE-VAN",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Aniocha South",
+    "code": "NG-DE-ASO",
+    "state_code": "NG-DE"
+  },
+  {
+    "name": "Obowo",
+    "code": "NG-IM-OBO",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Kaugama",
+    "code": "NG-JI-KAU",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "kaduna South",
+    "code": "NG-KD-KSO",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Ofu",
+    "code": "NG-KO-OFU",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Shomolu",
+    "code": "NG-LA-SHO",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Hawul",
+    "code": "NG-BO-HAW",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Moba",
+    "code": "NG-EK-MOB",
+    "state_code": "NG-EK"
+  },
+  {
+    "name": "Jaba",
+    "code": "NG-KD-JAB",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Shagamu",
+    "code": "NG-OG-SHA",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Cassol",
+    "code": "NG-TA-CAS",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Makurdi",
+    "code": "NG-BE-MAK",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Nsukka",
+    "code": "NG-EN-NSU",
+    "state_code": "NG-EN"
+  },
+  {
+    "name": "Ibadan North",
+    "code": "NG-OY-INO",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Darazo",
+    "code": "NG-BA-DAR",
+    "state_code": "NG-BA"
+  },
+  {
+    "name": "Oru East",
+    "code": "NG-IM-OEA",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Guri",
+    "code": "NG-JI-GUR",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Sanga",
+    "code": "NG-KD-SAN",
+    "state_code": "NG-KD"
+  },
+  {
+    "name": "Lapai",
+    "code": "NG-NI-LAP",
+    "state_code": "NG-NI"
+  },
+  {
+    "name": "Ondo West",
+    "code": "NG-ON-OWE",
+    "state_code": "NG-ON"
+  },
+  {
+    "name": "Olorunda",
+    "code": "NG-OS-OLO",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Dange-shnsi",
+    "code": "NG-SO-DSH",
+    "state_code": "NG-SO"
+  },
+  {
+    "name": "Mayo-Belwa",
+    "code": "NG-AD-MBE",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Gombe",
+    "code": "NG-GO-GOM",
+    "state_code": "NG-GO"
+  },
+  {
+    "name": "Malam Madori",
+    "code": "NG-JI-MMA",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Taura",
+    "code": "NG-JI-TAU",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Alimosho",
+    "code": "NG-LA-ALI",
+    "state_code": "NG-LA"
+  },
+  {
+    "name": "Sardauna",
+    "code": "NG-TA-SAR",
+    "state_code": "NG-TA"
+  },
+  {
+    "name": "Bukkuyum",
+    "code": "NG-ZA-BUK",
+    "state_code": "NG-ZA"
+  },
+  {
+    "name": "Mubi South",
+    "code": "NG-AD-MSO",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Orumba South",
+    "code": "NG-AN-OS1",
+    "state_code": "NG-AN"
+  },
+  {
+    "name": "Ohaji/Egbema",
+    "code": "NG-IM-OHA",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Fagge",
+    "code": "NG-KN-FAG",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Ajaokuta",
+    "code": "NG-KO-AJA",
+    "state_code": "NG-KO"
+  },
+  {
+    "name": "Iseyin",
+    "code": "NG-OY-IS1",
+    "state_code": "NG-OY"
+  },
+  {
+    "name": "Damaturu",
+    "code": "NG-YO-DAM",
+    "state_code": "NG-YO"
+  },
+  {
+    "name": "Ikom",
+    "code": "NG-CR-IKO",
+    "state_code": "NG-CR"
+  },
+  {
+    "name": "Kazaure",
+    "code": "NG-JI-KAZ",
+    "state_code": "NG-JI"
+  },
+  {
+    "name": "Kabo",
+    "code": "NG-KN-KAB",
+    "state_code": "NG-KN"
+  },
+  {
+    "name": "Oyun",
+    "code": "NG-KW-OYU",
+    "state_code": "NG-KW"
+  },
+  {
+    "name": "Odogbolu",
+    "code": "NG-OG-ODO",
+    "state_code": "NG-OG"
+  },
+  {
+    "name": "Boluwaduro",
+    "code": "NG-OS-BOL",
+    "state_code": "NG-OS"
+  },
+  {
+    "name": "Michika",
+    "code": "NG-AD-MIC",
+    "state_code": "NG-AD"
+  },
+  {
+    "name": "Kwande",
+    "code": "NG-BE-KWA",
+    "state_code": "NG-BE"
+  },
+  {
+    "name": "Marte",
+    "code": "NG-BO-MAR",
+    "state_code": "NG-BO"
+  },
+  {
+    "name": "Owerri-Municipal",
+    "code": "NG-IM-OMU",
+    "state_code": "NG-IM"
+  },
+  {
+    "name": "Degema",
+    "code": "NG-RI-DEG",
+    "state_code": "NG-RI"
+  }
+]
