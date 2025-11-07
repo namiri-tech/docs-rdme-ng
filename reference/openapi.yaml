@@ -309,8 +309,6 @@ paths:
               required:
                 - tax_category_code
                 - item_name
-                - unit_price
-                - currency_code
                 - description
                 - product_category
                 - hsn_code
@@ -344,11 +342,21 @@ paths:
                   format: double
                   example: 10000
                   minimum: 0
-                  description: The cost of a single unit of the item
+                  description: >-
+                    The cost of a single unit of the item. This field is
+                    deprecated to allow the item to be sold in multiple
+                    currencies. Invoices will use the unit price defined in the
+                    invoice payload
+                  deprecated: true
                 currency_code:
                   type: string
                   example: NGN
-                  description: The currency in which the item is priced
+                  description: >-
+                    The currency in which the item is priced. This field is
+                    deprecated to allow the item to be sold in multiple
+                    currencies. Invoices will use the currency code defined in
+                    the invoice payload
+                  deprecated: true
                 description:
                   type: string
                   example: Sample item description
@@ -2895,8 +2903,6 @@ components:
         - tax_category_code
         - item_name
         - item_number
-        - unit_price
-        - currency_code
         - description
         - product_category
         - hsn_code
@@ -2951,11 +2957,19 @@ components:
           type: number
           format: double
           example: 10000
-          description: The cost of a single unit of the item
+          description: >-
+            The cost of a single unit of the item. This field is deprecated to
+            allow the item to be sold in multiple currencies. Invoices will use
+            the unit price defined in the invoice payload
+          deprecated: true
         currency_code:
           type: string
           example: NGN
-          description: The currency in which the item is priced
+          description: >-
+            The currency in which the item is priced. This field is deprecated
+            to allow the item to be sold in multiple currencies. Invoices will
+            use the currency code defined in the invoice payload
+          deprecated: true
         description:
           type: string
           example: Sample item description
