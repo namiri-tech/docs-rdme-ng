@@ -653,7 +653,7 @@ paths:
                         type: number
                         format: double
                         example: 10000
-                        minimum: 0
+                        minimum: 0.01
                         description: The unit price of this line item before tax
                       discount_rate:
                         type: number
@@ -904,7 +904,7 @@ paths:
                         type: number
                         format: double
                         example: 10000
-                        minimum: 0
+                        minimum: 0.01
                         description: The unit price of this line item before tax
                       discount_rate:
                         type: number
@@ -1154,7 +1154,7 @@ paths:
                         type: number
                         format: double
                         example: 10000
-                        minimum: 0
+                        minimum: 0.01
                         description: The unit price of this line item before tax
                       discount_rate:
                         type: number
@@ -1643,7 +1643,7 @@ paths:
                         type: number
                         format: double
                         example: 10000
-                        minimum: 0
+                        minimum: 0.01
                         description: The unit price of this line item before tax
                       discount_rate:
                         type: number
@@ -1888,7 +1888,7 @@ paths:
                         type: number
                         format: double
                         example: 10000
-                        minimum: 0
+                        minimum: 0.01
                         description: The unit price of this line item before tax
                       discount_rate:
                         type: number
@@ -2130,7 +2130,7 @@ paths:
                         type: number
                         format: double
                         example: 10000
-                        minimum: 0
+                        minimum: 0.01
                         description: The unit price of this line item before tax
                       discount_rate:
                         type: number
