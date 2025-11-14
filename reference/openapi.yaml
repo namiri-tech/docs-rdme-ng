@@ -540,6 +540,7 @@ paths:
                 trader_invoice_number:
                   type: string
                   example: '2453618203'
+                  maxLength: 30
                   description: >-
                     An invoice number assigned by the supplier to uniquely
                     identify the invoice in their system
@@ -793,6 +794,7 @@ paths:
                 trader_invoice_number:
                   type: string
                   example: '2453618203'
+                  maxLength: 30
                   description: >-
                     An invoice number assigned by the supplier to uniquely
                     identify the credit note in their system
@@ -1044,6 +1046,7 @@ paths:
                 trader_invoice_number:
                   type: string
                   example: '2453618203'
+                  maxLength: 30
                   description: >-
                     An invoice number assigned by the supplier to uniquely
                     identify the debit note in their system
@@ -1495,6 +1498,7 @@ paths:
                 trader_invoice_number:
                   type: string
                   example: '2453618203'
+                  maxLength: 30
                   description: >-
                     An invoice number assigned by the supplier to uniquely
                     identify the invoice in their system
@@ -1777,6 +1781,7 @@ paths:
                 trader_invoice_number:
                   type: string
                   example: '2453618203'
+                  maxLength: 30
                   description: >-
                     An invoice number assigned by the supplier to uniquely
                     identify the credit note in their system
@@ -2020,6 +2025,7 @@ paths:
                 trader_invoice_number:
                   type: string
                   example: '2453618203'
+                  maxLength: 30
                   description: >-
                     An invoice number assigned by the supplier to uniquely
                     identify the debit note in their system
