@@ -2746,8 +2746,6 @@ components:
         - city_name
         - postal_zone
         - country_code
-        - local_government_code
-        - state_code
       properties:
         street_name:
           type: string
@@ -2768,11 +2766,15 @@ components:
         local_government_code:
           type: string
           example: NG-AB-ANO
-          description: The local government code of the party
+          description: >-
+            The local government code of the party. It is temporarily optional;
+            and will be made mandatory in a future release
         state_code:
           type: string
           example: NG-AB
-          description: The state code of the party
+          description: >-
+            The state code of the party. It is temporarily optional; and will be
+            made mandatory in a future release
     LocalGovernment:
       type: object
       required:
