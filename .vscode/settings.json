@@ -1,0 +1,7 @@
+{
+  "markdown-pdf.headerTemplate": "<div style=\"font-family: 'Sora', sans-serif; font-size: 9px; margin-left: 1cm;\"><span>DigiTax Nigeria API Reference</span></div><div style=\"font-family: 'Sora', sans-serif; font-size: 9px; margin-left: auto; margin-right: 1cm; \"><span class='pageNumber'></span> / <span class='totalPages'></span></div>",
+  "markdown-pdf.footerTemplate": "<div style=\"font-family: 'Sora', sans-serif; font-size: 9px; margin-left: 1cm;\"><span>Namiri Technology Limited</span></div>",
+  "markdown-pdf.styles": [
+    ".vscode/markdown.css"
+  ]
+}

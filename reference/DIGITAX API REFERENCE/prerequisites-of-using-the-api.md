@@ -29,13 +29,13 @@ In a Sandbox/ LIVE business,
 1. Navigate to the "Integrations" menu tab
 2. Select "Add API KEY"
 
-<Image align="center" border={true} caption="Add API Key" src="https://files.readme.io/a99655fef3da77da85c1f6be4f877e63988e7f34d24d20790ab5f5faa162cd39-AddAPIKey.png" />
+    <Image align="center" border={true} caption="Add API Key" src="https://files.readme.io/a99655fef3da77da85c1f6be4f877e63988e7f34d24d20790ab5f5faa162cd39-AddAPIKey.png" />
 
-3. Enter a name and select "Api key"
+3. Enter a name and select "Api Key"
 
-<Image align="center" border={true} caption="Create an API Key" src="https://files.readme.io/ecbb1763470858903d07c168a2fc17bc3477999ac27af026ccbc51dd81d74cf6-Api_Key.png" width="350px" />
+    <Image align="center" border={true} caption="Create an API Key" src="https://files.readme.io/ecbb1763470858903d07c168a2fc17bc3477999ac27af026ccbc51dd81d74cf6-Api_Key.png" width="350px" />
 
-Please record the value that you generate for later use, as you will not see it from the dashboard on subsequent visits. Save it securely.
+    Please record the value that you generate for later use, as you will not see it from the dashboard on subsequent visits. Save it securely.
 
 ### License Key
 

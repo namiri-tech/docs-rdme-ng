@@ -4,13 +4,13 @@ excerpt: >-
   This endpoint enables integrators to create invoices by including both party
   and item details in a single payload. It’s ideal for clients managing multiple
   parties and items who want a more streamlined approach to handling these
-  transactions. 
+  transactions.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Overview
+## Overview
 
 ### Party Details
 
@@ -20,7 +20,7 @@ For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C 
 
 Within the item object, users are required to provide pre-calculated values for `total_amount`, `taxable_amount`, and `tax_amount`.
 
-More details on, the `document_currency_code`, `tax_category_code`, `invoice_type_code` etc... can be found under the resource section [here](https://ng.docs.digitax.tech/reference/using-the-digitax-nigeria-api#/).
+More details on, the `document_currency_code`, `tax_category_code`, `invoice_type_code` etc... can be found under the resource section [here](https://ng.docs.digitax.tech/reference/get_resources-countries).
 
 ### Endpoint:
 
@@ -162,7 +162,7 @@ https://api.digitax.tech/ng/v1/credit-notes-with-item-codes
       "discount_rate": 0.05,
       "fee_rate": 0.02,
       "tax_rate": 0.075,
-      "taxable_amount": 9700, 
+      "taxable_amount": 9700,
       "tax_amount": 727.5
     }
   ]
@@ -196,7 +196,7 @@ https://api.digitax.tech/ng/v1/debit-notes-with-item-codes
       "discount_rate": 0.05,
       "fee_rate": 0.02,
       "tax_rate": 0.075,
-      "taxable_amount": 9700, 
+      "taxable_amount": 9700,
       "tax_amount": 727.5
     }
   ]
