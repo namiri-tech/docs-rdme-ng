@@ -208,8 +208,9 @@ paths:
                   type: string
                   example: 87864516-2365
                   description: >-
-                    The Taxpayer Identification Number (TIN) assigned to the
-                    buyer
+                    The Taxpayer Identification Number (TIN) or company
+                    incorporation number(if the party does not yet have a TIN)
+                    assigned to the party
                 email:
                   type: string
                   example: john@doe.com
@@ -1327,8 +1328,9 @@ paths:
                   type: string
                   example: 08289985-9145
                   description: >-
-                    The tax identification number of the buyer of the goods or
-                    services
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the buyer of
+                    the goods or services
                 party_name:
                   type: string
                   example: Namiri Technology
@@ -1353,8 +1355,9 @@ paths:
                   type: string
                   example: 08289985-9145
                   description: >-
-                    The tax identification number of the party to whom the
-                    payment goes to; if it goes to someone else
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the party to
+                    whom the payment goes to; if it goes to someone else
                 payee_party_name:
                   type: string
                   example: Namiri Technology
@@ -1380,8 +1383,9 @@ paths:
                   type: string
                   example: 08289985-9145
                   description: >-
-                    The tax identification number of the party to whom the
-                    payment goes to; if it goes to someone else
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the party to
+                    whom the payment goes to; if it goes to someone else
                 bill_party_name:
                   type: string
                   example: Namiri Technology
@@ -1407,8 +1411,9 @@ paths:
                   type: string
                   example: 08289985-9145
                   description: >-
-                    The tax identification number of the party to whom the
-                    payment goes to; if it goes to someone else
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the party to
+                    whom the payment goes to; if it goes to someone else
                 ship_party_name:
                   type: string
                   example: Namiri Technology
@@ -1434,8 +1439,10 @@ paths:
                   type: string
                   example: 08289985-9145
                   description: >-
-                    The tax identification number of the tax agent handling
-                    invoicing and compliance for the business if there is one
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the tax
+                    agent handling invoicing and compliance for the business if
+                    there is one
                 tax_representative_party_name:
                   type: string
                   example: Namiri Technology
@@ -2879,7 +2886,9 @@ components:
         tax_identification_number:
           type: string
           example: 08289985-9145
-          description: The Taxpayer Identification Number (TIN) assigned to the buyer
+          description: >-
+            The Taxpayer Identification Number (TIN) or company incorporation
+            number(if the party does not yet have a TIN) assigned to the party
         name:
           type: string
           example: John Doe
