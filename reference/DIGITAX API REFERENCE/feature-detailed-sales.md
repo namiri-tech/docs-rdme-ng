@@ -22,7 +22,7 @@ Within the item object, users are required to provide pre-calculated values for 
 
 More details on, the `document_currency_code`, `tax_category_code`, `invoice_type_code` etc... can be found under the resource section [here](https://ng.docs.digitax.tech/reference/get_resources-countries).
 
-### Endpoint:
+### Endpoint
 
 ```json
 https://api.digitax.tech/ng/v1/detailed-invoices
