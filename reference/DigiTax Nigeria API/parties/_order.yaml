@@ -1,3 +1,4 @@
 - get_parties
 - post_parties
 - get_parties-party-id
+- put_parties-party-id
