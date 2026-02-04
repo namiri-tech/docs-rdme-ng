@@ -677,6 +677,17 @@ paths:
                     The URL to call when we have new information about the
                     invoice, when the invoice is signed successfully or
                     validation has failed
+                invoice_kind:
+                  type: string
+                  example: B2B
+                  enum:
+                    - B2B
+                    - B2C
+                    - B2G
+                  description: >-
+                    Specifies the kind of invoice that was sent. It can either
+                    be Business to Business (B2B), Business to Consumer (B2C) or
+                    Business to Government (B2G)
                 items:
                   type: array
                   description: >-
@@ -1641,6 +1652,17 @@ paths:
                     The URL to call when we have new information about the
                     invoice, when the invoice is signed successfully or
                     validation has failed
+                invoice_kind:
+                  type: string
+                  example: B2B
+                  enum:
+                    - B2B
+                    - B2C
+                    - B2G
+                  description: >-
+                    Specifies the kind of invoice that was sent. It can either
+                    be Business to Business (B2B), Business to Consumer (B2C) or
+                    Business to Government (B2G)
                 items:
                   type: array
                   description: >-
@@ -2592,6 +2614,17 @@ paths:
                     The URL to call when we have new information about the debit
                     note, when the invoice is signed successfully or validation
                     has failed
+                invoice_kind:
+                  type: string
+                  example: B2B
+                  enum:
+                    - B2B
+                    - B2C
+                    - B2G
+                  description: >-
+                    Specifies the kind of invoice that was sent. It can either
+                    be Business to Business (B2B), Business to Consumer (B2C) or
+                    Business to Government (B2G)
       responses:
         '201':
           description: APP Invoice created
@@ -3084,6 +3117,9 @@ components:
         - signed_at
         - validated_at
         - payment_status
+        - charge_total_amount
+        - allowance_total_amount
+        - invoice_kind
       properties:
         id:
           type: string
@@ -3233,7 +3269,6 @@ components:
           enum:
             - DRAFT
             - PENDING
-            - CONFIRMED
             - FAILED
             - COMPLETED
           example: COMPLETED
@@ -3245,6 +3280,16 @@ components:
           description: >-
             The total amount of all invoice items before tax and any discounts
             or charges
+        charge_total_amount:
+          type: number
+          format: double
+          example: 9700
+          description: The sum of charges on invoice level
+        allowance_total_amount:
+          type: number
+          format: double
+          example: 9700
+          description: The sum of allowances on invoice level
         tax_exclusive_amount:
           type: number
           format: double
@@ -3351,6 +3396,18 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/InvoiceItem'
+        invoice_kind:
+          type: string
+          nullable: true
+          example: B2B
+          enum:
+            - B2B
+            - B2C
+            - B2G
+          description: >-
+            Specifies the kind of invoice that was sent. It can either be
+            Business to Business (B2B), Business to Consumer (B2C) or Business
+            to Government (B2G)
     InvoiceItem:
       type: object
       description: This captures details about each good or service being invoiced
@@ -3511,6 +3568,7 @@ components:
         - tax_inclusive_amount
         - payable_amount
         - tax_amount
+        - invoice_kind
       properties:
         id:
           type: string
@@ -3717,6 +3775,18 @@ components:
           description: >-
             If a business has a tax agent handling invoicing and compliance,
             their details are entered here
+        invoice_kind:
+          type: string
+          nullable: true
+          example: B2B
+          enum:
+            - B2B
+            - B2C
+            - B2G
+          description: >-
+            Specifies the kind of invoice that was sent. It can either be
+            Business to Business (B2B), Business to Consumer (B2C) or Business
+            to Government (B2G)
     InvoiceDownloadParty:
       type: object
       description: Represents the buyer or supplier party in a downloaded invoice
@@ -3856,6 +3926,7 @@ components:
         - transmitted_at
         - signed_at
         - validated_at
+        - invoice_kind
       properties:
         id:
           type: string
@@ -4076,6 +4147,18 @@ components:
           type: boolean
           example: true
           description: Indicates whether the invoice is active on the DigiTax system or not
+        invoice_kind:
+          type: string
+          nullable: true
+          example: B2B
+          enum:
+            - B2B
+            - B2C
+            - B2G
+          description: >-
+            Specifies the kind of invoice that is being sent. It can either be
+            Business to Business (B2B), Business to Consumer (B2C) or Business
+            to Government (B2G)
     APPInvoiceParty:
       type: object
       required:
