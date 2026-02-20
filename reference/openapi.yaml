@@ -683,11 +683,9 @@ paths:
                   enum:
                     - B2B
                     - B2C
-                    - B2G
                   description: >-
                     Specifies the kind of invoice that was sent. It can either
-                    be Business to Business (B2B), Business to Consumer (B2C) or
-                    Business to Government (B2G)
+                    be Business to Business (B2B), Business to Consumer (B2C)
                 items:
                   type: array
                   description: >-
@@ -1658,11 +1656,9 @@ paths:
                   enum:
                     - B2B
                     - B2C
-                    - B2G
                   description: >-
                     Specifies the kind of invoice that was sent. It can either
-                    be Business to Business (B2B), Business to Consumer (B2C) or
-                    Business to Government (B2G)
+                    be Business to Business (B2B), Business to Consumer (B2C)
                 items:
                   type: array
                   description: >-
@@ -2620,11 +2616,9 @@ paths:
                   enum:
                     - B2B
                     - B2C
-                    - B2G
                   description: >-
                     Specifies the kind of invoice that was sent. It can either
-                    be Business to Business (B2B), Business to Consumer (B2C) or
-                    Business to Government (B2G)
+                    be Business to Business (B2B), Business to Consumer (B2C)
       responses:
         '201':
           description: APP Invoice created
@@ -3403,11 +3397,9 @@ components:
           enum:
             - B2B
             - B2C
-            - B2G
           description: >-
             Specifies the kind of invoice that was sent. It can either be
-            Business to Business (B2B), Business to Consumer (B2C) or Business
-            to Government (B2G)
+            Business to Business (B2B), Business to Consumer (B2C)
     InvoiceItem:
       type: object
       description: This captures details about each good or service being invoiced
@@ -3782,11 +3774,9 @@ components:
           enum:
             - B2B
             - B2C
-            - B2G
           description: >-
             Specifies the kind of invoice that was sent. It can either be
-            Business to Business (B2B), Business to Consumer (B2C) or Business
-            to Government (B2G)
+            Business to Business (B2B), Business to Consumer (B2C)
     InvoiceDownloadParty:
       type: object
       description: Represents the buyer or supplier party in a downloaded invoice
@@ -4154,11 +4144,9 @@ components:
           enum:
             - B2B
             - B2C
-            - B2G
           description: >-
             Specifies the kind of invoice that is being sent. It can either be
-            Business to Business (B2B), Business to Consumer (B2C) or Business
-            to Government (B2G)
+            Business to Business (B2B), Business to Consumer (B2C)
     APPInvoiceParty:
       type: object
       required:
