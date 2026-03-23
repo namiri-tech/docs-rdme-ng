@@ -45,11 +45,11 @@ Our system will POST data to the callback URL when we have new information about
 
 We send a callback when invoice has been signed.
 
-When an invoice, credit note, or debit note has been synced to FIRS (or signed), we also send a POST request to the `callback_url`. The request body contains a `data` object with details about the synced invoice, credit note, or debit note and an `event` property with the value `sale.sync`.
+When an invoice, credit note, or debit note has been synced to NRS (or signed), we also send a POST request to the `callback_url`. The request body contains a `data` object with details about the synced invoice, credit note, or debit note and an `event` property with the value `sale.sync`.
 
 ## Structure and example
 
-Example response when an invoice, credit note, or debit note has been synced to FIRS (or has been signed)
+Example response when an invoice, credit note, or debit note has been synced to NRS (or has been signed)
 
 ```json
 {

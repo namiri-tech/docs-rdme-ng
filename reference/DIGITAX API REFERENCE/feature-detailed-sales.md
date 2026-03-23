@@ -2,7 +2,7 @@
 title: 'Feature: Detailed Sales'
 excerpt: >-
   This endpoint enables integrators to create invoices by including both party
-  and item details in a single payload. It’s ideal for clients managing multiple
+  and item details in a single payload. It's ideal for clients managing multiple
   parties and items who want a more streamlined approach to handling these
   transactions.
 deprecated: false
@@ -14,7 +14,7 @@ metadata:
 
 ### Party Details
 
-For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C transactions, the party details are optional; leave the fields "party_tin","party_name" and "party_email" as empty strings.
+For B2B transactions, the party's TIN, name, and email are mandatory. For B2C transactions, the party details are optional; leave the fields "party_tin","party_name" and "party_email" as empty strings.
 
 ### Tax Calculation
 

@@ -1,16 +1,16 @@
 ---
-title: Get Enabled for FIRS E-Invoicing with DigiTax
-excerpt: Go LIVE on DigiTax Nigeria and FIRS E-Invoicing system
+title: Get Enabled for NRS E-Invoicing with DigiTax
+excerpt: Go LIVE on DigiTax Nigeria and NRS E-Invoicing system
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-These are the steps needed to get enabled for FIRS E-Invoicing and go LIVE on DigiTax Nigeria:
+These are the steps needed to get enabled for NRS E-Invoicing and go LIVE on DigiTax Nigeria:
 
 ## Enable Your Business Entity for e-invoicing
 
-1. Access the FIRS e-invoicing portal on [einvoice.firs.gov.ng/login](https://einvoice.firs.gov.ng/login)
+1. Access the NRS e-invoicing portal on [einvoice.firs.gov.ng/login](https://einvoice.firs.gov.ng/login)
 2. Navigate to the **Businesses** Tab to check your e-invoicing enablement status.
 3. If not enabled, select “Get Enabled” to initiate setup.
 
@@ -18,11 +18,11 @@ These are the steps needed to get enabled for FIRS E-Invoicing and go LIVE on Di
 
    * Your business information
    * Select **DigiTax** as your Access Point Provider (APP)
-     > DigiTax will be listed here soon. FIRS is having a phased-rollout of the FIRS E-Invoicing system and approved APPs
+     > DigiTax will be listed here soon. NRS is having a phased-rollout of the NRS E-Invoicing system and approved APPs
    * Input your ERP details, and set a decryption code
-   * Submit the form to trigger FIRS review and approval for e-invoicing access.
+   * Submit the form to trigger NRS review and approval for e-invoicing access.
 
-You can also submit your data on the enablement form on [einvoice.firs.gov.ng/enablement](https://einvoice.firs.gov.ng/enablement) without logging into <Glossary>FIRS</Glossary> e-invoicing portal.
+You can also submit your data on the enablement form on [einvoice.firs.gov.ng/enablement](https://einvoice.firs.gov.ng/enablement) without logging into <Glossary>NRS</Glossary> e-invoicing portal.
 
 ## Set up a cloud account, and business on DigiTax dashboard
 
@@ -34,13 +34,13 @@ You can also submit your data on the enablement form on [einvoice.firs.gov.ng/en
 4. Reach out to DigiTax support for next steps
    1. Commercial conversations come in at this point (if not sooner)
    2. Commercial conversations are finalized, and DigiTax subscription and one-time setup fees are paid
-   3. An initialization request is made to FIRS E-Invoicing system, marking your business LIVE on DigiTax
+   3. An initialization request is made to NRS E-Invoicing system, marking your business LIVE on DigiTax
 
 Once that business goes LIVE, you can go ahead and generate an API Key under the "Integrations" tab.
 
 > 👍 Your integration is LIVE 🎉
 >
-> Using the LIVE X-API-Key, you'll now be interacting with the production environment of FIRS E-Invoicing system
+> Using the LIVE X-API-Key, you'll now be interacting with the production environment of NRS E-Invoicing system
 
 ## API Keys management
 

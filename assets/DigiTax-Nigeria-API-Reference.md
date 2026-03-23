@@ -56,7 +56,7 @@
 
 ## Introduction
 
-Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and FIRS e-Invoicing](https://ng.docs.digitax.tech/docs/getting-started) and [FIRS and FIRS E-Invoicing System](https://ng.docs.digitax.tech/docs/firs-e-invoicing-system).
+Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and NRS e-Invoicing](https://ng.docs.digitax.tech/docs/getting-started) and [NRS and NRS E-Invoicing System](https://ng.docs.digitax.tech/docs/firs-e-invoicing-system).
 
 > Use **DigiTax Nigeria API** to integrate your system with NRS E-Invoicing System for automation and to reduce platform-hopping
 
@@ -271,7 +271,7 @@ Example response when an invoice, credit note, or debit note has been synced to 
 
 DigiTax provides the following:
 
-- Asynchronous functionality that automatically retries FIRS
+- Asynchronous functionality that automatically retries NRS
 - Get notifications on transaction statuses via [Callback URLs](#feature-callback-urls)
 - Throttling traffic between the businesses throughput and the tax authority's system
 
@@ -279,7 +279,7 @@ These functionalities are possible due to the DigiTax Queueing system.
 
 > 📘 You don't run the risk of double-entry
 >
-> Every transaction that interacts with FIRS E-Invoicing System is first off entered into the DigiTax Queueing system to mitigate against possible FIRS:
+> Every transaction that interacts with NRS E-Invoicing System is first off entered into the DigiTax Queueing system to mitigate against possible NRS:
 >
 > - intermittency and downtime OR
 > - slow response rate
@@ -294,9 +294,9 @@ These are the possible options for the `status` property of a response from the 
 
 | Status    | Meaning                                                                                 | Action                                                                                                                                                 |
 | --------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| pending   | DigiTax Queueing system is **queued** after attempting to reach FIRS E-Invoicing System | Check in later. If you set up [Callback URLs](#feature-callback-urls), DigiTax will post to your system when the FIRS E-Invoicing System sync is done. |
+| pending   | DigiTax Queueing system is **queued** after attempting to reach NRS E-Invoicing System | Check in later. If you set up [Callback URLs](#feature-callback-urls), DigiTax will post to your system when the NRS E-Invoicing System sync is done. |
 | completed | The completed invoice is signed                                                         | Check in later. If you set up [Callback URLs](#feature-callback-urls), DigiTax will post to your system when it is done.                               |
-| failed    | FIRS E-Invoicing System rejected the transaction                                        | Please initiate another transaction.                                                                                                                   |
+| failed    | NRS E-Invoicing System rejected the transaction                                        | Please initiate another transaction.                                                                                                                   |
 
 ### Invoice Status Details
 
@@ -325,7 +325,7 @@ The timestamps above correspond to what you'd see on the Dashboard, under "Invoi
 For an invoice to be marked as transmitted:
 
 1. A party needs to be added
-2. The party needs to be onboarded on FIRS.
+2. The party needs to be onboarded on NRS.
 
 ### Party details for transmission
 
@@ -468,7 +468,7 @@ An HS/HSN code is required when registering an item as a good, while a Service c
 
 ### Party Details
 
-For B2B transactions, the party’s TIN, name, and email are mandatory. For B2C transactions, the party details are optional; leave the fields "party_tin","party_name" and "party_email" as empty strings.
+For B2B transactions, the party's TIN, name, and email are mandatory. For B2C transactions, the party details are optional; leave the fields "party_tin","party_name" and "party_email" as empty strings.
 
 ### Tax Calculation
 
@@ -665,37 +665,37 @@ DigiTax Nigeria API endpoints are divided into 7 sections listed below. The Open
 
 ## Resources API endpoints
 
-- [Get FIRS Countries](https://ng.docs.digitax.tech/reference/get_resources-countries)
-- [Get FIRS Currencies](https://ng.docs.digitax.tech/reference/get_resources-currencies)
-- [Get FIRS Tax Categories](https://ng.docs.digitax.tech/reference/get_resources-tax-categories)
-- [Get FIRS Invoice Types](https://ng.docs.digitax.tech/reference/get_resources-invoice-types)
-- [Get FIRS Payment Means](https://ng.docs.digitax.tech/reference/get_resources-payment-means)
-- [Get FIRS Local Governments](https://ng.docs.digitax.tech/reference/get_resources-local-governments)
-- [Get FIRS States](https://ng.docs.digitax.tech/reference/get_resources-states)
+- [Get NRS Countries](https://ng.docs.digitax.tech/reference/get_resources-countries)
+- [Get NRS Currencies](https://ng.docs.digitax.tech/reference/get_resources-currencies)
+- [Get NRS Tax Categories](https://ng.docs.digitax.tech/reference/get_resources-tax-categories)
+- [Get NRS Invoice Types](https://ng.docs.digitax.tech/reference/get_resources-invoice-types)
+- [Get NRS Payment Means](https://ng.docs.digitax.tech/reference/get_resources-payment-means)
+- [Get NRS Local Governments](https://ng.docs.digitax.tech/reference/get_resources-local-governments)
+- [Get NRS States](https://ng.docs.digitax.tech/reference/get_resources-states)
 
 ## Business API endpoints
 
-- [Get FIRS Info](https://ng.docs.digitax.tech/reference/get_info)
+- [Get NRS Info](https://ng.docs.digitax.tech/reference/get_info)
 
 ## Parties API endpoints
 
-- [Get FIRS Parties](https://ng.docs.digitax.tech/reference/get_parties)
+- [Get NRS Parties](https://ng.docs.digitax.tech/reference/get_parties)
 - [Create Party](https://ng.docs.digitax.tech/reference/post_parties)
 - [Get a business party](https://ng.docs.digitax.tech/reference/get_parties-party-id)
 
 ## Items API endpoints
 
-- [Get FIRS Items](https://ng.docs.digitax.tech/reference/get_items)
+- [Get NRS Items](https://ng.docs.digitax.tech/reference/get_items)
 - [Create Item](https://ng.docs.digitax.tech/reference/post_items)
 - [Get a business item](https://ng.docs.digitax.tech/reference/get_items-item-id)
 
 ## Invoices API endpoints
 
-- [Get FIRS Invoices](https://ng.docs.digitax.tech/reference/get_invoices)
+- [Get NRS Invoices](https://ng.docs.digitax.tech/reference/get_invoices)
 - [Create Invoice](https://ng.docs.digitax.tech/reference/post_invoices)
-- [Get FIRS Credit Notes](https://ng.docs.digitax.tech/reference/get_credit-notes)
+- [Get NRS Credit Notes](https://ng.docs.digitax.tech/reference/get_credit-notes)
 - [Create Credit Note](https://ng.docs.digitax.tech/reference/post_credit-notes)
-- [Get FIRS Debit Notes](https://ng.docs.digitax.tech/reference/get_debit-notes)
+- [Get NRS Debit Notes](https://ng.docs.digitax.tech/reference/get_debit-notes)
 - [Create Debit Note](https://ng.docs.digitax.tech/reference/post_debit-notes)
 - [Get a business invoice](https://ng.docs.digitax.tech/reference/get_invoices-invoice-id)
 - [Update an invoice payment status](https://ng.docs.digitax.tech/reference/put_invoices-invoice-id-payment-status)
@@ -706,8 +706,8 @@ DigiTax Nigeria API endpoints are divided into 7 sections listed below. The Open
 
 ## Invoices Downloads API endpoints
 
-- [Get FIRS Invoice Downloads](https://ng.docs.digitax.tech/reference/get_invoice-downloads)
-- [Get a FIRS Invoice Download](https://ng.docs.digitax.tech/reference/get_invoice-downloads-download-id)
+- [Get NRS Invoice Downloads](https://ng.docs.digitax.tech/reference/get_invoice-downloads)
+- [Get a NRS Invoice Download](https://ng.docs.digitax.tech/reference/get_invoice-downloads-download-id)
 - [Get a business invoice download by the invoice reference number](https://ng.docs.digitax.tech/reference/get_invoice-downloads-irn-invoice-reference-number)
 - [Confirm a business invoice download's payment status](https://ng.docs.digitax.tech/reference/get_invoice-downloads-download-id-confirm)
 

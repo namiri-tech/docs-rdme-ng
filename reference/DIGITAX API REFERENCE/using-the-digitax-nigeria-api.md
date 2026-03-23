@@ -8,9 +8,9 @@ metadata:
 ---
 ## Introduction
 
-Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and FIRS e-Invoicing](doc:getting-started) and [FIRS and FIRS E-Invoicing System](doc:firs-e-invoicing-system).
+Before you proceed, we encourage you to get an overview of [DigiTax Nigeria and NRS e-Invoicing](doc:getting-started) and [NRS and NRS E-Invoicing System](doc:firs-e-invoicing-system).
 
-> Use **DigiTax Nigeria API** to integrate your system with FIRS E-Invoicing System for automation and to reduce platform-hopping
+> Use **DigiTax Nigeria API** to integrate your system with NRS E-Invoicing System for automation and to reduce platform-hopping
 
 <Image border={true} src="https://files.readme.io/962057ae5fb5cf6fd78c5c3a7a5065cc2b42d10a24798169d1ab2852a3b7fffa-DigiTax-TaxAuthoritiesRegulators.png" className="border" />
 

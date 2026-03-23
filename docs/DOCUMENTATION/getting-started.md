@@ -1,8 +1,8 @@
 ---
-title: 'Getting Started: DigiTax Nigeria API and FIRS E-Invoice'
+title: 'Getting Started: DigiTax Nigeria API and NRS E-Invoice'
 excerpt: >-
   **DigiTax Nigeria API Hub** contains guides and API reference pages for
-  further understanding, equipping you on how to integrate with the FIRS
+  further understanding, equipping you on how to integrate with the NRS
   E-Invoicing System
 hidden: false
 metadata:
@@ -18,8 +18,8 @@ metadata:
     Talk to us via the **DigiTax chat** on the bottom right of any page.
   </Card>
 
-  <Card title="FIRS E-Invoice integration with DigiTax" icon="fa-bars">
-    Explore this page and other detailed guide pages to gain understanding of the FIRS E-Invoicing System and how DigiTax integration works.
+  <Card title="NRS E-Invoice integration with DigiTax" icon="fa-bars">
+    Explore this page and other detailed guide pages to gain understanding of the NRS E-Invoicing System and how DigiTax integration works.
   </Card>
 
   <Card title="DigiTax Nigeria API Reference" icon="fa-plug">
@@ -41,15 +41,15 @@ metadata:
 
 African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting. Electronic Tax Invoicing is a nascent Fintech category in the Pan-African region.
 
-Nigeria is one of the countries and the country's tax authority/ regulator, **FIRS** (Federal Inland Revenue Service) has a transformative e-invoicing system, named **FIRS Merchant Buyer Solution** (FIRS MBS). In this documentation, DigiTax Nigeria API Hub, we shall simply refer to it as _FIRS E-Invoicing System_.
+Nigeria is one of the countries and the country's tax authority/ regulator, **NRS** (Federal Inland Revenue Service) has a transformative e-invoicing system, named **NRS Merchant Buyer Solution** (NRS MBS). In this documentation, DigiTax Nigeria API Hub, we shall simply refer to it as _NRS E-Invoicing System_.
 
-## Introduction to FIRS E-Invoicing System and DigiTax platform
+## Introduction to NRS E-Invoicing System and DigiTax platform
 
-### FIRS E-Invoicing System
+### NRS E-Invoicing System
 
-<Glossary>FIRS</Glossary> is an agency of the government of Nigeria that is responsible for the assessment, collection and accounting for all revenues that are due to the government in accordance with the laws of Nigeria.
+<Glossary>NRS</Glossary> is an agency of the government of Nigeria that is responsible for the assessment, collection and accounting for all revenues that are due to the government in accordance with the laws of Nigeria.
 
-FIRS introduced the FIRS E-Invoicing System to align with Nigeria’s Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy. This e-invoicing system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
+NRS introduced the NRS E-Invoicing System to align with Nigeria's Digital Economy Policy and Strategy (2020–2030) and support the growth of the digital economy. This e-invoicing system replaces traditional paper-based or fragmented electronic invoicing methods with a robust, streamlined, and compliant digital invoicing framework.
 
 ### DigiTax platform
 
@@ -65,7 +65,7 @@ The suite of digital solutions or products under DigiTax are:
 
 DigiTax connects with regional tax authorities/ regulators, so far:
 
-* DigiTax Nigeria integrates you with <Glossary>FIRS</Glossary> e-Invoicing System
+* DigiTax Nigeria integrates you with <Glossary>NRS</Glossary> e-Invoicing System
 * DigiTax Kenya integrates you with <Glossary>KRA</Glossary> eTIMS (electronic Tax Information Management System)
 * DigiTax Zambia integrates you with <Glossary>ZRA</Glossary> Smart Invoice System
 
@@ -77,7 +77,7 @@ to offer you a streamlined invoicing system that ensures compliance and supports
 
 The DigiTax API is built with various industry standards for API platforms in mind. Read more on this [here](https://ng.docs.digitax.tech/reference/using-the-digitax-nigeria-api#digitax-api).
 
-> We invite you to use **DigiTax Nigeria API** to integrate your system with FIRS E-Invoicing System for automation and to reduce platform-hopping
+> We invite you to use **DigiTax Nigeria API** to integrate your system with NRS E-Invoicing System for automation and to reduce platform-hopping
 
 ***
 
@@ -101,13 +101,13 @@ We comply with industry and security best practices.
 
 ***
 
-## DigiTax Nigeria and FIRS e-Invoicing
+## DigiTax Nigeria and NRS e-Invoicing
 
-> **DigiTax Nigeria** integrates you with FIRS E-Invoicing System
+> **DigiTax Nigeria** integrates you with NRS E-Invoicing System
 
-**DigiTax** is a solution that sits between you; the taxpayer, and the FIRS E-Invoicing System.
+**DigiTax** is a solution that sits between you; the taxpayer, and the NRS E-Invoicing System.
 
-With DigiTax, you gain access to a streamlined invoicing system that ensures compliance and supports your business's growth. Together, DigiTax and FIRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
+With DigiTax, you gain access to a streamlined invoicing system that ensures compliance and supports your business's growth. Together, DigiTax and NRS e-Invoicing are transforming how businesses in Nigeria manage their tax and invoicing obligations.
 
 ## DigiTax Nigeria API Hub
 
@@ -131,7 +131,7 @@ Explore the API endpoints [here](/reference)
 
 Once again, thank you for reviewing the getting started page of the DigiTax Nigeria API hub. We're excited you're here! 💚
 
-We invite you to use **DigiTax Nigeria API** to integrate your system with FIRS E-Invoicing System for automation and to reduce platform-hopping
+We invite you to use **DigiTax Nigeria API** to integrate your system with NRS E-Invoicing System for automation and to reduce platform-hopping
 
 To recap:
 

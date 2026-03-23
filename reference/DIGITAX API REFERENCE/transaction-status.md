@@ -9,7 +9,7 @@ metadata:
 
 DigiTax provides the following:
 
-* Asynchronous functionality that automatically retries FIRS
+* Asynchronous functionality that automatically retries NRS
 * Get notifications on transaction statuses via [Callback URLs](ref:feature-callback-urls)
 * Throttling traffic between the businesses throughput and the tax authority's system
 
@@ -17,7 +17,7 @@ These functionalities are possible due to the DigiTax Queueing system.
 
 > 📘 You don't run the risk of double-entry
 >
-> Every transaction that interacts with FIRS E-Invoicing System is first off entered into the DigiTax Queueing system to mitigate against possible FIRS:
+> Every transaction that interacts with NRS E-Invoicing System is first off entered into the DigiTax Queueing system to mitigate against possible NRS:
 >
 > * intermittency and downtime OR
 > * slow response rate
@@ -32,9 +32,9 @@ These are the possible options for the `status` property of a response from the 
 
 | Status    | Meaning                                                                                 | Action                                                                                                                                                    |
 | :-------- | :-------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| pending   | DigiTax Queueing system is **queued** after attempting to reach FIRS E-Invoicing System | Check in later. If you set up [Callback URLs](ref:feature-callback-urls), DigiTax will post to your system when the FIRS E-Invoicing System sync is done. |
+| pending   | DigiTax Queueing system is **queued** after attempting to reach NRS E-Invoicing System | Check in later. If you set up [Callback URLs](ref:feature-callback-urls), DigiTax will post to your system when the NRS E-Invoicing System sync is done. |
 | completed | The completed invoice is signed                                                         | Check in later. If you set up [Callback URLs](ref:feature-callback-urls), DigiTax will post to your system when it is done.                               |
-| failed    | FIRS E-Invoicing System rejected the transaction                                        | Please initiate another transaction.                                                                                                                      |
+| failed    | NRS E-Invoicing System rejected the transaction                                        | Please initiate another transaction.                                                                                                                      |
 
 ### Invoice Status Details
 
@@ -63,7 +63,7 @@ The timestamps above correspond to what you'd see on the Dashboard, under "Invoi
 For an invoice to be marked as transmitted:
 
 1. A party needs to be added
-2. The party needs to be onboarded on FIRS.
+2. The party needs to be onboarded on NRS.
 
 ### Party details for transmission
 

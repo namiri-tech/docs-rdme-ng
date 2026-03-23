@@ -18,7 +18,7 @@ Below are diagrams for your attention regarding the infrastructure supporting Di
 
 ## High-level data flow
 
-An invoice is created by the taxpayer is saved on DigiTax while being transmitted to the Tax regulator (FIRS)
+An invoice is created by the taxpayer is saved on DigiTax while being transmitted to the Tax regulator (NRS)
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/bf59304d89ebc9058a45afcd0961893e9249438be1e2e38568598ae73454c51d-image.png" />
 

@@ -9,16 +9,16 @@ metadata:
 
 Invoice factoring is an alternative efficient financing method where businesses sell their unpaid invoices to a third-party factoring company/ provider in exchange for immediate cash.
 
-## Other benefits of the FIRS E-Invoicing System
+## Other benefits of the NRS E-Invoicing System
 
-Invoice factoring is one benefit of the FIRS E-Invoicing System. Consider other benefits captured on the [FIRS and FIRS E-Invoicing system page](doc:firs-e-invoicing-system).
+Invoice factoring is one benefit of the NRS E-Invoicing System. Consider other benefits captured on the [NRS and NRS E-Invoicing system page](doc:firs-e-invoicing-system).
 
 ## How Invoice Factoring Works with e-Invoicing
 
-Through the FIRS E-Invoicing system, there is:
+Through the NRS E-Invoicing system, there is:
 
 * Instant Validation:\
-  Factoring providers can verify invoice authenticity and check for FIRS digital stamps in real-time.
+  Factoring providers can verify invoice authenticity and check for NRS digital stamps in real-time.
 * Secure Records:\
   E-invoices are stored in a secure database, reducing risks of fraud or error.
 * Accelerated Cash Flow:\

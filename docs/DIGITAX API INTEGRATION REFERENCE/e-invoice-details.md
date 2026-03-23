@@ -1,5 +1,5 @@
 ---
-title: FIRS e-invoice details
+title: NRS e-invoice details
 excerpt: Explore the details on an e-invoice
 deprecated: false
 hidden: false
@@ -23,7 +23,7 @@ Below are the details on an e-invoice when downloaded via the Dashboard. The sec
 
 An e-invoice has three key components: (They are highlighted above)
 
-1. A QR code (Used by <Glossary>FIRS</Glossary> to verify authenticity of the invoice)
+1. A QR code (Used by <Glossary>NRS</Glossary> to verify authenticity of the invoice)
 2. The tax breakdown of that invoice
 3. e-invoice metadata that includes:
    * <Glossary>IRN</Glossary>

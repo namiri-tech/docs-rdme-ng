@@ -23,7 +23,7 @@ Explore the guides as outlined on the left-hand menu.
 
 For a great developer experience, the endpoints in the [DigiTax Nigeria API reference](/reference) are interactive.
 
-Once you're set up in the DigiTax Dashboard, you can generate a sandbox or LIVE **X-API-Key** for authorization. Read more on the [API prerequisites](ref:prerequisites-of-using-the-api)  and how to [Get Enabled for FIRS E-Invoicing with DigiTax](doc:get-enabled-for-firs-e-invoicing-with-digitax).
+Once you're set up in the DigiTax Dashboard, you can generate a sandbox or LIVE **X-API-Key** for authorization. Read more on the [API prerequisites](ref:prerequisites-of-using-the-api)  and how to [Get Enabled for NRS E-Invoicing with DigiTax](doc:get-enabled-for-firs-e-invoicing-with-digitax).
 
 Explore the API endpoints [here](/reference).
 
@@ -39,7 +39,7 @@ We support **cursor-based pagination requests** for endpoints whose **GET** requ
 
 #### Parameters for paginated requests
 
-The following are optional query parameters for paginated requests like [GET FIRS Invoices](ref:get_invoices).
+The following are optional query parameters for paginated requests like [GET NRS Invoices](ref:get_invoices).
 
 | Parameter  | Explanation                                                              |
 | :--------- | :----------------------------------------------------------------------- |
@@ -63,7 +63,7 @@ Below are examples:
 
 * Query Params
 
-  An example is seen in [GET FIRS Invoices](ref:get_invoices)
+  An example is seen in [GET NRS Invoices](ref:get_invoices)
 
 <Image align="center" width="360px" src="https://files.readme.io/d10de438c8359cc9dd67cfc7b87340a4e6a84abe03aadd17b7b2196be4ea5041-CleanShot_2025-02-27_at_12.49.29_22x.png" />
 
@@ -75,6 +75,6 @@ Below are examples:
 
 ## 💬 We're here to help
 
-If you get stuck, [email us](mailto:info@namiri.tech)  or use the **DigiTax chat** on the bottom right of any page.
+If you get stuck, [email us](mailto:info@namiri.tech) or use the **DigiTax chat** on the bottom right of any page.
 
 We're excited you're here! 💚
