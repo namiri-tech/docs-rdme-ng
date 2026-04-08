@@ -1,4 +1,4 @@
 ---
-title: APP Invoices
+title: Resources
 hidden: false
 ---
