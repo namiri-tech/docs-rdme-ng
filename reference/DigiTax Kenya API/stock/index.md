@@ -1,4 +1,0 @@
----
-title: Stock
-hidden: false
----

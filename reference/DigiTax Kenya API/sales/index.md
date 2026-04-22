@@ -1,4 +1,0 @@
----
-title: Sales
-hidden: false
----

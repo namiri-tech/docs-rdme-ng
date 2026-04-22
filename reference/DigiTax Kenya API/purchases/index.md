@@ -1,4 +1,0 @@
----
-title: Purchases
-hidden: false
----

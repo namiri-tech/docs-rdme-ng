@@ -1,0 +1,4 @@
+- get_invoice-downloads
+- get_invoice-downloads-download-id
+- get_invoice-downloads-irn-invoice-reference-number
+- get_invoice-downloads-download-id-confirm
