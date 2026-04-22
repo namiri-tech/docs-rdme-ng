@@ -1,6 +1,6 @@
 ---
 api:
   file: openapi.yaml
-  operationId: get_items-item-id
+  operationId: put_items-item-id
 hidden: false
 ---

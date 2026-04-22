@@ -1,0 +1,7 @@
+- post_reverse-invoices
+- get_reverse-invoices
+- get_reverse-invoices-sale-id
+- post_reverse-invoices-with-items
+- post_reverse-credit-notes-with-barcode
+- post_reverse-credit-notes
+- get_reverse-credit-notes

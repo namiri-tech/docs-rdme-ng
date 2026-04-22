@@ -1,6 +1,6 @@
 ---
 api:
   file: openapi.yaml
-  operationId: get_items-item-id
+  operationId: get_notices
 hidden: false
 ---

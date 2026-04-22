@@ -1,6 +1,6 @@
 ---
 api:
   file: openapi.yaml
-  operationId: get_items-item-id
+  operationId: post_reverse-invoices
 hidden: false
 ---
