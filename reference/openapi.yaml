@@ -429,7 +429,7 @@ paths:
                     system. It will be used as the unique product identifier
                 is_service:
                   type: boolean
-                  example: true
+                  example: false
                   description: >-
                     Indicates whether the item is a service (true) or a good
                     (false). It defaults to false if not provided
@@ -1812,7 +1812,7 @@ paths:
                           permission to calculate tax
                       is_service:
                         type: boolean
-                        example: true
+                        example: false
                         description: >-
                           Indicates whether the item is a service (true) or a
                           good (false). It defaults to false if not provided
@@ -3149,7 +3149,7 @@ components:
             will be used as the unique product identifier
         is_service:
           type: boolean
-          example: true
+          example: false
           description: Indicates whether the item is a service (true) or a good (false)
     Invoice:
       type: object
