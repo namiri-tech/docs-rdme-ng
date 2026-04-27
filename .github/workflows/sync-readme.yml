@@ -1,0 +1,19 @@
+name: Sync OpenAPI spec to README.com
+
+on:
+  push:
+    branches:
+      - v1.0
+    paths:
+      - 'reference/openapi.yaml'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Push OpenAPI spec to README.com
+        uses: readmeio/rdme@v10
+        with:
+          rdme: openapi upload reference/openapi.yaml --key ${{ secrets.README_API_KEY }} --slug=API_DEFINITION_SLUG
