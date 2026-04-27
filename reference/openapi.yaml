@@ -3553,10 +3553,10 @@ components:
       properties:
         next:
           type: string
-          example: item_01HC3J1VVVM05YCTS61G7V3KC6
+          example: 01HC3J1VVVM05YCTS61G7V3KC6
         previous:
           type: string
-          example: item_01HC3J1VVVM05YCTS61G7V3KC6
+          example: 01HC3J1VVVM05YCTS61G7V3KC6
         page_size:
           type: integer
           example: 20
