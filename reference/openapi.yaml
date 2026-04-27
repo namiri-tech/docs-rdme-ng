@@ -18,7 +18,7 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get Countries
+      summary: Get NRS Countries
       security:
         - apiKeyAuth: []
       responses:
