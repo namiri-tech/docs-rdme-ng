@@ -2,3 +2,7 @@
 - get_app-invoices
 - get_app-invoices-app-invoice-id
 - put_app-invoices-app-invoice-id-payment-status
+- post_app-invoices-1
+- get_app-invoices-1
+- get_app-invoices-app-invoice-id-1
+- put_app-invoices-app-invoice-id-payment-status-1

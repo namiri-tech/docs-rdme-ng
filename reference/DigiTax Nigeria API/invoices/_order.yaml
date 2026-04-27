@@ -10,3 +10,15 @@
 - post_detailed-invoices
 - post_credit-notes-with-item-codes
 - post_debit-notes-with-item-codes
+- get_invoices-1
+- post_invoices-1
+- get_credit-notes-1
+- post_credit-notes-1
+- get_debit-notes-1
+- post_debit-notes-1
+- get_invoices-invoice-id-1
+- put_invoices-invoice-id-payment-status-1
+- get_invoices-irn-invoice-reference-number-1
+- post_detailed-invoices-1
+- post_credit-notes-with-item-codes-1
+- post_debit-notes-with-item-codes-1

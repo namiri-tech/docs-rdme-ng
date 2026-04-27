@@ -1,0 +1,4584 @@
+openapi: 3.0.1
+info:
+  title: DigiTax Nigeria API
+  description: DigiTax Nigeria Public API
+  version: '3'
+  termsOfService: https://digitax.tech/page/terms
+  contact:
+    name: DigiTax
+    url: https://digitax.tech
+    email: info@digitax.tech
+  license:
+    name: Apache 2.0
+servers:
+  - url: https://api.digitax.tech/ng/v1
+    description: API
+paths:
+  /resources/countries:
+    get:
+      tags:
+        - Resources
+      summary: Get NRS Countries
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: A list of NRS countries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Country'
+        default:
+          $ref: '#/components/responses/Error'
+  /resources/currencies:
+    get:
+      tags:
+        - Resources
+      summary: Get NRS Currencies
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: A list of NRS currencies
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Currency'
+        default:
+          $ref: '#/components/responses/Error'
+  /resources/tax-categories:
+    get:
+      tags:
+        - Resources
+      summary: Get NRS Tax Categories
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: A list of NRS tax categories
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TaxCategory'
+        default:
+          $ref: '#/components/responses/Error'
+  /resources/invoice-types:
+    get:
+      tags:
+        - Resources
+      summary: Get NRS Invoice Types
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: A list of NRS invoice types
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InvoiceType'
+        default:
+          $ref: '#/components/responses/Error'
+  /resources/payment-means:
+    get:
+      tags:
+        - Resources
+      summary: Get NRS Payment Means
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: A list of NRS payment means
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CommonCode'
+        default:
+          $ref: '#/components/responses/Error'
+  /resources/local-governments:
+    get:
+      tags:
+        - Resources
+      summary: Get NRS Local Governments
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: A list of NRS local governments
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LocalGovernment'
+        default:
+          $ref: '#/components/responses/Error'
+  /resources/states:
+    get:
+      tags:
+        - Resources
+      summary: Get NRS States
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: A list of NRS states
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/State'
+        default:
+          $ref: '#/components/responses/Error'
+  /info:
+    get:
+      tags:
+        - Business
+      summary: Get NRS Info
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: NRS Info
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Branch'
+        default:
+          $ref: '#/components/responses/Error'
+  /parties:
+    get:
+      tags:
+        - Parties
+      summary: Get NRS Parties
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: A list of NRS parties
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: '#/components/schemas/Pagination'
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Party'
+        default:
+          $ref: '#/components/responses/Error'
+    post:
+      tags:
+        - Parties
+      summary: Create Party
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - tax_identification_number
+                - name
+                - email
+                - address
+              properties:
+                tax_identification_number:
+                  type: string
+                  example: 87864516-2365
+                  description: >-
+                    The Taxpayer Identification Number (TIN) or company
+                    incorporation number(if the party does not yet have a TIN)
+                    assigned to the party
+                email:
+                  type: string
+                  example: john@doe.com
+                  description: >-
+                    The buyer's official email address used for communication
+                    regarding invoices and tax compliance
+                name:
+                  type: string
+                  example: John Doe
+                  description: >-
+                    The registered name of the buyer receiving the invoice. This
+                    is the official business or individual name
+                phone:
+                  type: string
+                  example: '+2341234567890'
+                  description: >-
+                    The buyer's contact number with the country code prefix
+                    (+234 for Nigeria)
+                address:
+                  $ref: '#/components/schemas/Address'
+      responses:
+        '201':
+          description: Party created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Party'
+        default:
+          $ref: '#/components/responses/Error'
+  /parties/{party_id}:
+    get:
+      tags:
+        - Parties
+      summary: Get a business party
+      description: Retrieves information about a party given their ID on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: party_id
+          required: true
+          schema:
+            type: string
+            description: Party ID on DigiTax
+            example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Party'
+        default:
+          $ref: '#/components/responses/Error'
+    put:
+      tags:
+        - Parties
+      summary: Update a business party
+      description: Updates party information given their ID on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: party_id
+          required: true
+          schema:
+            type: string
+            description: Party ID on DigiTax
+            example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: john@doe.com
+                  description: >-
+                    The buyer's official email address used for communication
+                    regarding invoices and tax compliance
+                name:
+                  type: string
+                  example: John Doe
+                  description: >-
+                    The registered name of the buyer receiving the invoice. This
+                    is the official business or individual name
+                phone:
+                  type: string
+                  example: '+2341234567890'
+                  description: >-
+                    The buyer's contact number with the country code prefix
+                    (+234 for Nigeria)
+                address:
+                  $ref: '#/components/schemas/Address'
+      responses:
+        '200':
+          description: Party updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Party'
+        default:
+          $ref: '#/components/responses/Error'
+  /items:
+    get:
+      tags:
+        - Items
+      summary: Get NRS Items
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: A list of NRS items
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: '#/components/schemas/Pagination'
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Item'
+        default:
+          $ref: '#/components/responses/Error'
+    post:
+      tags:
+        - Items
+      summary: Create Item
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - tax_category_code
+                - item_name
+                - description
+                - product_category
+                - hsn_code
+              properties:
+                tax_category_code:
+                  type: string
+                  example: STANDARD_VAT
+                  description: >-
+                    The code for the tax category the item belongs to. It must
+                    be one of the tax categories defined in the resources API
+                product_category:
+                  type: string
+                  example: Food and Beverage Products
+                  description: The category the good or service belongs to
+                  maxLength: 100
+                item_name:
+                  type: string
+                  example: Digitax Product 001
+                  description: The name of the good or service being sold
+                hsn_code:
+                  type: string
+                  example: '2847.00'
+                  description: >-
+                    The Harmonized System of Nomenclature (HSN) Code for the
+                    good or the International Standard Industry Classification
+                    (ISIC) code for the service. <a
+                    href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+                    Reference</a>
+                unit_price:
+                  type: number
+                  format: double
+                  example: 10000
+                  minimum: 0
+                  description: >-
+                    The cost of a single unit of the item. This field is
+                    deprecated to allow the item to be sold in multiple
+                    currencies. Invoices will use the unit price defined in the
+                    invoice payload
+                  deprecated: true
+                currency_code:
+                  type: string
+                  example: NGN
+                  description: >-
+                    The currency in which the item is priced. This field is
+                    deprecated to allow the item to be sold in multiple
+                    currencies. Invoices will use the currency code defined in
+                    the invoice payload
+                  deprecated: true
+                description:
+                  type: string
+                  example: Sample item description
+                  description: A brief description of the item
+                display_name:
+                  type: string
+                  example: Digitax Product 001
+                  description: The name of the good or service being sold
+                price_unit:
+                  type: string
+                  example: NGN per 1
+                  description: The unit of measurement for the price of the item
+                item_code:
+                  type: string
+                  example: '8000020107057'
+                  description: >-
+                    A unique product code assigned to the item in the user's
+                    system. It will be used as the unique product identifier
+                is_service:
+                  type: boolean
+                  example: false
+                  description: >-
+                    Indicates whether the item is a service (true) or a good
+                    (false). It defaults to false if not provided
+      responses:
+        '201':
+          description: Item created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+        default:
+          $ref: '#/components/responses/Error'
+  /items/{item_id}:
+    get:
+      tags:
+        - Items
+      summary: Get a business item
+      description: Retrieves information about an item given their ID on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: item_id
+          required: true
+          schema:
+            type: string
+            description: Item ID on DigiTax
+            example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+        default:
+          $ref: '#/components/responses/Error'
+  /invoices:
+    get:
+      tags:
+        - Invoices
+      summary: Get NRS Invoices
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: A list of NRS invoices
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: '#/components/schemas/Pagination'
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+    post:
+      tags:
+        - Invoices
+      summary: Create Invoice
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - invoice_date
+                - issue_date
+                - invoice_type_code
+                - document_currency_code
+                - items
+                - trader_invoice_number
+              properties:
+                party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                  description: The buyer or recipient of the goods or services
+                payee_party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                  description: >-
+                    If the payment goes to someone else, this field captures
+                    that party's ID on DigiTax
+                bill_party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                  description: >-
+                    If the payment goes to someone else, this field captures
+                    that party's ID on DigiTax
+                ship_party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                  description: >-
+                    If the payment goes to someone else, this field captures
+                    that party's ID on DigiTax
+                tax_representative_party_id:
+                  type: string
+                  example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+                  description: >-
+                    The party ID of the tax agent handling invoicing and
+                    compliance for the business if there is one
+                invoice_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which the invoice was created in the format
+                    YYYY-MM-DD
+                issue_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this invoice was issued in the format
+                    YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this invoice was issued in the format
+                    HH:MM:SS
+                invoice_type_code:
+                  type: string
+                  example: '381'
+                  description: A code that specifies the type of invoice being issued
+                tax_point_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The actual date when the tax becomes applicable in the
+                    format YYYY-MM-DD
+                document_currency_code:
+                  type: string
+                  example: NGN
+                  description: >-
+                    A code that specifies the default currency in which the
+                    invoice is issued
+                buyer_reference:
+                  type: string
+                  example: '#INV-001'
+                  description: >-
+                    A reference number or code provided by the buyer to track
+                    the invoice
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  maxLength: 30
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the invoice in their system
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
+                billing_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    Links the invoice to a previous billing document (e.g.,
+                    credit note, debit note, or a prior invoice)
+                dispatch_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    An optional identifier of a referenced dispatch advice.
+                    Refers to the document used to track the dispatch of goods
+                receipt_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a receipt advice associated with an invoice.
+                    Links the invoice to a receipt document
+                originator_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to an originator document associated with an
+                    invoice. Identifies the original document that initiated the
+                    invoice
+                contract_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a contract associated with an invoice. Links
+                    the invoice to a contract governing the transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with an
+                    invoice. Used as a general reference field for any related
+                    documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                due_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which the invoice is due for payment in the
+                    format YYYY-MM-DD
+                notes:
+                  type: string
+                  example: Sample invoice notes
+                  description: >-
+                    Additional invoice information that is not contained
+                    explicitly in other structures
+                callback_url:
+                  type: string
+                  format: uri
+                  example: https://example.com/callback
+                  description: >-
+                    The URL to call when we have new information about the
+                    invoice, when the invoice is signed successfully or
+                    validation has failed
+                invoice_kind:
+                  type: string
+                  example: B2B
+                  enum:
+                    - B2B
+                    - B2C
+                  description: >-
+                    Specifies the kind of invoice that was sent. It can either
+                    be Business to Business (B2B), Business to Consumer (B2C)
+                payment_status:
+                  type: string
+                  example: PENDING
+                  enum:
+                    - PENDING
+                    - REJECTED
+                    - PAID
+                  description: The current payment status of the invoice
+                items:
+                  type: array
+                  description: >-
+                    A list that captures details about each good or service
+                    being invoiced
+                  items:
+                    type: object
+                    required:
+                      - item_id
+                      - quantity
+                      - unit_price
+                      - tax_rate
+                    properties:
+                      item_id:
+                        type: string
+                        example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+                        description: >-
+                          The ID of the item being sold, as it appears on
+                          DigiTax
+                      quantity:
+                        type: number
+                        format: double
+                        example: 1
+                        minimum: 0
+                        description: The total number of items sold in the invoice line
+                      unit_price:
+                        type: number
+                        format: double
+                        example: 10000
+                        minimum: 0.01
+                        description: The unit price of this line item before tax
+                      discount_rate:
+                        type: number
+                        format: double
+                        example: 0.05
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The discount rate applied to the item. It must be a
+                          value between 0 and 1, where 0 means no discount and 1
+                          means a 100% discount on the price
+                      fee_rate:
+                        type: number
+                        format: double
+                        example: 0.02
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The rate of any additional fees (e.g. service charge,
+                          delivery fee).  It must be a value between 0 and 1,
+                          where 0 means no fee and 1 means a 100% fee on the
+                          price
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The tax rate applied to the item. It must be a value
+                          between 0 and 1. For tax category codes that already
+                          have a defined tax rate, this value must match the tax
+                          category's tax rate
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
+      responses:
+        '201':
+          description: Invoice created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /credit-notes:
+    get:
+      tags:
+        - Invoices
+      summary: Get NRS Credit Notes
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: A list of NRS credit notes
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: '#/components/schemas/Pagination'
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+    post:
+      tags:
+        - Invoices
+      summary: Create Credit Note
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - return_date
+                - issue_date
+                - document_currency_code
+                - items
+                - invoice_id
+                - trader_invoice_number
+              properties:
+                return_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this credit note was created in the format
+                    YYYY-MM-DD
+                issue_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this credit note was issued in the format
+                    YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this credit note was issued in the format
+                    HH:MM:SS
+                tax_point_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The actual date when the tax becomes applicable in the
+                    format YYYY-MM-DD
+                document_currency_code:
+                  type: string
+                  example: NGN
+                  description: >-
+                    A code that specifies the default currency in which the
+                    credit note is issued
+                buyer_reference:
+                  type: string
+                  example: '#CN-001'
+                  description: >-
+                    A reference number or code provided by the buyer to track
+                    the credit note
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  maxLength: 30
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the credit note in their system
+                invoice_id:
+                  type: string
+                  example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
+                  description: The DigiTax ID of the invoice that is being credited
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
+                dispatch_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    An optional identifier of a referenced dispatch advice.
+                    Refers to the document used to track the dispatch of goods
+                receipt_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a receipt advice associated with a credit
+                    note. Links the credit note to a receipt document
+                originator_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to an originator document associated with a
+                    credit note. Identifies the original document that initiated
+                    the credit note
+                contract_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a contract associated with a credit note.
+                    Links the credit note to a contract governing the
+                    transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with an
+                    invoice. Used as a general reference field for any related
+                    documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                due_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which the credit note is due for payment in the
+                    format YYYY-MM-DD
+                notes:
+                  type: string
+                  example: Sample credit note notes
+                  description: >-
+                    Additional credit note information that is not contained
+                    explicitly in other structures
+                callback_url:
+                  type: string
+                  format: uri
+                  example: https://example.com/callback
+                  description: >-
+                    The URL to call when we have new information about the
+                    credit note, when the credit note is signed successfully or
+                    validation has failed
+                payment_status:
+                  type: string
+                  example: PENDING
+                  enum:
+                    - PENDING
+                    - REJECTED
+                    - PAID
+                  description: The current payment status of the credit note
+                items:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - item_id
+                      - quantity
+                      - unit_price
+                      - tax_rate
+                    properties:
+                      item_id:
+                        type: string
+                        example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+                        description: >-
+                          The ID of the item being sold, as it appears on
+                          DigiTax. It must be one of the items sold in the
+                          original invoice
+                      quantity:
+                        type: number
+                        format: double
+                        example: 1
+                        minimum: 0
+                        description: The total number of items being credited
+                      unit_price:
+                        type: number
+                        format: double
+                        example: 10000
+                        minimum: 0.01
+                        description: The unit price of this line item before tax
+                      discount_rate:
+                        type: number
+                        format: double
+                        example: 0.05
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The discount rate applied to the item. It must be a
+                          value between 0 and 1, where 0 means no discount and 1
+                          means a 100% discount on the price
+                      fee_rate:
+                        type: number
+                        format: double
+                        example: 0.02
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The rate of any additional fees (e.g. service charge,
+                          delivery fee).  It must be a value between 0 and 1,
+                          where 0 means no fee and 1 means a 100% fee on the
+                          price
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The tax rate applied to the item. It must be a value
+                          between 0 and 1. For tax category codes that already
+                          have a defined tax rate, this value must match the tax
+                          category's tax rate
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
+      responses:
+        '201':
+          description: Credit note created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /debit-notes:
+    get:
+      tags:
+        - Invoices
+      summary: Get NRS Debit Notes
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: A list of NRS debit notes
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: '#/components/schemas/Pagination'
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+    post:
+      tags:
+        - Invoices
+      summary: Create Debit Note
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - debit_date
+                - issue_date
+                - document_currency_code
+                - items
+                - invoice_id
+                - trader_invoice_number
+              properties:
+                debit_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this debit note was created in the format
+                    YYYY-MM-DD
+                issue_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this debit note was issued in the format
+                    YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this debit note was issued in the format
+                    HH:MM:SS
+                tax_point_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The actual date when the tax becomes applicable in the
+                    format YYYY-MM-DD
+                document_currency_code:
+                  type: string
+                  example: NGN
+                  description: >-
+                    A code that specifies the default currency in which the
+                    debit note is issued
+                buyer_reference:
+                  type: string
+                  example: '#DN-001'
+                  description: >-
+                    A reference number or code provided by the buyer to track
+                    the debit note
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  maxLength: 30
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the debit note in their system
+                invoice_id:
+                  type: string
+                  example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
+                  description: The DigiTax ID of the invoice that is being debited
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
+                dispatch_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    An optional identifier of a referenced dispatch advice.
+                    Refers to the document used to track the dispatch of goods
+                receipt_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a receipt advice associated with a debit
+                    note. Links the debit note to a receipt document
+                originator_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to an originator document associated with a
+                    debit note. Identifies the original document that initiated
+                    the debit note
+                contract_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a contract associated with a debit note.
+                    Links the debit note to a contract governing the transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with the
+                    debit note. Used as a general reference field for any
+                    related documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                due_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which the debit note is due for payment in the
+                    format YYYY-MM-DD
+                notes:
+                  type: string
+                  example: Sample debit note notes
+                  description: >-
+                    Additional debit note information that is not contained
+                    explicitly in other structures
+                callback_url:
+                  type: string
+                  format: uri
+                  example: https://example.com/callback
+                  description: >-
+                    The URL to call when we have new information about the debit
+                    note, when the invoice is signed successfully or validation
+                    has failed
+                payment_status:
+                  type: string
+                  example: PENDING
+                  enum:
+                    - PENDING
+                    - REJECTED
+                    - PAID
+                  description: The current payment status of the debit note
+                items:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - item_id
+                      - quantity
+                      - unit_price
+                      - tax_rate
+                    properties:
+                      item_id:
+                        type: string
+                        example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+                        description: >-
+                          The ID of the item being sold, as it appears on
+                          DigiTax. It must be one of the items sold in the
+                          original invoice
+                      quantity:
+                        type: number
+                        format: double
+                        example: 1
+                        minimum: 0
+                        description: The total number of items being debited
+                      unit_price:
+                        type: number
+                        format: double
+                        example: 10000
+                        minimum: 0.01
+                        description: The unit price of this line item before tax
+                      discount_rate:
+                        type: number
+                        format: double
+                        example: 0.05
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The discount rate applied to the item. It must be a
+                          value between 0 and 1, where 0 means no discount and 1
+                          means a 100% discount
+                      fee_rate:
+                        type: number
+                        format: double
+                        example: 0.02
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The rate of any additional fees (e.g. service charge,
+                          delivery fee).  It must be a value between 0 and 1,
+                          where 0 means no fee and 1 means a 100% fee on the
+                          price
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The tax rate applied to the item. It must be a value
+                          between 0 and 1. For tax category codes that already
+                          have a defined tax rate, this value must match the tax
+                          category's tax rate
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
+      responses:
+        '201':
+          description: Debit note created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /invoices/{invoice_id}:
+    get:
+      tags:
+        - Invoices
+      summary: Get a business invoice
+      description: >-
+        Retrieves information about an invoice, credit note or debit note given
+        their ID on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: invoice_id
+          required: true
+          schema:
+            type: string
+            description: Invoice ID on DigiTax
+            example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /invoices/{invoice_id}/payment-status:
+    put:
+      tags:
+        - Invoices
+      summary: Update an invoice payment status
+      description: Update an invoice payment status
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: invoice_id
+          required: true
+          schema:
+            type: string
+            description: Invoice ID on DigiTax
+            example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - payment_status
+              properties:
+                payment_status:
+                  type: string
+                  enum:
+                    - REJECTED
+                    - PAID
+                  example: REJECTED
+                  description: The payment status of the invoice
+                reference:
+                  type: string
+                  example: PY012001
+                  description: The reference number of the payment
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /invoices/irn/{invoice_reference_number}:
+    get:
+      tags:
+        - Invoices
+      summary: Get a business invoice by the invoice reference number
+      description: >-
+        Retrieves information about an invoice, credit note or debit note given
+        their invoice reference number on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: invoice_reference_number
+          required: true
+          schema:
+            type: string
+            description: Invoice Reference Number
+            example: 2226499116NGE7G-E3A89069-20250601
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /detailed-invoices:
+    post:
+      tags:
+        - Invoices
+      summary: Create invoice with the party and items information
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - issue_date
+                - invoice_type_code
+                - document_currency_code
+                - items
+                - trader_invoice_number
+              properties:
+                party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the buyer of
+                    the goods or services
+                party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the buyer of the goods or services. It
+                    must be provided for invoices that have the party_tin
+                    provided
+                party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the buyer of the goods or services. If
+                    it is not provided and the party_tin is provided, we will
+                    use firs-invoices@namiri.tech as the party's email address
+                party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the buyer of the goods or services. If not
+                    provided and the party_tin is provided, we will use a
+                    default address
+                payee_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the party to
+                    whom the payment goes to; if it goes to someone else
+                payee_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the party to whom the payment goes to;
+                    if it goes to someone else. It must be provided for invoices
+                    that have the payee_party_tin provided
+                payee_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the party to whom the payment goes to;
+                    if it goes to someone else. If it is not provided and the
+                    payee_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                payee_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the party to whom the payment goes to; if it
+                    goes to someone else. If not provided and the
+                    payee_party_tin is provided, we will use a default address
+                bill_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the party to
+                    whom the payment goes to; if it goes to someone else
+                bill_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the party to whom the payment goes to;
+                    if it goes to someone else. It must be provided for invoices
+                    that have the bill_party_tin provided
+                bill_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the party to whom the payment goes to;
+                    if it goes to someone else. If it is not provided and the
+                    bill_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                bill_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the party to whom the payment goes to; if it
+                    goes to someone else. If not provided and the bill_party_tin
+                    is provided, we will use a default address
+                ship_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the party to
+                    whom the payment goes to; if it goes to someone else
+                ship_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the party to whom the payment goes to;
+                    if it goes to someone else. It must be provided for invoices
+                    that have the ship_party_tin provided
+                ship_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the party to whom the payment goes to;
+                    if it goes to someone else. If it is not provided and the
+                    ship_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                ship_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the party to whom the payment goes to; if it
+                    goes to someone else. If not provided and the ship_party_tin
+                    is provided, we will use a default address
+                tax_representative_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the tax
+                    agent handling invoicing and compliance for the business if
+                    there is one
+                tax_representative_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the tax agent handling invoicing and
+                    compliance for the business. It must be provided for
+                    invoices that have the tax_representative_party_tin provided
+                tax_representative_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the tax agent handling invoicing and
+                    compliance for the business. If it is not provided and the
+                    tax_representative_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                tax_representative_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the tax agent handling invoicing and
+                    compliance for the business. If not provided and the
+                    tax_representative_party_tin is provided, we will use a
+                    default address
+                issue_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this invoice was issued in the format
+                    YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this invoice was issued in the format
+                    HH:MM:SS
+                invoice_type_code:
+                  type: string
+                  example: '381'
+                  description: A code that specifies the type of invoice being issued
+                tax_point_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The actual date when the tax becomes applicable in the
+                    format YYYY-MM-DD
+                document_currency_code:
+                  type: string
+                  example: NGN
+                  description: >-
+                    A code that specifies the default currency in which the
+                    invoice is issued
+                buyer_reference:
+                  type: string
+                  example: '#INV-001'
+                  description: >-
+                    A reference number or code provided by the buyer to track
+                    the invoice
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  maxLength: 30
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the invoice in their system
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
+                billing_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    Links the invoice to a previous billing document (e.g.,
+                    credit note, debit note, or a prior invoice)
+                dispatch_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    An optional identifier of a referenced dispatch advice.
+                    Refers to the document used to track the dispatch of goods
+                receipt_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a receipt advice associated with an invoice.
+                    Links the invoice to a receipt document
+                originator_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to an originator document associated with an
+                    invoice. Identifies the original document that initiated the
+                    invoice
+                contract_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a contract associated with an invoice. Links
+                    the invoice to a contract governing the transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with an
+                    invoice. Used as a general reference field for any related
+                    documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                due_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which the invoice is due for payment in the
+                    format YYYY-MM-DD
+                notes:
+                  type: string
+                  example: Sample invoice notes
+                  description: >-
+                    Additional invoice information that is not contained
+                    explicitly in other structures
+                callback_url:
+                  type: string
+                  format: uri
+                  example: https://example.com/callback
+                  description: >-
+                    The URL to call when we have new information about the
+                    invoice, when the invoice is signed successfully or
+                    validation has failed
+                invoice_kind:
+                  type: string
+                  example: B2B
+                  enum:
+                    - B2B
+                    - B2C
+                  description: >-
+                    Specifies the kind of invoice that was sent. It can either
+                    be Business to Business (B2B), Business to Consumer (B2C)
+                payment_status:
+                  type: string
+                  example: PENDING
+                  enum:
+                    - PENDING
+                    - REJECTED
+                    - PAID
+                  description: The current payment status of the invoice
+                items:
+                  type: array
+                  description: >-
+                    A list that captures details about each good or service
+                    being invoiced
+                  items:
+                    type: object
+                    required:
+                      - item_code
+                      - quantity
+                      - unit_price
+                      - tax_rate
+                      - tax_category_code
+                      - item_name
+                      - item_description
+                      - product_category
+                      - hsn_code
+                    properties:
+                      item_code:
+                        type: string
+                        example: '8000020107057'
+                        description: >-
+                          A unique product code assigned to the item in the
+                          user's system. It will be used as the unique product
+                          identifier
+                      tax_category_code:
+                        type: string
+                        example: STANDARD_VAT
+                        description: >-
+                          The code for the tax category the item belongs to. It
+                          must be one of the tax categories defined in the
+                          resources API
+                      product_category:
+                        type: string
+                        example: Food and Beverage Products
+                        description: The category the good or service belongs to
+                        maxLength: 100
+                      item_name:
+                        type: string
+                        example: Digitax Product 001
+                        description: The name of the good or service being sold
+                      hsn_code:
+                        type: string
+                        example: '2847.00'
+                        description: >-
+                          The Harmonized System of Nomenclature (HSN) Code for
+                          the good or the International Standard Industry
+                          Classification (ISIC) code for the service. <a
+                          href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+                          Reference</a>
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item
+                      quantity:
+                        type: number
+                        format: double
+                        example: 1
+                        minimum: 0
+                        description: The total number of items sold in the invoice line
+                      unit_price:
+                        type: number
+                        format: double
+                        example: 10000
+                        minimum: 0.01
+                        description: The unit price of this line item before tax
+                      discount_rate:
+                        type: number
+                        format: double
+                        example: 0.05
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The discount rate applied to the item. It must be a
+                          value between 0 and 1, where 0 means no discount and 1
+                          means a 100% discount on the price
+                      fee_rate:
+                        type: number
+                        format: double
+                        example: 0.02
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The rate of any additional fees (e.g. service charge,
+                          delivery fee).  It must be a value between 0 and 1,
+                          where 0 means no fee and 1 means a 100% fee on the
+                          price
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The tax rate applied to the item. It must be a value
+                          between 0 and 1. For tax category codes that already
+                          have a defined tax rate, this value must match the tax
+                          category's tax rate
+                      taxable_amount:
+                        type: number
+                        format: double
+                        example: 9700
+                        minimum: 0
+                        description: >-
+                          The amount on which tax is calculated. It must be
+                          equal to the line extension amount (unit price *
+                          quantity) plus fees minus discounts. This value will
+                          be ignored unless the business has the permission to
+                          calculate tax
+                      tax_amount:
+                        type: number
+                        format: double
+                        example: 727.5
+                        minimum: 0
+                        description: >-
+                          The tax amount for this line item. It must be equal to
+                          the taxable amount multiplied by the tax rate. This
+                          value will be ignored unless the business has the
+                          permission to calculate tax
+                      is_service:
+                        type: boolean
+                        example: false
+                        description: >-
+                          Indicates whether the item is a service (true) or a
+                          good (false). It defaults to false if not provided
+      responses:
+        '201':
+          description: Invoice created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /credit-notes-with-item-codes:
+    post:
+      tags:
+        - Invoices
+      summary: Create credit note with the item code in place of the item ID
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - return_date
+                - issue_date
+                - document_currency_code
+                - items
+                - invoice_id
+                - trader_invoice_number
+              properties:
+                return_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this credit note was created in the format
+                    YYYY-MM-DD
+                issue_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this credit note was issued in the format
+                    YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this credit note was issued in the format
+                    HH:MM:SS
+                tax_point_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The actual date when the tax becomes applicable in the
+                    format YYYY-MM-DD
+                document_currency_code:
+                  type: string
+                  example: NGN
+                  description: >-
+                    A code that specifies the default currency in which the
+                    credit note is issued
+                buyer_reference:
+                  type: string
+                  example: '#CN-001'
+                  description: >-
+                    A reference number or code provided by the buyer to track
+                    the credit note
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  maxLength: 30
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the credit note in their system
+                invoice_id:
+                  type: string
+                  example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
+                  description: The DigiTax ID of the invoice that is being credited
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
+                dispatch_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    An optional identifier of a referenced dispatch advice.
+                    Refers to the document used to track the dispatch of goods
+                receipt_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a receipt advice associated with a credit
+                    note. Links the credit note to a receipt document
+                originator_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to an originator document associated with a
+                    credit note. Identifies the original document that initiated
+                    the credit note
+                contract_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a contract associated with a credit note.
+                    Links the credit note to a contract governing the
+                    transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with the
+                    credit note. Used as a general reference field for any
+                    related documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                due_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which the credit note is due for payment in the
+                    format YYYY-MM-DD
+                notes:
+                  type: string
+                  example: Sample credit note notes
+                  description: >-
+                    Additional credit note information that is not contained
+                    explicitly in other structures
+                callback_url:
+                  type: string
+                  format: uri
+                  example: https://example.com/callback
+                  description: >-
+                    The URL to call when we have new information about the
+                    credit note, when the credit note is signed successfully or
+                    validation has failed
+                payment_status:
+                  type: string
+                  example: PENDING
+                  enum:
+                    - PENDING
+                    - REJECTED
+                    - PAID
+                  description: The current payment status of the credit note
+                items:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - item_code
+                      - quantity
+                      - unit_price
+                      - tax_rate
+                    properties:
+                      item_code:
+                        type: string
+                        example: '8000020107057'
+                        description: >-
+                          A unique product code assigned to the item in the
+                          user's system. It will be used as the unique product
+                          identifier
+                      quantity:
+                        type: number
+                        format: double
+                        example: 1
+                        minimum: 0
+                        description: The total number of items being credited
+                      unit_price:
+                        type: number
+                        format: double
+                        example: 10000
+                        minimum: 0.01
+                        description: The unit price of this line item before tax
+                      discount_rate:
+                        type: number
+                        format: double
+                        example: 0.05
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The discount rate applied to the item. It must be a
+                          value between 0 and 1, where 0 means no discount and 1
+                          means a 100% discount on the price
+                      fee_rate:
+                        type: number
+                        format: double
+                        example: 0.02
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The rate of any additional fees (e.g. service charge,
+                          delivery fee).  It must be a value between 0 and 1,
+                          where 0 means no fee and 1 means a 100% fee on the
+                          price
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The tax rate applied to the item. It must be a value
+                          between 0 and 1. For tax category codes that already
+                          have a defined tax rate, this value must match the tax
+                          category's tax rate
+                      taxable_amount:
+                        type: number
+                        format: double
+                        example: 9700
+                        minimum: 0
+                        description: >-
+                          The amount on which tax is calculated. It must be
+                          equal to the line extension amount (unit price *
+                          quantity) plus fees minus discounts. This value will
+                          be ignored unless the business has the permission to
+                          calculate tax
+                      tax_amount:
+                        type: number
+                        format: double
+                        example: 727.5
+                        minimum: 0
+                        description: >-
+                          The tax amount for this line item. It must be equal to
+                          the taxable amount multiplied by the tax rate. This
+                          value will be ignored unless the business has the
+                          permission to calculate tax
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
+      responses:
+        '201':
+          description: Credit note created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /debit-notes-with-item-codes:
+    post:
+      tags:
+        - Invoices
+      summary: Create debit note with the item code in place of the item ID
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - debit_date
+                - issue_date
+                - document_currency_code
+                - items
+                - invoice_id
+                - trader_invoice_number
+              properties:
+                debit_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this debit note was created in the format
+                    YYYY-MM-DD
+                issue_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which this debit note was issued in the format
+                    YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this debit note was issued in the format
+                    HH:MM:SS
+                tax_point_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The actual date when the tax becomes applicable in the
+                    format YYYY-MM-DD
+                document_currency_code:
+                  type: string
+                  example: NGN
+                  description: >-
+                    A code that specifies the default currency in which the
+                    debit note is issued
+                buyer_reference:
+                  type: string
+                  example: '#DN-001'
+                  description: >-
+                    A reference number or code provided by the buyer to track
+                    the debit note
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  maxLength: 30
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the debit note in their system
+                invoice_id:
+                  type: string
+                  example: invoice_01JWR2VH5B3FC4JRXNJDQZCVE6
+                  description: The DigiTax ID of the invoice that is being debited
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
+                dispatch_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    An optional identifier of a referenced dispatch advice.
+                    Refers to the document used to track the dispatch of goods
+                receipt_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a receipt advice associated with a debit
+                    note. Links the debit note to a receipt document
+                originator_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to an originator document associated with a
+                    debit note. Identifies the original document that initiated
+                    the debit note
+                contract_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a contract associated with a debit note.
+                    Links the debit note to a contract governing the transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with the
+                    debit note. Used as a general reference field for any
+                    related documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                due_date:
+                  type: string
+                  format: date
+                  example: '2025-08-07'
+                  description: >-
+                    The date on which the debit note is due for payment in the
+                    format YYYY-MM-DD
+                notes:
+                  type: string
+                  example: Sample debit note notes
+                  description: >-
+                    Additional debit note information that is not contained
+                    explicitly in other structures
+                callback_url:
+                  type: string
+                  format: uri
+                  example: https://example.com/callback
+                  description: >-
+                    The URL to call when we have new information about the debit
+                    note, when the invoice is signed successfully or validation
+                    has failed
+                payment_status:
+                  type: string
+                  example: PENDING
+                  enum:
+                    - PENDING
+                    - REJECTED
+                    - PAID
+                  description: The current payment status of the debit note
+                items:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - item_code
+                      - quantity
+                      - unit_price
+                      - tax_rate
+                    properties:
+                      item_code:
+                        type: string
+                        example: '8000020107057'
+                        description: >-
+                          A unique product code assigned to the item in the
+                          user's system. It will be used as the unique product
+                          identifier
+                      quantity:
+                        type: number
+                        format: double
+                        example: 1
+                        minimum: 0
+                        description: The total number of items being debited
+                      unit_price:
+                        type: number
+                        format: double
+                        example: 10000
+                        minimum: 0.01
+                        description: The unit price of this line item before tax
+                      discount_rate:
+                        type: number
+                        format: double
+                        example: 0.05
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The discount rate applied to the item. It must be a
+                          value between 0 and 1, where 0 means no discount and 1
+                          means a 100% discount
+                      fee_rate:
+                        type: number
+                        format: double
+                        example: 0.02
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The rate of any additional fees (e.g. service charge,
+                          delivery fee).  It must be a value between 0 and 1,
+                          where 0 means no fee and 1 means a 100% fee on the
+                          price
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The tax rate applied to the item. It must be a value
+                          between 0 and 1. For tax category codes that already
+                          have a defined tax rate, this value must match the tax
+                          category's tax rate
+                      taxable_amount:
+                        type: number
+                        format: double
+                        example: 9700
+                        minimum: 0
+                        description: >-
+                          The amount on which tax is calculated. It must be
+                          equal to the line extension amount (unit price *
+                          quantity) plus fees minus discounts. This value will
+                          be ignored unless the business has the permission to
+                          calculate tax
+                      tax_amount:
+                        type: number
+                        format: double
+                        example: 727.5
+                        minimum: 0
+                        description: >-
+                          The tax amount for this line item. It must be equal to
+                          the taxable amount multiplied by the tax rate. This
+                          value will be ignored unless the business has the
+                          permission to calculate tax
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
+      responses:
+        '201':
+          description: Debit note created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /invoice-downloads:
+    get:
+      tags:
+        - Invoice Downloads
+      summary: Get NRS Invoice Downloads
+      description: Get NRS Invoice Downloads
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: A list of NRS invoice downloads
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: '#/components/schemas/Pagination'
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InvoiceDownload'
+        default:
+          $ref: '#/components/responses/Error'
+  /invoice-downloads/{download_id}:
+    get:
+      tags:
+        - Invoice Downloads
+      summary: Get a NRS Invoice Download
+      description: >-
+        Retrieves information about an invoice download given their ID on
+        DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: download_id
+          required: true
+          schema:
+            type: string
+            description: Invoice download ID in Digitax
+            example: transmission_01JW6DXQ61ZGP2T6QDHSM34SGP
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceDownload'
+        default:
+          $ref: '#/components/responses/Error'
+  /invoice-downloads/irn/{invoice_reference_number}:
+    get:
+      tags:
+        - Invoice Downloads
+      summary: Get a business invoice download by the invoice reference number
+      description: >-
+        Retrieves information about an invoice download given their invoice
+        reference number on DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: invoice_reference_number
+          required: true
+          schema:
+            type: string
+            description: The Invoice Reference Number of the invoice download
+            example: 2226499116NGE7G-E3A89069-20250601
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceDownload'
+        default:
+          $ref: '#/components/responses/Error'
+  /invoice-downloads/{download_id}/confirm:
+    get:
+      tags:
+        - Invoice Downloads
+      summary: Confirm a business invoice download's payment status
+      description: >-
+        Confirms an invoice download's payment status on NRS given their ID on
+        DigiTax
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: download_id
+          required: true
+          schema:
+            type: string
+            description: Invoice download ID in Digitax
+            example: transmission_01JW6DXQ61ZGP2T6QDHSM34SGP
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceDownload'
+        default:
+          $ref: '#/components/responses/Error'
+  /app-invoices:
+    post:
+      tags:
+        - APP Invoices
+      summary: >-
+        Create Invoice by users who are using DigiTax as their Access Point
+        Provider(APP) only
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - irn
+                - issue_date
+                - invoice_type_code
+                - document_currency_code
+                - tax_currency_code
+                - accounting_supplier_party
+                - invoice_line
+                - tax_total
+                - legal_monetary_total
+              properties:
+                irn:
+                  type: string
+                  example: 150835152MSVKRR-E3A89069-20250528
+                  description: >-
+                    A unique tracking number assigned to each invoice on the NRS
+                    system
+                payment_status:
+                  type: string
+                  example: PENDING
+                  enum:
+                    - PENDING
+                    - REJECTED
+                    - PAID
+                  description: >-
+                    Indicates whether the invoice has been paid or is still
+                    pending
+                issue_date:
+                  type: string
+                  format: date
+                  example: '2025-09-12'
+                  description: >-
+                    The date on which this invoice was issued in the format
+                    YYYY-MM-DD
+                issue_time:
+                  type: string
+                  example: '17:59:04'
+                  format: time
+                  description: The time at which the invoice was issued in HH:MM:SS format
+                due_date:
+                  type: string
+                  format: date
+                  example: '2025-09-12'
+                  description: >-
+                    The date on which the invoice is due for payment in the
+                    format YYYY-MM-DD
+                invoice_type_code:
+                  type: string
+                  example: '381'
+                  description: A code that specifies the type of invoice being issued
+                tax_point_date:
+                  type: string
+                  format: date
+                  example: '2025-09-12'
+                  description: >-
+                    The actual date when the tax becomes applicable in the
+                    format YYYY-MM-DD
+                document_currency_code:
+                  type: string
+                  example: NGN
+                  description: >-
+                    A code that specifies the default currency in which the
+                    invoice is issued
+                tax_currency_code:
+                  type: string
+                  example: NGN
+                  description: The currency in which tax amounts are calculated
+                accounting_cost:
+                  type: string
+                  example: '2000'
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                note:
+                  type: string
+                  example: Sample invoice notes
+                  description: >-
+                    Additional invoice information that is not contained
+                    explicitly in other structures
+                buyer_reference:
+                  type: string
+                  example: '#INV-001'
+                  description: >-
+                    A reference number or code provided by the buyer to track
+                    the invoice
+                order_reference:
+                  type: string
+                  example: 150835152MSVKRR-E3A89069-20250401
+                  description: The order number tied to an invoice
+                actual_delivery_date:
+                  type: string
+                  format: date
+                  example: '2025-09-12'
+                  description: The date the goods or services were delivered
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
+                invoice_line:
+                  type: array
+                  description: >-
+                    It captures details about each item or service being
+                    invoiced
+                  items:
+                    $ref: '#/components/schemas/LineItem'
+                tax_total:
+                  type: array
+                  description: The total tax charged on the invoice
+                  items:
+                    $ref: '#/components/schemas/TaxTotal'
+                accounting_customer_party:
+                  $ref: '#/components/schemas/APPInvoiceParty'
+                  description: The buyer or recipient of the goods or services
+                accounting_supplier_party:
+                  $ref: '#/components/schemas/APPInvoiceParty'
+                  description: The seller or supplier issuing the invoice
+                bill_party:
+                  $ref: '#/components/schemas/APPInvoiceParty'
+                  description: >-
+                    If the payment goes to someone else, this field captures
+                    that entity's details
+                ship_party:
+                  $ref: '#/components/schemas/APPInvoiceParty'
+                  description: >-
+                    If the payment goes to someone else, this field captures
+                    that entity's details
+                payee_party:
+                  $ref: '#/components/schemas/APPInvoiceParty'
+                  description: >-
+                    If the payment goes to someone else, this field captures
+                    that entity's details
+                tax_representative_party:
+                  $ref: '#/components/schemas/APPInvoiceParty'
+                  description: >-
+                    If a business has a tax agent handling invoicing and
+                    compliance, their details are entered here
+                billing_reference:
+                  type: array
+                  description: >-
+                    A list of references to previous billing documents
+                    associated with the invoice (e.g., credit notes, debit
+                    notes, or prior invoices)
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                dispatch_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    An optional identifier of a referenced dispatch advice.
+                    Refers to the document used to track the dispatch of goods
+                receipt_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a receipt advice associated with an invoice.
+                    Links the invoice to a receipt document
+                originator_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to an originator document associated with an
+                    invoice. Identifies the original document that initiated the
+                    invoice
+                contract_document_reference:
+                  $ref: '#/components/schemas/InvoiceDocumentReference'
+                  description: >-
+                    A reference to a contract associated with an invoice. Links
+                    the invoice to a contract governing the transaction
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with an
+                    invoice. Used as a general reference field for any related
+                    documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                legal_monetary_total:
+                  $ref: '#/components/schemas/LegalMonetaryTotal'
+                  description: >-
+                    The total amount the buyer has to pay, including or
+                    excluding taxes. It ensures that the buyer knows exactly how
+                    much to pay, whether taxes are included or not
+                callback_url:
+                  type: string
+                  format: uri
+                  example: https://example.com/callback
+                  description: >-
+                    The URL to call when we have new information about the debit
+                    note, when the invoice is signed successfully or validation
+                    has failed
+                invoice_kind:
+                  type: string
+                  example: B2B
+                  enum:
+                    - B2B
+                    - B2C
+                  description: >-
+                    Specifies the kind of invoice that was sent. It can either
+                    be Business to Business (B2B), Business to Consumer (B2C)
+      responses:
+        '201':
+          description: APP Invoice created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APPInvoice'
+        default:
+          $ref: '#/components/responses/Error'
+    get:
+      tags:
+        - APP Invoices
+      summary: Get APP Invoices
+      description: List all APP invoices, with pagination
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/PageSize'
+      responses:
+        '200':
+          description: A list of APP invoices
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - cursor
+                  - data
+                properties:
+                  cursor:
+                    $ref: '#/components/schemas/Pagination'
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/APPInvoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /app-invoices/{app_invoice_id}:
+    get:
+      tags:
+        - APP Invoices
+      summary: Get an APP invoice
+      description: >-
+        Retrieves information about an invoice created in the Access Point
+        Provider integration
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: app_invoice_id
+          required: true
+          schema:
+            type: string
+            description: Invoice ID in Digitax
+            example: appinvoice_01K4Q9TGAQNQ5A5FW0WJ9WHPH1
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APPInvoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /app-invoices/{app_invoice_id}/payment-status:
+    put:
+      tags:
+        - APP Invoices
+      summary: Update an APP invoice payment status
+      description: >-
+        Update the payment status of an invoice created in the Access Point
+        Provider integration
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: app_invoice_id
+          required: true
+          schema:
+            type: string
+            description: Invoice ID on DigiTax
+            example: appinvoice_01K4Q9TGAQNQ5A5FW0WJ9WHPH1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - payment_status
+              properties:
+                payment_status:
+                  type: string
+                  enum:
+                    - REJECTED
+                    - PAID
+                  example: REJECTED
+                  description: The payment status of the invoice
+                reference:
+                  type: string
+                  example: PY012001
+                  description: The reference number of the payment
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APPInvoice'
+        default:
+          $ref: '#/components/responses/Error'
+components:
+  schemas:
+    Country:
+      type: object
+      required:
+        - name
+        - alpha2
+        - alpha3
+      properties:
+        name:
+          type: string
+          example: Nigeria
+        alpha2:
+          type: string
+          example: NG
+        alpha3:
+          type: string
+          example: NGA
+    Currency:
+      type: object
+      required:
+        - symbol
+        - name
+        - symbolNative
+        - decimalDigits
+        - rounding
+        - code
+        - namePlural
+      properties:
+        symbol:
+          type: string
+          example: ₦
+        name:
+          type: string
+          example: Nigerian Naira
+        symbolNative:
+          type: string
+          example: ₦
+        decimalDigits:
+          type: integer
+          example: 2
+        rounding:
+          type: integer
+          example: 0
+        code:
+          type: string
+          example: NGN
+        namePlural:
+          type: string
+          example: Nigerian nairas
+    TaxCategory:
+      type: object
+      description: Represents a tax category as is defined by NRS
+      required:
+        - code
+        - name
+        - has_rate
+        - tax_rate
+      properties:
+        code:
+          type: string
+          example: STANDARD_VAT
+          description: The code representing the tax category
+        name:
+          type: string
+          example: Standard Value-Added Tax
+          description: The name of the tax category
+        tax_rate:
+          type: number
+          format: double
+          example: 0.075
+          nullable: true
+          description: >-
+            The tax rate(between 0 and 1) applied to the category for tax
+            categories that have a defined rate
+        has_rate:
+          type: boolean
+          example: true
+          description: Indicates whether the tax category has a rate defined
+    CommonCode:
+      type: object
+      required:
+        - code
+        - value
+      properties:
+        code:
+          type: string
+          example: '389'
+        value:
+          type: string
+          example: Purchase Order
+    InvoiceType:
+      type: object
+      required:
+        - code
+        - value
+        - invoice_category
+      properties:
+        code:
+          type: string
+          example: '389'
+        value:
+          type: string
+          example: Purchase Order
+        invoice_category:
+          type: string
+          example: INVOICE
+          enum:
+            - INVOICE
+            - CREDIT_NOTE
+            - DEBIT_NOTE
+    Address:
+      type: object
+      description: Represents the address of the taxpayer
+      required:
+        - street_name
+        - city_name
+        - postal_zone
+        - country_code
+      properties:
+        street_name:
+          type: string
+          example: 123 Main St
+          description: The street name where the buyer's business is located
+        city_name:
+          type: string
+          example: Lagos
+          description: The city where the buyer's business is registered
+        postal_zone:
+          type: string
+          example: '100001'
+          description: The postal code of the buyer's business location
+        country_code:
+          type: string
+          example: NGA
+          description: The country code representing the party's registered country
+        local_government_code:
+          type: string
+          example: NG-AB-ANO
+          description: >-
+            The local government code of the party. It is temporarily optional;
+            and will be made mandatory in a future release
+        state_code:
+          type: string
+          example: NG-AB
+          description: >-
+            The state code of the party. It is temporarily optional; and will be
+            made mandatory in a future release
+    LocalGovernment:
+      type: object
+      required:
+        - name
+        - code
+        - state_code
+      properties:
+        name:
+          type: string
+          example: Nigeria
+        code:
+          type: string
+          example: NG-AB-ANO
+        state_code:
+          type: string
+          example: NG-AB
+    State:
+      type: object
+      required:
+        - name
+        - code
+      properties:
+        name:
+          type: string
+          example: Nigeria
+        code:
+          type: string
+          example: NG-AB
+    Branch:
+      type: object
+      required:
+        - id
+        - created_at
+        - updated_at
+        - active
+        - is_test
+        - tax_identification_number
+        - address
+        - taxpayer_name
+        - taxpayer_email
+      properties:
+        id:
+          type: string
+          example: branch_01HC3J1VVVM05YCTS61G7V3KC6
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        active:
+          type: boolean
+        is_test:
+          type: boolean
+        service_id:
+          type: string
+          example: E3B89060
+        taxpayer_id:
+          type: string
+          example: 3dce1631-9169-49d7-b1e9-37f081a42962
+        taxpayer_name:
+          type: string
+          example: John Doe
+        taxpayer_email:
+          type: string
+          example: john@doe.com
+        tax_identification_number:
+          type: string
+          example: 08289985-9146
+        address:
+          $ref: '#/components/schemas/Address'
+    Party:
+      type: object
+      description: The buyer or recipient of goods or services
+      required:
+        - id
+        - created_at
+        - updated_at
+        - active
+        - tax_identification_number
+        - name
+        - email
+      properties:
+        id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: The ID of the party on DigiTax
+        created_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the party was created
+        updated_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the party was last updated
+        active:
+          type: boolean
+          example: true
+          description: Indicates whether the party is active on the DigiTax system or not
+        tax_identification_number:
+          type: string
+          example: 08289985-9145
+          description: >-
+            The Taxpayer Identification Number (TIN) or company incorporation
+            number(if the party does not yet have a TIN) assigned to the party
+        name:
+          type: string
+          example: John Doe
+          description: >-
+            The registered name of the buyer receiving the invoice. This is the
+            official business or individual name
+        phone:
+          type: string
+          example: '+2341234567890'
+          description: >-
+            The buyer's contact number with the country code prefix (+234 for
+            Nigeria)
+        email:
+          type: string
+          example: john@doe.com
+          description: >-
+            The buyer's official email address used for communication regarding
+            invoices and tax compliance
+        address:
+          $ref: '#/components/schemas/Address'
+    Item:
+      type: object
+      description: Represents a good or service being sold
+      required:
+        - id
+        - created_at
+        - updated_at
+        - active
+        - tax_category_code
+        - item_name
+        - item_number
+        - description
+        - product_category
+        - hsn_code
+        - is_service
+      properties:
+        id:
+          type: string
+          example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+          description: The ID of the item on DigiTax
+        created_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the item was created
+        updated_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the item was last updated
+        active:
+          type: boolean
+          example: true
+          description: Indicates whether the item is active on the DigiTax system or not
+        tax_category_code:
+          type: string
+          example: STANDARD_VAT
+          description: >-
+            The code for the tax category the item belongs to. It must be one of
+            the tax categories defined in the resources API
+        product_category:
+          type: string
+          example: Food and Beverages
+          description: The category the good or service belongs to
+        item_name:
+          type: string
+          example: Digitax Product 001
+          description: The name of the good or service being sold
+        hsn_code:
+          type: string
+          example: '2847.00'
+          description: >-
+            The Harmonized System of Nomenclature (HSN) Code for the good or the
+            International Standard Industry Classification (ISIC) code for the
+            service. <a
+            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+            Reference</a>
+        item_number:
+          type: string
+          example: ITM25-148-144544241-S6AM78
+          description: The unique item number of the item on DigiTax
+        unit_price:
+          type: number
+          format: double
+          example: 10000
+          description: >-
+            The cost of a single unit of the item. This field is deprecated to
+            allow the item to be sold in multiple currencies. Invoices will use
+            the unit price defined in the invoice payload
+          deprecated: true
+        currency_code:
+          type: string
+          example: NGN
+          description: >-
+            The currency in which the item is priced. This field is deprecated
+            to allow the item to be sold in multiple currencies. Invoices will
+            use the currency code defined in the invoice payload
+          deprecated: true
+        description:
+          type: string
+          example: Sample item description
+          description: A brief description of the item
+        display_name:
+          type: string
+          example: Digitax Product 001
+          description: The name of the good or service being sold
+        item_code:
+          type: string
+          example: '8000020107057'
+          description: >-
+            A unique product code assigned to the item in the user's system. It
+            will be used as the unique product identifier
+        is_service:
+          type: boolean
+          example: false
+          description: Indicates whether the item is a service (true) or a good (false)
+    Invoice:
+      type: object
+      description: Represents an invoice, credit note or debit note created on DigiTax
+      required:
+        - id
+        - created_at
+        - updated_at
+        - active
+        - party_id
+        - invoice_date
+        - issue_date
+        - invoice_type_code
+        - document_currency_code
+        - tax_currency_code
+        - invoice_number
+        - invoice_reference_number
+        - status
+        - is_valid
+        - line_extension_amount
+        - tax_exclusive_amount
+        - tax_inclusive_amount
+        - payable_amount
+        - tax_amount
+        - items
+        - transmitted_at
+        - signed_at
+        - validated_at
+        - payment_status
+        - charge_total_amount
+        - allowance_total_amount
+        - invoice_kind
+      properties:
+        id:
+          type: string
+          example: invoice_01JWBCPPJGSSPN8GAG0XC65RJK
+          description: The ID of the invoice on DigiTax
+        original_invoice_id:
+          type: string
+          example: invoice_01K0K1DKM7XJRE6Z2MH8D4NQC3
+          description: >-
+            The ID of the original invoice that was credited or debited on
+            DigiTax if this is a credit or debit note
+        created_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the invoice was created
+        updated_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the invoice was last updated
+        active:
+          type: boolean
+          example: true
+          description: Indicates whether the invoice is active on the DigiTax system or not
+        party_id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: The buyer or recipient of the goods or services
+        payee_party_id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: >-
+            If the payment goes to someone else, this field captures that
+            party's ID on DigiTax
+        bill_party_id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: >-
+            If the payment goes to someone else, this field captures that
+            party's ID on DigiTax
+        ship_party_id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: >-
+            If the payment goes to someone else, this field captures that
+            party's ID on DigiTax
+        tax_representative_party_id:
+          type: string
+          example: party_01JWB8QHB4C1Q437MXCPR0XAZW
+          description: >-
+            The party ID of the tax agent handling invoicing and compliance for
+            the business if there is one
+        invoice_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: The date on which the invoice was created in the format YYYY-MM-DD
+        issue_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: The date on which this invoice was issued in the format YYYY-MM-DD
+        issue_time:
+          type: string
+          format: time
+          example: '17:59:04'
+          description: The time at which the invoice was issued in HH:MM:SS format
+        is_valid:
+          type: boolean
+          example: true
+          description: Indicates whether the invoice payload is valid
+        transmitted_at:
+          type: string
+          format: date-time
+          nullable: true
+          example: '2025-08-12T04:40:58Z'
+          description: The date and time when the invoice was transmitted to the party
+        signed_at:
+          type: string
+          format: date-time
+          nullable: true
+          example: '2025-08-12T04:40:58Z'
+          description: The date and time when the invoice was submitted to NRS for signing
+        validated_at:
+          type: string
+          format: date-time
+          nullable: true
+          example: '2025-08-12T04:40:58Z'
+          description: The date and time when the invoice payload was validated
+        invoice_type_code:
+          type: string
+          example: '381'
+          description: A code that specifies the type of the invoice
+        tax_point_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: >-
+            The actual date when the tax becomes applicable in the format
+            YYYY-MM-DD
+        document_currency_code:
+          type: string
+          example: NGN
+          description: >-
+            A code that specifies the default currency in which the invoice is
+            issued
+        tax_currency_code:
+          type: string
+          example: NGN
+          description: The currency in which tax amounts are calculated
+        invoice_number:
+          type: string
+          example: INV25-224-074057504-HMD2PU
+          description: The unique invoice number of the invoice on DigiTax
+        invoice_reference_number:
+          type: string
+          example: 150835152MSVKRR-E3A89069-20250528
+          description: A unique tracking number assigned to each invoice on the NRS system
+        buyer_reference:
+          type: string
+          example: '#INV-001'
+          description: >-
+            A reference number or code provided by the buyer to track the
+            invoice
+        trader_invoice_number:
+          type: string
+          example: '2453618203'
+          description: >-
+            An invoice number assigned by the supplier to uniquely identify the
+            invoice in their system
+        payment_status:
+          type: string
+          example: PENDING
+          enum:
+            - PENDING
+            - REJECTED
+            - PAID
+          description: Indicates whether the invoice has been paid or is still pending
+        delivery_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: The date on which the goods or services were delivered
+        status:
+          type: string
+          enum:
+            - DRAFT
+            - PENDING
+            - FAILED
+            - COMPLETED
+          example: COMPLETED
+          description: The current status of the invoice
+        line_extension_amount:
+          type: number
+          format: double
+          example: 10000
+          description: >-
+            The total amount of all invoice items before tax and any discounts
+            or charges
+        charge_total_amount:
+          type: number
+          format: double
+          example: 9700
+          description: The sum of charges on invoice level
+        allowance_total_amount:
+          type: number
+          format: double
+          example: 9700
+          description: The sum of allowances on invoice level
+        tax_exclusive_amount:
+          type: number
+          format: double
+          example: 9700
+          description: The total invoice amount before tax is added
+        tax_inclusive_amount:
+          type: number
+          format: double
+          example: 10427.5
+          description: The total invoice amount after tax is added
+        payable_amount:
+          type: number
+          format: double
+          example: 10427.5
+          description: >-
+            The final amount the buyer must pay after applying discounts,
+            charges and tax
+        tax_amount:
+          type: number
+          format: double
+          example: 727.5
+          description: The total tax amount applied to the invoice
+        accounting_cost:
+          type: string
+          example: 2000 NGN
+          description: >-
+            Represents the accounting category or cost center assigned to the
+            transaction
+        payment_terms_note:
+          type: string
+          example: Payment due within 30 days of invoice issue
+          description: Describes the terms and conditions of payment
+        invoice_delivery_period:
+          $ref: '#/components/schemas/DeliveryPeriod'
+          description: >-
+            Defines the start and end dates for when goods or services were
+            delivered. This helps track multi-day deliveries on a single invoice
+        payment_means:
+          type: array
+          description: Defines how the invoice will be paid and when payment is due
+          items:
+            $ref: '#/components/schemas/PaymentMeans'
+        allowance_charge:
+          type: array
+          description: Defines any discounts (allowance) or extra charges (charge)
+          items:
+            $ref: '#/components/schemas/AllowanceCharge'
+        billing_reference:
+          type: array
+          items:
+            $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A list of references to previous billing documents associated with
+            the invoice (e.g., credit notes, debit notes, or prior invoices)
+        dispatch_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            An optional identifier of a referenced dispatch advice. Refers to
+            the document used to track the dispatch of goods
+        receipt_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A reference to a receipt advice associated with an invoice. Links
+            the invoice to a receipt document
+        originator_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A reference to an originator document associated with an invoice.
+            Identifies the original document that initiated the invoice
+        contract_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A reference to a contract associated with an invoice. Links the
+            invoice to a contract governing the transaction
+        additional_document_reference:
+          type: array
+          description: >-
+            A reference to additional documents associated with an invoice. Used
+            as a general reference field for any related documents
+          items:
+            $ref: '#/components/schemas/InvoiceDocumentReference'
+        due_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: >-
+            The date on which the invoice is due for payment in the format
+            YYYY-MM-DD
+        notes:
+          type: string
+          example: Sample invoice notes
+          description: >-
+            Additional invoice information that is not contained explicitly in
+            other structures
+        qr_code_data:
+          type: string
+          description: Encrypted QR code data from NRS
+          example: iVBORw0KGgoAAAANSUhEUgAA...
+        taxes:
+          type: array
+          items:
+            $ref: '#/components/schemas/TaxBreakdown'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/InvoiceItem'
+        invoice_kind:
+          type: string
+          nullable: true
+          example: B2B
+          enum:
+            - B2B
+            - B2C
+          description: >-
+            Specifies the kind of invoice that was sent. It can either be
+            Business to Business (B2B), Business to Consumer (B2C)
+    InvoiceItem:
+      type: object
+      description: This captures details about each good or service being invoiced
+      required:
+        - id
+        - item_id
+        - line_extension_amount
+        - quantity
+        - unit_price
+        - created_at
+        - updated_at
+        - active
+        - tax_rate
+      properties:
+        id:
+          type: string
+          example: invoiceitem_01JWBCPPJHE271WCDRRPSRQ7WS
+          description: The ID of the invoice item on DigiTax
+        created_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the invoice item was created
+        updated_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the invoice item was last updated
+        active:
+          type: boolean
+          example: true
+          description: Indicates whether the invoice item is active
+        item_id:
+          type: string
+          example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+          description: The ID of the item being sold, as it appears on DigiTax
+        line_extension_amount:
+          type: number
+          format: double
+          example: 10000
+          description: The total amount for this item before tax
+        quantity:
+          type: number
+          format: double
+          example: 1
+          description: The total number of items sold
+        unit_price:
+          type: number
+          format: double
+          example: 10000
+          description: The cost of one unit of the item
+        discount_rate:
+          type: number
+          format: double
+          example: 0.05
+          description: The discount rate(between 0 to 1) applied to the item
+        fee_rate:
+          type: number
+          format: double
+          example: 0.02
+          description: >-
+            The rate(between 0 to 1) of any additional fees (e.g. service
+            charge, delivery fee) applied to the item
+        discount_amount:
+          type: number
+          format: double
+          example: 500
+          description: >-
+            The actual discount value in currency applied to the item based on
+            the discount rate
+        fee_amount:
+          type: number
+          format: double
+          example: 200
+          description: The actual fee charged in currency based on the fee rate
+        tax_rate:
+          type: number
+          format: double
+          example: 0.075
+          description: The tax rate(between 0 to 1) applied to the item
+    Pagination:
+      type: object
+      properties:
+        next:
+          type: string
+          example: 01HC3J1VVVM05YCTS61G7V3KC6
+        previous:
+          type: string
+          example: 01HC3J1VVVM05YCTS61G7V3KC6
+        page_size:
+          type: integer
+          example: 20
+    InvoiceDocumentReference:
+      type: object
+      description: >-
+        Represents a reference to a document related to an invoice, such as a
+        dispatch advice, receipt advice, etc
+      required:
+        - irn
+        - issue_date
+      properties:
+        irn:
+          type: string
+          example: 135620605NANVTQ-E3A89069-20250526
+          description: The Invoice Reference Number (IRN) of the document
+        issue_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: The date on which the document was issued in the format YYYY-MM-DD
+    TaxBreakdown:
+      type: object
+      description: Represents the breakdown of the tax charged on an invoice
+      required:
+        - tax_category_code
+        - tax_amount
+        - taxable_amount
+        - tax_percentage
+      properties:
+        tax_category_code:
+          type: string
+          example: STANDARD_VAT
+          description: The tax category code that this tax breakdown applies to
+        tax_amount:
+          type: number
+          format: double
+          example: 727.5
+          description: The actual tax applied on the taxable amount
+        taxable_amount:
+          type: number
+          format: double
+          example: 9700
+          description: The total value of goods/services on which tax is calculated
+        tax_percentage:
+          type: number
+          format: double
+          example: 7.5
+          description: >-
+            The tax rate applied to the taxable amount, expressed as a
+            percentage
+    InvoiceDownload:
+      type: object
+      description: Represents an invoice downloaded onto DigiTax from NRS by the buyer
+      required:
+        - id
+        - invoice_reference_number
+        - payment_status
+        - items
+        - accounting_customer_party
+        - accounting_supplier_party
+        - taxes
+        - issue_date
+        - invoice_type_code
+        - document_currency_code
+        - tax_currency_code
+        - line_extension_amount
+        - tax_exclusive_amount
+        - tax_inclusive_amount
+        - payable_amount
+        - tax_amount
+        - invoice_kind
+      properties:
+        id:
+          type: string
+          example: transmission_01JW6E2NHP1ABCEVCM0FBK265Q
+          description: The ID of the invoice download on DigiTax
+        invoice_reference_number:
+          type: string
+          example: 135620605NANVTQ-E3A89069-20250526
+          description: The Invoice Reference Number (IRN) of the invoice download
+        payment_status:
+          type: string
+          enum:
+            - PENDING
+            - REJECTED
+            - PAID
+          example: REJECTED
+          description: The payment status of the invoice download
+        acknowledged_at:
+          type: string
+          format: date-time
+          description: The date and time when the invoice download was acknowledged
+        issue_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: >-
+            The date on which the invoice was issued by the supplier in the
+            format YYYY-MM-DD
+        issue_time:
+          type: string
+          format: time
+          example: '14:30:00'
+          description: The time at which this invoice was issued in the format HH:MM:SS
+        invoice_type_code:
+          type: string
+          example: '381'
+          description: A code that specifies the type of the invoice
+        tax_point_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: >-
+            The actual date when the tax becomes applicable in the format
+            YYYY-MM-DD
+        document_currency_code:
+          type: string
+          example: NGN
+          description: >-
+            A code that specifies the default currency in which the invoice is
+            issued
+        tax_currency_code:
+          type: string
+          example: NGN
+          description: The currency in which tax amounts are calculated
+        buyer_reference:
+          type: string
+          example: '#INV-001'
+          description: >-
+            A reference number or code provided by the buyer to track the
+            invoice
+        delivery_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: The date on which the goods or services were delivered
+        line_extension_amount:
+          type: number
+          format: double
+          example: 10000
+          description: >-
+            The total amount of all invoice items before tax and any discounts
+            or charges
+        tax_exclusive_amount:
+          type: number
+          format: double
+          example: 9700
+          description: The total invoice amount before tax is added
+        tax_inclusive_amount:
+          type: number
+          format: double
+          example: 10427.5
+          description: The total invoice amount after tax is added
+        payable_amount:
+          type: number
+          format: double
+          example: 10427.5
+          description: >-
+            The final amount the buyer must pay after applying discounts,
+            charges and tax
+        tax_amount:
+          type: number
+          format: double
+          example: 727.5
+          description: The total tax amount applied to the invoice
+        accounting_cost:
+          type: string
+          example: 2000 NGN
+          description: >-
+            Represents the accounting category or cost center assigned to the
+            transaction
+        payment_terms_note:
+          type: string
+          example: Payment due within 30 days of invoice issue
+          description: Describes the terms and conditions of payment
+        invoice_delivery_period:
+          $ref: '#/components/schemas/DeliveryPeriod'
+          description: >-
+            Defines the start and end dates for when goods or services were
+            delivered. This helps track multi-day deliveries on a single invoice
+        payment_means:
+          type: array
+          description: Defines how the invoice will be paid and when payment is due
+          items:
+            $ref: '#/components/schemas/PaymentMeans'
+        allowance_charge:
+          type: array
+          description: Defines any discounts (allowance) or extra charges (charge)
+          items:
+            $ref: '#/components/schemas/AllowanceCharge'
+        billing_reference:
+          type: array
+          items:
+            $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A list of references to previous billing documents associated with
+            the invoice (e.g., credit notes, debit notes, or prior invoices)
+        dispatch_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            An optional identifier of a referenced dispatch advice. Refers to
+            the document used to track the dispatch of goods
+        receipt_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A reference to a receipt advice associated with an invoice. Links
+            the invoice to a receipt document
+        originator_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A reference to an originator document associated with an invoice.
+            Identifies the original document that initiated the invoice
+        contract_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A reference to a contract associated with an invoice. Links the
+            invoice to a contract governing the transaction
+        additional_document_reference:
+          type: array
+          description: >-
+            A reference to additional documents associated with an invoice. Used
+            as a general reference field for any related documents
+          items:
+            $ref: '#/components/schemas/InvoiceDocumentReference'
+        due_date:
+          type: string
+          format: date
+          example: '2025-08-07'
+          description: >-
+            The date on which the invoice is due for payment in the format
+            YYYY-MM-DD
+        notes:
+          type: string
+          example: Sample invoice notes
+          description: >-
+            Additional invoice information that is not contained explicitly in
+            other structures
+        taxes:
+          type: array
+          items:
+            $ref: '#/components/schemas/TaxBreakdown'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/InvoiceDownloadItem'
+        accounting_customer_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: The buyer or recipient of the goods or services
+        accounting_supplier_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: The seller or supplier issuing the invoice
+        bill_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: >-
+            If the payment goes to someone else, this field captures that
+            entity's details
+        ship_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: >-
+            If the payment goes to someone else, this field captures that
+            entity's details
+        payee_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: >-
+            If the payment goes to someone else, this field captures that
+            entity's details
+        tax_representative_party:
+          type: object
+          $ref: '#/components/schemas/InvoiceDownloadParty'
+          description: >-
+            If a business has a tax agent handling invoicing and compliance,
+            their details are entered here
+        invoice_kind:
+          type: string
+          nullable: true
+          example: B2B
+          enum:
+            - B2B
+            - B2C
+          description: >-
+            Specifies the kind of invoice that was sent. It can either be
+            Business to Business (B2B), Business to Consumer (B2C)
+    InvoiceDownloadParty:
+      type: object
+      description: Represents the buyer or supplier party in a downloaded invoice
+      required:
+        - tax_identification_number
+        - name
+        - email
+      properties:
+        tax_identification_number:
+          type: string
+          example: 08289985-9145
+          description: The Taxpayer Identification Number (TIN) assigned to the party
+        name:
+          type: string
+          example: John Doe
+          description: >-
+            The registered name of the party. This is the official business or
+            individual name
+        phone:
+          type: string
+          example: '+2341234567890'
+          description: >-
+            The party's contact number with the country code prefix (+234 for
+            Nigeria)
+        email:
+          type: string
+          example: john@doe.com
+          description: >-
+            The party's official email address used for communication regarding
+            invoices and tax compliance
+        address:
+          $ref: '#/components/schemas/Address'
+    InvoiceDownloadItem:
+      type: object
+      description: >-
+        This captures details about each good or service in the downloaded
+        invoice
+      required:
+        - line_extension_amount
+        - quantity
+        - unit_price
+        - product_category
+        - item_name
+        - hsn_code
+      properties:
+        line_extension_amount:
+          type: number
+          format: double
+          example: 10000
+          description: The total amount for this item before tax
+        quantity:
+          type: number
+          format: double
+          example: 1
+          description: The total number of items sold
+        unit_price:
+          type: number
+          format: double
+          example: 10000
+          description: The cost of one unit of the item
+        discount_rate:
+          type: number
+          format: double
+          example: 0.05
+          description: The discount rate(between 0 to 1) applied to the item
+        fee_rate:
+          type: number
+          format: double
+          example: 0.02
+          description: >-
+            The rate(between 0 to 1) of any additional fees (e.g. service
+            charge, delivery fee) applied to the item
+        discount_amount:
+          type: number
+          format: double
+          example: 500
+          description: >-
+            The actual discount value in currency applied to the item based on
+            the discount rate
+        fee_amount:
+          type: number
+          format: double
+          example: 200
+          description: The actual fee charged in currency based on the fee rate
+        product_category:
+          type: string
+          example: Food and Beverages
+          description: The category the product belongs to
+        item_name:
+          type: string
+          example: Digitax Product 001
+          description: The name of the good or service being sold
+        hsn_code:
+          type: string
+          example: '2847.00'
+          description: >-
+            The Harmonized System of Nomenclature (HSN) Code for the product or
+            the International Standard Industry Classification (ISIC) code. <a
+            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+            Reference</a>
+        description:
+          type: string
+          example: Sample item description
+          description: A brief description of the item
+        sellers_item_identification:
+          type: string
+          example: Sample item sellers item identification
+          description: An identifier for the item as assigned by the seller
+        service_category:
+          type: string
+          example: Construction of buildings
+          description: The category the service belongs to
+        isic_code:
+          type: string
+          example: '4100'
+          description: >-
+            The International Standard Industry Classification (ISIC) code for
+            the service
+    APPInvoice:
+      type: object
+      required:
+        - id
+        - irn
+        - issue_date
+        - invoice_type_code
+        - document_currency_code
+        - tax_currency_code
+        - accounting_supplier_party
+        - invoice_line
+        - tax_total
+        - legal_monetary_total
+        - created_at
+        - updated_at
+        - active
+        - payment_status
+        - is_valid
+        - transmitted_at
+        - signed_at
+        - validated_at
+        - invoice_kind
+      properties:
+        id:
+          type: string
+          example: appinvoice_01K4Q9TGAQNQ5A5FW0WJ9WHPH1
+          description: The ID of the invoice on DigiTax
+        irn:
+          type: string
+          example: 150835152MSVKRR-E3A89069-20250528
+          description: A unique tracking number assigned to each invoice on the NRS system
+        payment_status:
+          type: string
+          example: PENDING
+          enum:
+            - PENDING
+            - REJECTED
+            - PAID
+          description: Indicates whether the invoice has been paid or is still pending
+        issue_date:
+          type: string
+          format: date
+          example: '2025-09-12'
+          description: The date on which this invoice was issued in the format YYYY-MM-DD
+        issue_time:
+          type: string
+          format: time
+          example: '17:59:04'
+          description: The time at which the invoice was issued in HH:MM:SS format
+        due_date:
+          type: string
+          format: date
+          example: '2025-09-12'
+          description: >-
+            The date on which the invoice is due for payment in the format
+            YYYY-MM-DD
+        invoice_type_code:
+          type: string
+          example: '381'
+          description: A code that specifies the type of invoice being issued
+        tax_point_date:
+          type: string
+          format: date
+          example: '2025-09-12'
+          description: >-
+            The actual date when the tax becomes applicable in the format
+            YYYY-MM-DD
+        document_currency_code:
+          type: string
+          example: NGN
+          description: >-
+            A code that specifies the default currency in which the invoice is
+            issued
+        tax_currency_code:
+          type: string
+          example: NGN
+          description: The currency in which tax amounts are calculated
+        accounting_cost:
+          type: string
+          example: '2000'
+          description: >-
+            Represents the accounting category or cost center assigned to the
+            transaction
+        note:
+          type: string
+          example: Sample invoice notes
+          description: >-
+            Additional invoice information that is not contained explicitly in
+            other structures
+        buyer_reference:
+          type: string
+          example: '#INV-001'
+          description: >-
+            A reference number or code provided by the buyer to track the
+            invoice
+        order_reference:
+          type: string
+          example: 150835152MSVKRR-E3A89069-20250401
+          description: The order number tied to an invoice
+        actual_delivery_date:
+          type: string
+          format: date
+          example: '2025-09-12'
+          description: The date the goods or services were delivered
+        payment_terms_note:
+          type: string
+          example: Payment due within 30 days of invoice issue
+          description: Describes the terms and conditions of payment
+        invoice_delivery_period:
+          $ref: '#/components/schemas/DeliveryPeriod'
+          description: >-
+            Defines the start and end dates for when goods or services were
+            delivered. This helps track multi-day deliveries on a single invoice
+        allowance_charge:
+          type: array
+          description: Defines any discounts (allowance) or extra charges (charge)
+          items:
+            $ref: '#/components/schemas/AllowanceCharge'
+        invoice_line:
+          type: array
+          description: It captures details about each item or service being invoiced
+          items:
+            $ref: '#/components/schemas/LineItem'
+        tax_total:
+          type: array
+          description: The total tax charged on the invoice
+          items:
+            $ref: '#/components/schemas/TaxTotal'
+        accounting_customer_party:
+          $ref: '#/components/schemas/APPInvoiceParty'
+          description: The buyer or recipient of the goods or services
+        accounting_supplier_party:
+          $ref: '#/components/schemas/APPInvoiceParty'
+          description: The seller or supplier issuing the invoice
+        bill_party:
+          $ref: '#/components/schemas/APPInvoiceParty'
+          description: >-
+            If the payment goes to someone else, this field captures that
+            entity's details
+        ship_party:
+          $ref: '#/components/schemas/APPInvoiceParty'
+          description: >-
+            If the payment goes to someone else, this field captures that
+            entity's details
+        payee_party:
+          $ref: '#/components/schemas/APPInvoiceParty'
+          description: >-
+            If the payment goes to someone else, this field captures that
+            entity's details
+        tax_representative_party:
+          $ref: '#/components/schemas/APPInvoiceParty'
+          description: >-
+            If a business has a tax agent handling invoicing and compliance,
+            their details are entered here
+        billing_reference:
+          type: array
+          description: >-
+            A list of references to previous billing documents associated with
+            the invoice (e.g., credit notes, debit notes, or prior invoices)
+          items:
+            $ref: '#/components/schemas/InvoiceDocumentReference'
+        dispatch_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            An optional identifier of a referenced dispatch advice. Refers to
+            the document used to track the dispatch of goods
+        receipt_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A reference to a receipt advice associated with an invoice. Links
+            the invoice to a receipt document
+        originator_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A reference to an originator document associated with an invoice.
+            Identifies the original document that initiated the invoice
+        contract_document_reference:
+          $ref: '#/components/schemas/InvoiceDocumentReference'
+          description: >-
+            A reference to a contract associated with an invoice. Links the
+            invoice to a contract governing the transaction
+        additional_document_reference:
+          type: array
+          description: >-
+            A reference to additional documents associated with an invoice. Used
+            as a general reference field for any related documents
+          items:
+            $ref: '#/components/schemas/InvoiceDocumentReference'
+        payment_means:
+          type: array
+          description: Defines how the invoice will be paid and when payment is due
+          items:
+            $ref: '#/components/schemas/PaymentMeans'
+        legal_monetary_total:
+          $ref: '#/components/schemas/LegalMonetaryTotal'
+          description: >-
+            The total amount the buyer has to pay, including or excluding taxes.
+            It ensures that the buyer knows exactly how much to pay, whether
+            taxes are included or not
+        callback_url:
+          type: string
+          format: uri
+          example: https://example.com/callback
+          description: >-
+            The URL to call when we have new information about the debit note,
+            when the invoice is signed successfully or validation has failed
+        is_valid:
+          type: boolean
+          example: true
+          description: Indicates whether the invoice payload is valid
+        created_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the invoice was created
+        updated_at:
+          type: string
+          format: date-time
+          example: '2025-08-12T04:40:57Z'
+          description: The date and time when the invoice was last updated
+        transmitted_at:
+          type: string
+          format: date-time
+          nullable: true
+          example: '2025-08-12T04:40:58Z'
+          description: The date and time when the invoice was transmitted to the party
+        signed_at:
+          type: string
+          format: date-time
+          nullable: true
+          example: '2025-08-12T04:40:58Z'
+          description: The date and time when the invoice was submitted to NRS for signing
+        validated_at:
+          type: string
+          format: date-time
+          nullable: true
+          example: '2025-08-12T04:40:58Z'
+          description: The date and time when the invoice payload was validated
+        active:
+          type: boolean
+          example: true
+          description: Indicates whether the invoice is active on the DigiTax system or not
+        invoice_kind:
+          type: string
+          nullable: true
+          example: B2B
+          enum:
+            - B2B
+            - B2C
+          description: >-
+            Specifies the kind of invoice that is being sent. It can either be
+            Business to Business (B2B), Business to Consumer (B2C)
+    APPInvoiceParty:
+      type: object
+      required:
+        - tin
+        - party_name
+        - telephone
+        - email
+        - postal_address
+      properties:
+        tin:
+          type: string
+          example: 08289985-9145
+          description: The Taxpayer Identification Number (TIN) assigned to the taxpayer
+        party_name:
+          type: string
+          example: John Doe
+          description: The official business or individual name of the taxpayer
+        telephone:
+          type: string
+          example: '+2341234567890'
+          description: >-
+            The buyer's contact number with the country code prefix (+234 for
+            Nigeria)
+        email:
+          type: string
+          example: john@doe.com
+          description: >-
+            The buyer's official email address used for communication regarding
+            invoices and tax compliance
+        postal_address:
+          $ref: '#/components/schemas/InvoiceAddress'
+        business_description:
+          type: string
+          example: Construction and real estate
+          description: A brief description of the business's line of business
+    DeliveryPeriod:
+      type: object
+      required:
+        - start_date
+        - end_date
+      properties:
+        start_date:
+          type: string
+          format: date
+          example: '2025-09-12'
+          description: The start date of the delivery period in YYYY-MM-DD format
+        end_date:
+          type: string
+          format: date
+          example: '2025-09-12'
+          description: The end date of the delivery period in YYYY-MM-DD format
+    AllowanceCharge:
+      type: object
+      required:
+        - amount
+        - charge_indicator
+      properties:
+        charge_indicator:
+          type: boolean
+          example: true
+          description: Indicates if the entry is a charge (true) or an allowance (false)
+        amount:
+          type: number
+          format: double
+          example: 800.6
+          description: Amount of the charge or allowance
+    TaxTotal:
+      type: object
+      required:
+        - tax_amount
+        - tax_subtotal
+      properties:
+        tax_amount:
+          type: number
+          format: double
+          example: 56.07
+          description: The total tax charged on the invoice
+        tax_subtotal:
+          type: array
+          description: This section breaks down the tax into different tax categories
+          items:
+            $ref: '#/components/schemas/TaxSubtotal'
+    TaxSubtotal:
+      type: object
+      required:
+        - taxable_amount
+        - tax_amount
+        - tax_category
+      properties:
+        taxable_amount:
+          type: number
+          format: double
+          example: 800
+          description: The total value of goods/services on which tax is calculated
+        tax_amount:
+          type: number
+          format: double
+          example: 8
+          description: The actual tax applied on the taxable amount
+        tax_category:
+          $ref: '#/components/schemas/InvoiceTaxCategory'
+          description: Specifies what type of tax is applied to this subtotal
+    InvoiceTaxCategory:
+      type: object
+      required:
+        - id
+        - percent
+      properties:
+        id:
+          type: string
+          example: LOCAL_SALES_TAX
+          description: The tax category code that the tax subtotal applies to
+        percent:
+          type: number
+          format: double
+          example: 2.3
+          description: >-
+            The tax rate applied to the taxable amount, expressed as a
+            percentage
+    LegalMonetaryTotal:
+      type: object
+      required:
+        - line_extension_amount
+        - tax_exclusive_amount
+        - tax_inclusive_amount
+        - payable_amount
+      properties:
+        line_extension_amount:
+          type: number
+          format: double
+          example: 340.5
+          description: >-
+            The total amount of all invoice items before tax and any discounts
+            or charges
+        tax_exclusive_amount:
+          type: number
+          format: double
+          example: 400
+          description: The total invoice amount before tax is added
+        tax_inclusive_amount:
+          type: number
+          format: double
+          example: 430
+          description: The total invoice amount after tax is added
+        payable_amount:
+          type: number
+          format: double
+          example: 30
+          description: >-
+            The final amount the buyer must pay after applying discounts,
+            charges and tax
+    LineItem:
+      type: object
+      required:
+        - hsn_code
+        - product_category
+        - invoiced_quantity
+        - line_extension_amount
+        - item
+        - price
+        - discount_rate
+        - discount_amount
+        - fee_rate
+        - fee_amount
+      properties:
+        hsn_code:
+          type: string
+          example: CC-001
+          description: >-
+            The Harmonized System of Nomenclature (HSN) Code for the product or
+            the International Standard Industry Classification (ISIC) code. <a
+            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+            Reference</a>
+        product_category:
+          type: string
+          example: Food and Beverages
+          description: The category the product belongs to
+          maxLength: 100
+        discount_rate:
+          type: number
+          format: double
+          example: 2
+          description: The percentage discount applied to the item
+        discount_amount:
+          type: number
+          format: double
+          example: 20
+          description: The actual discount value in currency applied to the item
+        fee_rate:
+          type: number
+          format: double
+          example: 3
+          description: >-
+            The percentage of any additional fees (e.g., service charge,
+            delivery fee)
+        fee_amount:
+          type: number
+          format: double
+          example: 30
+          description: The actual fee charged in currency based on the fee rate
+        invoiced_quantity:
+          type: number
+          format: double
+          example: 15
+          description: The total number of items sold in the invoice line
+        line_extension_amount:
+          type: number
+          format: double
+          example: 30
+          description: The total amount for this line item before tax
+        item:
+          $ref: '#/components/schemas/LineItemDetail'
+          description: The details of the item/service being sold
+        price:
+          $ref: '#/components/schemas/LineItemPrice'
+          description: The cost of a single unit of the item
+        service_category:
+          type: string
+          example: Construction of buildings
+          description: >-
+            The category the service belongs to. For services, this is a
+            mandatory field; and its value is what should also be used for
+            product_category
+          maxLength: 100
+        isic_code:
+          type: string
+          example: '4100'
+          description: >-
+            The International Standard Industry Classification (ISIC) code for
+            the service. For services, this is a mandatory field; and its value
+            is what should also be used for hsn_code
+    LineItemDetail:
+      type: object
+      required:
+        - name
+        - description
+      properties:
+        name:
+          type: string
+          example: Digitax Product 001
+          description: The name of the good or service being sold
+        description:
+          type: string
+          example: Sample item description
+          description: A brief description of the item
+        sellers_item_identification:
+          type: string
+          example: Identified as spoon by the seller
+          description: An identifier for the item as assigned by the seller
+    LineItemPrice:
+      type: object
+      required:
+        - price_amount
+        - base_quantity
+        - price_unit
+      properties:
+        price_amount:
+          type: number
+          format: double
+          example: 10
+          description: The cost of one unit of the item
+        base_quantity:
+          type: number
+          format: double
+          example: 1
+          description: The quantity that corresponds to the price amount
+        price_unit:
+          type: string
+          example: NGN per 1
+          description: Specifies the unit of measurement for the item price
+    PaymentMeans:
+      type: object
+      required:
+        - payment_means_code
+        - payment_due_date
+      properties:
+        payment_means_code:
+          type: string
+          example: '49'
+          description: The code that specifies the method of payment
+        payment_due_date:
+          type: string
+          format: date
+          example: '2024-05-14'
+          description: The date when the payment is due in YYYY-MM-DD format
+    InvoiceAddress:
+      type: object
+      description: Represents the address of the taxpayer
+      required:
+        - street_name
+        - city_name
+        - postal_zone
+        - country
+      properties:
+        street_name:
+          type: string
+          example: 123 Main St
+          description: The street name where the buyer's business is located
+        city_name:
+          type: string
+          example: Lagos
+          description: The city where the buyer's business is registered
+        postal_zone:
+          type: string
+          example: '100001'
+          description: The postal code of the buyer's business location
+        country:
+          type: string
+          example: NG
+          description: The Alpha2 country code representing the buyer's registered country
+  parameters:
+    After:
+      in: query
+      name: after
+      required: false
+      schema:
+        type: string
+        description: >-
+          When paginating results, a pointer to an ID after which we want
+          results
+        example: 01HC3J1VVVM05YCTS61G7V3KC6
+    Before:
+      in: query
+      name: before
+      required: false
+      schema:
+        type: string
+        description: >-
+          When paginating results, a pointer to an ID before which we want
+          results
+        example: 01HC3J1VVVM05YCTS61G7V3KC6
+    PageSize:
+      in: query
+      name: page_size
+      required: false
+      schema:
+        type: integer
+        maximum: 20
+        minimum: 1
+        description: The maximum number of items to return per page, defaults to 20
+        example: 20
+  responses:
+    default:
+      $ref: '#/components/responses/Error'
+    Error:
+      description: Error response
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - message
+              - code
+            properties:
+              message:
+                type: string
+              code:
+                type: string
+              metadata:
+                type: object
+                additionalProperties:
+                  type: string
+  securitySchemes:
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
