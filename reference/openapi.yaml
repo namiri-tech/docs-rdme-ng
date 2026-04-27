@@ -2470,8 +2470,8 @@ paths:
                   type: string
                   example: 150835152MSVKRR-E3A89069-20250528
                   description: >-
-                    A unique tracking number assigned to each invoice on the
-                    NRS system
+                    A unique tracking number assigned to each invoice on the NRS
+                    system
                 payment_status:
                   type: string
                   example: PENDING
