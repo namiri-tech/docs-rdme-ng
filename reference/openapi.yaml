@@ -4535,7 +4535,7 @@ components:
         description: >-
           When paginating results, a pointer to an ID after which we want
           results
-        example: item_01HC3J1VVVM05YCTS61G7V3KC6
+        example: 01HC3J1VVVM05YCTS61G7V3KC6
     Before:
       in: query
       name: before
@@ -4545,7 +4545,7 @@ components:
         description: >-
           When paginating results, a pointer to an ID before which we want
           results
-        example: item_01HC3J1VVVM05YCTS61G7V3KC6
+        example: 01HC3J1VVVM05YCTS61G7V3KC6
     PageSize:
       in: query
       name: page_size
