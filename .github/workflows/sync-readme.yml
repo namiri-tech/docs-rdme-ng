@@ -16,4 +16,4 @@ jobs:
       - name: Push OpenAPI spec to README.com
         uses: readmeio/rdme@v10
         with:
-          rdme: openapi upload reference/openapi.yaml --key ${{ secrets.README_API_KEY }} --slug=API_DEFINITION_SLUG
+          rdme: openapi upload reference/openapi.yaml --key ${{ secrets.README_API_KEY }} --slug=openapi
