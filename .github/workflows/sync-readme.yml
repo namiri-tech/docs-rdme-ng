@@ -13,7 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Push OpenAPI spec to README.com
-        uses: readmeio/rdme@v10
+      - uses: actions/setup-node@v4
         with:
-          rdme: openapi upload reference/openapi.yaml --key ${{ secrets.README_API_KEY }} --slug=openapi
+          node-version: '24'
+
+      - name: Push OpenAPI spec to README.com
+        run: npx rdme openapi upload reference/openapi.yaml --key ${{ secrets.README_API_KEY }} --slug=openapi
