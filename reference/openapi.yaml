@@ -386,9 +386,9 @@ paths:
                   description: >-
                     The Harmonized System of Nomenclature (HSN) Code for the
                     good or the International Standard Industry Classification
-                    (ISIC) code for the service. <br><a
-                    href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
-                    Reference</a>
+                    (ISIC) code for the service. <br>[<i
+                    class="icon-guides"></i> **NRS e-Invoice
+                    Guides**](https://ng.docs.digitax.tech/docs)
                 unit_price:
                   type: number
                   format: double
