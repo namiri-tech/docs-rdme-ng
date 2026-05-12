@@ -386,8 +386,9 @@ paths:
                   description: >-
                     The Harmonized System of Nomenclature (HSN) Code for the
                     good or the International Standard Industry Classification
-                    (ISIC) code for the service. [HSN and ISIC Code
-                    Reference](https://ng.docs.digitax.tech/reference/reference-hs-service-code-files)
+                    (ISIC) code for the service. <a
+                    href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
+                    target="_blank">**HS/HSN Reference**</a>
                 unit_price:
                   type: number
                   format: double
@@ -1737,9 +1738,9 @@ paths:
                         description: >-
                           The Harmonized System of Nomenclature (HSN) Code for
                           the good or the International Standard Industry
-                          Classification (ISIC) code for the service. [HSN and
-                          ISIC Code
-                          Reference](https://ng.docs.digitax.tech/reference/reference-hs-service-code-files)
+                          Classification (ISIC) code for the service. <a
+                          href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
+                          target="_blank">**HS/HSN Reference**</a>
                       item_description:
                         type: string
                         example: Sample item description
@@ -3108,8 +3109,9 @@ components:
           description: >-
             The Harmonized System of Nomenclature (HSN) Code for the good or the
             International Standard Industry Classification (ISIC) code for the
-            service. [HSN and ISIC Code
-            Reference](https://ng.docs.digitax.tech/reference/reference-hs-service-code-files)
+            service. <a
+            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
+            target="_blank">**HS/HSN Reference**</a>
         item_number:
           type: string
           example: ITM25-148-144544241-S6AM78
@@ -3940,9 +3942,9 @@ components:
           example: '2847.00'
           description: >-
             The Harmonized System of Nomenclature (HSN) Code for the product or
-            the International Standard Industry Classification (ISIC) code. [HSN
-            and ISIC Code
-            Reference](https://ng.docs.digitax.tech/reference/reference-hs-service-code-files)
+            the International Standard Industry Classification (ISIC) code. <a
+            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
+            target="_blank">**HS/HSN Reference**</a>
         description:
           type: string
           example: Sample item description
@@ -4383,9 +4385,9 @@ components:
           example: CC-001
           description: >-
             The Harmonized System of Nomenclature (HSN) Code for the product or
-            the International Standard Industry Classification (ISIC) code. [HSN
-            and ISIC Code
-            Reference](https://ng.docs.digitax.tech/reference/reference-hs-service-code-files)
+            the International Standard Industry Classification (ISIC) code. <a
+            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
+            target="_blank">**HS/HSN Reference**</a>
         product_category:
           type: string
           example: Food and Beverages
