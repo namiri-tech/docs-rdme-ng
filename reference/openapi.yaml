@@ -386,7 +386,7 @@ paths:
                   description: >-
                     The Harmonized System of Nomenclature (HSN) code for goods,
                     or the International Standard Industry Classification (ISIC)
-                    code for services. Review the <a
+                    code for services. Consult the <a
                     href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
                     target="_blank">**HS/HSN Code Reference**</a>
                 unit_price:
