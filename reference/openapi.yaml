@@ -384,11 +384,11 @@ paths:
                   type: string
                   example: '2847.00'
                   description: >-
-                    The Harmonized System of Nomenclature (HSN) Code for the
-                    good or the International Standard Industry Classification
-                    (ISIC) code for the service. <br>Refer to the <a
+                    The Harmonized System of Nomenclature (HSN) code for goods,
+                    or the International Standard Industry Classification (ISIC)
+                    code for services. Review the <a
                     href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
-                    target="_blank">**HS/HSN codes Reference**</a>
+                    target="_blank">**HS/HSN Code Reference**</a>
                 unit_price:
                   type: number
                   format: double
