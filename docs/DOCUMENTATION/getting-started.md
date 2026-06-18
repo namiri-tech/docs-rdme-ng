@@ -34,6 +34,7 @@ metadata:
 
   * [DigiTax Kenya API hub](https://ke.docs.digitax.tech)
   * **DigiTax Nigeria API hub (You are here 🎉)**
+  * [DigiTax Tanzania API hub](https://tz.docs.digitax.tech)
   * [DigiTax Zambia API hub](https://zm.docs.digitax.tech)
 </Accordion>
 
