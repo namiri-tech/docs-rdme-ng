@@ -18,12 +18,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get NRS Countries
+      summary: Get FIRS Countries
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of NRS countries
+          description: A list of FIRS countries
           content:
             application/json:
               schema:
@@ -36,12 +36,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get NRS Currencies
+      summary: Get FIRS Currencies
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of NRS currencies
+          description: A list of FIRS currencies
           content:
             application/json:
               schema:
@@ -54,12 +54,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get NRS Tax Categories
+      summary: Get FIRS Tax Categories
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of NRS tax categories
+          description: A list of FIRS tax categories
           content:
             application/json:
               schema:
@@ -72,12 +72,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get NRS Invoice Types
+      summary: Get FIRS Invoice Types
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of NRS invoice types
+          description: A list of FIRS invoice types
           content:
             application/json:
               schema:
@@ -90,12 +90,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get NRS Payment Means
+      summary: Get FIRS Payment Means
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of NRS payment means
+          description: A list of FIRS payment means
           content:
             application/json:
               schema:
@@ -108,12 +108,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get NRS Local Governments
+      summary: Get FIRS Local Governments
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of NRS local governments
+          description: A list of FIRS local governments
           content:
             application/json:
               schema:
@@ -126,12 +126,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get NRS States
+      summary: Get FIRS States
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of NRS states
+          description: A list of FIRS states
           content:
             application/json:
               schema:
@@ -144,12 +144,12 @@ paths:
     get:
       tags:
         - Business
-      summary: Get NRS Info
+      summary: Get FIRS Info
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: NRS Info
+          description: FIRS Info
           content:
             application/json:
               schema:
@@ -160,7 +160,7 @@ paths:
     get:
       tags:
         - Parties
-      summary: Get NRS Parties
+      summary: Get FIRS Parties
       security:
         - apiKeyAuth: []
       parameters:
@@ -169,7 +169,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of NRS parties
+          description: A list of FIRS parties
           content:
             application/json:
               schema:
@@ -320,7 +320,7 @@ paths:
     get:
       tags:
         - Items
-      summary: Get NRS Items
+      summary: Get FIRS Items
       security:
         - apiKeyAuth: []
       parameters:
@@ -329,7 +329,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of NRS items
+          description: A list of FIRS items
           content:
             application/json:
               schema:
@@ -384,11 +384,11 @@ paths:
                   type: string
                   example: '2847.00'
                   description: >-
-                    The Harmonized System of Nomenclature (HSN) code for goods,
-                    or the International Standard Industry Classification (ISIC)
-                    code for services. Consult the <a
-                    href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
-                    target="_blank">**HS/HSN Code Reference**</a>
+                    The Harmonized System of Nomenclature (HSN) Code for the
+                    good or the International Standard Industry Classification
+                    (ISIC) code for the service. <a
+                    href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+                    Reference</a>
                 unit_price:
                   type: number
                   format: double
@@ -429,7 +429,7 @@ paths:
                     system. It will be used as the unique product identifier
                 is_service:
                   type: boolean
-                  example: false
+                  example: true
                   description: >-
                     Indicates whether the item is a service (true) or a good
                     (false). It defaults to false if not provided
@@ -471,7 +471,7 @@ paths:
     get:
       tags:
         - Invoices
-      summary: Get NRS Invoices
+      summary: Get FIRS Invoices
       security:
         - apiKeyAuth: []
       parameters:
@@ -480,7 +480,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of NRS invoices
+          description: A list of FIRS invoices
           content:
             application/json:
               schema:
@@ -516,6 +516,7 @@ paths:
                 - document_currency_code
                 - items
                 - trader_invoice_number
+                - invoice_kind
               properties:
                 party_id:
                   type: string
@@ -683,9 +684,11 @@ paths:
                   enum:
                     - B2B
                     - B2C
+                    - B2G
                   description: >-
                     Specifies the kind of invoice that was sent. It can either
-                    be Business to Business (B2B), Business to Consumer (B2C)
+                    be Business to Business (B2B), Business to Consumer (B2C) or
+                    Business to Government (B2G)
                 payment_status:
                   type: string
                   example: PENDING
@@ -774,7 +777,7 @@ paths:
     get:
       tags:
         - Invoices
-      summary: Get NRS Credit Notes
+      summary: Get FIRS Credit Notes
       security:
         - apiKeyAuth: []
       parameters:
@@ -783,7 +786,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of NRS credit notes
+          description: A list of FIRS credit notes
           content:
             application/json:
               schema:
@@ -1034,7 +1037,7 @@ paths:
     get:
       tags:
         - Invoices
-      summary: Get NRS Debit Notes
+      summary: Get FIRS Debit Notes
       security:
         - apiKeyAuth: []
       parameters:
@@ -1043,7 +1046,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of NRS debit notes
+          description: A list of FIRS debit notes
           content:
             application/json:
               schema:
@@ -1407,6 +1410,7 @@ paths:
                 - document_currency_code
                 - items
                 - trader_invoice_number
+                - invoice_kind
               properties:
                 party_tin:
                   type: string
@@ -1680,9 +1684,11 @@ paths:
                   enum:
                     - B2B
                     - B2C
+                    - B2G
                   description: >-
                     Specifies the kind of invoice that was sent. It can either
-                    be Business to Business (B2B), Business to Consumer (B2C)
+                    be Business to Business (B2B), Business to Consumer (B2C) or
+                    Business to Government (B2G)
                 payment_status:
                   type: string
                   example: PENDING
@@ -1739,8 +1745,8 @@ paths:
                           The Harmonized System of Nomenclature (HSN) Code for
                           the good or the International Standard Industry
                           Classification (ISIC) code for the service. <a
-                          href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
-                          target="_blank">**HS/HSN Reference**</a>
+                          href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+                          Reference</a>
                       item_description:
                         type: string
                         example: Sample item description
@@ -1812,7 +1818,7 @@ paths:
                           permission to calculate tax
                       is_service:
                         type: boolean
-                        example: false
+                        example: true
                         description: >-
                           Indicates whether the item is a service (true) or a
                           good (false). It defaults to false if not provided
@@ -2332,8 +2338,8 @@ paths:
     get:
       tags:
         - Invoice Downloads
-      summary: Get NRS Invoice Downloads
-      description: Get NRS Invoice Downloads
+      summary: Get FIRS Invoice Downloads
+      description: Get FIRS Invoice Downloads
       security:
         - apiKeyAuth: []
       parameters:
@@ -2342,7 +2348,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of NRS invoice downloads
+          description: A list of FIRS invoice downloads
           content:
             application/json:
               schema:
@@ -2363,7 +2369,7 @@ paths:
     get:
       tags:
         - Invoice Downloads
-      summary: Get a NRS Invoice Download
+      summary: Get a FIRS Invoice Download
       description: >-
         Retrieves information about an invoice download given their ID on
         DigiTax
@@ -2419,7 +2425,7 @@ paths:
         - Invoice Downloads
       summary: Confirm a business invoice download's payment status
       description: >-
-        Confirms an invoice download's payment status on NRS given their ID on
+        Confirms an invoice download's payment status on FIRS given their ID on
         DigiTax
       security:
         - apiKeyAuth: []
@@ -2465,13 +2471,14 @@ paths:
                 - invoice_line
                 - tax_total
                 - legal_monetary_total
+                - invoice_kind
               properties:
                 irn:
                   type: string
                   example: 150835152MSVKRR-E3A89069-20250528
                   description: >-
-                    A unique tracking number assigned to each invoice on the NRS
-                    system
+                    A unique tracking number assigned to each invoice on the
+                    FIRS system
                 payment_status:
                   type: string
                   example: PENDING
@@ -2664,9 +2671,11 @@ paths:
                   enum:
                     - B2B
                     - B2C
+                    - B2G
                   description: >-
                     Specifies the kind of invoice that was sent. It can either
-                    be Business to Business (B2B), Business to Consumer (B2C)
+                    be Business to Business (B2B), Business to Consumer (B2C) or
+                    Business to Government (B2G)
       responses:
         '201':
           description: APP Invoice created
@@ -2832,7 +2841,7 @@ components:
           example: Nigerian nairas
     TaxCategory:
       type: object
-      description: Represents a tax category as is defined by NRS
+      description: Represents a tax category as is defined by FIRS
       required:
         - code
         - name
@@ -3110,8 +3119,8 @@ components:
             The Harmonized System of Nomenclature (HSN) Code for the good or the
             International Standard Industry Classification (ISIC) code for the
             service. <a
-            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
-            target="_blank">**HS/HSN Reference**</a>
+            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+            Reference</a>
         item_number:
           type: string
           example: ITM25-148-144544241-S6AM78
@@ -3149,7 +3158,7 @@ components:
             will be used as the unique product identifier
         is_service:
           type: boolean
-          example: false
+          example: true
           description: Indicates whether the item is a service (true) or a good (false)
     Invoice:
       type: object
@@ -3265,7 +3274,7 @@ components:
           format: date-time
           nullable: true
           example: '2025-08-12T04:40:58Z'
-          description: The date and time when the invoice was submitted to NRS for signing
+          description: The date and time when the invoice was submitted to FIRS for signing
         validated_at:
           type: string
           format: date-time
@@ -3300,7 +3309,7 @@ components:
         invoice_reference_number:
           type: string
           example: 150835152MSVKRR-E3A89069-20250528
-          description: A unique tracking number assigned to each invoice on the NRS system
+          description: A unique tracking number assigned to each invoice on the FIRS system
         buyer_reference:
           type: string
           example: '#INV-001'
@@ -3448,7 +3457,7 @@ components:
             other structures
         qr_code_data:
           type: string
-          description: Encrypted QR code data from NRS
+          description: Encrypted QR code data from FIRS
           example: iVBORw0KGgoAAAANSUhEUgAA...
         taxes:
           type: array
@@ -3465,9 +3474,11 @@ components:
           enum:
             - B2B
             - B2C
+            - B2G
           description: >-
             Specifies the kind of invoice that was sent. It can either be
-            Business to Business (B2B), Business to Consumer (B2C)
+            Business to Business (B2B), Business to Consumer (B2C) or Business
+            to Government (B2G)
     InvoiceItem:
       type: object
       description: This captures details about each good or service being invoiced
@@ -3610,7 +3621,7 @@ components:
             percentage
     InvoiceDownload:
       type: object
-      description: Represents an invoice downloaded onto DigiTax from NRS by the buyer
+      description: Represents an invoice downloaded onto DigiTax from FIRS by the buyer
       required:
         - id
         - invoice_reference_number
@@ -3842,9 +3853,11 @@ components:
           enum:
             - B2B
             - B2C
+            - B2G
           description: >-
             Specifies the kind of invoice that was sent. It can either be
-            Business to Business (B2B), Business to Consumer (B2C)
+            Business to Business (B2B), Business to Consumer (B2C) or Business
+            to Government (B2G)
     InvoiceDownloadParty:
       type: object
       description: Represents the buyer or supplier party in a downloaded invoice
@@ -3943,8 +3956,8 @@ components:
           description: >-
             The Harmonized System of Nomenclature (HSN) Code for the product or
             the International Standard Industry Classification (ISIC) code. <a
-            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
-            target="_blank">**HS/HSN Reference**</a>
+            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+            Reference</a>
         description:
           type: string
           example: Sample item description
@@ -3993,7 +4006,7 @@ components:
         irn:
           type: string
           example: 150835152MSVKRR-E3A89069-20250528
-          description: A unique tracking number assigned to each invoice on the NRS system
+          description: A unique tracking number assigned to each invoice on the FIRS system
         payment_status:
           type: string
           example: PENDING
@@ -4194,7 +4207,7 @@ components:
           format: date-time
           nullable: true
           example: '2025-08-12T04:40:58Z'
-          description: The date and time when the invoice was submitted to NRS for signing
+          description: The date and time when the invoice was submitted to FIRS for signing
         validated_at:
           type: string
           format: date-time
@@ -4212,9 +4225,11 @@ components:
           enum:
             - B2B
             - B2C
+            - B2G
           description: >-
             Specifies the kind of invoice that is being sent. It can either be
-            Business to Business (B2B), Business to Consumer (B2C)
+            Business to Business (B2B), Business to Consumer (B2C) or Business
+            to Government (B2G)
     APPInvoiceParty:
       type: object
       required:
@@ -4386,8 +4401,8 @@ components:
           description: >-
             The Harmonized System of Nomenclature (HSN) Code for the product or
             the International Standard Industry Classification (ISIC) code. <a
-            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files"
-            target="_blank">**HS/HSN Reference**</a>
+            href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+            Reference</a>
         product_category:
           type: string
           example: Food and Beverages
