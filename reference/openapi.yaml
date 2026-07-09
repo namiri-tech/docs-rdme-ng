@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-  title: DigiTax Nigeria API
+  title: DigiTax Nigeria API Endpoints
   description: DigiTax Nigeria Public API
   version: '3'
   termsOfService: https://digitax.tech/page/terms
@@ -18,12 +18,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get FIRS Countries
+      summary: Get NRS Countries
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of FIRS countries
+          description: A list of NRS countries
           content:
             application/json:
               schema:
@@ -36,12 +36,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get FIRS Currencies
+      summary: Get NRS Currencies
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of FIRS currencies
+          description: A list of NRS currencies
           content:
             application/json:
               schema:
@@ -54,12 +54,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get FIRS Tax Categories
+      summary: Get NRS Tax Categories
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of FIRS tax categories
+          description: A list of NRS tax categories
           content:
             application/json:
               schema:
@@ -72,12 +72,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get FIRS Invoice Types
+      summary: Get NRS Invoice Types
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of FIRS invoice types
+          description: A list of NRS invoice types
           content:
             application/json:
               schema:
@@ -90,12 +90,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get FIRS Payment Means
+      summary: Get NRS Payment Means
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of FIRS payment means
+          description: A list of NRS payment means
           content:
             application/json:
               schema:
@@ -108,12 +108,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get FIRS Local Governments
+      summary: Get NRS Local Governments
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of FIRS local governments
+          description: A list of NRS local governments
           content:
             application/json:
               schema:
@@ -126,12 +126,12 @@ paths:
     get:
       tags:
         - Resources
-      summary: Get FIRS States
+      summary: Get NRS States
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: A list of FIRS states
+          description: A list of NRS states
           content:
             application/json:
               schema:
@@ -144,12 +144,12 @@ paths:
     get:
       tags:
         - Business
-      summary: Get FIRS Info
+      summary: Get NRS Info
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: FIRS Info
+          description: NRS Info
           content:
             application/json:
               schema:
@@ -160,7 +160,7 @@ paths:
     get:
       tags:
         - Parties
-      summary: Get FIRS Parties
+      summary: Get NRS Parties
       security:
         - apiKeyAuth: []
       parameters:
@@ -169,7 +169,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of FIRS parties
+          description: A list of NRS parties
           content:
             application/json:
               schema:
@@ -320,7 +320,7 @@ paths:
     get:
       tags:
         - Items
-      summary: Get FIRS Items
+      summary: Get NRS Items
       security:
         - apiKeyAuth: []
       parameters:
@@ -329,7 +329,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of FIRS items
+          description: A list of NRS items
           content:
             application/json:
               schema:
@@ -378,7 +378,7 @@ paths:
                   maxLength: 100
                 item_name:
                   type: string
-                  example: Digitax Product 001
+                  example: DigiTax Product 001
                   description: The name of the good or service being sold
                 hsn_code:
                   type: string
@@ -415,7 +415,7 @@ paths:
                   description: A brief description of the item
                 display_name:
                   type: string
-                  example: Digitax Product 001
+                  example: DigiTax Product 001
                   description: The name of the good or service being sold
                 price_unit:
                   type: string
@@ -471,7 +471,7 @@ paths:
     get:
       tags:
         - Invoices
-      summary: Get FIRS Invoices
+      summary: Get NRS Invoices
       security:
         - apiKeyAuth: []
       parameters:
@@ -480,7 +480,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of FIRS invoices
+          description: A list of NRS invoices
           content:
             application/json:
               schema:
@@ -549,14 +549,14 @@ paths:
                 invoice_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which the invoice was created in the format
                     YYYY-MM-DD
                 issue_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this invoice was issued in the format
                     YYYY-MM-DD
@@ -574,7 +574,7 @@ paths:
                 tax_point_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The actual date when the tax becomes applicable in the
                     format YYYY-MM-DD
@@ -660,7 +660,7 @@ paths:
                 due_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which the invoice is due for payment in the
                     format YYYY-MM-DD
@@ -777,7 +777,7 @@ paths:
     get:
       tags:
         - Invoices
-      summary: Get FIRS Credit Notes
+      summary: Get NRS Credit Notes
       security:
         - apiKeyAuth: []
       parameters:
@@ -786,7 +786,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of FIRS credit notes
+          description: A list of NRS credit notes
           content:
             application/json:
               schema:
@@ -826,14 +826,14 @@ paths:
                 return_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this credit note was created in the format
                     YYYY-MM-DD
                 issue_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this credit note was issued in the format
                     YYYY-MM-DD
@@ -847,7 +847,7 @@ paths:
                 tax_point_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The actual date when the tax becomes applicable in the
                     format YYYY-MM-DD
@@ -933,7 +933,7 @@ paths:
                 due_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which the credit note is due for payment in the
                     format YYYY-MM-DD
@@ -1037,7 +1037,7 @@ paths:
     get:
       tags:
         - Invoices
-      summary: Get FIRS Debit Notes
+      summary: Get NRS Debit Notes
       security:
         - apiKeyAuth: []
       parameters:
@@ -1046,7 +1046,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of FIRS debit notes
+          description: A list of NRS debit notes
           content:
             application/json:
               schema:
@@ -1086,14 +1086,14 @@ paths:
                 debit_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this debit note was created in the format
                     YYYY-MM-DD
                 issue_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this debit note was issued in the format
                     YYYY-MM-DD
@@ -1107,7 +1107,7 @@ paths:
                 tax_point_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The actual date when the tax becomes applicable in the
                     format YYYY-MM-DD
@@ -1192,7 +1192,7 @@ paths:
                 due_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which the debit note is due for payment in the
                     format YYYY-MM-DD
@@ -1381,7 +1381,7 @@ paths:
           schema:
             type: string
             description: Invoice Reference Number
-            example: 2226499116NGE7G-E3A89069-20250601
+            example: 2226499116NGE7G-E3A89069-20260714
       responses:
         '200':
           description: Success
@@ -1556,7 +1556,7 @@ paths:
                 issue_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this invoice was issued in the format
                     YYYY-MM-DD
@@ -1574,7 +1574,7 @@ paths:
                 tax_point_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The actual date when the tax becomes applicable in the
                     format YYYY-MM-DD
@@ -1660,7 +1660,7 @@ paths:
                 due_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which the invoice is due for payment in the
                     format YYYY-MM-DD
@@ -1736,7 +1736,7 @@ paths:
                         maxLength: 100
                       item_name:
                         type: string
-                        example: Digitax Product 001
+                        example: DigiTax Product 001
                         description: The name of the good or service being sold
                       hsn_code:
                         type: string
@@ -1855,14 +1855,14 @@ paths:
                 return_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this credit note was created in the format
                     YYYY-MM-DD
                 issue_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this credit note was issued in the format
                     YYYY-MM-DD
@@ -1876,7 +1876,7 @@ paths:
                 tax_point_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The actual date when the tax becomes applicable in the
                     format YYYY-MM-DD
@@ -1962,7 +1962,7 @@ paths:
                 due_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which the credit note is due for payment in the
                     format YYYY-MM-DD
@@ -2107,14 +2107,14 @@ paths:
                 debit_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this debit note was created in the format
                     YYYY-MM-DD
                 issue_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this debit note was issued in the format
                     YYYY-MM-DD
@@ -2128,7 +2128,7 @@ paths:
                 tax_point_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The actual date when the tax becomes applicable in the
                     format YYYY-MM-DD
@@ -2213,7 +2213,7 @@ paths:
                 due_date:
                   type: string
                   format: date
-                  example: '2025-08-07'
+                  example: '2026-07-14'
                   description: >-
                     The date on which the debit note is due for payment in the
                     format YYYY-MM-DD
@@ -2338,8 +2338,8 @@ paths:
     get:
       tags:
         - Invoice Downloads
-      summary: Get FIRS Invoice Downloads
-      description: Get FIRS Invoice Downloads
+      summary: Get NRS Invoice Downloads
+      description: Get NRS Invoice Downloads
       security:
         - apiKeyAuth: []
       parameters:
@@ -2348,7 +2348,7 @@ paths:
         - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
-          description: A list of FIRS invoice downloads
+          description: A list of NRS invoice downloads
           content:
             application/json:
               schema:
@@ -2369,7 +2369,7 @@ paths:
     get:
       tags:
         - Invoice Downloads
-      summary: Get a FIRS Invoice Download
+      summary: Get a NRS Invoice Download
       description: >-
         Retrieves information about an invoice download given their ID on
         DigiTax
@@ -2381,7 +2381,7 @@ paths:
           required: true
           schema:
             type: string
-            description: Invoice download ID in Digitax
+            description: Invoice download ID in DigiTax
             example: transmission_01JW6DXQ61ZGP2T6QDHSM34SGP
       responses:
         '200':
@@ -2409,7 +2409,7 @@ paths:
           schema:
             type: string
             description: The Invoice Reference Number of the invoice download
-            example: 2226499116NGE7G-E3A89069-20250601
+            example: 2226499116NGE7G-E3A89069-20260714
       responses:
         '200':
           description: Success
@@ -2425,7 +2425,7 @@ paths:
         - Invoice Downloads
       summary: Confirm a business invoice download's payment status
       description: >-
-        Confirms an invoice download's payment status on FIRS given their ID on
+        Confirms an invoice download's payment status on NRS given their ID on
         DigiTax
       security:
         - apiKeyAuth: []
@@ -2435,7 +2435,7 @@ paths:
           required: true
           schema:
             type: string
-            description: Invoice download ID in Digitax
+            description: Invoice download ID in DigiTax
             example: transmission_01JW6DXQ61ZGP2T6QDHSM34SGP
       responses:
         '200':
@@ -2475,10 +2475,10 @@ paths:
               properties:
                 irn:
                   type: string
-                  example: 150835152MSVKRR-E3A89069-20250528
+                  example: 150835152MSVKRR-E3A89069-20260714
                   description: >-
-                    A unique tracking number assigned to each invoice on the
-                    FIRS system
+                    A unique tracking number assigned to each invoice on the NRS
+                    system
                 payment_status:
                   type: string
                   example: PENDING
@@ -2492,7 +2492,7 @@ paths:
                 issue_date:
                   type: string
                   format: date
-                  example: '2025-09-12'
+                  example: '2026-07-14'
                   description: >-
                     The date on which this invoice was issued in the format
                     YYYY-MM-DD
@@ -2504,7 +2504,7 @@ paths:
                 due_date:
                   type: string
                   format: date
-                  example: '2025-09-12'
+                  example: '2026-07-14'
                   description: >-
                     The date on which the invoice is due for payment in the
                     format YYYY-MM-DD
@@ -2515,7 +2515,7 @@ paths:
                 tax_point_date:
                   type: string
                   format: date
-                  example: '2025-09-12'
+                  example: '2026-07-14'
                   description: >-
                     The actual date when the tax becomes applicable in the
                     format YYYY-MM-DD
@@ -2549,12 +2549,12 @@ paths:
                     the invoice
                 order_reference:
                   type: string
-                  example: 150835152MSVKRR-E3A89069-20250401
+                  example: 150835152MSVKRR-E3A89069-20260714
                   description: The order number tied to an invoice
                 actual_delivery_date:
                   type: string
                   format: date
-                  example: '2025-09-12'
+                  example: '2026-07-14'
                   description: The date the goods or services were delivered
                 payment_terms_note:
                   type: string
@@ -2731,7 +2731,7 @@ paths:
           required: true
           schema:
             type: string
-            description: Invoice ID in Digitax
+            description: Invoice ID in DigiTax
             example: appinvoice_01K4Q9TGAQNQ5A5FW0WJ9WHPH1
       responses:
         '200':
@@ -2841,7 +2841,7 @@ components:
           example: Nigerian nairas
     TaxCategory:
       type: object
-      description: Represents a tax category as is defined by FIRS
+      description: Represents a tax category as is defined by NRS
       required:
         - code
         - name
@@ -3027,12 +3027,12 @@ components:
         created_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the party was created
         updated_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the party was last updated
         active:
           type: boolean
@@ -3087,12 +3087,12 @@ components:
         created_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the item was created
         updated_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the item was last updated
         active:
           type: boolean
@@ -3110,7 +3110,7 @@ components:
           description: The category the good or service belongs to
         item_name:
           type: string
-          example: Digitax Product 001
+          example: DigiTax Product 001
           description: The name of the good or service being sold
         hsn_code:
           type: string
@@ -3148,7 +3148,7 @@ components:
           description: A brief description of the item
         display_name:
           type: string
-          example: Digitax Product 001
+          example: DigiTax Product 001
           description: The name of the good or service being sold
         item_code:
           type: string
@@ -3205,12 +3205,12 @@ components:
         created_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the invoice was created
         updated_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the invoice was last updated
         active:
           type: boolean
@@ -3247,12 +3247,12 @@ components:
         invoice_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: The date on which the invoice was created in the format YYYY-MM-DD
         issue_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: The date on which this invoice was issued in the format YYYY-MM-DD
         issue_time:
           type: string
@@ -3267,19 +3267,19 @@ components:
           type: string
           format: date-time
           nullable: true
-          example: '2025-08-12T04:40:58Z'
+          example: '2026-07-14T04:40:58Z'
           description: The date and time when the invoice was transmitted to the party
         signed_at:
           type: string
           format: date-time
           nullable: true
-          example: '2025-08-12T04:40:58Z'
-          description: The date and time when the invoice was submitted to FIRS for signing
+          example: '2026-07-14T04:40:58Z'
+          description: The date and time when the invoice was submitted to NRS for signing
         validated_at:
           type: string
           format: date-time
           nullable: true
-          example: '2025-08-12T04:40:58Z'
+          example: '2026-07-14T04:40:58Z'
           description: The date and time when the invoice payload was validated
         invoice_type_code:
           type: string
@@ -3288,7 +3288,7 @@ components:
         tax_point_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: >-
             The actual date when the tax becomes applicable in the format
             YYYY-MM-DD
@@ -3308,8 +3308,8 @@ components:
           description: The unique invoice number of the invoice on DigiTax
         invoice_reference_number:
           type: string
-          example: 150835152MSVKRR-E3A89069-20250528
-          description: A unique tracking number assigned to each invoice on the FIRS system
+          example: 150835152MSVKRR-E3A89069-20260714
+          description: A unique tracking number assigned to each invoice on the NRS system
         buyer_reference:
           type: string
           example: '#INV-001'
@@ -3333,7 +3333,7 @@ components:
         delivery_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: The date on which the goods or services were delivered
         status:
           type: string
@@ -3445,7 +3445,7 @@ components:
         due_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: >-
             The date on which the invoice is due for payment in the format
             YYYY-MM-DD
@@ -3457,7 +3457,7 @@ components:
             other structures
         qr_code_data:
           type: string
-          description: Encrypted QR code data from FIRS
+          description: Encrypted QR code data from NRS
           example: iVBORw0KGgoAAAANSUhEUgAA...
         taxes:
           type: array
@@ -3500,12 +3500,12 @@ components:
         created_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the invoice item was created
         updated_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the invoice item was last updated
         active:
           type: boolean
@@ -3582,12 +3582,12 @@ components:
       properties:
         irn:
           type: string
-          example: 135620605NANVTQ-E3A89069-20250526
+          example: 135620605NANVTQ-E3A89069-20260714
           description: The Invoice Reference Number (IRN) of the document
         issue_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: The date on which the document was issued in the format YYYY-MM-DD
     TaxBreakdown:
       type: object
@@ -3621,7 +3621,7 @@ components:
             percentage
     InvoiceDownload:
       type: object
-      description: Represents an invoice downloaded onto DigiTax from FIRS by the buyer
+      description: Represents an invoice downloaded onto DigiTax from NRS by the buyer
       required:
         - id
         - invoice_reference_number
@@ -3647,7 +3647,7 @@ components:
           description: The ID of the invoice download on DigiTax
         invoice_reference_number:
           type: string
-          example: 135620605NANVTQ-E3A89069-20250526
+          example: 135620605NANVTQ-E3A89069-20260714
           description: The Invoice Reference Number (IRN) of the invoice download
         payment_status:
           type: string
@@ -3664,7 +3664,7 @@ components:
         issue_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: >-
             The date on which the invoice was issued by the supplier in the
             format YYYY-MM-DD
@@ -3680,7 +3680,7 @@ components:
         tax_point_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: >-
             The actual date when the tax becomes applicable in the format
             YYYY-MM-DD
@@ -3703,7 +3703,7 @@ components:
         delivery_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: The date on which the goods or services were delivered
         line_extension_amount:
           type: number
@@ -3796,7 +3796,7 @@ components:
         due_date:
           type: string
           format: date
-          example: '2025-08-07'
+          example: '2026-07-14'
           description: >-
             The date on which the invoice is due for payment in the format
             YYYY-MM-DD
@@ -3948,7 +3948,7 @@ components:
           description: The category the product belongs to
         item_name:
           type: string
-          example: Digitax Product 001
+          example: DigiTax Product 001
           description: The name of the good or service being sold
         hsn_code:
           type: string
@@ -4005,8 +4005,8 @@ components:
           description: The ID of the invoice on DigiTax
         irn:
           type: string
-          example: 150835152MSVKRR-E3A89069-20250528
-          description: A unique tracking number assigned to each invoice on the FIRS system
+          example: 150835152MSVKRR-E3A89069-20260714
+          description: A unique tracking number assigned to each invoice on the NRS system
         payment_status:
           type: string
           example: PENDING
@@ -4018,7 +4018,7 @@ components:
         issue_date:
           type: string
           format: date
-          example: '2025-09-12'
+          example: '2026-07-14'
           description: The date on which this invoice was issued in the format YYYY-MM-DD
         issue_time:
           type: string
@@ -4028,7 +4028,7 @@ components:
         due_date:
           type: string
           format: date
-          example: '2025-09-12'
+          example: '2026-07-14'
           description: >-
             The date on which the invoice is due for payment in the format
             YYYY-MM-DD
@@ -4039,7 +4039,7 @@ components:
         tax_point_date:
           type: string
           format: date
-          example: '2025-09-12'
+          example: '2026-07-14'
           description: >-
             The actual date when the tax becomes applicable in the format
             YYYY-MM-DD
@@ -4073,12 +4073,12 @@ components:
             invoice
         order_reference:
           type: string
-          example: 150835152MSVKRR-E3A89069-20250401
+          example: 150835152MSVKRR-E3A89069-20260714
           description: The order number tied to an invoice
         actual_delivery_date:
           type: string
           format: date
-          example: '2025-09-12'
+          example: '2026-07-14'
           description: The date the goods or services were delivered
         payment_terms_note:
           type: string
@@ -4189,30 +4189,30 @@ components:
         created_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the invoice was created
         updated_at:
           type: string
           format: date-time
-          example: '2025-08-12T04:40:57Z'
+          example: '2026-07-14T04:40:57Z'
           description: The date and time when the invoice was last updated
         transmitted_at:
           type: string
           format: date-time
           nullable: true
-          example: '2025-08-12T04:40:58Z'
+          example: '2026-07-14T04:40:58Z'
           description: The date and time when the invoice was transmitted to the party
         signed_at:
           type: string
           format: date-time
           nullable: true
-          example: '2025-08-12T04:40:58Z'
-          description: The date and time when the invoice was submitted to FIRS for signing
+          example: '2026-07-14T04:40:58Z'
+          description: The date and time when the invoice was submitted to NRS for signing
         validated_at:
           type: string
           format: date-time
           nullable: true
-          example: '2025-08-12T04:40:58Z'
+          example: '2026-07-14T04:40:58Z'
           description: The date and time when the invoice payload was validated
         active:
           type: boolean
@@ -4274,12 +4274,12 @@ components:
         start_date:
           type: string
           format: date
-          example: '2025-09-12'
+          example: '2026-07-14'
           description: The start date of the delivery period in YYYY-MM-DD format
         end_date:
           type: string
           format: date
-          example: '2025-09-12'
+          example: '2026-07-14'
           description: The end date of the delivery period in YYYY-MM-DD format
     AllowanceCharge:
       type: object
@@ -4469,7 +4469,7 @@ components:
       properties:
         name:
           type: string
-          example: Digitax Product 001
+          example: DigiTax Product 001
           description: The name of the good or service being sold
         description:
           type: string
@@ -4513,7 +4513,7 @@ components:
         payment_due_date:
           type: string
           format: date
-          example: '2024-05-14'
+          example: '2026-07-14'
           description: The date when the payment is due in YYYY-MM-DD format
     InvoiceAddress:
       type: object
