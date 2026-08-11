@@ -140,6 +140,28 @@ paths:
                   $ref: '#/components/schemas/State'
         default:
           $ref: '#/components/responses/Error'
+  /resources/invoice-quantity-codes:
+    get:
+      tags:
+        - Resources
+      summary: Get NRS Invoice Quantity Codes
+      description: >-
+        Returns the standardized Unit of Measurement (UoM) codes (UN/ECE
+        Recommendation 20, including Recommendation 21) recommended for the
+        `price_unit` field on invoice line items.
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: A list of NRS invoice quantity codes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/QuantityCode'
+        default:
+          $ref: '#/components/responses/Error'
   /info:
     get:
       tags:
@@ -419,8 +441,11 @@ paths:
                   description: The name of the good or service being sold
                 price_unit:
                   type: string
-                  example: NGN per 1
-                  description: The unit of measurement for the price of the item
+                  example: H87
+                  description: >-
+                    Specifies the unit of measurement for the item price.
+                    Recommended to get this from the invoice quantity codes
+                    resource: /resources/invoice-quantity-codes
                 item_code:
                   type: string
                   example: '8000020107057'
@@ -696,6 +721,7 @@ paths:
                     - PENDING
                     - REJECTED
                     - PAID
+                    - PARTIAL
                   description: The current payment status of the invoice
                 items:
                   type: array
@@ -764,6 +790,13 @@ paths:
                         type: string
                         example: Sample item description
                         description: A brief description of the item being sold
+                      price_unit:
+                        type: string
+                        example: H87
+                        description: >-
+                          Specifies the unit of measurement for this invoice
+                          line item's price. Get this from the invoice quantity
+                          codes resource: /resources/invoice-quantity-codes
       responses:
         '201':
           description: Invoice created
@@ -958,6 +991,7 @@ paths:
                     - PENDING
                     - REJECTED
                     - PAID
+                    - PARTIAL
                   description: The current payment status of the credit note
                 items:
                   type: array
@@ -1024,6 +1058,13 @@ paths:
                         type: string
                         example: Sample item description
                         description: A brief description of the item being sold
+                      price_unit:
+                        type: string
+                        example: H87
+                        description: >-
+                          Specifies the unit of measurement for this invoice
+                          line item's price. Get this from the invoice quantity
+                          codes resource: /resources/invoice-quantity-codes
       responses:
         '201':
           description: Credit note created
@@ -1217,6 +1258,7 @@ paths:
                     - PENDING
                     - REJECTED
                     - PAID
+                    - PARTIAL
                   description: The current payment status of the debit note
                 items:
                   type: array
@@ -1283,6 +1325,13 @@ paths:
                         type: string
                         example: Sample item description
                         description: A brief description of the item being sold
+                      price_unit:
+                        type: string
+                        example: H87
+                        description: >-
+                          Specifies the unit of measurement for this invoice
+                          line item's price. Get this from the invoice quantity
+                          codes resource: /resources/invoice-quantity-codes
       responses:
         '201':
           description: Debit note created
@@ -1349,12 +1398,20 @@ paths:
                   enum:
                     - REJECTED
                     - PAID
+                    - PARTIAL
                   example: REJECTED
                   description: The payment status of the invoice
                 reference:
                   type: string
                   example: PY012001
                   description: The reference number of the payment
+                amount:
+                  type: number
+                  format: double
+                  example: 10
+                  description: >-
+                    The amount paid in this transaction. Required when
+                    payment_status is PARTIAL, ignored otherwise.
       responses:
         '200':
           description: Success
@@ -1696,6 +1753,7 @@ paths:
                     - PENDING
                     - REJECTED
                     - PAID
+                    - PARTIAL
                   description: The current payment status of the invoice
                 items:
                   type: array
@@ -1751,6 +1809,13 @@ paths:
                         type: string
                         example: Sample item description
                         description: A brief description of the item
+                      price_unit:
+                        type: string
+                        example: H87
+                        description: >-
+                          Specifies the unit of measurement for this invoice
+                          line item's price. Get this from the invoice quantity
+                          codes resource: /resources/invoice-quantity-codes
                       quantity:
                         type: number
                         format: double
@@ -1987,6 +2052,7 @@ paths:
                     - PENDING
                     - REJECTED
                     - PAID
+                    - PARTIAL
                   description: The current payment status of the credit note
                 items:
                   type: array
@@ -2074,6 +2140,13 @@ paths:
                         type: string
                         example: Sample item description
                         description: A brief description of the item being sold
+                      price_unit:
+                        type: string
+                        example: H87
+                        description: >-
+                          Specifies the unit of measurement for this invoice
+                          line item's price. Get this from the invoice quantity
+                          codes resource: /resources/invoice-quantity-codes
       responses:
         '201':
           description: Credit note created
@@ -2238,6 +2311,7 @@ paths:
                     - PENDING
                     - REJECTED
                     - PAID
+                    - PARTIAL
                   description: The current payment status of the debit note
                 items:
                   type: array
@@ -2325,6 +2399,13 @@ paths:
                         type: string
                         example: Sample item description
                         description: A brief description of the item being sold
+                      price_unit:
+                        type: string
+                        example: H87
+                        description: >-
+                          Specifies the unit of measurement for this invoice
+                          line item's price. Get this from the invoice quantity
+                          codes resource: /resources/invoice-quantity-codes
       responses:
         '201':
           description: Debit note created
@@ -2486,6 +2567,7 @@ paths:
                     - PENDING
                     - REJECTED
                     - PAID
+                    - PARTIAL
                   description: >-
                     Indicates whether the invoice has been paid or is still
                     pending
@@ -2774,12 +2856,20 @@ paths:
                   enum:
                     - REJECTED
                     - PAID
+                    - PARTIAL
                   example: REJECTED
                   description: The payment status of the invoice
                 reference:
                   type: string
                   example: PY012001
                   description: The reference number of the payment
+                amount:
+                  type: number
+                  format: double
+                  example: 10
+                  description: >-
+                    The amount paid in this transaction. Required when
+                    payment_status is PARTIAL, ignored otherwise.
       responses:
         '200':
           description: Success
@@ -2880,6 +2970,27 @@ components:
         value:
           type: string
           example: Purchase Order
+    QuantityCode:
+      type: object
+      description: >-
+        A standardized UN/ECE Recommendation 20 (and Recommendation 21) unit of
+        measure code for the price_unit field on invoice line items
+      required:
+        - code
+        - name
+        - description
+      properties:
+        code:
+          type: string
+          example: EA
+        name:
+          type: string
+          example: each
+        description:
+          type: string
+          example: >-
+            A unit of count defining the number of items regarded as separate
+            units.
     InvoiceType:
       type: object
       required:
@@ -3329,6 +3440,7 @@ components:
             - PENDING
             - REJECTED
             - PAID
+            - PARTIAL
           description: Indicates whether the invoice has been paid or is still pending
         delivery_date:
           type: string
@@ -3378,6 +3490,11 @@ components:
           description: >-
             The final amount the buyer must pay after applying discounts,
             charges and tax
+        paid_amount:
+          type: number
+          format: double
+          example: 0
+          description: The running total paid so far
         tax_amount:
           type: number
           format: double
@@ -3559,6 +3676,10 @@ components:
           format: double
           example: 0.075
           description: The tax rate(between 0 to 1) applied to the item
+        price_unit:
+          type: string
+          example: EA
+          description: Specifies the unit of measurement for the item price
     Pagination:
       type: object
       properties:
@@ -3655,6 +3776,7 @@ components:
             - PENDING
             - REJECTED
             - PAID
+            - PARTIAL
           example: REJECTED
           description: The payment status of the invoice download
         acknowledged_at:
@@ -3976,6 +4098,10 @@ components:
           description: >-
             The International Standard Industry Classification (ISIC) code for
             the service
+        price_unit:
+          type: string
+          example: EA
+          description: Specifies the unit of measurement for the item price
     APPInvoice:
       type: object
       required:
@@ -4014,6 +4140,7 @@ components:
             - PENDING
             - REJECTED
             - PAID
+            - PARTIAL
           description: Indicates whether the invoice has been paid or is still pending
         issue_date:
           type: string
@@ -4230,6 +4357,11 @@ components:
             Specifies the kind of invoice that is being sent. It can either be
             Business to Business (B2B), Business to Consumer (B2C) or Business
             to Government (B2G)
+        paid_amount:
+          type: number
+          format: double
+          example: 0
+          description: The running total paid so far
     APPInvoiceParty:
       type: object
       required:
@@ -4498,8 +4630,11 @@ components:
           description: The quantity that corresponds to the price amount
         price_unit:
           type: string
-          example: NGN per 1
-          description: Specifies the unit of measurement for the item price
+          example: H87
+          description: >-
+            Specifies the unit of measurement for the item price. Get this from
+            the invoice quantity codes resource:
+            /resources/invoice-quantity-codes
     PaymentMeans:
       type: object
       required:
