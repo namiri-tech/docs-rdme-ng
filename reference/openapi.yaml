@@ -145,14 +145,15 @@ paths:
       tags:
         - Resources
       summary: Get NRS Invoice Quantity Codes
+      description: >-
+        Returns the standardized Unit of Measurement (UoM) codes (UN/ECE
+        Recommendation 20, including Recommendation 21) recommended for the
+        `price_unit` field on invoice line items.
       security:
         - apiKeyAuth: []
       responses:
         '200':
-          description: >-
-            Returns the standardized Unit of Measurement (UoM) codes (UN/ECE
-            Recommendation 20, including Recommendation 21) recommended for the
-            `price_unit` field on invoice line items.
+          description: A list of NRS invoice quantity codes
           content:
             application/json:
               schema:
