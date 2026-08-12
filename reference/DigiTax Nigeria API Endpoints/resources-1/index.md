@@ -1,4 +1,0 @@
----
-title: Resources
-hidden: false
----
