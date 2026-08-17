@@ -2,3 +2,5 @@
 - get_app-invoices
 - get_app-invoices-app-invoice-id
 - put_app-invoices-app-invoice-id-payment-status
+- post_app-invoices-app-invoice-id-sign
+- post_app-invoices-app-invoice-id-transmit

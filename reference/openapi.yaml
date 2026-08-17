@@ -2758,6 +2758,28 @@ paths:
                     Specifies the kind of invoice that was sent. It can either
                     be Business to Business (B2B), Business to Consumer (B2C) or
                     Business to Government (B2G)
+                manual_processing:
+                  type: object
+                  description: >-
+                    Opt individual pipeline steps into manual triggering instead
+                    of automatic progression. Omit or set false for existing
+                    automatic behaviour
+                  properties:
+                    sign:
+                      type: boolean
+                      default: false
+                      description: >-
+                        If true, this invoice will not be auto-enqueued for
+                        signing after validation succeeds - call POST
+                        /app-invoices/{app_invoice_id}/sign to trigger it
+                    transmit:
+                      type: boolean
+                      default: false
+                      description: >-
+                        If true, this invoice will not be auto-enqueued for
+                        transmission after signing succeeds (or on creation, for
+                        pre-signed integrations) - call POST
+                        /app-invoices/{app_invoice_id}/transmit to trigger it
       responses:
         '201':
           description: APP Invoice created
@@ -2873,6 +2895,62 @@ paths:
       responses:
         '200':
           description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APPInvoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /app-invoices/{app_invoice_id}/sign:
+    post:
+      tags:
+        - APP Invoices
+      summary: Sign an APP invoice
+      description: >-
+        Manually trigger signing of an APP invoice created with
+        manual_processing.sign enabled. Signing an already-signed invoice is a
+        no-op.
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: app_invoice_id
+          required: true
+          schema:
+            type: string
+            description: Invoice ID on DigiTax
+            example: appinvoice_01K4Q9TGAQNQ5A5FW0WJ9WHPH1
+      responses:
+        '202':
+          description: Signing queued
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APPInvoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /app-invoices/{app_invoice_id}/transmit:
+    post:
+      tags:
+        - APP Invoices
+      summary: Transmit an APP invoice
+      description: >-
+        Manually trigger transmission of an APP invoice created with
+        manual_processing.transmit enabled. Transmitting an already-transmitted
+        invoice is a no-op.
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: app_invoice_id
+          required: true
+          schema:
+            type: string
+            description: Invoice ID on DigiTax
+            example: appinvoice_01K4Q9TGAQNQ5A5FW0WJ9WHPH1
+      responses:
+        '202':
+          description: Transmission queued
           content:
             application/json:
               schema:
@@ -4362,6 +4440,27 @@ components:
           format: double
           example: 0
           description: The running total paid so far
+        manual_processing:
+          type: object
+          description: >-
+            Indicates which pipeline steps require manual triggering instead of
+            automatic progression
+          properties:
+            sign:
+              type: boolean
+              example: false
+              description: >-
+                If true, this invoice is not auto-enqueued for signing after
+                validation succeeds - call POST
+                /app-invoices/{app_invoice_id}/sign to trigger it
+            transmit:
+              type: boolean
+              example: false
+              description: >-
+                If true, this invoice is not auto-enqueued for transmission
+                after signing succeeds (or on creation, for pre-signed
+                integrations) - call POST
+                /app-invoices/{app_invoice_id}/transmit to trigger it
     APPInvoiceParty:
       type: object
       required:
