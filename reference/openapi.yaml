@@ -719,10 +719,12 @@ paths:
                   example: PENDING
                   enum:
                     - PENDING
-                    - REJECTED
                     - PAID
-                    - PARTIAL
-                  description: The current payment status of the invoice
+                  description: >-
+                    The payment status of the invoice at creation. PARTIAL and
+                    REJECTED are not accepted here - use the payment status
+                    endpoint to move the invoice to either of those once it has
+                    been signed
                 items:
                   type: array
                   description: >-
@@ -989,10 +991,12 @@ paths:
                   example: PENDING
                   enum:
                     - PENDING
-                    - REJECTED
                     - PAID
-                    - PARTIAL
-                  description: The current payment status of the credit note
+                  description: >-
+                    The payment status of the credit note at creation. PARTIAL
+                    and REJECTED are not accepted here - use the payment status
+                    endpoint to move the credit note to either of those once it
+                    has been signed
                 items:
                   type: array
                   items:
@@ -1256,10 +1260,12 @@ paths:
                   example: PENDING
                   enum:
                     - PENDING
-                    - REJECTED
                     - PAID
-                    - PARTIAL
-                  description: The current payment status of the debit note
+                  description: >-
+                    The payment status of the debit note at creation. PARTIAL
+                    and REJECTED are not accepted here - use the payment status
+                    endpoint to move the debit note to either of those once it
+                    has been signed
                 items:
                   type: array
                   items:
@@ -1373,7 +1379,21 @@ paths:
       tags:
         - Invoices
       summary: Update an invoice payment status
-      description: Update an invoice payment status
+      description: >
+        Update an invoice payment status. The invoice must already be signed.
+
+
+        PARTIAL may be sent repeatedly until the outstanding balance is settled.
+        A PARTIAL payment that
+
+        clears the balance settles the invoice, so the invoice is stored and
+        returned as PAID rather than
+
+        PARTIAL, is reported to NRS as PAID with no amount, and is queued for
+        fiscalisation. Sending PAID
+
+        against an invoice that is already settled is accepted and changes
+        nothing.
       security:
         - apiKeyAuth: []
       parameters:
@@ -1400,7 +1420,10 @@ paths:
                     - PAID
                     - PARTIAL
                   example: REJECTED
-                  description: The payment status of the invoice
+                  description: >-
+                    The payment status of the invoice. Requesting PARTIAL
+                    settles the invoice to PAID when the payment clears the
+                    outstanding balance
                 reference:
                   type: string
                   example: PY012001
@@ -1411,7 +1434,9 @@ paths:
                   example: 10
                   description: >-
                     The amount paid in this transaction. Required when
-                    payment_status is PARTIAL, ignored otherwise.
+                    payment_status is PARTIAL, and rejected for PAID and
+                    REJECTED. PAID settles whatever is still outstanding, so it
+                    takes no amount
       responses:
         '200':
           description: Success
@@ -1751,10 +1776,12 @@ paths:
                   example: PENDING
                   enum:
                     - PENDING
-                    - REJECTED
                     - PAID
-                    - PARTIAL
-                  description: The current payment status of the invoice
+                  description: >-
+                    The payment status of the invoice at creation. PARTIAL and
+                    REJECTED are not accepted here - use the payment status
+                    endpoint to move the invoice to either of those once it has
+                    been signed
                 items:
                   type: array
                   description: >-
@@ -2050,10 +2077,12 @@ paths:
                   example: PENDING
                   enum:
                     - PENDING
-                    - REJECTED
                     - PAID
-                    - PARTIAL
-                  description: The current payment status of the credit note
+                  description: >-
+                    The payment status of the credit note at creation. PARTIAL
+                    and REJECTED are not accepted here - use the payment status
+                    endpoint to move the credit note to either of those once it
+                    has been signed
                 items:
                   type: array
                   items:
@@ -2150,6 +2179,481 @@ paths:
       responses:
         '201':
           description: Credit note created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        default:
+          $ref: '#/components/responses/Error'
+  /external-credit-notes:
+    post:
+      tags:
+        - Invoices
+      summary: Create a credit note against an invoice never submitted to FIRS/NRS
+      description: >-
+        Raises a credit note against an invoice that was issued before
+        e-invoicing began and was never submitted to FIRS/NRS - so it has no IRN
+        and no DigiTax invoice ID. Unlike the other credit note endpoints, party
+        and item details are supplied inline rather than referencing an existing
+        invoice_id
+      security:
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - return_date
+                - issue_date
+                - document_currency_code
+                - original_invoice
+                - items
+                - invoice_kind
+              properties:
+                return_date:
+                  type: string
+                  format: date
+                  example: '2026-07-14'
+                  description: >-
+                    The date on which this credit note was created in the format
+                    YYYY-MM-DD
+                issue_date:
+                  type: string
+                  format: date
+                  example: '2026-07-14'
+                  description: >-
+                    The date on which this credit note was issued in the format
+                    YYYY-MM-DD
+                issue_time:
+                  type: string
+                  format: time
+                  example: '14:30:00'
+                  description: >-
+                    The time at which this credit note was issued in the format
+                    HH:MM:SS
+                tax_point_date:
+                  type: string
+                  format: date
+                  example: '2026-07-14'
+                  description: >-
+                    The actual date when the tax becomes applicable in the
+                    format YYYY-MM-DD
+                document_currency_code:
+                  type: string
+                  example: NGN
+                  description: >-
+                    A code that specifies the default currency in which the
+                    credit note is issued
+                buyer_reference:
+                  type: string
+                  example: '#CN-001'
+                  description: >-
+                    A reference number or code provided by the buyer to track
+                    the credit note
+                original_invoice:
+                  type: object
+                  required:
+                    - reference
+                    - issue_date
+                    - total
+                  properties:
+                    reference:
+                      type: string
+                      example: INV-00432
+                      description: >-
+                        The legacy invoice number of the original invoice, which
+                        was never submitted to FIRS/NRS. Passed straight through
+                        into the credit note's billing reference - it is not
+                        validated as an IRN
+                    issue_date:
+                      type: string
+                      format: date
+                      example: '2023-01-17'
+                      description: >-
+                        The date on which the original invoice was issued in the
+                        format YYYY-MM-DD
+                    total:
+                      type: number
+                      format: double
+                      example: 15000
+                      minimum: 0.01
+                      description: >-
+                        The declared grand total of the original invoice. Caps
+                        the cumulative total of every credit note raised against
+                        this reference - the first call for a given reference
+                        records this value, and later calls against the same
+                        reference must repeat the same date and total
+                    self_billed:
+                      type: boolean
+                      example: false
+                      description: >-
+                        Whether the original invoice was self-billed. Determines
+                        whether the resulting credit note is issued as a
+                        standard or self-billed credit note
+                trader_invoice_number:
+                  type: string
+                  example: '2453618203'
+                  maxLength: 30
+                  description: >-
+                    An invoice number assigned by the supplier to uniquely
+                    identify the credit note in their system
+                party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the buyer of
+                    the goods or services
+                party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the buyer of the goods or services. It
+                    must be provided for credit notes that have the party_tin
+                    provided
+                party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the buyer of the goods or services. If
+                    it is not provided and the party_tin is provided, we will
+                    use firs-invoices@namiri.tech as the party's email address
+                party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the buyer of the goods or services. If not
+                    provided and the party_tin is provided, we will use a
+                    default address
+                payee_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the party to
+                    whom the payment goes to; if it goes to someone else
+                payee_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the party to whom the payment goes to;
+                    if it goes to someone else. It must be provided for credit
+                    notes that have the payee_party_tin provided
+                payee_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the party to whom the payment goes to;
+                    if it goes to someone else. If it is not provided and the
+                    payee_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                payee_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the party to whom the payment goes to; if it
+                    goes to someone else. If not provided and the
+                    payee_party_tin is provided, we will use a default address
+                bill_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the party to
+                    whom the payment goes to; if it goes to someone else
+                bill_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the party to whom the payment goes to;
+                    if it goes to someone else. It must be provided for credit
+                    notes that have the bill_party_tin provided
+                bill_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the party to whom the payment goes to;
+                    if it goes to someone else. If it is not provided and the
+                    bill_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                bill_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the party to whom the payment goes to; if it
+                    goes to someone else. If not provided and the bill_party_tin
+                    is provided, we will use a default address
+                ship_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the party to
+                    whom the payment goes to; if it goes to someone else
+                ship_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the party to whom the payment goes to;
+                    if it goes to someone else. It must be provided for credit
+                    notes that have the ship_party_tin provided
+                ship_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the party to whom the payment goes to;
+                    if it goes to someone else. If it is not provided and the
+                    ship_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                ship_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the party to whom the payment goes to; if it
+                    goes to someone else. If not provided and the ship_party_tin
+                    is provided, we will use a default address
+                tax_representative_party_tin:
+                  type: string
+                  example: 08289985-9145
+                  description: >-
+                    The tax identification number or company incorporation
+                    number(if the party does not yet have a TIN) of the tax
+                    agent handling invoicing and compliance for the business if
+                    there is one
+                tax_representative_party_name:
+                  type: string
+                  example: Namiri Technology
+                  description: >-
+                    The taxpayer name of the tax agent handling invoicing and
+                    compliance for the business. It must be provided for credit
+                    notes that have the tax_representative_party_tin provided
+                tax_representative_party_email:
+                  type: string
+                  example: firs-invoices@namiri.tech
+                  description: >-
+                    The email address of the tax agent handling invoicing and
+                    compliance for the business. If it is not provided and the
+                    tax_representative_party_tin is provided, we will use
+                    firs-invoices@namiri.tech as the party's email address
+                tax_representative_party_address:
+                  $ref: '#/components/schemas/Address'
+                  description: >-
+                    The address of the tax agent handling invoicing and
+                    compliance for the business. If not provided and the
+                    tax_representative_party_tin is provided, we will use a
+                    default address
+                due_date:
+                  type: string
+                  format: date
+                  example: '2026-07-14'
+                  description: >-
+                    The date on which the credit note is due for payment in the
+                    format YYYY-MM-DD
+                notes:
+                  type: string
+                  example: Sample credit note notes
+                  description: >-
+                    Additional credit note information that is not contained
+                    explicitly in other structures
+                callback_url:
+                  type: string
+                  format: uri
+                  example: https://example.com/callback
+                  description: >-
+                    The URL to call when we have new information about the
+                    credit note, when it is signed successfully or validation
+                    has failed
+                invoice_kind:
+                  type: string
+                  example: B2B
+                  enum:
+                    - B2B
+                    - B2C
+                    - B2G
+                  description: >-
+                    Specifies the kind of credit note that was sent. It can
+                    either be Business to Business (B2B), Business to Consumer
+                    (B2C) or Business to Government (B2G)
+                payment_status:
+                  type: string
+                  example: PENDING
+                  enum:
+                    - PENDING
+                    - PAID
+                  description: >-
+                    The payment status of the credit note at creation. PARTIAL
+                    and REJECTED are not accepted here - use the payment status
+                    endpoint to move the credit note to either of those once it
+                    has been signed
+                accounting_cost:
+                  type: string
+                  example: 2000 NGN
+                  description: >-
+                    Represents the accounting category or cost center assigned
+                    to the transaction
+                payment_terms_note:
+                  type: string
+                  example: Payment due within 30 days of invoice issue
+                  description: Describes the terms and conditions of payment
+                invoice_delivery_period:
+                  $ref: '#/components/schemas/DeliveryPeriod'
+                  description: >-
+                    Defines the start and end dates for when goods or services
+                    were delivered. This helps track multi-day deliveries on a
+                    single invoice
+                payment_means:
+                  type: array
+                  description: Defines how the invoice will be paid and when payment is due
+                  items:
+                    $ref: '#/components/schemas/PaymentMeans'
+                allowance_charge:
+                  type: array
+                  description: Defines any discounts (allowance) or extra charges (charge)
+                  items:
+                    $ref: '#/components/schemas/AllowanceCharge'
+                additional_document_reference:
+                  type: array
+                  description: >-
+                    A reference to additional documents associated with a credit
+                    note. Used as a general reference field for any related
+                    documents
+                  items:
+                    $ref: '#/components/schemas/InvoiceDocumentReference'
+                items:
+                  type: array
+                  description: >-
+                    A list that captures details about each good or service
+                    being credited
+                  items:
+                    type: object
+                    required:
+                      - item_code
+                      - quantity
+                      - unit_price
+                      - tax_rate
+                      - tax_category_code
+                      - item_name
+                      - item_description
+                      - product_category
+                      - hsn_code
+                    properties:
+                      item_code:
+                        type: string
+                        example: '8000020107057'
+                        description: >-
+                          A unique product code assigned to the item in the
+                          user's system. It will be used as the unique product
+                          identifier
+                      tax_category_code:
+                        type: string
+                        example: STANDARD_VAT
+                        description: >-
+                          The code for the tax category the item belongs to. It
+                          must be one of the tax categories defined in the
+                          resources API
+                      product_category:
+                        type: string
+                        example: Food and Beverage Products
+                        description: The category the good or service belongs to
+                        maxLength: 100
+                      item_name:
+                        type: string
+                        example: DigiTax Product 001
+                        description: The name of the good or service being sold
+                      hsn_code:
+                        type: string
+                        example: '2847.00'
+                        description: >-
+                          The Harmonized System of Nomenclature (HSN) Code for
+                          the good or the International Standard Industry
+                          Classification (ISIC) code for the service. <a
+                          href="https://ng.docs.digitax.tech/reference/reference-hs-service-code-files">HSN
+                          Reference</a>
+                      item_description:
+                        type: string
+                        example: Sample item description
+                        description: A brief description of the item being sold
+                      price_unit:
+                        type: string
+                        example: H87
+                        description: >-
+                          Specifies the unit of measurement for this invoice
+                          line item's price. Get this from the invoice quantity
+                          codes resource: /resources/invoice-quantity-codes
+                      quantity:
+                        type: number
+                        format: double
+                        example: 1
+                        minimum: 0
+                        description: >-
+                          The total number of items credited in the credit note
+                          line
+                      unit_price:
+                        type: number
+                        format: double
+                        example: 10000
+                        minimum: 0.01
+                        description: The unit price of this line item before tax
+                      discount_rate:
+                        type: number
+                        format: double
+                        example: 0.05
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The discount rate applied to the item. It must be a
+                          value between 0 and 1, where 0 means no discount and 1
+                          means a 100% discount on the price
+                      fee_rate:
+                        type: number
+                        format: double
+                        example: 0.02
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The rate of any additional fees (e.g. service charge,
+                          delivery fee). It must be a value between 0 and 1,
+                          where 0 means no fee and 1 means a 100% fee on the
+                          price
+                      tax_rate:
+                        type: number
+                        format: double
+                        example: 0.075
+                        minimum: 0
+                        maximum: 1
+                        description: >-
+                          The tax rate applied to the item. It must be a value
+                          between 0 and 1. For tax category codes that already
+                          have a defined tax rate, this value must match the tax
+                          category's tax rate
+                      taxable_amount:
+                        type: number
+                        format: double
+                        example: 9700
+                        minimum: 0
+                        description: >-
+                          The amount on which tax is calculated. It must be
+                          equal to the line extension amount (unit price *
+                          quantity) plus fees minus discounts. This value will
+                          be ignored unless the business has the permission to
+                          calculate tax
+                      tax_amount:
+                        type: number
+                        format: double
+                        example: 727.5
+                        minimum: 0
+                        description: >-
+                          The tax amount for this line item. It must be equal to
+                          the taxable amount multiplied by the tax rate. This
+                          value will be ignored unless the business has the
+                          permission to calculate tax
+                      is_service:
+                        type: boolean
+                        example: true
+                        description: >-
+                          Indicates whether the item is a service (true) or a
+                          good (false). It defaults to false if not provided
+      responses:
+        '201':
+          description: External credit note created
           content:
             application/json:
               schema:
@@ -2309,10 +2813,12 @@ paths:
                   example: PENDING
                   enum:
                     - PENDING
-                    - REJECTED
                     - PAID
-                    - PARTIAL
-                  description: The current payment status of the debit note
+                  description: >-
+                    The payment status of the debit note at creation. PARTIAL
+                    and REJECTED are not accepted here - use the payment status
+                    endpoint to move the debit note to either of those once it
+                    has been signed
                 items:
                   type: array
                   items:
@@ -2565,12 +3071,12 @@ paths:
                   example: PENDING
                   enum:
                     - PENDING
-                    - REJECTED
                     - PAID
-                    - PARTIAL
                   description: >-
-                    Indicates whether the invoice has been paid or is still
-                    pending
+                    The payment status of the invoice at creation. PARTIAL and
+                    REJECTED are not accepted here - use the payment status
+                    endpoint to move the invoice to either of those once it has
+                    been signed
                 issue_date:
                   type: string
                   format: date
@@ -2851,9 +3357,24 @@ paths:
       tags:
         - APP Invoices
       summary: Update an APP invoice payment status
-      description: >-
+      description: >
         Update the payment status of an invoice created in the Access Point
-        Provider integration
+        Provider integration. The
+
+        invoice must already be signed.
+
+
+        PARTIAL may be sent repeatedly until the outstanding balance is settled.
+        A PARTIAL payment that
+
+        clears the balance settles the invoice, so the invoice is stored and
+        returned as PAID rather than
+
+        PARTIAL, is reported to NRS as PAID with no amount, and is queued for
+        fiscalisation. Sending PAID
+
+        against an invoice that is already settled is accepted and changes
+        nothing.
       security:
         - apiKeyAuth: []
       parameters:
@@ -2880,7 +3401,10 @@ paths:
                     - PAID
                     - PARTIAL
                   example: REJECTED
-                  description: The payment status of the invoice
+                  description: >-
+                    The payment status of the invoice. Requesting PARTIAL
+                    settles the invoice to PAID when the payment clears the
+                    outstanding balance
                 reference:
                   type: string
                   example: PY012001
@@ -2891,7 +3415,9 @@ paths:
                   example: 10
                   description: >-
                     The amount paid in this transaction. Required when
-                    payment_status is PARTIAL, ignored otherwise.
+                    payment_status is PARTIAL, and rejected for PAID and
+                    REJECTED. PAID settles whatever is still outstanding, so it
+                    takes no amount
       responses:
         '200':
           description: Success
@@ -3391,6 +3917,16 @@ components:
           description: >-
             The ID of the original invoice that was credited or debited on
             DigiTax if this is a credit or debit note
+        is_placeholder:
+          type: boolean
+          example: false
+          description: >-
+            True if this row is a placeholder standing in for a
+            pre-e-invoicing-scheme original invoice that was never submitted to
+            FIRS/NRS. Placeholders are never validated, signed, or returned by
+            any list endpoint. The legacy reference itself isn't exposed here -
+            it's already on the credit note that references this row, as
+            billing_reference[0].irn
         created_at:
           type: string
           format: date-time
