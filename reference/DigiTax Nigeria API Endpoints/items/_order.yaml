@@ -1,3 +1,4 @@
 - get_items
 - post_items
 - get_items-item-id
+- put_items-item-id

@@ -492,6 +492,62 @@ paths:
                 $ref: '#/components/schemas/Item'
         default:
           $ref: '#/components/responses/Error'
+    put:
+      tags:
+        - Items
+      summary: Update an item
+      description: >-
+        Changes only the fields that are sent, and at least one must be. An item
+        code can only be added to an item that was created without one. An item
+        that already has an item code keeps it. Sending that same code again
+        succeeds without a change, and a different code is refused. The item
+        name and display name can be changed at any time.
+      security:
+        - apiKeyAuth: []
+      parameters:
+        - in: path
+          name: item_id
+          required: true
+          schema:
+            type: string
+            description: Item ID on DigiTax
+            example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                item_code:
+                  type: string
+                  example: '8000020107057'
+                  description: >-
+                    A unique product code assigned to the item in the user's
+                    system. It will be used as the unique product identifier. It
+                    cannot already be used by another item, and cannot start
+                    with item_
+                item_name:
+                  type: string
+                  example: DigiTax Product 001
+                  description: >-
+                    The name of the good or service being sold. It cannot be
+                    empty.
+                display_name:
+                  type: string
+                  example: DigiTax Product 001
+                  description: >-
+                    How the seller identifies the item, if different from the
+                    item name. It cannot be empty.
+      responses:
+        '200':
+          description: Item updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+        default:
+          $ref: '#/components/responses/Error'
   /invoices:
     get:
       tags:
@@ -1014,6 +1070,13 @@ paths:
                           The ID of the item being sold, as it appears on
                           DigiTax. It must be one of the items sold in the
                           original invoice
+                      original_invoice_item_id:
+                        type: string
+                        example: invoiceitem_01JWBCPPJHE271WCDRRPSRQ7WS
+                        description: >-
+                          The ID of the specific invoice line item from the
+                          original invoice. This is required when duplicate item
+                          IDs are enabled for your business
                       quantity:
                         type: number
                         format: double
@@ -1283,6 +1346,13 @@ paths:
                           The ID of the item being sold, as it appears on
                           DigiTax. It must be one of the items sold in the
                           original invoice
+                      original_invoice_item_id:
+                        type: string
+                        example: invoiceitem_01JWBCPPJHE271WCDRRPSRQ7WS
+                        description: >-
+                          The ID of the specific invoice line item from the
+                          original invoice. This is required when duplicate item
+                          IDs are enabled for your business
                       quantity:
                         type: number
                         format: double
@@ -2100,6 +2170,13 @@ paths:
                           A unique product code assigned to the item in the
                           user's system. It will be used as the unique product
                           identifier
+                      original_invoice_item_id:
+                        type: string
+                        example: invoiceitem_01JWBCPPJHE271WCDRRPSRQ7WS
+                        description: >-
+                          The ID of the specific invoice line item from the
+                          original invoice. This is required when duplicate item
+                          IDs are enabled for your business
                       quantity:
                         type: number
                         format: double
@@ -2836,6 +2913,13 @@ paths:
                           A unique product code assigned to the item in the
                           user's system. It will be used as the unique product
                           identifier
+                      original_invoice_item_id:
+                        type: string
+                        example: invoiceitem_01JWBCPPJHE271WCDRRPSRQ7WS
+                        description: >-
+                          The ID of the specific invoice line item from the
+                          original invoice. This is required when duplicate item
+                          IDs are enabled for your business
                       quantity:
                         type: number
                         format: double
@@ -4246,6 +4330,13 @@ components:
           type: string
           example: item_01JWBBCVSHK3ZQAVNPW2MPSQXS
           description: The ID of the item being sold, as it appears on DigiTax
+        original_invoice_item_id:
+          type: string
+          nullable: true
+          example: invoiceitem_01JWBCPPJHE271WCDRRPSRQ7WS
+          description: >-
+            The ID of the original invoice item this line references, when the
+            invoice is a credit or debit note
         line_extension_amount:
           type: number
           format: double
