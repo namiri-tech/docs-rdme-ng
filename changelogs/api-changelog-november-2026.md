@@ -1,7 +1,7 @@
 ---
 title: API Changelog - November 2026
 author: Namiri Tech
-hidden: true
+hidden: false
 published_at: '2026-11-10T07:29:26.281Z'
 ---
 # Update Item Details
