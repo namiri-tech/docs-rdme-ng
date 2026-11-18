@@ -27,21 +27,24 @@ metadata:
   </Card>
 </Cards>
 
-<Accordion title="DigiTax is Pan-African. Explore other countries here ..." icon="fa-globe">
+<Accordion title="DigiTax is Global. Explore other supported countries below ..." icon="fa-globe">
   You are currently reading a guide in the DigiTax Nigeria API Hub.
 
   If you're looking for another country or the general homepage for DigiTax API, navigate to the [DigiTax API homepage](https://docs.digitax.tech), or country-specific API hub pages (ordered alphabetically):
 
-  * [DigiTax Kenya API hub](https://ke.docs.digitax.tech)
-  * **DigiTax Nigeria API hub (You are here 🎉)**
-  * [DigiTax Zambia API hub](https://zm.docs.digitax.tech)
+  * <i class="icon-guides" /> [DigiTax Kenya API Hub](https://ke.docs.digitax.tech)
+  * <i class="icon-guides" /> **DigiTax Nigeria API Hub (You are here 🎉)**
+  * <i class="icon-guides" /> [DigiTax Tanzania API Hub](https://tz.docs.digitax.tech)
+  * <i class="icon-guides" /> [DigiTax UAE API Hub](https://ae.docs.digitax.tech)
+  * <i class="icon-guides" /> [DigiTax Zambia API Hub](https://zm.docs.digitax.tech)
+  * <i class="icon-guides" /> [DigiTax Zimbabwe API Hub](https://zw.docs.digitax.tech)
 </Accordion>
 
 ## Electronic Tax Invoicing in Nigeria
 
 African countries lately have been opting to digitize their tax systems by imposing e-Invoicing or Electronic Tax Invoicing and Reporting. Electronic Tax Invoicing is a nascent Fintech category in the Pan-African region.
 
-Nigeria is one of the countries and the country's tax authority/ regulator, **NRS** (Federal Inland Revenue Service) has a transformative e-invoicing system, named **NRS Merchant Buyer Solution** (NRS MBS). In this documentation, DigiTax Nigeria API Hub, we shall simply refer to it as _NRS E-Invoicing System_.
+Nigeria is one of the countries and the country's tax authority/ regulator, **NRS** (Nigeria Revenue Service) has a transformative e-invoicing system, named **NRS Merchant Buyer Solution** (NRS MBS). In this documentation, DigiTax Nigeria API Hub, we shall simply refer to it as _NRS E-Invoicing System_.
 
 ## Introduction to NRS E-Invoicing System and DigiTax platform
 
@@ -65,9 +68,12 @@ The suite of digital solutions or products under DigiTax are:
 
 DigiTax connects with regional tax authorities/ regulators, so far:
 
-* DigiTax Nigeria integrates you with <Glossary>NRS</Glossary> e-Invoicing System
-* DigiTax Kenya integrates you with <Glossary>KRA</Glossary> eTIMS (electronic Tax Information Management System)
-* DigiTax Zambia integrates you with <Glossary>ZRA</Glossary> Smart Invoice System
+* _**DigiTax Kenya**_ integrates you with <Glossary>KRA</Glossary> eTIMS (Kenya Revenue Authority)
+* _**DigiTax Nigeria**_ integrates you with <Glossary>NRS</Glossary> (Nigeria Revenue Service)
+* _**DigiTax Tanzania**_ integrates you with TRA VFD (Tanzania Revenue Authority)
+* _**DigiTax UAE**_ integrates you with FTA (Federal Tax Authority)
+* _**DigiTax Zambia**_ integrates you with <Glossary>ZRA</Glossary> Smart Invoice (Zambia Revenue Authority)
+* _**DigiTax Zimbabwe**_ integrates you with ZIMRA FDMS (Zimbabwe Revenue Authority)
 
 to offer you a streamlined invoicing system that ensures compliance and supports the growth of your business.
 
@@ -75,7 +81,7 @@ to offer you a streamlined invoicing system that ensures compliance and supports
 
 ### DigiTax API Features
 
-The DigiTax API is built with various industry standards for API platforms in mind. Read more on this [here](https://ng.docs.digitax.tech/reference/using-the-digitax-nigeria-api#digitax-api).
+The DigiTax API is built with various industry standards for API platforms in mind. Read more on this [here](ref:using-the-digitax-nigeria-api#digitax-api).
 
 > We invite you to use **DigiTax Nigeria API** to integrate your system with NRS E-Invoicing System for automation and to reduce platform-hopping
 
@@ -89,7 +95,7 @@ These include:
 
 To use this API, you'll need access to DigiTax Dashboard environment to get an X-API-Key. Get in touch with [our team](mailto:support@namiri.tech).
 
-These are the steps required to get up and running - [Prerequisites of using DigiTax API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
+These are the steps required to get up and running - [Prerequisites of using DigiTax API](ref:prerequisites-of-using-the-api)
 
 ***
 
@@ -136,7 +142,7 @@ We invite you to use **DigiTax Nigeria API** to integrate your system with NRS E
 To recap:
 
 * Explore our detailed guides to gain understanding of DigiTax Nigeria integration. Learn how to navigate them [here](doc:how-to-use-this-site)
-* Get the [Prerequisites for using DigiTax Nigeria API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
+* Get the [Prerequisites for using DigiTax Nigeria API](ref:prerequisites-of-using-the-api)
 * For support, [email us](mailto:support@namiri.tech) OR talk to us via the **DigiTax chat** on the bottom-right of any page
 
 Welcome to the Less Taxing solution - DigiTax.

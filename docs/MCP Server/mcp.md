@@ -48,17 +48,15 @@ DigiTax Nigeria API Hub hosts a remote MCP server at `https://ng.docs.digitax.te
 
   </Tab>
   <Tab title="Claude Desktop">
-    **Add to `claude_desktop_config.json`:**
+    Claude Desktop connects to remote MCP servers through the Connectors UI, not via `claude_desktop_config.json`.
 
-    ```json
-    {
-      "mcpServers": {
-        "dgtxng": {
-          "url": "https://ng.docs.digitax.tech/mcp"
-        }
-      }
-    }
-    ```
+    1. Open **Claude Desktop** and go to **Settings → Connectors**.
+    2. Click **Add custom connector**.
+    3. Enter a name (e.g. `DigiTax Nigeria`) and the URL:
+       ```
+       https://ng.docs.digitax.tech/mcp
+       ```
+    4. Save. To use it in a conversation, click **+** → **Add connectors** and enable **DigiTax Nigeria**.
 
   </Tab>
 </Tabs>
@@ -67,11 +65,22 @@ DigiTax Nigeria API Hub hosts a remote MCP server at `https://ng.docs.digitax.te
 
 Once configured, you can test your MCP server connection:
 
-1. **Open your AI editor** (Cursor, Windsurf, etc.)
+1. **Open your AI editor** (Cursor, Windsurf, Claude Desktop, etc.)
 2. **Start a new chat** with the AI assistant
 3. **Ask about DigiTax Nigeria API Hub** - try questions like:
-   * "How do I [common use case]?"
-   * "Show me an example of [API functionality]"
-   * "Create a [integration type] using DigiTax Nigeria API Hub"
+   * "How do I create an NRS e-invoice with DigiTax Nigeria?"
+   * "Which party details are required before an invoice can be transmitted?"
+   * "How do I issue a credit note against an existing invoice?"
+   * "How do I get a callback when an invoice's status changes?"
 
 The AI should now have access to your DigiTax Nigeria API Hub account data and documentation through the MCP server.
+
+## Authentication
+
+The DigiTax Nigeria MCP server reads live data from your account. Pass your API key as a request header:
+
+```text
+X-API-Key: <your-api-key>
+```
+
+See [API Prerequisites](ref:prerequisites-of-using-the-api) for how to obtain your key and configure it in your MCP client.
