@@ -58,7 +58,7 @@ The DigiTax API is built with various industry standards for API platforms in mi
 
 To use this API, you'll need access to DigiTax Dashboard environment to get an API Key. You can test our solutions (DigiTax Dashboard, DigiTax App and DigiTax API) for free using test businesses.
 
-These are the steps required to get up and running on the API - [Prerequisites of using DigiTax API](https://ng.docs.digitax.tech/update/reference/prerequisites-of-using-the-api)
+These are the steps required to get up and running on the API - [Prerequisites of using DigiTax API](ref:prerequisites-of-using-the-api)
 
 > ℹ️ You can test our solutions before committing
 >

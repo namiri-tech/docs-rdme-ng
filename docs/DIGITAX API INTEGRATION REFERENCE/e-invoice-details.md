@@ -13,7 +13,7 @@ Once signed up on DigiTax, you can generate an e-invoice via the:
 * **DigiTax Dashboard** (Web Browser-based Desktop application for e-invoicing),
 * **DigiTax API** (for system-to-system integration without the issue of platform hopping), and
 * **DigiTax App** (Compatible with Android POS devices)
-* **DigiTax Plugins** like DigiTax WooCommerce, DigiTax Odoo, DigiTax Quickbooks, DigiTax Sage Online, among others. These  may vary in availability per country.
+* **DigiTax Plugins** like DigiTax WooCommerce, DigiTax Odoo, DigiTax QuickBooks, DigiTax Sage Online, among others. These  may vary in availability per country.
 
 ## e-invoice sections
 

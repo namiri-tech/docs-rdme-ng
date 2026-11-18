@@ -75,6 +75,6 @@ Below are examples:
 
 ## 💬 We're here to help
 
-If you get stuck, [email us](mailto:info@namiri.tech) or use the **DigiTax chat** on the bottom right of any page.
+If you get stuck, [email us](mailto:support@namiri.tech) or use the **DigiTax chat** on the bottom right of any page.
 
 We're excited you're here! 💚
